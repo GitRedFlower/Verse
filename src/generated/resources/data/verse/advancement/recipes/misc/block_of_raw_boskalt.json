@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_raw_boskalt": {
+      "conditions": {
+        "items": [
+          {
+            "items": "verse:raw_boskalt"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "verse:block_of_raw_boskalt"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_raw_boskalt"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "verse:block_of_raw_boskalt"
+    ]
+  }
+}

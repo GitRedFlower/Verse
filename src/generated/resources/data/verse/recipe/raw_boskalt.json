@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "verse:block_of_raw_boskalt"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "verse:raw_boskalt"
+  }
+}

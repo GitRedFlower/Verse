@@ -2,10 +2,14 @@ package net.redflower.verse.datagen;
 
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
-import net.minecraft.data.recipes.RecipeOutput;
-import net.minecraft.data.recipes.RecipeProvider;
+import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.Items;
+import net.minecraft.world.level.ItemLike;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
+import net.redflower.verse.block.VerseBlocks;
+import net.redflower.verse.item.VerseItems;
 
+import java.util.List;
 import java.util.concurrent.CompletableFuture;
 
 public class VerseRecipeProvider extends RecipeProvider implements IConditionBuilder {
@@ -16,6 +20,125 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
 
     @Override
     protected void buildRecipes(RecipeOutput recipeOutput) {
+        List<ItemLike> BOSKALT_SMELT = List.of(VerseItems.RAW_BOSKALT, VerseBlocks.BOSKALT_ORE, VerseBlocks.DEEPSLATE_BOSKALT_ORE);
 
+        //Shaped
+        //Blocks
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseBlocks.BLOCK_OF_RAW_BOSKALT)
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', VerseItems.RAW_BOSKALT.get())
+                .unlockedBy("has_raw_boskalt", has(VerseItems.RAW_BOSKALT))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseBlocks.BLOCK_OF_BOSKALT)
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', VerseItems.BOSKALT_INGOT.get())
+                .unlockedBy("has_boskalt_ingot", has(VerseItems.BOSKALT_INGOT))
+                .save(recipeOutput);
+
+        //Armor
+        //Boskalt
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.BOSKALT_HELMET)
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("   ")
+                .define('A', VerseItems.BOSKALT_INGOT.get())
+                .unlockedBy("has_boskalt_ingot", has(VerseItems.BOSKALT_INGOT))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.BOSKALT_CHESTPLATE)
+                .pattern("A A")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', VerseItems.BOSKALT_INGOT.get())
+                .unlockedBy("has_boskalt_ingot", has(VerseItems.BOSKALT_INGOT))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.BOSKALT_LEGGINGS)
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("A A")
+                .define('A', VerseItems.BOSKALT_INGOT.get())
+                .unlockedBy("has_boskalt_ingot", has(VerseItems.BOSKALT_INGOT))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.BOSKALT_BOOTS)
+                .pattern("   ")
+                .pattern("A A")
+                .pattern("A A")
+                .define('A', VerseItems.BOSKALT_INGOT.get())
+                .unlockedBy("has_boskalt_ingot", has(VerseItems.BOSKALT_INGOT))
+                .save(recipeOutput);
+
+        //Tools
+        //Boskalt
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.BOSKALT_SHOVEL)
+                .pattern(" A ")
+                .pattern(" B ")
+                .pattern(" B ")
+                .define('A', VerseItems.BOSKALT_INGOT.get())
+                .define('B', Items.STICK)
+                .unlockedBy("has_boskalt_ingot", has(VerseItems.BOSKALT_INGOT))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.BOSKALT_PICKAXE)
+                .pattern("AAA")
+                .pattern(" B ")
+                .pattern(" B ")
+                .define('A', VerseItems.BOSKALT_INGOT.get())
+                .define('B', Items.STICK)
+                .unlockedBy("has_boskalt_ingot", has(VerseItems.BOSKALT_INGOT))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.BOSKALT_AXE)
+                .pattern(" AA")
+                .pattern(" BA")
+                .pattern(" B ")
+                .define('A', VerseItems.BOSKALT_INGOT.get())
+                .define('B', Items.STICK)
+                .unlockedBy("has_boskalt_ingot", has(VerseItems.BOSKALT_INGOT))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.BOSKALT_HOE)
+                .pattern(" AA")
+                .pattern(" B ")
+                .pattern(" B ")
+                .define('A', VerseItems.BOSKALT_INGOT.get())
+                .define('B', Items.STICK)
+                .unlockedBy("has_boskalt_ingot", has(VerseItems.BOSKALT_INGOT))
+                .save(recipeOutput);
+
+        //Weapons
+        //Swords
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.BOSKALT_SWORD)
+                .pattern(" A ")
+                .pattern(" A ")
+                .pattern(" B ")
+                .define('A', VerseItems.BOSKALT_INGOT.get())
+                .define('B', Items.STICK)
+                .unlockedBy("has_boskalt_ingot", has(VerseItems.BOSKALT_INGOT))
+                .save(recipeOutput);
+
+
+        //Shapeless
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VerseItems.RAW_BOSKALT.get(), 9)
+                .requires(VerseBlocks.BLOCK_OF_RAW_BOSKALT)
+                .unlockedBy("has_block_of_raw_boskalt", has(VerseBlocks.BLOCK_OF_RAW_BOSKALT))
+                .save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VerseItems.BOSKALT_INGOT.get(), 9)
+                .requires(VerseBlocks.BLOCK_OF_BOSKALT)
+                .unlockedBy("has_block_of_boskalt", has(VerseBlocks.BLOCK_OF_BOSKALT))
+                .save(recipeOutput);
+
+        //smelting
+        oreSmelting(recipeOutput, BOSKALT_SMELT, RecipeCategory.MISC, VerseItems.BOSKALT_INGOT, 0.25f, 200, "boskalt");
+
+        //blasting
+        oreBlasting(recipeOutput, BOSKALT_SMELT, RecipeCategory.MISC, VerseItems.BOSKALT_INGOT, 0.25f, 100, "boskalt");
     }
 }

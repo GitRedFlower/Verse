@@ -1,0 +1,13 @@
+// 1.21.1	2025-11-04T23:29:54.0193623	Block States: verse
+0badcbda4cab1e13456e8143dddfa0489bb2f64b assets/verse/blockstates/block_of_boskalt.json
+6151018737c08c310769c7c9267fbcce65f7f1de assets/verse/blockstates/block_of_raw_boskalt.json
+f2e50392df8f9c6d5b08397a1b6a6bef570ca96e assets/verse/blockstates/boskalt_ore.json
+3776b479b7908403ba1cf2f0bb0760b993858df3 assets/verse/blockstates/deepslate_boskalt_ore.json
+28e6a21a41d65765519eb645c80b75c74ac38275 assets/verse/models/block/block_of_boskalt.json
+f8f3ddb18d829776cb60e33b4f90cfabf24398d8 assets/verse/models/block/block_of_raw_boskalt.json
+4c34ce4540115d9b2543b6092877a6358dc7bacc assets/verse/models/block/boskalt_ore.json
+a9243ed94daaa753c0a06fb11d918c6e138c556a assets/verse/models/block/deepslate_boskalt_ore.json
+46960c87fe92ad89c6b7da6cfda1058c161d5cc9 assets/verse/models/item/block_of_boskalt.json
+48ad7423ba04914b69af042fea8e1949756247f5 assets/verse/models/item/block_of_raw_boskalt.json
+2f35372b48cb5b45338ee93446d59f79c5da176c assets/verse/models/item/boskalt_ore.json
+af5858e9509b11b1d8f9755cad40624420f3b4ba assets/verse/models/item/deepslate_boskalt_ore.json

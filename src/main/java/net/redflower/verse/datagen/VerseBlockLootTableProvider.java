@@ -6,6 +6,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
@@ -26,7 +27,15 @@ public class VerseBlockLootTableProvider extends BlockLootSubProvider {
 
     @Override
     protected void generate() {
+        //Drops Nothing Special
+        dropSelf(VerseBlocks.BLOCK_OF_RAW_BOSKALT.get());
+        dropSelf(VerseBlocks.BLOCK_OF_BOSKALT.get());
 
+        //Ore Drops
+        add(VerseBlocks.BOSKALT_ORE.get(),
+               block -> createMultipleOreDrops(VerseBlocks.BOSKALT_ORE.get(), Items.DIAMOND, 2, 5));
+        add(VerseBlocks.DEEPSLATE_BOSKALT_ORE.get(),
+                block -> createMultipleOreDrops(VerseBlocks.DEEPSLATE_BOSKALT_ORE.get(), Items.DIAMOND, 2, 5));
     }
 
     //Creates Multiple Ore Drops. Created By Modding by Kaupenjoe. DO NOT TOUCH!!!!

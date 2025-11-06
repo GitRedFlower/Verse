@@ -1,0 +1,4 @@
+// 1.21.1	2025-11-05T12:34:53.1823645	Tags for minecraft:block mod id verse
+983aa004e8900b56c4c1a87f119b0702928ab5f2 data/minecraft/tags/block/mineable/pickaxe.json
+3e8bac74d26c066f1bb688adb672ba6608b3b767 data/verse/tags/block/incorrect_for_boskalt_tool.json
+32b13946c4cd1f944b029659ccce5fcb2adad4ff data/verse/tags/block/needs_boskalt_tool.json

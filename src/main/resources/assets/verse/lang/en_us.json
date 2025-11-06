@@ -1,4 +1,24 @@
 {
+  "block.verse.boskalt_ore" : "Boskalt Ore",
+  "block.verse.deepslate_boskalt_ore" : "Deepslate Boskalt Ore",
+  "block.verse.block_of_raw_boskalt" : "Block of Raw Boskalt",
+  "block.verse.block_of_boskalt" : "Block of Boskalt",
+
+  "item.verse.raw_boskalt" : "Raw Boskalt",
+  "item.verse.boskalt_ingot" : "Boskalt Ingot",
+
+  "item.verse.boskalt_helmet" : "Boskalt Helmet",
+  "item.verse.boskalt_chestplate" : "Boskalt Chestplate",
+  "item.verse.boskalt_leggings" : "Boskalt Leggings",
+  "item.verse.boskalt_boots" : "Boskalt Boots",
+
+  "item.verse.boskalt_shovel" : "Boskalt Shovel",
+  "item.verse.boskalt_pickaxe" : "Boskalt Pickaxe",
+  "item.verse.boskalt_axe" : "Boskalt Axe",
+  "item.verse.boskalt_hoe" : "Boskalt Hoe",
+
+  "item.verse.boskalt_sword" : "Boskalt Sword",
+
   "creativetab.verse.blocks" : "Verse Blocks",
   "creativetab.verse.items" : "Verse Items"
 }

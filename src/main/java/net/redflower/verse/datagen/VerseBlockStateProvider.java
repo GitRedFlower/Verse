@@ -5,6 +5,7 @@ import net.neoforged.neoforge.client.model.generators.BlockStateProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.redflower.verse.VERSE;
+import net.redflower.verse.block.VerseBlocks;
 
 public class VerseBlockStateProvider extends BlockStateProvider {
 
@@ -14,6 +15,16 @@ public class VerseBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
+        //Ores
+        blockWIthItem(VerseBlocks.BOSKALT_ORE);
+        blockWIthItem(VerseBlocks.DEEPSLATE_BOSKALT_ORE);
+
+        //Raw Material Blocks
+        blockWIthItem(VerseBlocks.BLOCK_OF_RAW_BOSKALT);
+
+
+        //Material Blocks
+        blockWIthItem(VerseBlocks.BLOCK_OF_BOSKALT);
 
     }
 

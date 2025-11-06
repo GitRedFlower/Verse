@@ -16,13 +16,33 @@ import java.util.function.Supplier;
 public class VerseBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(VERSE.MODID);
 
-    //Flag Blocks
-    public static final DeferredBlock<Block> ABROSEXUAL_FLAG_BLOCK = registerBlock("abrosexual_flag_block",
+    //Stone Ores
+    public static final DeferredBlock<Block> BOSKALT_ORE = registerBlock("boskalt_ore",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(0.5f)
                     .requiresCorrectToolForDrops()
-                    .sound(SoundType.WOOL)));
+                    .strength(3f)
+                    .sound(SoundType.STONE)));
 
+    //Deepslate Ores
+    public static final DeferredBlock<Block> DEEPSLATE_BOSKALT_ORE = registerBlock("deepslate_boskalt_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(4.5f)
+                    .sound(SoundType.DEEPSLATE)));
+
+    //Raw Material Blocks
+    public static final DeferredBlock<Block> BLOCK_OF_RAW_BOSKALT = registerBlock("block_of_raw_boskalt",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3f)
+                    .sound(SoundType.STONE)));
+
+    //Material Blocks
+    public static final DeferredBlock<Block> BLOCK_OF_BOSKALT = registerBlock("block_of_boskalt",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3f)
+                    .sound(SoundType.METAL)));
 
 
     //Registers The Blocks. DO NOT TOUCH!!!!
