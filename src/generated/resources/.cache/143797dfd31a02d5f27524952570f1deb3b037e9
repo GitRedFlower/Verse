@@ -1,10 +1,10 @@
-// 1.21.1	2025-11-05T12:33:33.5827784	Tags for minecraft:item mod id verse
-2db4326b020e98bd3b5d4c23eb1921b26037cfb9 data/minecraft/tags/item/axes.json
-d8d62320353dec036d242cdc33aa26531cd31696 data/minecraft/tags/item/beacon_payment_items.json
-86d587790863dcf7a72610f1c3b595b8184b7ba2 data/minecraft/tags/item/enchantable/armor.json
-86d587790863dcf7a72610f1c3b595b8184b7ba2 data/minecraft/tags/item/enchantable/durability.json
-1a892ef8507452a7be75aa04a56550acb3b1534c data/minecraft/tags/item/hoes.json
-82957f85cc65d588d4fef0dd0ca480473de69f34 data/minecraft/tags/item/pickaxes.json
-1b1fa02c1d63b7e3973f3a7f63c58d47fb2fe2b6 data/minecraft/tags/item/shovels.json
-cadde63176170eb64c48225e215b48b1f8bd9e0b data/minecraft/tags/item/swords.json
-86d587790863dcf7a72610f1c3b595b8184b7ba2 data/minecraft/tags/item/trimmable_armor.json
+// 1.21.1	2025-11-06T22:00:11.4972472	Tags for minecraft:item mod id verse
+96f1c69b9e1c686ce82160dc66267b4dee39bc60 data/minecraft/tags/item/axes.json
+8e3805ff40ac290e572d44138ee48a554a3df117 data/minecraft/tags/item/beacon_payment_items.json
+ff56e0128f135c78e8667d73aa43647c0e00e3f2 data/minecraft/tags/item/enchantable/armor.json
+ff56e0128f135c78e8667d73aa43647c0e00e3f2 data/minecraft/tags/item/enchantable/durability.json
+6172c2a035d5408e029cff5625bc1f9328669e88 data/minecraft/tags/item/hoes.json
+52177350be2c95a09e0f4c29b776ebaeefa29c97 data/minecraft/tags/item/pickaxes.json
+56cce5355cb4522808ee386070753af6e812dfe3 data/minecraft/tags/item/shovels.json
+bfced41d0d350641ea49147998cfc3126b96906d data/minecraft/tags/item/swords.json
+ff56e0128f135c78e8667d73aa43647c0e00e3f2 data/minecraft/tags/item/trimmable_armor.json

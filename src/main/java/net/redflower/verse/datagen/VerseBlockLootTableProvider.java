@@ -16,6 +16,7 @@ import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
 import net.redflower.verse.block.VerseBlocks;
+import net.redflower.verse.item.VerseItems;
 
 import java.util.Set;
 
@@ -30,12 +31,25 @@ public class VerseBlockLootTableProvider extends BlockLootSubProvider {
         //Drops Nothing Special
         dropSelf(VerseBlocks.BLOCK_OF_RAW_BOSKALT.get());
         dropSelf(VerseBlocks.BLOCK_OF_BOSKALT.get());
+        dropSelf(VerseBlocks.BLOCK_OF_GARNET.get());
+        dropSelf(VerseBlocks.BLOCK_OF_SAPPHIRE.get());
 
         //Ore Drops
+        //Multiple Drops
         add(VerseBlocks.BOSKALT_ORE.get(),
-               block -> createMultipleOreDrops(VerseBlocks.BOSKALT_ORE.get(), Items.DIAMOND, 2, 5));
+               block -> createMultipleOreDrops(VerseBlocks.BOSKALT_ORE.get(), VerseItems.RAW_BOSKALT.get(), 2, 5));
         add(VerseBlocks.DEEPSLATE_BOSKALT_ORE.get(),
-                block -> createMultipleOreDrops(VerseBlocks.DEEPSLATE_BOSKALT_ORE.get(), Items.DIAMOND, 2, 5));
+                block -> createMultipleOreDrops(VerseBlocks.DEEPSLATE_BOSKALT_ORE.get(), VerseItems.RAW_BOSKALT.get(), 2, 5));
+
+        //Single Drops
+        add(VerseBlocks.GARNET_ORE.get(),
+                block -> createOreDrop(VerseBlocks.GARNET_ORE.get(), VerseItems.GARNET.get()));
+        add(VerseBlocks.DEEPSLATE_GARNET_ORE.get(),
+                block -> createOreDrop(VerseBlocks.DEEPSLATE_GARNET_ORE.get(), VerseItems.GARNET.get()));
+        add(VerseBlocks.SAPPHIRE_ORE.get(),
+                block -> createOreDrop(VerseBlocks.SAPPHIRE_ORE.get(), VerseItems.SAPPHIRE.get()));
+        add(VerseBlocks.DEEPSLATE_SAPPHIRE_ORE.get(),
+                block -> createOreDrop(VerseBlocks.DEEPSLATE_SAPPHIRE_ORE.get(), VerseItems.SAPPHIRE.get()));
     }
 
     //Creates Multiple Ore Drops. Created By Modding by Kaupenjoe. DO NOT TOUCH!!!!

@@ -23,8 +23,32 @@ public class VerseBlocks {
                     .strength(3f)
                     .sound(SoundType.STONE)));
 
+    public static final DeferredBlock<Block> GARNET_ORE = registerBlock("garnet_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3f)
+                    .sound(SoundType.STONE)));
+
+    public static final DeferredBlock<Block> SAPPHIRE_ORE = registerBlock("sapphire_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3f)
+                    .sound(SoundType.STONE)));
+
     //Deepslate Ores
     public static final DeferredBlock<Block> DEEPSLATE_BOSKALT_ORE = registerBlock("deepslate_boskalt_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(4.5f)
+                    .sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> DEEPSLATE_GARNET_ORE = registerBlock("deepslate_garnet_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(4.5f)
+                    .sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> DEEPSLATE_SAPPHIRE_ORE = registerBlock("deepslate_sapphire_ore",
             () -> new Block(BlockBehaviour.Properties.of()
                     .requiresCorrectToolForDrops()
                     .strength(4.5f)
@@ -39,6 +63,18 @@ public class VerseBlocks {
 
     //Material Blocks
     public static final DeferredBlock<Block> BLOCK_OF_BOSKALT = registerBlock("block_of_boskalt",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3f)
+                    .sound(SoundType.METAL)));
+
+    public static final DeferredBlock<Block> BLOCK_OF_GARNET = registerBlock("block_of_garnet",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3f)
+                    .sound(SoundType.METAL)));
+
+    public static final DeferredBlock<Block> BLOCK_OF_SAPPHIRE = registerBlock("block_of_sapphire",
             () -> new Block(BlockBehaviour.Properties.of()
                     .requiresCorrectToolForDrops()
                     .strength(3f)

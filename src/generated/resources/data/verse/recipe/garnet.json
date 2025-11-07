@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "verse:block_of_garnet"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "verse:garnet"
+  }
+}

@@ -24,12 +24,18 @@ public class VerseCreativeModTabs {
                         //Ores
                         output.accept(VerseBlocks.BOSKALT_ORE);
                         output.accept(VerseBlocks.DEEPSLATE_BOSKALT_ORE);
+                        output.accept(VerseBlocks.GARNET_ORE);
+                        output.accept(VerseBlocks.DEEPSLATE_GARNET_ORE);
+                        output.accept(VerseBlocks.SAPPHIRE_ORE);
+                        output.accept(VerseBlocks.DEEPSLATE_SAPPHIRE_ORE);
 
                         //Raw Ore Blocks
                         output.accept(VerseBlocks.BLOCK_OF_RAW_BOSKALT);
 
                         //Material Blocks
                         output.accept(VerseBlocks.BLOCK_OF_BOSKALT);
+                        output.accept(VerseBlocks.BLOCK_OF_GARNET);
+                        output.accept(VerseBlocks.BLOCK_OF_SAPPHIRE);
                     })
                     .build());
 
@@ -45,20 +51,42 @@ public class VerseCreativeModTabs {
                         //Ingots
                         output.accept(VerseItems.BOSKALT_INGOT);
 
+                        //Gems
+                        output.accept(VerseItems.GARNET);
+                        output.accept(VerseItems.SAPPHIRE);
+
                         //Tools
                         output.accept(VerseItems.BOSKALT_SHOVEL);
                         output.accept(VerseItems.BOSKALT_PICKAXE);
                         output.accept(VerseItems.BOSKALT_AXE);
                         output.accept(VerseItems.BOSKALT_HOE);
+                        output.accept(VerseItems.GARNET_SHOVEL);
+                        output.accept(VerseItems.GARNET_PICKAXE);
+                        output.accept(VerseItems.GARNET_AXE);
+                        output.accept(VerseItems.GARNET_HOE);
+                        output.accept(VerseItems.SAPPHIRE_SHOVEL);
+                        output.accept(VerseItems.SAPPHIRE_PICKAXE);
+                        output.accept(VerseItems.SAPPHIRE_AXE);
+                        output.accept(VerseItems.SAPPHIRE_HOE);
 
                         //Swords
                         output.accept(VerseItems.BOSKALT_SWORD);
+                        output.accept(VerseItems.GARNET_SWORD);
+                        output.accept(VerseItems.SAPPHIRE_SWORD);
 
                         //Armor
                         output.accept(VerseItems.BOSKALT_HELMET);
                         output.accept(VerseItems.BOSKALT_CHESTPLATE);
                         output.accept(VerseItems.BOSKALT_LEGGINGS);
                         output.accept(VerseItems.BOSKALT_BOOTS);
+                        output.accept(VerseItems.GARNET_HELMET);
+                        output.accept(VerseItems.GARNET_CHESTPLATE);
+                        output.accept(VerseItems.GARNET_LEGGINGS);
+                        output.accept(VerseItems.GARNET_BOOTS);
+                        output.accept(VerseItems.SAPPHIRE_HELMET);
+                        output.accept(VerseItems.SAPPHIRE_CHESTPLATE);
+                        output.accept(VerseItems.SAPPHIRE_LEGGINGS);
+                        output.accept(VerseItems.SAPPHIRE_BOOTS);
                     })
                     .build());
 

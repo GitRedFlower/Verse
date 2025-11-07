@@ -25,7 +25,33 @@ public class VerseBlockTagProvider extends BlockTagsProvider {
                 .add(VerseBlocks.BOSKALT_ORE.get())
                 .add(VerseBlocks.DEEPSLATE_BOSKALT_ORE.get())
                 .add(VerseBlocks.BLOCK_OF_RAW_BOSKALT.get())
+                .add(VerseBlocks.BLOCK_OF_BOSKALT.get())
+                .add(VerseBlocks.GARNET_ORE.get())
+                .add(VerseBlocks.DEEPSLATE_GARNET_ORE.get())
+                .add(VerseBlocks.BLOCK_OF_GARNET.get())
+                .add(VerseBlocks.SAPPHIRE_ORE.get())
+                .add(VerseBlocks.DEEPSLATE_SAPPHIRE_ORE.get())
+                .add(VerseBlocks.BLOCK_OF_SAPPHIRE.get());
+
+        //Stone Level
+        tag(BlockTags.NEEDS_STONE_TOOL)
+                .add(VerseBlocks.BOSKALT_ORE.get())
+                .add(VerseBlocks.DEEPSLATE_BOSKALT_ORE.get())
+                .add(VerseBlocks.BLOCK_OF_RAW_BOSKALT.get())
                 .add(VerseBlocks.BLOCK_OF_BOSKALT.get());
+
+        //Iron Level
+        tag(BlockTags.NEEDS_IRON_TOOL)
+                .add(VerseBlocks.GARNET_ORE.get())
+                .add(VerseBlocks.DEEPSLATE_GARNET_ORE.get())
+                .add(VerseBlocks.BLOCK_OF_GARNET.get())
+                .add(VerseBlocks.SAPPHIRE_ORE.get())
+                .add(VerseBlocks.DEEPSLATE_SAPPHIRE_ORE.get())
+                .add(VerseBlocks.BLOCK_OF_SAPPHIRE.get());
+
+        //Beacon Base Blocks
+        tag(BlockTags.BEACON_BASE_BLOCKS)
+                .add(VerseBlocks.BLOCK_OF_GARNET.get());
 
         //Custom Tool Tiers Setup
         //Boskalt Setup
@@ -35,5 +61,13 @@ public class VerseBlockTagProvider extends BlockTagsProvider {
         tag(VerseTags.Blocks.INCORRECT_FOR_BOSKALT_TOOL)
                 .addTag(BlockTags.INCORRECT_FOR_IRON_TOOL)
                 .remove(VerseTags.Blocks.NEEDS_BOSKALT_TOOL);
+
+        //Garnet Setup
+        tag(VerseTags.Blocks.NEEDS_GARNET_TOOL)
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
+
+        tag(VerseTags.Blocks.INCORRECT_FOR_BOSKALT_TOOL)
+                .addTag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
+                .remove(VerseTags.Blocks.NEEDS_GARNET_TOOL);
     }
 }

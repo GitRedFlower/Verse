@@ -45,16 +45,29 @@ public class VerseItemModelProvider extends ItemModelProvider {
         //Ingots
         basicItem(VerseItems.BOSKALT_INGOT.get());
 
+        //Gems
+        basicItem(VerseItems.GARNET.get());
+        basicItem(VerseItems.SAPPHIRE.get());
+
         //Weapons
         //Swords
         handheldItem(VerseItems.BOSKALT_SWORD);
+        handheldItem(VerseItems.GARNET_SWORD);
+        handheldItem(VerseItems.SAPPHIRE_SWORD);
 
         //Tools
-        //Boskalt
         handheldItem(VerseItems.BOSKALT_SHOVEL);
         handheldItem(VerseItems.BOSKALT_PICKAXE);
         handheldItem(VerseItems.BOSKALT_AXE);
         handheldItem(VerseItems.BOSKALT_HOE);
+        handheldItem(VerseItems.GARNET_SHOVEL);
+        handheldItem(VerseItems.GARNET_PICKAXE);
+        handheldItem(VerseItems.GARNET_AXE);
+        handheldItem(VerseItems.GARNET_HOE);
+        handheldItem(VerseItems.SAPPHIRE_SHOVEL);
+        handheldItem(VerseItems.SAPPHIRE_PICKAXE);
+        handheldItem(VerseItems.SAPPHIRE_AXE);
+        handheldItem(VerseItems.SAPPHIRE_HOE);
 
         //Armor
         //Boskalt
@@ -62,6 +75,18 @@ public class VerseItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(VerseItems.BOSKALT_CHESTPLATE);
         trimmedArmorItem(VerseItems.BOSKALT_LEGGINGS);
         trimmedArmorItem(VerseItems.BOSKALT_BOOTS);
+
+        //Garnet
+        trimmedArmorItem(VerseItems.GARNET_HELMET);
+        trimmedArmorItem(VerseItems.GARNET_CHESTPLATE);
+        trimmedArmorItem(VerseItems.GARNET_LEGGINGS);
+        trimmedArmorItem(VerseItems.GARNET_BOOTS);
+
+        //Sapphire
+        trimmedArmorItem(VerseItems.SAPPHIRE_HELMET);
+        trimmedArmorItem(VerseItems.SAPPHIRE_CHESTPLATE);
+        trimmedArmorItem(VerseItems.SAPPHIRE_LEGGINGS);
+        trimmedArmorItem(VerseItems.SAPPHIRE_BOOTS);
     }
 
     // Created by El_Redstoniano, Obtained from Modding by Kaupenjoe

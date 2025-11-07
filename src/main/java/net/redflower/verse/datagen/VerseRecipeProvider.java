@@ -21,6 +21,8 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
     @Override
     protected void buildRecipes(RecipeOutput recipeOutput) {
         List<ItemLike> BOSKALT_SMELT = List.of(VerseItems.RAW_BOSKALT, VerseBlocks.BOSKALT_ORE, VerseBlocks.DEEPSLATE_BOSKALT_ORE);
+        List<ItemLike> GARNET_SMELT = List.of(VerseBlocks.GARNET_ORE, VerseBlocks.DEEPSLATE_GARNET_ORE);
+        List<ItemLike> SAPPHIRE_SMELT = List.of(VerseBlocks.SAPPHIRE_ORE, VerseBlocks.DEEPSLATE_SAPPHIRE_ORE);
 
         //Shaped
         //Blocks
@@ -38,6 +40,22 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
                 .pattern("AAA")
                 .define('A', VerseItems.BOSKALT_INGOT.get())
                 .unlockedBy("has_boskalt_ingot", has(VerseItems.BOSKALT_INGOT))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseBlocks.BLOCK_OF_GARNET)
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', VerseItems.GARNET.get())
+                .unlockedBy("has_garnet", has(VerseItems.GARNET))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseBlocks.BLOCK_OF_SAPPHIRE)
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', VerseItems.SAPPHIRE.get())
+                .unlockedBy("has_sapphire", has(VerseItems.SAPPHIRE))
                 .save(recipeOutput);
 
         //Armor
@@ -72,6 +90,72 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
                 .pattern("A A")
                 .define('A', VerseItems.BOSKALT_INGOT.get())
                 .unlockedBy("has_boskalt_ingot", has(VerseItems.BOSKALT_INGOT))
+                .save(recipeOutput);
+
+        //Garnet
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.GARNET_HELMET)
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("   ")
+                .define('A', VerseItems.GARNET.get())
+                .unlockedBy("has_garnet", has(VerseItems.GARNET))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.GARNET_CHESTPLATE)
+                .pattern("A A")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', VerseItems.GARNET.get())
+                .unlockedBy("has_garnet", has(VerseItems.GARNET))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.GARNET_LEGGINGS)
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("A A")
+                .define('A', VerseItems.GARNET.get())
+                .unlockedBy("has_garnet", has(VerseItems.GARNET))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.GARNET_BOOTS)
+                .pattern("   ")
+                .pattern("A A")
+                .pattern("A A")
+                .define('A', VerseItems.GARNET.get())
+                .unlockedBy("has_garnet", has(VerseItems.GARNET))
+                .save(recipeOutput);
+
+        //Sapphire
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.SAPPHIRE_HELMET)
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("   ")
+                .define('A', VerseItems.SAPPHIRE.get())
+                .unlockedBy("has_sapphire", has(VerseItems.SAPPHIRE))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.SAPPHIRE_CHESTPLATE)
+                .pattern("A A")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', VerseItems.SAPPHIRE.get())
+                .unlockedBy("has_sapphire", has(VerseItems.SAPPHIRE))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.SAPPHIRE_LEGGINGS)
+                .pattern("AAA")
+                .pattern("A A")
+                .pattern("A A")
+                .define('A', VerseItems.SAPPHIRE.get())
+                .unlockedBy("has_sapphire", has(VerseItems.SAPPHIRE))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.SAPPHIRE_BOOTS)
+                .pattern("   ")
+                .pattern("A A")
+                .pattern("A A")
+                .define('A', VerseItems.SAPPHIRE.get())
+                .unlockedBy("has_sapphire", has(VerseItems.SAPPHIRE))
                 .save(recipeOutput);
 
         //Tools
@@ -112,6 +196,80 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
                 .unlockedBy("has_boskalt_ingot", has(VerseItems.BOSKALT_INGOT))
                 .save(recipeOutput);
 
+        //Garnet
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.GARNET_SHOVEL)
+                .pattern(" A ")
+                .pattern(" B ")
+                .pattern(" B ")
+                .define('A', VerseItems.GARNET.get())
+                .define('B', Items.STICK)
+                .unlockedBy("has_garnet", has(VerseItems.GARNET))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.GARNET_PICKAXE)
+                .pattern("AAA")
+                .pattern(" B ")
+                .pattern(" B ")
+                .define('A', VerseItems.GARNET.get())
+                .define('B', Items.STICK)
+                .unlockedBy("has_garnet", has(VerseItems.GARNET))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.GARNET_AXE)
+                .pattern(" AA")
+                .pattern(" BA")
+                .pattern(" B ")
+                .define('A', VerseItems.GARNET.get())
+                .define('B', Items.STICK)
+                .unlockedBy("has_garnet", has(VerseItems.GARNET))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.GARNET_HOE)
+                .pattern(" AA")
+                .pattern(" B ")
+                .pattern(" B ")
+                .define('A', VerseItems.GARNET.get())
+                .define('B', Items.STICK)
+                .unlockedBy("has_garnet", has(VerseItems.GARNET))
+                .save(recipeOutput);
+
+        //Sapphire
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.SAPPHIRE_SHOVEL)
+                .pattern(" A ")
+                .pattern(" B ")
+                .pattern(" B ")
+                .define('A', VerseItems.SAPPHIRE.get())
+                .define('B', Items.STICK)
+                .unlockedBy("has_garnet", has(VerseItems.SAPPHIRE))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.SAPPHIRE_PICKAXE)
+                .pattern("AAA")
+                .pattern(" B ")
+                .pattern(" B ")
+                .define('A', VerseItems.SAPPHIRE.get())
+                .define('B', Items.STICK)
+                .unlockedBy("has_garnet", has(VerseItems.SAPPHIRE))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.SAPPHIRE_AXE)
+                .pattern(" AA")
+                .pattern(" BA")
+                .pattern(" B ")
+                .define('A', VerseItems.SAPPHIRE.get())
+                .define('B', Items.STICK)
+                .unlockedBy("has_garnet", has(VerseItems.SAPPHIRE))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.SAPPHIRE_HOE)
+                .pattern(" AA")
+                .pattern(" B ")
+                .pattern(" B ")
+                .define('A', VerseItems.SAPPHIRE.get())
+                .define('B', Items.STICK)
+                .unlockedBy("has_garnet", has(VerseItems.SAPPHIRE))
+                .save(recipeOutput);
+
         //Weapons
         //Swords
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.BOSKALT_SWORD)
@@ -121,6 +279,24 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
                 .define('A', VerseItems.BOSKALT_INGOT.get())
                 .define('B', Items.STICK)
                 .unlockedBy("has_boskalt_ingot", has(VerseItems.BOSKALT_INGOT))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.GARNET_SWORD)
+                .pattern(" A ")
+                .pattern(" A ")
+                .pattern(" B ")
+                .define('A', VerseItems.GARNET.get())
+                .define('B', Items.STICK)
+                .unlockedBy("has_garnet", has(VerseItems.GARNET))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.SAPPHIRE_SWORD)
+                .pattern(" A ")
+                .pattern(" A ")
+                .pattern(" B ")
+                .define('A', VerseItems.SAPPHIRE.get())
+                .define('B', Items.STICK)
+                .unlockedBy("has_garnet", has(VerseItems.SAPPHIRE))
                 .save(recipeOutput);
 
 
@@ -135,10 +311,24 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
                 .unlockedBy("has_block_of_boskalt", has(VerseBlocks.BLOCK_OF_BOSKALT))
                 .save(recipeOutput);
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VerseItems.GARNET.get(), 9)
+                .requires(VerseBlocks.BLOCK_OF_GARNET)
+                .unlockedBy("has_block_of_garnet", has(VerseBlocks.BLOCK_OF_GARNET))
+                .save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VerseItems.SAPPHIRE.get(), 9)
+                .requires(VerseBlocks.BLOCK_OF_SAPPHIRE)
+                .unlockedBy("has_block_of_sapphire", has(VerseBlocks.BLOCK_OF_SAPPHIRE))
+                .save(recipeOutput);
+
         //smelting
         oreSmelting(recipeOutput, BOSKALT_SMELT, RecipeCategory.MISC, VerseItems.BOSKALT_INGOT, 0.25f, 200, "boskalt");
+        oreSmelting(recipeOutput, GARNET_SMELT, RecipeCategory.MISC, VerseItems.GARNET, 0.25f, 200, "garnet");
+        oreSmelting(recipeOutput, SAPPHIRE_SMELT, RecipeCategory.MISC, VerseItems.SAPPHIRE, 0.25f, 200, "sapphire");
 
         //blasting
         oreBlasting(recipeOutput, BOSKALT_SMELT, RecipeCategory.MISC, VerseItems.BOSKALT_INGOT, 0.25f, 100, "boskalt");
+        oreBlasting(recipeOutput, GARNET_SMELT, RecipeCategory.MISC, VerseItems.GARNET, 0.25f, 100, "garnet");
+        oreBlasting(recipeOutput, SAPPHIRE_SMELT, RecipeCategory.MISC, VerseItems.SAPPHIRE, 0.25f, 100, "sapphire");
     }
 }

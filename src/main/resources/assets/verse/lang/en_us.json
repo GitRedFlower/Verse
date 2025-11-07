@@ -3,21 +3,53 @@
   "block.verse.deepslate_boskalt_ore" : "Deepslate Boskalt Ore",
   "block.verse.block_of_raw_boskalt" : "Block of Raw Boskalt",
   "block.verse.block_of_boskalt" : "Block of Boskalt",
+  "block.verse.garnet_ore" : "Garnet Ore",
+  "block.verse.deepslate_garnet_ore" : "Deepslate Garnet Ore",
+  "block.verse.block_of_garnet" : "Block of Garnet",
+  "block.verse.sapphire_ore" : "Sapphire Ore",
+  "block.verse.deepslate_sapphire_ore" : "Deepslate Sapphire Ore",
+  "block.verse.block_of_sapphire" : "Block of Sapphire",
 
   "item.verse.raw_boskalt" : "Raw Boskalt",
+
   "item.verse.boskalt_ingot" : "Boskalt Ingot",
+
+  "item.verse.garnet" : "Garnet",
+  "item.verse.sapphire" : "Sapphire",
 
   "item.verse.boskalt_helmet" : "Boskalt Helmet",
   "item.verse.boskalt_chestplate" : "Boskalt Chestplate",
   "item.verse.boskalt_leggings" : "Boskalt Leggings",
   "item.verse.boskalt_boots" : "Boskalt Boots",
 
+  "item.verse.garnet_helmet" : "Garnet Helmet",
+  "item.verse.garnet_chestplate" : "Garnet Chestplate",
+  "item.verse.garnet_leggings" : "Garnet Leggings",
+  "item.verse.garnet_boots" : "Garnet Boots",
+
+  "item.verse.sapphire_helmet" : "Sapphire Helmet",
+  "item.verse.sapphire_chestplate" : "Sapphire Chestplate",
+  "item.verse.sapphire_leggings" : "Sapphire Leggings",
+  "item.verse.sapphire_boots" : "Sapphire Boots",
+
   "item.verse.boskalt_shovel" : "Boskalt Shovel",
   "item.verse.boskalt_pickaxe" : "Boskalt Pickaxe",
   "item.verse.boskalt_axe" : "Boskalt Axe",
   "item.verse.boskalt_hoe" : "Boskalt Hoe",
 
+  "item.verse.garnet_shovel" : "Garnet Shovel",
+  "item.verse.garnet_pickaxe" : "Garnet Pickaxe",
+  "item.verse.garnet_axe" : "Garnet Axe",
+  "item.verse.garnet_hoe" : "Garnet Hoe",
+
+  "item.verse.sapphire_shovel" : "Sapphire Shovel",
+  "item.verse.sapphire_pickaxe" : "Sapphire Pickaxe",
+  "item.verse.sapphire_axe" : "Sapphire Axe",
+  "item.verse.sapphire_hoe" : "Sapphire Hoe",
+
   "item.verse.boskalt_sword" : "Boskalt Sword",
+  "item.verse.garnet_sword" : "Garnet Sword",
+  "item.verse.sapphire_sword" : "Sapphire Sword",
 
   "creativetab.verse.blocks" : "Verse Blocks",
   "creativetab.verse.items" : "Verse Items"
