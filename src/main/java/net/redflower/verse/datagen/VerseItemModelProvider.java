@@ -49,6 +49,17 @@ public class VerseItemModelProvider extends ItemModelProvider {
         basicItem(VerseItems.GARNET.get());
         basicItem(VerseItems.SAPPHIRE.get());
 
+        //Food
+        //Ore Apples
+        basicItem(VerseItems.COAL_APPLE.get());
+        basicItem(VerseItems.COPPER_APPLE.get());
+        basicItem(VerseItems.IRON_APPLE.get());
+        basicItem(VerseItems.REDSTONE_APPLE.get());
+        basicItem(VerseItems.LAPIS_APPLE.get());
+        basicItem(VerseItems.EMERALD_APPLE.get());
+        basicItem(VerseItems.DIAMOND_APPLE.get());
+
+
         //Weapons
         //Swords
         handheldItem(VerseItems.BOSKALT_SWORD);

@@ -51,6 +51,15 @@
   "item.verse.garnet_sword" : "Garnet Sword",
   "item.verse.sapphire_sword" : "Sapphire Sword",
 
+  "item.verse.coal_apple" : "Coal Apple",
+  "item.verse.copper_apple" : "Copper Apple",
+  "item.verse.iron_apple" : "Iron Apple",
+  "item.verse.redstone_apple" : "Redstone Apple",
+  "item.verse.lapis_apple" : "Lapis Apple",
+  "item.verse.emerald_apple" : "Emerald Apple",
+  "item.verse.diamond_apple" : "Diamond Apple",
+
+
   "creativetab.verse.blocks" : "Verse Blocks",
   "creativetab.verse.items" : "Verse Items"
 }

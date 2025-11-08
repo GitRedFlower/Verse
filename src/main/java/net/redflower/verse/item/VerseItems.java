@@ -6,6 +6,7 @@ import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.redflower.verse.VERSE;
 import net.redflower.verse.item.custom.VerseArmorMaterials;
+import net.redflower.verse.item.custom.VerseFoodProperties;
 import net.redflower.verse.item.custom.VerseToolTiers;
 
 public class VerseItems {
@@ -25,6 +26,29 @@ public class VerseItems {
 
     public static final DeferredItem<Item> SAPPHIRE = ITEMS.register("sapphire",
             () -> new Item(new Item.Properties()));
+
+    //Food Items
+    //Ore Apples
+    public static final DeferredItem<Item> COAL_APPLE = ITEMS.register("coal_apple",
+            () -> new Item(new Item.Properties().food(VerseFoodProperties.COAL_APPLE)));
+
+    public static final DeferredItem<Item> COPPER_APPLE = ITEMS.register("copper_apple",
+            () -> new Item(new Item.Properties().food(VerseFoodProperties.COPPER_APPLE)));
+
+    public static final DeferredItem<Item> IRON_APPLE = ITEMS.register("iron_apple",
+            () -> new Item(new Item.Properties().food(VerseFoodProperties.IRON_APPLE)));
+
+    public static final DeferredItem<Item> REDSTONE_APPLE = ITEMS.register("redstone_apple",
+            () -> new Item(new Item.Properties().food(VerseFoodProperties.REDSTONE_APPLE)));
+
+    public static final DeferredItem<Item> LAPIS_APPLE = ITEMS.register("lapis_apple",
+            () -> new Item(new Item.Properties().food(VerseFoodProperties.LAPIS_APPLE)));
+
+    public static final DeferredItem<Item> EMERALD_APPLE = ITEMS.register("emerald_apple",
+            () -> new Item(new Item.Properties().food(VerseFoodProperties.EMERALD_APPLE)));
+
+    public static final DeferredItem<Item> DIAMOND_APPLE = ITEMS.register("diamond_apple",
+            () -> new Item(new Item.Properties().food(VerseFoodProperties.DIAMOND_APPLE)));
 
     //Nuggets
 

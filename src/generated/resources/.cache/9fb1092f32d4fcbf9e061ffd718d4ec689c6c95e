@@ -1,4 +1,4 @@
-// 1.21.1	2025-11-06T22:00:11.5012475	Recipes
+// 1.21.1	2025-11-07T23:43:46.212813658	Recipes
 c581d298efb43da8cb8121582aa83cc9621c512d data/minecraft/advancement/recipes/misc/boskalt_ingot_from_blasting_boskalt_ore.json
 6acb8c3abbd99fcc27513281f2e234b8e070f912 data/minecraft/advancement/recipes/misc/boskalt_ingot_from_blasting_deepslate_boskalt_ore.json
 cfd09c438401b457cf9bb3b78a9791fa86a67f97 data/minecraft/advancement/recipes/misc/boskalt_ingot_from_blasting_raw_boskalt.json
@@ -41,6 +41,10 @@ af2946be5a24a0b835efd91419c7542004397d62 data/verse/advancement/recipes/misc/bos
 257866f3777f9e562cbf240cfe9b87c11f37eb2d data/verse/advancement/recipes/misc/boskalt_pickaxe.json
 8e4aa8b338cf3ee2bf2a0003309bf05a4a487f36 data/verse/advancement/recipes/misc/boskalt_shovel.json
 df1bcafe66f0956b86cb2ea65566c223ec59121b data/verse/advancement/recipes/misc/boskalt_sword.json
+7c11a34c29b6c1e6e6c5b4deceeeab0cba023859 data/verse/advancement/recipes/misc/coal_apple.json
+9a06eaffa36db876c182f4a59649b1544e389bb3 data/verse/advancement/recipes/misc/copper_apple.json
+918263396c52e6563a56c12917a388c10666f97e data/verse/advancement/recipes/misc/diamond_apple.json
+d4c950044589430fe47a6e76a7d89eb3815ca414 data/verse/advancement/recipes/misc/emerald_apple.json
 cc3696089197d2fcebd83e421404ededf45d4d05 data/verse/advancement/recipes/misc/garnet.json
 dc57c7d06d7986f3522941b55bdc747b7c3f8f89 data/verse/advancement/recipes/misc/garnet_axe.json
 1712b9df75757ea95d9bc047ad3418a6239a6dc5 data/verse/advancement/recipes/misc/garnet_boots.json
@@ -51,7 +55,10 @@ af3a8df54b3c4eac743ae28dd2974472356e0a51 data/verse/advancement/recipes/misc/gar
 afb71edf3ae7e7b27f4cfb4c24234bc5f1f771b9 data/verse/advancement/recipes/misc/garnet_pickaxe.json
 d58e66e7a3e68d636e02c2e49ce19b9599dbb60f data/verse/advancement/recipes/misc/garnet_shovel.json
 613b0ee24f28352e29442f9cc7ef43d5baafcfe5 data/verse/advancement/recipes/misc/garnet_sword.json
+47fba972bf3ed1f95b0c322c12406880c52accab data/verse/advancement/recipes/misc/iron_apple.json
+922d9d3626bbac77ed336855dc3a786a9b98e3e8 data/verse/advancement/recipes/misc/lapis_apple.json
 d5407627ba37d1283a2cba8c947bcd4426bbb7ab data/verse/advancement/recipes/misc/raw_boskalt.json
+892f47ca3b3f417d4ea1439db70b40e1e8106d27 data/verse/advancement/recipes/misc/redstone_apple.json
 91ddc1a3ccd63a3aa069e57276679d84a3aba5fb data/verse/advancement/recipes/misc/sapphire.json
 d3df5302e28fbed8d14737606df2bf3d710bd692 data/verse/advancement/recipes/misc/sapphire_axe.json
 eb6f2a5daae51026d18ae27ab086318be1ed34df data/verse/advancement/recipes/misc/sapphire_boots.json
@@ -76,6 +83,10 @@ eae6884802b2b7c52dab7db45e08984d0fb8685d data/verse/recipe/boskalt_ingot.json
 95e5161506abe4d8e475c96581488326e770f2de data/verse/recipe/boskalt_pickaxe.json
 ea11798c5c3cd624cc310be08ca4fdcad17c354e data/verse/recipe/boskalt_shovel.json
 93ed73f82b2118f0a9c6bf6768f1ad1ac68a2101 data/verse/recipe/boskalt_sword.json
+2fe80527b7ca4e1e38180d3f222790c571a4315b data/verse/recipe/coal_apple.json
+f058f1b125e1106b87bf97030846bd42b6f17a11 data/verse/recipe/copper_apple.json
+5aefad2e47d012c98f8761b164b6ff411a50c6c0 data/verse/recipe/diamond_apple.json
+3f942ea5d71cc987451de5016091c11be2325680 data/verse/recipe/emerald_apple.json
 b2ffd0876fc7aab3429d4aecf55b657ee988d3f8 data/verse/recipe/garnet.json
 4e0024780443f927856faa5af1ff1645d517e5f3 data/verse/recipe/garnet_axe.json
 1bfb4bbf321d3bf2b865bb1f16d8b1ea562a616b data/verse/recipe/garnet_boots.json
@@ -86,7 +97,10 @@ b636e6db9396ad553f1a08e76f89398c3377432c data/verse/recipe/garnet_chestplate.jso
 4a89efa1c1c7393372bba0e3709ed5cdb6008590 data/verse/recipe/garnet_pickaxe.json
 8ce7cbf351d83ca0a8927de3fc07143f7bc056f4 data/verse/recipe/garnet_shovel.json
 e3269a6238cc087d758e1794c4cec48d45a817c6 data/verse/recipe/garnet_sword.json
+a0fb984bd54763f6c6c7081775605ec354e3f9d4 data/verse/recipe/iron_apple.json
+7e7f4406a1a538b47b32f2d4c7679b5943318acb data/verse/recipe/lapis_apple.json
 2a6b89c8312ef01472c0b3528fdd13514fa91ac2 data/verse/recipe/raw_boskalt.json
+5f8daf7a144666fd705a4e9cddc4ec35c0550599 data/verse/recipe/redstone_apple.json
 afe8ab341146c52e4444c01cf1892009731e2f9d data/verse/recipe/sapphire.json
 18adf3a3ef0ca6c0a96c386c913865f83ca47ec7 data/verse/recipe/sapphire_axe.json
 d67a5d9d0a37b96e2dc5f36c7ae21552b457e307 data/verse/recipe/sapphire_boots.json

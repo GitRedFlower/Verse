@@ -87,6 +87,16 @@ public class VerseCreativeModTabs {
                         output.accept(VerseItems.SAPPHIRE_CHESTPLATE);
                         output.accept(VerseItems.SAPPHIRE_LEGGINGS);
                         output.accept(VerseItems.SAPPHIRE_BOOTS);
+
+                        //Food Items
+                        //Ore Apples
+                        output.accept(VerseItems.COAL_APPLE);
+                        output.accept(VerseItems.COPPER_APPLE);
+                        output.accept(VerseItems.IRON_APPLE);
+                        output.accept(VerseItems.REDSTONE_APPLE);
+                        output.accept(VerseItems.LAPIS_APPLE);
+                        output.accept(VerseItems.EMERALD_APPLE);
+                        output.accept(VerseItems.DIAMOND_APPLE);
                     })
                     .build());
 

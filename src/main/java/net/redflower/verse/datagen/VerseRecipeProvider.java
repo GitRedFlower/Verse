@@ -299,6 +299,71 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
                 .unlockedBy("has_garnet", has(VerseItems.SAPPHIRE))
                 .save(recipeOutput);
 
+        //Food
+        //Ore Apples
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.COAL_APPLE)
+                .pattern("AAA")
+                .pattern("ABA")
+                .pattern("AAA")
+                .define('A', Items.COAL)
+                .define('B', Items.APPLE)
+                .unlockedBy("has_coal", has(Items.COAL))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.COPPER_APPLE)
+                .pattern("AAA")
+                .pattern("ABA")
+                .pattern("AAA")
+                .define('A', Items.COPPER_INGOT)
+                .define('B', Items.APPLE)
+                .unlockedBy("has_copper", has(Items.COPPER_INGOT))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.IRON_APPLE)
+                .pattern("AAA")
+                .pattern("ABA")
+                .pattern("AAA")
+                .define('A', Items.IRON_INGOT)
+                .define('B', Items.APPLE)
+                .unlockedBy("has_iron", has(Items.IRON_INGOT))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.REDSTONE_APPLE)
+                .pattern("AAA")
+                .pattern("ABA")
+                .pattern("AAA")
+                .define('A', Items.REDSTONE)
+                .define('B', Items.APPLE)
+                .unlockedBy("has_redstone", has(Items.REDSTONE))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.LAPIS_APPLE)
+                .pattern("AAA")
+                .pattern("ABA")
+                .pattern("AAA")
+                .define('A', Items.LAPIS_LAZULI)
+                .define('B', Items.APPLE)
+                .unlockedBy("has_lapis", has(Items.LAPIS_LAZULI))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.EMERALD_APPLE)
+                .pattern("AAA")
+                .pattern("ABA")
+                .pattern("AAA")
+                .define('A', Items.EMERALD)
+                .define('B', Items.APPLE)
+                .unlockedBy("has_emerald", has(Items.EMERALD))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.DIAMOND_APPLE)
+                .pattern("AAA")
+                .pattern("ABA")
+                .pattern("AAA")
+                .define('A', Items.DIAMOND)
+                .define('B', Items.APPLE)
+                .unlockedBy("has_diamond", has(Items.DIAMOND))
+                .save(recipeOutput);
+
 
         //Shapeless
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VerseItems.RAW_BOSKALT.get(), 9)
