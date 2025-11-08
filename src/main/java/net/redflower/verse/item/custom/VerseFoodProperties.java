@@ -27,4 +27,26 @@ public class VerseFoodProperties {
 
     public static final FoodProperties DIAMOND_APPLE = new FoodProperties.Builder().nutrition(4).saturationModifier(0.75f)
             .effect( () -> new MobEffectInstance(MobEffects.REGENERATION, 2400, 0), 1.0f).build();
+
+    //Enchanted Ore Apple
+    public static final FoodProperties ENCHANTED_COAL_APPLE = new FoodProperties.Builder().nutrition(4).saturationModifier(0.75f)
+            .effect( () -> new MobEffectInstance(MobEffects.NIGHT_VISION, 2400, 2), 1.0f).build();
+
+    public static final FoodProperties ENCHANTED_COPPER_APPLE = new FoodProperties.Builder().nutrition(4).saturationModifier(0.75f)
+            .effect( () -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 2400, 2), 1.0f).build();
+
+    public static final FoodProperties ENCHANTED_IRON_APPLE = new FoodProperties.Builder().nutrition(4).saturationModifier(0.75f)
+            .effect( () -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 2400, 2), 1.0f).build();
+
+    public static final FoodProperties ENCHANTED_REDSTONE_APPLE = new FoodProperties.Builder().nutrition(4).saturationModifier(0.75f)
+            .effect( () -> new MobEffectInstance(MobEffects.DIG_SPEED, 2400, 2), 1.0f).build();
+
+    public static final FoodProperties ENCHANTED_LAPIS_APPLE = new FoodProperties.Builder().nutrition(4).saturationModifier(0.75f)
+            .effect( () -> new MobEffectInstance(MobEffects.WATER_BREATHING, 2400, 2), 1.0f).build();
+
+    public static final FoodProperties ENCHANTED_EMERALD_APPLE = new FoodProperties.Builder().nutrition(4).saturationModifier(0.75f)
+            .effect( () -> new MobEffectInstance(MobEffects.HERO_OF_THE_VILLAGE, 2400, 3), 1.0f).build();
+
+    public static final FoodProperties ENCHANTED_DIAMOND_APPLE = new FoodProperties.Builder().nutrition(4).saturationModifier(0.75f)
+            .effect( () -> new MobEffectInstance(MobEffects.REGENERATION, 2400, 2), 1.0f).build();
 }

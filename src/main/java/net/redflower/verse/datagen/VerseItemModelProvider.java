@@ -59,6 +59,15 @@ public class VerseItemModelProvider extends ItemModelProvider {
         basicItem(VerseItems.EMERALD_APPLE.get());
         basicItem(VerseItems.DIAMOND_APPLE.get());
 
+        //Enchanted Ore Apples
+        basicItem(VerseItems.ENCHANTED_COAL_APPLE.get());
+        basicItem(VerseItems.ENCHANTED_COPPER_APPLE.get());
+        basicItem(VerseItems.ENCHANTED_IRON_APPLE.get());
+        basicItem(VerseItems.ENCHANTED_REDSTONE_APPLE.get());
+        basicItem(VerseItems.ENCHANTED_LAPIS_APPLE.get());
+        basicItem(VerseItems.ENCHANTED_EMERALD_APPLE.get());
+        basicItem(VerseItems.ENCHANTED_DIAMOND_APPLE.get());
+
 
         //Weapons
         //Swords

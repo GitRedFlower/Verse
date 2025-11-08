@@ -8,6 +8,7 @@ import net.redflower.verse.VERSE;
 import net.redflower.verse.item.custom.VerseArmorMaterials;
 import net.redflower.verse.item.custom.VerseFoodProperties;
 import net.redflower.verse.item.custom.VerseToolTiers;
+import net.redflower.verse.item.custom.itemType.EnchantedApple;
 
 public class VerseItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(VERSE.MODID);
@@ -49,6 +50,28 @@ public class VerseItems {
 
     public static final DeferredItem<Item> DIAMOND_APPLE = ITEMS.register("diamond_apple",
             () -> new Item(new Item.Properties().food(VerseFoodProperties.DIAMOND_APPLE)));
+
+    //Enchanted Ore Apples
+    public static final DeferredItem<Item> ENCHANTED_COAL_APPLE = ITEMS.register("enchanted_coal_apple",
+            () -> new EnchantedApple(new Item.Properties().food(VerseFoodProperties.ENCHANTED_COAL_APPLE)));
+
+    public static final DeferredItem<Item> ENCHANTED_COPPER_APPLE = ITEMS.register("enchanted_copper_apple",
+            () -> new EnchantedApple(new Item.Properties().food(VerseFoodProperties.ENCHANTED_COPPER_APPLE)));
+
+    public static final DeferredItem<Item> ENCHANTED_IRON_APPLE = ITEMS.register("enchanted_iron_apple",
+            () -> new EnchantedApple(new Item.Properties().food(VerseFoodProperties.ENCHANTED_IRON_APPLE)));
+
+    public static final DeferredItem<Item> ENCHANTED_REDSTONE_APPLE = ITEMS.register("enchanted_redstone_apple",
+            () -> new EnchantedApple(new Item.Properties().food(VerseFoodProperties.ENCHANTED_REDSTONE_APPLE)));
+
+    public static final DeferredItem<Item> ENCHANTED_LAPIS_APPLE = ITEMS.register("enchanted_lapis_apple",
+            () -> new EnchantedApple(new Item.Properties().food(VerseFoodProperties.ENCHANTED_LAPIS_APPLE)));
+
+    public static final DeferredItem<Item> ENCHANTED_EMERALD_APPLE = ITEMS.register("enchanted_emerald_apple",
+            () -> new EnchantedApple(new Item.Properties().food(VerseFoodProperties.ENCHANTED_EMERALD_APPLE)));
+
+    public static final DeferredItem<Item> ENCHANTED_DIAMOND_APPLE = ITEMS.register("enchanted_diamond_apple",
+            () -> new EnchantedApple(new Item.Properties().food(VerseFoodProperties.ENCHANTED_DIAMOND_APPLE)));
 
     //Nuggets
 

@@ -97,6 +97,13 @@ public class VerseCreativeModTabs {
                         output.accept(VerseItems.LAPIS_APPLE);
                         output.accept(VerseItems.EMERALD_APPLE);
                         output.accept(VerseItems.DIAMOND_APPLE);
+                        output.accept(VerseItems.ENCHANTED_COAL_APPLE);
+                        output.accept(VerseItems.ENCHANTED_COPPER_APPLE);
+                        output.accept(VerseItems.ENCHANTED_IRON_APPLE);
+                        output.accept(VerseItems.ENCHANTED_REDSTONE_APPLE);
+                        output.accept(VerseItems.ENCHANTED_LAPIS_APPLE);
+                        output.accept(VerseItems.ENCHANTED_EMERALD_APPLE);
+                        output.accept(VerseItems.ENCHANTED_DIAMOND_APPLE);
                     })
                     .build());
 

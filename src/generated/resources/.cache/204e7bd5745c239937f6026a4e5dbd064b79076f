@@ -1,4 +1,4 @@
-// 1.21.1	2025-11-07T23:43:46.210893383	Item Models: verse
+// 1.21.1	2025-11-08T11:04:42.341272341	Item Models: verse
 cef9e33268e5d8ab44764974437b5db65bdd3d6b assets/verse/models/item/boskalt_axe.json
 67062791a071ab82bda9b4f3f239ca582d774195 assets/verse/models/item/boskalt_boots.json
 eaa1ae8a85d8933b1557885bb8b93d0e8ddace7f assets/verse/models/item/boskalt_boots_amethyst_trim.json
@@ -53,6 +53,13 @@ c880e4a5e995973f5167d70ee966ec389d8e5088 assets/verse/models/item/boskalt_shovel
 c6311105fd3387a96374110c9dc78ec0b6df4fc9 assets/verse/models/item/copper_apple.json
 c57425e579784258e6fc1fcdcef265ae173e3f15 assets/verse/models/item/diamond_apple.json
 b69d414aeecfcf13c1fb4eb855bd6ffbe4d025ba assets/verse/models/item/emerald_apple.json
+bbc05bc8a04991fc34025b68912b6bc8c4a14ac5 assets/verse/models/item/enchanted_coal_apple.json
+f12b66aa3ba19bec3ec337e5115040208d248f01 assets/verse/models/item/enchanted_copper_apple.json
+110ed54498fec1e08ad417f7a2e7fe1bcbbd4234 assets/verse/models/item/enchanted_diamond_apple.json
+dab5f45b26b26a46d16e6b88af31123f8492cbe9 assets/verse/models/item/enchanted_emerald_apple.json
+3b66b2841735f742f6b9ce2e9ddc44ed5ac5eb46 assets/verse/models/item/enchanted_iron_apple.json
+e8240dfe8f556bf33288b306a0e6ef7daa7e9479 assets/verse/models/item/enchanted_lapis_apple.json
+72a0fe375e9fe5dc7825d4053090dd946224bf41 assets/verse/models/item/enchanted_redstone_apple.json
 f7f80620322492be155f0d3a263f6dc9248b1a03 assets/verse/models/item/garnet.json
 eb3c25ac81850b6f4707d80a141d0deffb1e1df8 assets/verse/models/item/garnet_axe.json
 c917f7238e53d0dd82585fcc4bbe087aad6fff4b assets/verse/models/item/garnet_boots.json
