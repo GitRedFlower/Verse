@@ -31,14 +31,17 @@ public class VerseBlockTagProvider extends BlockTagsProvider {
                 .add(VerseBlocks.BLOCK_OF_GARNET.get())
                 .add(VerseBlocks.SAPPHIRE_ORE.get())
                 .add(VerseBlocks.DEEPSLATE_SAPPHIRE_ORE.get())
-                .add(VerseBlocks.BLOCK_OF_SAPPHIRE.get());
+                .add(VerseBlocks.BLOCK_OF_SAPPHIRE.get())
+                .add(VerseBlocks.ALTAR.get());
+
 
         //Stone Level
         tag(BlockTags.NEEDS_STONE_TOOL)
                 .add(VerseBlocks.BOSKALT_ORE.get())
                 .add(VerseBlocks.DEEPSLATE_BOSKALT_ORE.get())
                 .add(VerseBlocks.BLOCK_OF_RAW_BOSKALT.get())
-                .add(VerseBlocks.BLOCK_OF_BOSKALT.get());
+                .add(VerseBlocks.BLOCK_OF_BOSKALT.get())
+                .add(VerseBlocks.ALTAR.get());
 
         //Iron Level
         tag(BlockTags.NEEDS_IRON_TOOL)

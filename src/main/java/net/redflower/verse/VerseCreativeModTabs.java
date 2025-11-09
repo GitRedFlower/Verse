@@ -36,6 +36,9 @@ public class VerseCreativeModTabs {
                         output.accept(VerseBlocks.BLOCK_OF_BOSKALT);
                         output.accept(VerseBlocks.BLOCK_OF_GARNET);
                         output.accept(VerseBlocks.BLOCK_OF_SAPPHIRE);
+
+                        //Functional Blocks
+                        output.accept(VerseBlocks.ALTAR);
                     })
                     .build());
 

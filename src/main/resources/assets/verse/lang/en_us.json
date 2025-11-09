@@ -10,6 +10,8 @@
   "block.verse.deepslate_sapphire_ore" : "Deepslate Sapphire Ore",
   "block.verse.block_of_sapphire" : "Block of Sapphire",
 
+  "block.verse.altar" : "Altar",
+
   "item.verse.raw_boskalt" : "Raw Boskalt",
 
   "item.verse.boskalt_ingot" : "Boskalt Ingot",
@@ -59,13 +61,13 @@
   "item.verse.emerald_apple" : "Emerald Apple",
   "item.verse.diamond_apple" : "Diamond Apple",
 
-  "item.verse.enchanted_coal_apple" : "Coal Apple",
-  "item.verse.enchanted_copper_apple" : "Copper Apple",
-  "item.verse.enchanted_iron_apple" : "Iron Apple",
-  "item.verse.enchanted_redstone_apple" : "Redstone Apple",
-  "item.verse.enchanted_lapis_apple" : "Lapis Apple",
-  "item.verse.enchanted_emerald_apple" : "Emerald Apple",
-  "item.verse.enchanted_diamond_apple" : "Diamond Apple",
+  "item.verse.enchanted_coal_apple" : "Enchanted Coal Apple",
+  "item.verse.enchanted_copper_apple" : "Enchanted Copper Apple",
+  "item.verse.enchanted_iron_apple" : "Enchanted Iron Apple",
+  "item.verse.enchanted_redstone_apple" : "Enchanted Redstone Apple",
+  "item.verse.enchanted_lapis_apple" : "Enchanted Lapis Apple",
+  "item.verse.enchanted_emerald_apple" : "Enchanted Emerald Apple",
+  "item.verse.enchanted_diamond_apple" : "Enchanted Diamond Apple",
 
   "item.verse.enchanted_weak_shard" : "Weak Enchanted Shard",
 

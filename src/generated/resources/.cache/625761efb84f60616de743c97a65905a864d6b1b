@@ -1,8 +1,8 @@
-// 1.21.1	2025-11-05T22:51:56.2993158	Tags for minecraft:block mod id verse
+// 1.21.1	2025-11-08T22:32:02.156329956	Tags for minecraft:block mod id verse
 84be73b88492392edd900c4c9e587e40ce1119df data/minecraft/tags/block/beacon_base_blocks.json
-0893b24ee1bb94a9966a703d8dd83c0823bbec39 data/minecraft/tags/block/mineable/pickaxe.json
+085923f8878e04fef35c8c99057c5c0de1573e9e data/minecraft/tags/block/mineable/pickaxe.json
 4e2b2ffff21d54f2dcc868a6fee4245245aaa9a4 data/minecraft/tags/block/needs_iron_tool.json
-983aa004e8900b56c4c1a87f119b0702928ab5f2 data/minecraft/tags/block/needs_stone_tool.json
+fdb644abc135a40d3f4207bcb65aa456940267b7 data/minecraft/tags/block/needs_stone_tool.json
 504a5c014f9e445dec55ce1ed8f73046313af3db data/verse/tags/block/incorrect_for_boskalt_tool.json
 32b13946c4cd1f944b029659ccce5fcb2adad4ff data/verse/tags/block/needs_boskalt_tool.json
 a249c46329a41538f49a564e1f14338aaf1be5a0 data/verse/tags/block/needs_garnet_tool.json

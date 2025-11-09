@@ -1,4 +1,5 @@
-// 1.21.1	2025-11-06T21:34:51.5574089	Loot Tables
+// 1.21.1	2025-11-08T22:32:02.157313776	Loot Tables
+bc5dcb0a01206ddcffddcec4e7b01b562da6d315 data/verse/loot_table/blocks/altar.json
 44ea856cd0f1eaa47168a9a9808bb1e805210ff6 data/verse/loot_table/blocks/block_of_boskalt.json
 eb37d834fabaa330e2f04cb7f7b9078a783e593d data/verse/loot_table/blocks/block_of_garnet.json
 914cbc8318f22426c369e5890826803f6977e88b data/verse/loot_table/blocks/block_of_raw_boskalt.json

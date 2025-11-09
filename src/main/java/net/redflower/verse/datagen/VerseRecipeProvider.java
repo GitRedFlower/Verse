@@ -384,6 +384,16 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
                 .unlockedBy("has_enchanted_weak_shard", has(VerseItems.ENCHANTED_WEAK_SHARD))
                 .save(recipeOutput);
 
+        //Functional Blocks
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseBlocks.ALTAR)
+                .pattern("A A")
+                .pattern(" A ")
+                .pattern("ABA")
+                .define('A', Items.STONE)
+                .define('B', VerseItems.ENCHANTED_WEAK_SCROLL)
+                .unlockedBy("has_enchanted_weak_shard", has(VerseItems.ENCHANTED_WEAK_SHARD))
+                .save(recipeOutput);
+
 
         //Shapeless
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VerseItems.RAW_BOSKALT.get(), 9)

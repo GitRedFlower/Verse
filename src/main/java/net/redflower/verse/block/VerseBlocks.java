@@ -9,6 +9,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.redflower.verse.VERSE;
+import net.redflower.verse.block.custom.AltarBlock;
 import net.redflower.verse.item.VerseItems;
 
 import java.util.function.Supplier;
@@ -79,6 +80,10 @@ public class VerseBlocks {
                     .requiresCorrectToolForDrops()
                     .strength(3f)
                     .sound(SoundType.METAL)));
+
+    //Functional Block
+    public static final DeferredBlock<Block> ALTAR = registerBlock("altar",
+            () -> new AltarBlock(BlockBehaviour.Properties.of().noOcclusion()));
 
 
     //Registers The Blocks. DO NOT TOUCH!!!!

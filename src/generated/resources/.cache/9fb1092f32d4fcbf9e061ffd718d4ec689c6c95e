@@ -1,4 +1,4 @@
-// 1.21.1	2025-11-08T22:15:06.79525067	Recipes
+// 1.21.1	2025-11-08T22:39:41.573039609	Recipes
 c581d298efb43da8cb8121582aa83cc9621c512d data/minecraft/advancement/recipes/misc/boskalt_ingot_from_blasting_boskalt_ore.json
 6acb8c3abbd99fcc27513281f2e234b8e070f912 data/minecraft/advancement/recipes/misc/boskalt_ingot_from_blasting_deepslate_boskalt_ore.json
 cfd09c438401b457cf9bb3b78a9791fa86a67f97 data/minecraft/advancement/recipes/misc/boskalt_ingot_from_blasting_raw_boskalt.json
@@ -27,6 +27,7 @@ e4061faa0ab8a92c6ce1a2b3b3941478ef835bf9 data/minecraft/recipe/sapphire_from_bla
 cdcb1afc27d8096032dfe0ffc434e7d5ace80f98 data/minecraft/recipe/sapphire_from_blasting_sapphire_ore.json
 ff046a787f15a673c4dc4cb33ee34ffd801b9224 data/minecraft/recipe/sapphire_from_smelting_deepslate_sapphire_ore.json
 b2cefb159972dd1492b9786f8494eff025d6fb47 data/minecraft/recipe/sapphire_from_smelting_sapphire_ore.json
+fcdc02e4e93ec8d35786e3a1dcea38185744e09e data/verse/advancement/recipes/misc/altar.json
 931416381a1f684bedcc2baabfc814647aeb9d88 data/verse/advancement/recipes/misc/block_of_boskalt.json
 8697a9ac219cd63d8ae048999378ecbebe23e03e data/verse/advancement/recipes/misc/block_of_garnet.json
 27fbef335317b42cc322bdfa649237fd2298699b data/verse/advancement/recipes/misc/block_of_raw_boskalt.json
@@ -71,6 +72,7 @@ ef2eac2e1517bbc5edc60f572a249e1f68ece4bb data/verse/advancement/recipes/misc/sap
 8cfc9c1ff28d70f171c077163636d63a547b0959 data/verse/advancement/recipes/misc/sapphire_pickaxe.json
 d0dd4645fe7cc13e458d9c7fa0fd08e017f3f304 data/verse/advancement/recipes/misc/sapphire_shovel.json
 0d29ba9288a5a1312cb44ba291c50d5d4b5e0c18 data/verse/advancement/recipes/misc/sapphire_sword.json
+b09fedcbaec86bb10d171e799ab26a8153c5425f data/verse/recipe/altar.json
 7d4646a34e1d1699f74531242bfbff81301b17f7 data/verse/recipe/block_of_boskalt.json
 6eeff96913e364870f27e55ec0432b79a84244c1 data/verse/recipe/block_of_garnet.json
 50a7561dcdfd81515567a2f276b2429a10e98655 data/verse/recipe/block_of_raw_boskalt.json
