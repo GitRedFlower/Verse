@@ -50,6 +50,10 @@ public class VerseBlockLootTableProvider extends BlockLootSubProvider {
                 block -> createOreDrop(VerseBlocks.SAPPHIRE_ORE.get(), VerseItems.SAPPHIRE.get()));
         add(VerseBlocks.DEEPSLATE_SAPPHIRE_ORE.get(),
                 block -> createOreDrop(VerseBlocks.DEEPSLATE_SAPPHIRE_ORE.get(), VerseItems.SAPPHIRE.get()));
+        add(VerseBlocks.QUARTZ_ORE.get(),
+                block -> createOreDrop(VerseBlocks.QUARTZ_ORE.get(), VerseItems.QUARTZ.get()));
+        add(VerseBlocks.DEEPSLATE_QUARTZ_ORE.get(),
+                block -> createOreDrop(VerseBlocks.DEEPSLATE_QUARTZ_ORE.get(), VerseItems.QUARTZ.get()));
     }
 
     //Creates Multiple Ore Drops. Created By Modding by Kaupenjoe. DO NOT TOUCH!!!!

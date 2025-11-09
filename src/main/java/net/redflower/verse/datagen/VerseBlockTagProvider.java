@@ -32,7 +32,9 @@ public class VerseBlockTagProvider extends BlockTagsProvider {
                 .add(VerseBlocks.SAPPHIRE_ORE.get())
                 .add(VerseBlocks.DEEPSLATE_SAPPHIRE_ORE.get())
                 .add(VerseBlocks.BLOCK_OF_SAPPHIRE.get())
-                .add(VerseBlocks.ALTAR.get());
+                .add(VerseBlocks.ALTAR.get())
+                .add(VerseBlocks.QUARTZ_ORE.get())
+                .add(VerseBlocks.DEEPSLATE_QUARTZ_ORE.get());
 
 
         //Stone Level
@@ -50,7 +52,9 @@ public class VerseBlockTagProvider extends BlockTagsProvider {
                 .add(VerseBlocks.BLOCK_OF_GARNET.get())
                 .add(VerseBlocks.SAPPHIRE_ORE.get())
                 .add(VerseBlocks.DEEPSLATE_SAPPHIRE_ORE.get())
-                .add(VerseBlocks.BLOCK_OF_SAPPHIRE.get());
+                .add(VerseBlocks.BLOCK_OF_SAPPHIRE.get())
+                .add(VerseBlocks.QUARTZ_ORE.get())
+                .add(VerseBlocks.DEEPSLATE_QUARTZ_ORE.get());
 
         //Beacon Base Blocks
         tag(BlockTags.BEACON_BASE_BLOCKS)

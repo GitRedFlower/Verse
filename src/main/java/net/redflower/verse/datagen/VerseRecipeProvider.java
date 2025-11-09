@@ -3,8 +3,10 @@ package net.redflower.verse.datagen;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.ItemLike;
+import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 import net.redflower.verse.block.VerseBlocks;
 import net.redflower.verse.item.VerseItems;
@@ -23,6 +25,7 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
         List<ItemLike> BOSKALT_SMELT = List.of(VerseItems.RAW_BOSKALT, VerseBlocks.BOSKALT_ORE, VerseBlocks.DEEPSLATE_BOSKALT_ORE);
         List<ItemLike> GARNET_SMELT = List.of(VerseBlocks.GARNET_ORE, VerseBlocks.DEEPSLATE_GARNET_ORE);
         List<ItemLike> SAPPHIRE_SMELT = List.of(VerseBlocks.SAPPHIRE_ORE, VerseBlocks.DEEPSLATE_SAPPHIRE_ORE);
+        List<ItemLike> QUARTZ_SMELT = List.of(VerseBlocks.QUARTZ_ORE, VerseBlocks.DEEPSLATE_QUARTZ_ORE);
 
         //Shaped
         //Blocks
@@ -420,10 +423,69 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
         oreSmelting(recipeOutput, BOSKALT_SMELT, RecipeCategory.MISC, VerseItems.BOSKALT_INGOT, 0.25f, 200, "boskalt");
         oreSmelting(recipeOutput, GARNET_SMELT, RecipeCategory.MISC, VerseItems.GARNET, 0.25f, 200, "garnet");
         oreSmelting(recipeOutput, SAPPHIRE_SMELT, RecipeCategory.MISC, VerseItems.SAPPHIRE, 0.25f, 200, "sapphire");
+        oreSmelting(recipeOutput, QUARTZ_SMELT, RecipeCategory.MISC, VerseItems.QUARTZ, 0.25f, 200, "quartz");
 
         //blasting
         oreBlasting(recipeOutput, BOSKALT_SMELT, RecipeCategory.MISC, VerseItems.BOSKALT_INGOT, 0.25f, 100, "boskalt");
         oreBlasting(recipeOutput, GARNET_SMELT, RecipeCategory.MISC, VerseItems.GARNET, 0.25f, 100, "garnet");
         oreBlasting(recipeOutput, SAPPHIRE_SMELT, RecipeCategory.MISC, VerseItems.SAPPHIRE, 0.25f, 100, "sapphire");
+        oreBlasting(recipeOutput, QUARTZ_SMELT, RecipeCategory.MISC, VerseItems.QUARTZ, 0.25f, 100, "quartz");
+
+        //Vanilla Override Recipes
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.QUARTZ_BLOCK)
+                .pattern("AA ")
+                .pattern("AA ")
+                .pattern("   ")
+                .define('A', Tags.Items.GEMS_QUARTZ)
+                .unlockedBy("has_quartz_gems", has(Tags.Items.GEMS_QUARTZ))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.DAYLIGHT_DETECTOR)
+                .pattern("BBB")
+                .pattern("AAA")
+                .pattern("CCC")
+                .define('A', Tags.Items.GEMS_QUARTZ)
+                .define('B', Items.GLASS)
+                .define('C', ItemTags.WOODEN_SLABS)
+                .unlockedBy("has_quartz_gems", has(Tags.Items.GEMS_QUARTZ))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.DIORITE, 2)
+                .pattern("BA ")
+                .pattern("AB ")
+                .pattern("   ")
+                .define('A', Tags.Items.GEMS_QUARTZ)
+                .define('B', Items.COBBLESTONE)
+                .unlockedBy("has_quartz_gems", has(Tags.Items.GEMS_QUARTZ))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.GRANITE)
+                .pattern("   ")
+                .pattern("BA ")
+                .pattern("   ")
+                .define('A', Tags.Items.GEMS_QUARTZ)
+                .define('B', Items.DIORITE)
+                .unlockedBy("has_quartz_gems", has(Tags.Items.GEMS_QUARTZ))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.OBSERVER)
+                .pattern("BBB")
+                .pattern("CCA")
+                .pattern("BBB")
+                .define('A', Tags.Items.GEMS_QUARTZ)
+                .define('B', Items.COBBLESTONE)
+                .define('C', Items.REDSTONE)
+                .unlockedBy("has_quartz_gems", has(Tags.Items.GEMS_QUARTZ))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.COMPARATOR)
+                .pattern(" C ")
+                .pattern("CAC")
+                .pattern("BBB")
+                .define('A', Tags.Items.GEMS_QUARTZ)
+                .define('B', Items.STONE)
+                .define('C', Items.REDSTONE_TORCH)
+                .unlockedBy("has_quartz_gems", has(Tags.Items.GEMS_QUARTZ))
+                .save(recipeOutput);
     }
 }

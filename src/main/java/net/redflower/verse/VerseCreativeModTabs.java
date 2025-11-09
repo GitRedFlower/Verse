@@ -24,6 +24,8 @@ public class VerseCreativeModTabs {
                         //Ores
                         output.accept(VerseBlocks.BOSKALT_ORE);
                         output.accept(VerseBlocks.DEEPSLATE_BOSKALT_ORE);
+                        output.accept(VerseBlocks.QUARTZ_ORE);
+                        output.accept(VerseBlocks.DEEPSLATE_QUARTZ_ORE);
                         output.accept(VerseBlocks.GARNET_ORE);
                         output.accept(VerseBlocks.DEEPSLATE_GARNET_ORE);
                         output.accept(VerseBlocks.SAPPHIRE_ORE);
@@ -55,6 +57,7 @@ public class VerseCreativeModTabs {
                         output.accept(VerseItems.BOSKALT_INGOT);
 
                         //Gems
+                        output.accept(VerseItems.QUARTZ);
                         output.accept(VerseItems.GARNET);
                         output.accept(VerseItems.SAPPHIRE);
 

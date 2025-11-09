@@ -1,4 +1,4 @@
-// 1.21.1	2025-11-08T22:15:06.79296308	Item Models: verse
+// 1.21.1	2025-11-08T23:26:55.890409055	Item Models: verse
 cef9e33268e5d8ab44764974437b5db65bdd3d6b assets/verse/models/item/boskalt_axe.json
 67062791a071ab82bda9b4f3f239ca582d774195 assets/verse/models/item/boskalt_boots.json
 eaa1ae8a85d8933b1557885bb8b93d0e8ddace7f assets/verse/models/item/boskalt_boots_amethyst_trim.json
@@ -114,6 +114,7 @@ ccf5f48a54103abfae705d84a8a8cb7a1d7a7761 assets/verse/models/item/garnet_shovel.
 918fa623ccfbd6c6338b3da4dcef3efd4dcfb3d0 assets/verse/models/item/garnet_sword.json
 a34e4080117107e4f1f0e1a20e54d9ceeb396677 assets/verse/models/item/iron_apple.json
 083ee4d1d51cc07184a8539744336f3f360c86d8 assets/verse/models/item/lapis_apple.json
+fad1e1a7d5c62895f17880569fddebd96645ecdc assets/verse/models/item/quartz.json
 58611f16697303fd9b30ca1abf52daf56641fdf2 assets/verse/models/item/raw_boskalt.json
 629dfe74d8c15e4364457610b69a2265eea27e47 assets/verse/models/item/redstone_apple.json
 28b3c227581e680afc683b7a699954235d8b5add assets/verse/models/item/sapphire.json

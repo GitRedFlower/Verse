@@ -5,6 +5,7 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.level.block.Block;
+import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.redflower.verse.VERSE;
 import net.redflower.verse.item.VerseItems;
@@ -24,7 +25,17 @@ public class VerseItemTagProvider extends ItemTagsProvider {
         tag(ItemTags.BEACON_PAYMENT_ITEMS)
                 .add(VerseItems.BOSKALT_INGOT.get())
                 .add(VerseItems.GARNET.get())
-                .add(VerseItems.SAPPHIRE.get());
+                .add(VerseItems.SAPPHIRE.get())
+                .add(VerseItems.QUARTZ.get());
+
+        //Gems
+        this.tag(Tags.Items.GEMS)
+                .add(VerseItems.QUARTZ.get())
+                .add(VerseItems.SAPPHIRE.get())
+                .add(VerseItems.GARNET.get());
+
+        this.tag(Tags.Items.GEMS_QUARTZ)
+                .add(VerseItems.QUARTZ.get());
 
         //Weapons
         //Swords

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "tag": "c:gems/quartz"
+    },
+    "B": {
+      "item": "minecraft:diorite"
+    }
+  },
+  "pattern": [
+    "   ",
+    "BA ",
+    "   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "minecraft:granite"
+  }
+}

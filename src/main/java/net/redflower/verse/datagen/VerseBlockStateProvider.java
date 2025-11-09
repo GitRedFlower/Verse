@@ -22,6 +22,8 @@ public class VerseBlockStateProvider extends BlockStateProvider {
         blockWIthItem(VerseBlocks.DEEPSLATE_GARNET_ORE);
         blockWIthItem(VerseBlocks.SAPPHIRE_ORE);
         blockWIthItem(VerseBlocks.DEEPSLATE_SAPPHIRE_ORE);
+        blockWIthItem(VerseBlocks.QUARTZ_ORE);
+        blockWIthItem(VerseBlocks.DEEPSLATE_QUARTZ_ORE);
 
         //Raw Material Blocks
         blockWIthItem(VerseBlocks.BLOCK_OF_RAW_BOSKALT);

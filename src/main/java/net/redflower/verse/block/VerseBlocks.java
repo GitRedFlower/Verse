@@ -36,6 +36,12 @@ public class VerseBlocks {
                     .strength(3f)
                     .sound(SoundType.STONE)));
 
+    public static final DeferredBlock<Block> QUARTZ_ORE = registerBlock("quartz_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3f)
+                    .sound(SoundType.STONE)));
+
     //Deepslate Ores
     public static final DeferredBlock<Block> DEEPSLATE_BOSKALT_ORE = registerBlock("deepslate_boskalt_ore",
             () -> new Block(BlockBehaviour.Properties.of()
@@ -50,6 +56,12 @@ public class VerseBlocks {
                     .sound(SoundType.DEEPSLATE)));
 
     public static final DeferredBlock<Block> DEEPSLATE_SAPPHIRE_ORE = registerBlock("deepslate_sapphire_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(4.5f)
+                    .sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> DEEPSLATE_QUARTZ_ORE = registerBlock("deepslate_quartz_ore",
             () -> new Block(BlockBehaviour.Properties.of()
                     .requiresCorrectToolForDrops()
                     .strength(4.5f)

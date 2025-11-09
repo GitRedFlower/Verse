@@ -10,6 +10,8 @@
     "verse:sapphire_ore",
     "verse:deepslate_sapphire_ore",
     "verse:block_of_sapphire",
-    "verse:altar"
+    "verse:altar",
+    "verse:quartz_ore",
+    "verse:deepslate_quartz_ore"
   ]
 }

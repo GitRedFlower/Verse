@@ -48,6 +48,7 @@ public class VerseItemModelProvider extends ItemModelProvider {
         //Gems
         basicItem(VerseItems.GARNET.get());
         basicItem(VerseItems.SAPPHIRE.get());
+        basicItem(VerseItems.QUARTZ.get());
 
         //Food
         //Ore Apples
