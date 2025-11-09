@@ -1,4 +1,4 @@
-// 1.21.1	2025-11-07T23:43:46.212813658	Recipes
+// 1.21.1	2025-11-08T22:15:06.79525067	Recipes
 c581d298efb43da8cb8121582aa83cc9621c512d data/minecraft/advancement/recipes/misc/boskalt_ingot_from_blasting_boskalt_ore.json
 6acb8c3abbd99fcc27513281f2e234b8e070f912 data/minecraft/advancement/recipes/misc/boskalt_ingot_from_blasting_deepslate_boskalt_ore.json
 cfd09c438401b457cf9bb3b78a9791fa86a67f97 data/minecraft/advancement/recipes/misc/boskalt_ingot_from_blasting_raw_boskalt.json
@@ -45,6 +45,8 @@ df1bcafe66f0956b86cb2ea65566c223ec59121b data/verse/advancement/recipes/misc/bos
 9a06eaffa36db876c182f4a59649b1544e389bb3 data/verse/advancement/recipes/misc/copper_apple.json
 918263396c52e6563a56c12917a388c10666f97e data/verse/advancement/recipes/misc/diamond_apple.json
 d4c950044589430fe47a6e76a7d89eb3815ca414 data/verse/advancement/recipes/misc/emerald_apple.json
+4ce5e5d7a29df16f8014e3ff25fcd430c73deae9 data/verse/advancement/recipes/misc/enchanted_weak_scroll.json
+12048a4ae2c0e689d9f31601d6cd30c8fe683eba data/verse/advancement/recipes/misc/enchanted_weak_shard.json
 cc3696089197d2fcebd83e421404ededf45d4d05 data/verse/advancement/recipes/misc/garnet.json
 dc57c7d06d7986f3522941b55bdc747b7c3f8f89 data/verse/advancement/recipes/misc/garnet_axe.json
 1712b9df75757ea95d9bc047ad3418a6239a6dc5 data/verse/advancement/recipes/misc/garnet_boots.json
@@ -87,6 +89,8 @@ ea11798c5c3cd624cc310be08ca4fdcad17c354e data/verse/recipe/boskalt_shovel.json
 f058f1b125e1106b87bf97030846bd42b6f17a11 data/verse/recipe/copper_apple.json
 5aefad2e47d012c98f8761b164b6ff411a50c6c0 data/verse/recipe/diamond_apple.json
 3f942ea5d71cc987451de5016091c11be2325680 data/verse/recipe/emerald_apple.json
+e661ee3535a8d28fc8b4b7b78e769e83c1467fd8 data/verse/recipe/enchanted_weak_scroll.json
+173f8f7405da76ef66587fea5cdb9c385330c6ce data/verse/recipe/enchanted_weak_shard.json
 b2ffd0876fc7aab3429d4aecf55b657ee988d3f8 data/verse/recipe/garnet.json
 4e0024780443f927856faa5af1ff1645d517e5f3 data/verse/recipe/garnet_axe.json
 1bfb4bbf321d3bf2b865bb1f16d8b1ea562a616b data/verse/recipe/garnet_boots.json

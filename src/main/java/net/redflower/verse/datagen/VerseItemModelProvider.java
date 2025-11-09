@@ -68,6 +68,12 @@ public class VerseItemModelProvider extends ItemModelProvider {
         basicItem(VerseItems.ENCHANTED_EMERALD_APPLE.get());
         basicItem(VerseItems.ENCHANTED_DIAMOND_APPLE.get());
 
+        //Enchanted Shards
+        basicItem(VerseItems.ENCHANTED_WEAK_SHARD.get());
+
+        //Enchanted Scrolls
+        basicItem(VerseItems.ENCHANTED_WEAK_SCROLL.get());
+
 
         //Weapons
         //Swords

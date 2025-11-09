@@ -67,6 +67,10 @@
   "item.verse.enchanted_emerald_apple" : "Emerald Apple",
   "item.verse.enchanted_diamond_apple" : "Diamond Apple",
 
+  "item.verse.enchanted_weak_shard" : "Weak Enchanted Shard",
+
+  "item.verse.enchanted_weak_scroll" : "Weak Enchanted Scroll",
+
 
   "creativetab.verse.blocks" : "Verse Blocks",
   "creativetab.verse.items" : "Verse Items"

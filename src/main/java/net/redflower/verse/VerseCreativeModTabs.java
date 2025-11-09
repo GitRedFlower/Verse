@@ -104,6 +104,12 @@ public class VerseCreativeModTabs {
                         output.accept(VerseItems.ENCHANTED_LAPIS_APPLE);
                         output.accept(VerseItems.ENCHANTED_EMERALD_APPLE);
                         output.accept(VerseItems.ENCHANTED_DIAMOND_APPLE);
+
+                        //Enchanted Shards
+                        output.accept(VerseItems.ENCHANTED_WEAK_SHARD);
+
+                        //Enchanted Scrolls
+                        output.accept(VerseItems.ENCHANTED_WEAK_SCROLL);
                     })
                     .build());
 

@@ -9,6 +9,8 @@ import net.redflower.verse.item.custom.VerseArmorMaterials;
 import net.redflower.verse.item.custom.VerseFoodProperties;
 import net.redflower.verse.item.custom.VerseToolTiers;
 import net.redflower.verse.item.custom.itemType.EnchantedApple;
+import net.redflower.verse.item.custom.itemType.EnchantedScrolls;
+import net.redflower.verse.item.custom.itemType.EnchantedShards;
 
 public class VerseItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(VERSE.MODID);
@@ -189,6 +191,14 @@ public class VerseItems {
     public static final DeferredItem<HoeItem> SAPPHIRE_HOE = ITEMS.register("sapphire_hoe",
             () -> new HoeItem(VerseToolTiers.SAPPHIRE, new Item.Properties()
                     .attributes(HoeItem.createAttributes(VerseToolTiers.SAPPHIRE, 0f, -0.0f))));
+
+    //Enchanted Shards
+    public static final DeferredItem<Item> ENCHANTED_WEAK_SHARD = ITEMS.register("enchanted_weak_shard",
+            () -> new EnchantedShards(new Item.Properties()));
+
+    //Enchanted Scrolls
+    public static final DeferredItem<Item> ENCHANTED_WEAK_SCROLL = ITEMS.register("enchanted_weak_scroll",
+            () -> new EnchantedScrolls(new Item.Properties()));
 
 
     //Registers The Items. DO NOT TOUCH!!!
