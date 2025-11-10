@@ -1,8 +1,8 @@
-// 1.21.1	2025-11-08T23:41:38.572215778	Tags for minecraft:item mod id verse
-b99d431f35e40d76c1e0be81b4cb537f14f88ce7 data/c/tags/item/gems.json
+// 1.21.1	2025-11-09T19:08:09.041411682	Tags for minecraft:item mod id verse
+8c04d7550b0f90236195a0236fb4fb73fc5ef346 data/c/tags/item/gems.json
 7da706d853e40866ce4f49134c65ef909636174d data/c/tags/item/gems/quartz.json
 96f1c69b9e1c686ce82160dc66267b4dee39bc60 data/minecraft/tags/item/axes.json
-5b4b1941eb7a5395d23b843febccf2316d4132b2 data/minecraft/tags/item/beacon_payment_items.json
+07ecb132e54c1904a28203ed66d3f5a04b1a5fb1 data/minecraft/tags/item/beacon_payment_items.json
 ff56e0128f135c78e8667d73aa43647c0e00e3f2 data/minecraft/tags/item/enchantable/armor.json
 ff56e0128f135c78e8667d73aa43647c0e00e3f2 data/minecraft/tags/item/enchantable/durability.json
 6172c2a035d5408e029cff5625bc1f9328669e88 data/minecraft/tags/item/hoes.json

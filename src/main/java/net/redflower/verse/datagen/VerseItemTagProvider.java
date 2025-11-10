@@ -26,13 +26,16 @@ public class VerseItemTagProvider extends ItemTagsProvider {
                 .add(VerseItems.BOSKALT_INGOT.get())
                 .add(VerseItems.GARNET.get())
                 .add(VerseItems.SAPPHIRE.get())
-                .add(VerseItems.QUARTZ.get());
+                .add(VerseItems.QUARTZ.get())
+                .add(VerseItems.AMBER.get());
 
         //Gems
         this.tag(Tags.Items.GEMS)
                 .add(VerseItems.QUARTZ.get())
                 .add(VerseItems.SAPPHIRE.get())
-                .add(VerseItems.GARNET.get());
+                .add(VerseItems.GARNET.get())
+                .add(VerseItems.AMBER.get());
+
 
         this.tag(Tags.Items.GEMS_QUARTZ)
                 .add(VerseItems.QUARTZ.get());

@@ -7,6 +7,9 @@
     "verse:deepslate_sapphire_ore",
     "verse:block_of_sapphire",
     "verse:quartz_ore",
-    "verse:deepslate_quartz_ore"
+    "verse:deepslate_quartz_ore",
+    "verse:amber_ore",
+    "verse:deepslate_amber_ore",
+    "verse:block_of_amber"
   ]
 }

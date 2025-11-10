@@ -7,12 +7,15 @@
   "block.verse.deepslate_sapphire_ore" : "Deepslate Sapphire Ore",
   "block.verse.quartz_ore" : "Quartz Ore",
   "block.verse.deepslate_quartz_ore" : "Deepslate Quartz Ore",
+  "block.verse.amber_ore" : "Amber Ore",
+  "block.verse.deepslate_amber_ore" : "Deepslate Amber Ore",
 
   "block.verse.block_of_raw_boskalt" : "Block of Raw Boskalt",
 
   "block.verse.block_of_boskalt" : "Block of Boskalt",
   "block.verse.block_of_garnet" : "Block of Garnet",
   "block.verse.block_of_sapphire" : "Block of Sapphire",
+  "block.verse.block_of_amber" : "Block of Amber",
 
   "block.verse.altar" : "Altar",
 
@@ -23,6 +26,11 @@
   "item.verse.garnet" : "Garnet",
   "item.verse.sapphire" : "Sapphire",
   "item.verse.quartz" : "Quartz",
+  "item.verse.amber" : "Amber",
+
+  "item.verse.amber_lens_core" : "Amber Lens Core",
+
+  "item.verse.amber_lens" : "Amber Lens",
 
   "item.verse.boskalt_helmet" : "Boskalt Helmet",
   "item.verse.boskalt_chestplate" : "Boskalt Chestplate",

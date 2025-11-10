@@ -26,6 +26,7 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
         List<ItemLike> GARNET_SMELT = List.of(VerseBlocks.GARNET_ORE, VerseBlocks.DEEPSLATE_GARNET_ORE);
         List<ItemLike> SAPPHIRE_SMELT = List.of(VerseBlocks.SAPPHIRE_ORE, VerseBlocks.DEEPSLATE_SAPPHIRE_ORE);
         List<ItemLike> QUARTZ_SMELT = List.of(VerseBlocks.QUARTZ_ORE, VerseBlocks.DEEPSLATE_QUARTZ_ORE);
+        List<ItemLike> AMBER_SMELT = List.of(VerseBlocks.AMBER_ORE, VerseBlocks.DEEPSLATE_AMBER_ORE);
 
         //Shaped
         //Blocks
@@ -59,6 +60,14 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
                 .pattern("AAA")
                 .define('A', VerseItems.SAPPHIRE.get())
                 .unlockedBy("has_sapphire", has(VerseItems.SAPPHIRE))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseBlocks.BLOCK_OF_AMBER)
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', VerseItems.AMBER.get())
+                .unlockedBy("has_amber", has(VerseItems.AMBER))
                 .save(recipeOutput);
 
         //Armor
@@ -397,6 +406,27 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
                 .unlockedBy("has_enchanted_weak_shard", has(VerseItems.ENCHANTED_WEAK_SHARD))
                 .save(recipeOutput);
 
+        //Crafting Items
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.AMBER_LENS_CORE.get())
+                .pattern("AAA")
+                .pattern("ABA")
+                .pattern("AAA")
+                .define('A', VerseItems.AMBER.get())
+                .define('B', Items.GLASS_PANE)
+                .unlockedBy("has_amber", has(VerseItems.AMBER))
+                .save(recipeOutput);
+
+        //Fuel Items
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.AMBER_LENS.get())
+                .pattern("ACA")
+                .pattern("ABA")
+                .pattern("ACA")
+                .define('A', VerseItems.AMBER.get())
+                .define('B', VerseItems.AMBER_LENS_CORE.get())
+                .define('C', VerseBlocks.BLOCK_OF_AMBER.get())
+                .unlockedBy("has_amber_lens_core", has(VerseItems.AMBER_LENS_CORE))
+                .save(recipeOutput);
+
 
         //Shapeless
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VerseItems.RAW_BOSKALT.get(), 9)
@@ -419,17 +449,24 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
                 .unlockedBy("has_block_of_sapphire", has(VerseBlocks.BLOCK_OF_SAPPHIRE))
                 .save(recipeOutput);
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VerseItems.AMBER.get(), 9)
+                .requires(VerseBlocks.BLOCK_OF_AMBER)
+                .unlockedBy("has_block_of_amber", has(VerseBlocks.BLOCK_OF_AMBER))
+                .save(recipeOutput);
+
         //smelting
         oreSmelting(recipeOutput, BOSKALT_SMELT, RecipeCategory.MISC, VerseItems.BOSKALT_INGOT, 0.25f, 200, "boskalt");
         oreSmelting(recipeOutput, GARNET_SMELT, RecipeCategory.MISC, VerseItems.GARNET, 0.25f, 200, "garnet");
         oreSmelting(recipeOutput, SAPPHIRE_SMELT, RecipeCategory.MISC, VerseItems.SAPPHIRE, 0.25f, 200, "sapphire");
         oreSmelting(recipeOutput, QUARTZ_SMELT, RecipeCategory.MISC, VerseItems.QUARTZ, 0.25f, 200, "quartz");
+        oreSmelting(recipeOutput, AMBER_SMELT, RecipeCategory.MISC, VerseItems.AMBER, 0.25f, 200, "amber");
 
         //blasting
         oreBlasting(recipeOutput, BOSKALT_SMELT, RecipeCategory.MISC, VerseItems.BOSKALT_INGOT, 0.25f, 100, "boskalt");
         oreBlasting(recipeOutput, GARNET_SMELT, RecipeCategory.MISC, VerseItems.GARNET, 0.25f, 100, "garnet");
         oreBlasting(recipeOutput, SAPPHIRE_SMELT, RecipeCategory.MISC, VerseItems.SAPPHIRE, 0.25f, 100, "sapphire");
         oreBlasting(recipeOutput, QUARTZ_SMELT, RecipeCategory.MISC, VerseItems.QUARTZ, 0.25f, 100, "quartz");
+        oreBlasting(recipeOutput, AMBER_SMELT, RecipeCategory.MISC, VerseItems.AMBER, 0.25f, 100, "amber");
 
         //Vanilla Override Recipes
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.QUARTZ_BLOCK)

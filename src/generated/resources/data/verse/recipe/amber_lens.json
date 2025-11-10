@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "verse:amber"
+    },
+    "B": {
+      "item": "verse:amber_lens_core"
+    },
+    "C": {
+      "item": "verse:block_of_amber"
+    }
+  },
+  "pattern": [
+    "ACA",
+    "ABA",
+    "ACA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "verse:amber_lens"
+  }
+}

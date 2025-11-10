@@ -32,6 +32,7 @@ public class VerseBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(VerseBlocks.BLOCK_OF_BOSKALT.get());
         dropSelf(VerseBlocks.BLOCK_OF_GARNET.get());
         dropSelf(VerseBlocks.BLOCK_OF_SAPPHIRE.get());
+        dropSelf(VerseBlocks.BLOCK_OF_AMBER.get());
         dropSelf(VerseBlocks.ALTAR.get());
 
         //Ore Drops
@@ -54,6 +55,10 @@ public class VerseBlockLootTableProvider extends BlockLootSubProvider {
                 block -> createOreDrop(VerseBlocks.QUARTZ_ORE.get(), VerseItems.QUARTZ.get()));
         add(VerseBlocks.DEEPSLATE_QUARTZ_ORE.get(),
                 block -> createOreDrop(VerseBlocks.DEEPSLATE_QUARTZ_ORE.get(), VerseItems.QUARTZ.get()));
+        add(VerseBlocks.AMBER_ORE.get(),
+                block -> createOreDrop(VerseBlocks.AMBER_ORE.get(), VerseItems.AMBER.get()));
+        add(VerseBlocks.DEEPSLATE_AMBER_ORE.get(),
+                block -> createOreDrop(VerseBlocks.DEEPSLATE_AMBER_ORE.get(), VerseItems.AMBER.get()));
     }
 
     //Creates Multiple Ore Drops. Created By Modding by Kaupenjoe. DO NOT TOUCH!!!!

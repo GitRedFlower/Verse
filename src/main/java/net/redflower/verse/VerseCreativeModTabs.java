@@ -26,6 +26,8 @@ public class VerseCreativeModTabs {
                         output.accept(VerseBlocks.DEEPSLATE_BOSKALT_ORE);
                         output.accept(VerseBlocks.QUARTZ_ORE);
                         output.accept(VerseBlocks.DEEPSLATE_QUARTZ_ORE);
+                        output.accept(VerseBlocks.AMBER_ORE);
+                        output.accept(VerseBlocks.DEEPSLATE_AMBER_ORE);
                         output.accept(VerseBlocks.GARNET_ORE);
                         output.accept(VerseBlocks.DEEPSLATE_GARNET_ORE);
                         output.accept(VerseBlocks.SAPPHIRE_ORE);
@@ -36,6 +38,7 @@ public class VerseCreativeModTabs {
 
                         //Material Blocks
                         output.accept(VerseBlocks.BLOCK_OF_BOSKALT);
+                        output.accept(VerseBlocks.BLOCK_OF_AMBER);
                         output.accept(VerseBlocks.BLOCK_OF_GARNET);
                         output.accept(VerseBlocks.BLOCK_OF_SAPPHIRE);
 
@@ -58,6 +61,7 @@ public class VerseCreativeModTabs {
 
                         //Gems
                         output.accept(VerseItems.QUARTZ);
+                        output.accept(VerseItems.AMBER);
                         output.accept(VerseItems.GARNET);
                         output.accept(VerseItems.SAPPHIRE);
 
@@ -93,6 +97,12 @@ public class VerseCreativeModTabs {
                         output.accept(VerseItems.SAPPHIRE_CHESTPLATE);
                         output.accept(VerseItems.SAPPHIRE_LEGGINGS);
                         output.accept(VerseItems.SAPPHIRE_BOOTS);
+
+                        //Crafting Items
+                        output.accept(VerseItems.AMBER_LENS_CORE);
+
+                        //Fuel Items
+                        output.accept(VerseItems.AMBER_LENS);
 
                         //Food Items
                         //Ore Apples

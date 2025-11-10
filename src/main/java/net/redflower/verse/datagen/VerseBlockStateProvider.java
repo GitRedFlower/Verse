@@ -24,6 +24,8 @@ public class VerseBlockStateProvider extends BlockStateProvider {
         blockWIthItem(VerseBlocks.DEEPSLATE_SAPPHIRE_ORE);
         blockWIthItem(VerseBlocks.QUARTZ_ORE);
         blockWIthItem(VerseBlocks.DEEPSLATE_QUARTZ_ORE);
+        blockWIthItem(VerseBlocks.AMBER_ORE);
+        blockWIthItem(VerseBlocks.DEEPSLATE_AMBER_ORE);
 
         //Raw Material Blocks
         blockWIthItem(VerseBlocks.BLOCK_OF_RAW_BOSKALT);
@@ -33,6 +35,7 @@ public class VerseBlockStateProvider extends BlockStateProvider {
         blockWIthItem(VerseBlocks.BLOCK_OF_BOSKALT);
         blockWIthItem(VerseBlocks.BLOCK_OF_GARNET);
         blockWIthItem(VerseBlocks.BLOCK_OF_SAPPHIRE);
+        blockWIthItem(VerseBlocks.BLOCK_OF_AMBER);
 
     }
 

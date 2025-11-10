@@ -7,6 +7,7 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import net.redflower.verse.VERSE;
 import net.redflower.verse.item.custom.VerseArmorMaterials;
 import net.redflower.verse.item.custom.VerseFoodProperties;
+import net.redflower.verse.item.custom.VerseFuelItem;
 import net.redflower.verse.item.custom.VerseToolTiers;
 import net.redflower.verse.item.custom.itemType.EnchantedApple;
 import net.redflower.verse.item.custom.itemType.EnchantedScrolls;
@@ -31,6 +32,9 @@ public class VerseItems {
             () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> QUARTZ = ITEMS.register("quartz",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> AMBER = ITEMS.register("amber",
             () -> new Item(new Item.Properties()));
 
     //Food Items
@@ -194,6 +198,14 @@ public class VerseItems {
     public static final DeferredItem<HoeItem> SAPPHIRE_HOE = ITEMS.register("sapphire_hoe",
             () -> new HoeItem(VerseToolTiers.SAPPHIRE, new Item.Properties()
                     .attributes(HoeItem.createAttributes(VerseToolTiers.SAPPHIRE, 0f, -0.0f))));
+
+    //Crafting Items
+    public static final DeferredItem<Item> AMBER_LENS_CORE = ITEMS.register("amber_lens_core",
+            () -> new Item(new Item.Properties()));
+
+    //Fuel Items
+    public static final DeferredItem<Item> AMBER_LENS = ITEMS.register("amber_lens",
+            () -> new VerseFuelItem(new Item.Properties(), 20000));
 
     //Enchanted Shards
     public static final DeferredItem<Item> ENCHANTED_WEAK_SHARD = ITEMS.register("enchanted_weak_shard",
