@@ -79,7 +79,7 @@ public class VerseBlockTagProvider extends BlockTagsProvider {
         tag(VerseTags.Blocks.NEEDS_GARNET_TOOL)
                 .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
 
-        tag(VerseTags.Blocks.INCORRECT_FOR_BOSKALT_TOOL)
+        tag(VerseTags.Blocks.INCORRECT_FOR_GARNET_TOOL)
                 .addTag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
                 .remove(VerseTags.Blocks.NEEDS_GARNET_TOOL);
     }
