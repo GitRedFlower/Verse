@@ -19,6 +19,9 @@ public class VerseTags {
         public static final TagKey<Block> NEEDS_SAPPHIRE_TOOL = createTag("needs_sapphire_tool");
         public static final TagKey<Block> INCORRECT_FOR_SAPPHIRE_TOOL = createTag("incorrect_for_sapphire_tool");
 
+        public static final TagKey<Block> NEEDS_DRAGONRITE_TOOL = createTag("needs_dragonrite_tool");
+        public static final TagKey<Block> INCORRECT_FOR_DRAGONRITE_TOOL = createTag("incorrect_for_dragonrite_tool");
+
 
 
         private static TagKey<Block> createTag(String name) {

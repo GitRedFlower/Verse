@@ -52,6 +52,11 @@
   "item.verse.sapphire_leggings" : "Sapphire Leggings",
   "item.verse.sapphire_boots" : "Sapphire Boots",
 
+  "item.verse.dragonrite_helmet" : "Dragonrite Helmet",
+  "item.verse.dragonrite_chestplate" : "Dragonrite Chestplate",
+  "item.verse.dragonrite_leggings" : "Dragonrite Leggings",
+  "item.verse.dragonrite_boots" : "Dragonrite Boots",
+
   "item.verse.boskalt_shovel" : "Boskalt Shovel",
   "item.verse.boskalt_pickaxe" : "Boskalt Pickaxe",
   "item.verse.boskalt_axe" : "Boskalt Axe",
@@ -67,9 +72,15 @@
   "item.verse.sapphire_axe" : "Sapphire Axe",
   "item.verse.sapphire_hoe" : "Sapphire Hoe",
 
+  "item.verse.dragonrite_shovel" : "Dragonrite Shovel",
+  "item.verse.dragonrite_pickaxe" : "Dragonrite Pickaxe",
+  "item.verse.dragonrite_axe" : "Dragonrite Axe",
+  "item.verse.dragonrite_hoe" : "Dragonrite Hoe",
+
   "item.verse.boskalt_sword" : "Boskalt Sword",
   "item.verse.garnet_sword" : "Garnet Sword",
   "item.verse.sapphire_sword" : "Sapphire Sword",
+  "item.verse.dragonrite_sword" : "Dragonrite Sword",
 
   "item.verse.coal_apple" : "Coal Apple",
   "item.verse.copper_apple" : "Copper Apple",

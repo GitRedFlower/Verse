@@ -82,10 +82,13 @@ public class VerseCreativeModTabs {
                         //Tier 5 Materials
 
                         //Tools
+                        //Tier 1
                         output.accept(VerseItems.BOSKALT_SHOVEL);
                         output.accept(VerseItems.BOSKALT_PICKAXE);
                         output.accept(VerseItems.BOSKALT_AXE);
                         output.accept(VerseItems.BOSKALT_HOE);
+
+                        //Tier 2
                         output.accept(VerseItems.GARNET_SHOVEL);
                         output.accept(VerseItems.GARNET_PICKAXE);
                         output.accept(VerseItems.GARNET_AXE);
@@ -95,16 +98,39 @@ public class VerseCreativeModTabs {
                         output.accept(VerseItems.SAPPHIRE_AXE);
                         output.accept(VerseItems.SAPPHIRE_HOE);
 
+                        //Tier 3
+
+                        //Tier 4
+                        output.accept(VerseItems.DRAGONRITE_SHOVEL);
+                        output.accept(VerseItems.DRAGONRITE_PICKAXE);
+                        output.accept(VerseItems.DRAGONRITE_AXE);
+                        output.accept(VerseItems.DRAGONRITE_HOE);
+
+                        //Tier 5
+
                         //Swords
+                        //Tier 1
                         output.accept(VerseItems.BOSKALT_SWORD);
+
+                        //Tier 2
                         output.accept(VerseItems.GARNET_SWORD);
                         output.accept(VerseItems.SAPPHIRE_SWORD);
 
+                        //Tier 3
+
+                        //Tier 4
+                        output.accept(VerseItems.DRAGONRITE_SWORD);
+
+                        //Tier 5
+
                         //Armor
+                        //Tier 1
                         output.accept(VerseItems.BOSKALT_HELMET);
                         output.accept(VerseItems.BOSKALT_CHESTPLATE);
                         output.accept(VerseItems.BOSKALT_LEGGINGS);
                         output.accept(VerseItems.BOSKALT_BOOTS);
+
+                        //Tier 2
                         output.accept(VerseItems.GARNET_HELMET);
                         output.accept(VerseItems.GARNET_CHESTPLATE);
                         output.accept(VerseItems.GARNET_LEGGINGS);
@@ -113,6 +139,16 @@ public class VerseCreativeModTabs {
                         output.accept(VerseItems.SAPPHIRE_CHESTPLATE);
                         output.accept(VerseItems.SAPPHIRE_LEGGINGS);
                         output.accept(VerseItems.SAPPHIRE_BOOTS);
+
+                        //Tier 3
+
+                        //Tier 4
+                        output.accept(VerseItems.DRAGONRITE_HELMET);
+                        output.accept(VerseItems.DRAGONRITE_CHESTPLATE);
+                        output.accept(VerseItems.DRAGONRITE_LEGGINGS);
+                        output.accept(VerseItems.DRAGONRITE_BOOTS);
+
+                        //Tier 5
 
                         //Crafting Items
                         output.accept(VerseItems.AMBER_LENS_CORE);
