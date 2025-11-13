@@ -16,4 +16,7 @@ public class VerseToolTiers {
 
     public static final Tier SAPPHIRE = new SimpleTier(VerseTags.Blocks.INCORRECT_FOR_SAPPHIRE_TOOL,
             250, 6.0f, 0.0f,14, () -> Ingredient.of(VerseItems.SAPPHIRE));
+
+    public static final Tier DRAGONRITE = new SimpleTier(VerseTags.Blocks.INCORRECT_FOR_DRAGONRITE_TOOL,
+            250, 6.0f, 0.0f,14, () -> Ingredient.of(VerseItems.DRAGONRITE_INGOT));
 }

@@ -53,6 +53,9 @@ public class VerseItemModelProvider extends ItemModelProvider {
         basicItem(VerseItems.QUARTZ.get());
         basicItem(VerseItems.AMBER.get());
 
+        //Nuggets
+        basicItem(VerseItems.DIAMOND_NUGGET.get());
+
         //Crafting Items
         basicItem(VerseItems.AMBER_LENS_CORE.get());
 
@@ -84,12 +87,16 @@ public class VerseItemModelProvider extends ItemModelProvider {
         //Enchanted Scrolls
         basicItem(VerseItems.ENCHANTED_WEAK_SCROLL.get());
 
+        //Smithing Templates
+        basicItem(VerseItems.DRAGONRITE_UPGRADE_SMITHING_TEMPLATE.get());
+
 
         //Weapons
         //Swords
         handheldItem(VerseItems.BOSKALT_SWORD);
         handheldItem(VerseItems.GARNET_SWORD);
         handheldItem(VerseItems.SAPPHIRE_SWORD);
+        handheldItem(VerseItems.DRAGONRITE_SWORD);
 
         //Tools
         handheldItem(VerseItems.BOSKALT_SHOVEL);
@@ -104,6 +111,10 @@ public class VerseItemModelProvider extends ItemModelProvider {
         handheldItem(VerseItems.SAPPHIRE_PICKAXE);
         handheldItem(VerseItems.SAPPHIRE_AXE);
         handheldItem(VerseItems.SAPPHIRE_HOE);
+        handheldItem(VerseItems.DRAGONRITE_SHOVEL);
+        handheldItem(VerseItems.DRAGONRITE_PICKAXE);
+        handheldItem(VerseItems.DRAGONRITE_AXE);
+        handheldItem(VerseItems.DRAGONRITE_HOE);
 
         //Armor
         //Boskalt
@@ -123,6 +134,12 @@ public class VerseItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(VerseItems.SAPPHIRE_CHESTPLATE);
         trimmedArmorItem(VerseItems.SAPPHIRE_LEGGINGS);
         trimmedArmorItem(VerseItems.SAPPHIRE_BOOTS);
+
+        //Dragonrite
+        trimmedArmorItem(VerseItems.DRAGONRITE_HELMET);
+        trimmedArmorItem(VerseItems.DRAGONRITE_CHESTPLATE);
+        trimmedArmorItem(VerseItems.DRAGONRITE_LEGGINGS);
+        trimmedArmorItem(VerseItems.DRAGONRITE_BOOTS);
     }
 
     // Created by El_Redstoniano, Obtained from Modding by Kaupenjoe

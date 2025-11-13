@@ -4,11 +4,13 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.redflower.verse.VERSE;
 import net.redflower.verse.item.VerseItems;
+import net.redflower.verse.util.VerseTags;
 import org.jetbrains.annotations.Nullable;
 
 import java.util.concurrent.CompletableFuture;
@@ -41,37 +43,46 @@ public class VerseItemTagProvider extends ItemTagsProvider {
         this.tag(Tags.Items.GEMS_QUARTZ)
                 .add(VerseItems.QUARTZ.get());
 
+        //Smithing Templates
+        tag(VerseTags.Items.TIER_2_UPGRADE)
+                .add(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE);
+
         //Weapons
         //Swords
         tag(ItemTags.SWORDS)
                 .add(VerseItems.BOSKALT_SWORD.get())
                 .add(VerseItems.GARNET_SWORD.get())
-                .add(VerseItems.SAPPHIRE_SWORD.get());
+                .add(VerseItems.SAPPHIRE_SWORD.get())
+                .add(VerseItems.DRAGONRITE_SWORD.get());
 
         //Tools
         //Shovels
         tag(ItemTags.SHOVELS)
                 .add(VerseItems.BOSKALT_SHOVEL.get())
                 .add(VerseItems.GARNET_SHOVEL.get())
-                .add(VerseItems.SAPPHIRE_SHOVEL.get());
+                .add(VerseItems.SAPPHIRE_SHOVEL.get())
+                .add(VerseItems.DRAGONRITE_SHOVEL.get());
 
         //Pickaxes
         tag(ItemTags.PICKAXES)
                 .add(VerseItems.BOSKALT_PICKAXE.get())
                 .add(VerseItems.GARNET_PICKAXE.get())
-                .add(VerseItems.SAPPHIRE_PICKAXE.get());
+                .add(VerseItems.SAPPHIRE_PICKAXE.get())
+                .add(VerseItems.DRAGONRITE_PICKAXE.get());
 
         //Axes
         tag(ItemTags.AXES)
                 .add(VerseItems.BOSKALT_AXE.get())
                 .add(VerseItems.GARNET_AXE.get())
-                .add(VerseItems.SAPPHIRE_AXE.get());
+                .add(VerseItems.SAPPHIRE_AXE.get())
+                .add(VerseItems.DRAGONRITE_AXE.get());
 
         //Hoes
         tag(ItemTags.HOES)
                 .add(VerseItems.BOSKALT_HOE.get())
                 .add(VerseItems.GARNET_HOE.get())
-                .add(VerseItems.SAPPHIRE_HOE.get());
+                .add(VerseItems.SAPPHIRE_HOE.get())
+                .add(VerseItems.DRAGONRITE_HOE.get());
 
         //Armor
         //Trimmable Armor
@@ -86,8 +97,12 @@ public class VerseItemTagProvider extends ItemTagsProvider {
                 .add(VerseItems.GARNET_BOOTS.get())
                 .add(VerseItems.SAPPHIRE_HELMET.get())
                 .add(VerseItems.SAPPHIRE_CHESTPLATE.get())
-                .add(VerseItems.SAPPHIRE_CHESTPLATE.get())
-                .add(VerseItems.SAPPHIRE_BOOTS.get());
+                .add(VerseItems.SAPPHIRE_LEGGINGS.get())
+                .add(VerseItems.SAPPHIRE_BOOTS.get())
+                .add(VerseItems.DRAGONRITE_HELMET.get())
+                .add(VerseItems.DRAGONRITE_CHESTPLATE.get())
+                .add(VerseItems.DRAGONRITE_LEGGINGS.get())
+                .add(VerseItems.DRAGONRITE_BOOTS.get());
 
         //Make Armor Enchantable
         tag(ItemTags.ARMOR_ENCHANTABLE)
@@ -102,7 +117,11 @@ public class VerseItemTagProvider extends ItemTagsProvider {
                 .add(VerseItems.SAPPHIRE_HELMET.get())
                 .add(VerseItems.SAPPHIRE_CHESTPLATE.get())
                 .add(VerseItems.SAPPHIRE_CHESTPLATE.get())
-                .add(VerseItems.SAPPHIRE_BOOTS.get());
+                .add(VerseItems.SAPPHIRE_BOOTS.get())
+                .add(VerseItems.DRAGONRITE_HELMET.get())
+                .add(VerseItems.DRAGONRITE_CHESTPLATE.get())
+                .add(VerseItems.DRAGONRITE_LEGGINGS.get())
+                .add(VerseItems.DRAGONRITE_BOOTS.get());
 
 
         //Make Armor Durability Enchantable
@@ -118,6 +137,10 @@ public class VerseItemTagProvider extends ItemTagsProvider {
                 .add(VerseItems.SAPPHIRE_HELMET.get())
                 .add(VerseItems.SAPPHIRE_CHESTPLATE.get())
                 .add(VerseItems.SAPPHIRE_CHESTPLATE.get())
-                .add(VerseItems.SAPPHIRE_BOOTS.get());
+                .add(VerseItems.SAPPHIRE_BOOTS.get())
+                .add(VerseItems.DRAGONRITE_HELMET.get())
+                .add(VerseItems.DRAGONRITE_CHESTPLATE.get())
+                .add(VerseItems.DRAGONRITE_LEGGINGS.get())
+                .add(VerseItems.DRAGONRITE_BOOTS.get());
     }
 }

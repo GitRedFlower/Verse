@@ -11,7 +11,6 @@ import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.level.block.SoundType;
 import net.redflower.verse.VERSE;
 import net.redflower.verse.item.VerseItems;
 
@@ -47,6 +46,15 @@ public class VerseArmorMaterials {
                 attribute.put(ArmorItem.Type.HELMET, 3);
                 attribute.put(ArmorItem.Type.BODY, 12);
             }), 10, 2.0f, 0.0f, VerseItems.GARNET, SoundEvents.ARMOR_EQUIP_DIAMOND);
+
+    public static final Holder<ArmorMaterial> DRAGONRITE_ARMOR_MATERIAL = register("dragonrite",
+            Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
+                attribute.put(ArmorItem.Type.BOOTS, 6);
+                attribute.put(ArmorItem.Type.LEGGINGS, 9);
+                attribute.put(ArmorItem.Type.CHESTPLATE, 11);
+                attribute.put(ArmorItem.Type.HELMET, 6);
+                attribute.put(ArmorItem.Type.BODY, 14);
+            }), 16, 4.0f, 0.2f, VerseItems.DRAGONRITE_INGOT, SoundEvents.ARMOR_EQUIP_NETHERITE);
 
     private static Holder<ArmorMaterial> register(String name, EnumMap<ArmorItem.Type, Integer> typeProtection,
                                                   int enchantability, float toughness, float knockbackResistance,

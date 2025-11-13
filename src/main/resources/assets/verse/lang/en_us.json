@@ -33,6 +33,8 @@
   "item.verse.quartz" : "Quartz",
   "item.verse.amber" : "Amber",
 
+  "item.verse.diamond_nugget" : "Diamond Nugget",
+
   "item.verse.amber_lens_core" : "Amber Lens Core",
 
   "item.verse.amber_lens" : "Amber Lens",
@@ -52,6 +54,11 @@
   "item.verse.sapphire_leggings" : "Sapphire Leggings",
   "item.verse.sapphire_boots" : "Sapphire Boots",
 
+  "item.verse.dragonrite_helmet" : "Dragonrite Helmet",
+  "item.verse.dragonrite_chestplate" : "Dragonrite Chestplate",
+  "item.verse.dragonrite_leggings" : "Dragonrite Leggings",
+  "item.verse.dragonrite_boots" : "Dragonrite Boots",
+
   "item.verse.boskalt_shovel" : "Boskalt Shovel",
   "item.verse.boskalt_pickaxe" : "Boskalt Pickaxe",
   "item.verse.boskalt_axe" : "Boskalt Axe",
@@ -67,9 +74,15 @@
   "item.verse.sapphire_axe" : "Sapphire Axe",
   "item.verse.sapphire_hoe" : "Sapphire Hoe",
 
+  "item.verse.dragonrite_shovel" : "Dragonrite Shovel",
+  "item.verse.dragonrite_pickaxe" : "Dragonrite Pickaxe",
+  "item.verse.dragonrite_axe" : "Dragonrite Axe",
+  "item.verse.dragonrite_hoe" : "Dragonrite Hoe",
+
   "item.verse.boskalt_sword" : "Boskalt Sword",
   "item.verse.garnet_sword" : "Garnet Sword",
   "item.verse.sapphire_sword" : "Sapphire Sword",
+  "item.verse.dragonrite_sword" : "Dragonrite Sword",
 
   "item.verse.coal_apple" : "Coal Apple",
   "item.verse.copper_apple" : "Copper Apple",
@@ -86,6 +99,8 @@
   "item.verse.enchanted_lapis_apple" : "Enchanted Lapis Apple",
   "item.verse.enchanted_emerald_apple" : "Enchanted Emerald Apple",
   "item.verse.enchanted_diamond_apple" : "Enchanted Diamond Apple",
+
+  "item.verse.dragonrite_upgrade_smithing_template" : "Smithing Template",
 
   "item.verse.enchanted_weak_shard" : "Weak Enchanted Shard",
 

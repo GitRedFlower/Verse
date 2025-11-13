@@ -89,6 +89,8 @@ public class VerseItems {
             () -> new EnchantedApple(new Item.Properties().food(VerseFoodProperties.ENCHANTED_DIAMOND_APPLE)));
 
     //Nuggets
+    public static final DeferredItem<Item> DIAMOND_NUGGET = ITEMS.register("diamond_nugget",
+            () -> new Item(new Item.Properties()));
 
     //Armor
     //Boskalt
@@ -142,6 +144,23 @@ public class VerseItems {
             () -> new ArmorItem(VerseArmorMaterials.SAPPHIRE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
                     new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(41))));
 
+    //Dragonrite
+    public static final DeferredItem<ArmorItem> DRAGONRITE_HELMET = ITEMS.register("dragonrite_helmet",
+            () -> new ArmorItem(VerseArmorMaterials.DRAGONRITE_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(41))));
+
+    public static final DeferredItem<ArmorItem> DRAGONRITE_CHESTPLATE = ITEMS.register("dragonrite_chestplate",
+            () -> new ArmorItem(VerseArmorMaterials.DRAGONRITE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(41))));
+
+    public static final DeferredItem<ArmorItem> DRAGONRITE_LEGGINGS = ITEMS.register("dragonrite_leggings",
+            () -> new ArmorItem(VerseArmorMaterials.DRAGONRITE_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(41))));
+
+    public static final DeferredItem<ArmorItem> DRAGONRITE_BOOTS = ITEMS.register("dragonrite_boots",
+            () -> new ArmorItem(VerseArmorMaterials.DRAGONRITE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(41))));
+
     //Weapons
     //Swords
     public static final DeferredItem<SwordItem> BOSKALT_SWORD = ITEMS.register("boskalt_sword",
@@ -155,6 +174,10 @@ public class VerseItems {
     public static final DeferredItem<SwordItem> SAPPHIRE_SWORD = ITEMS.register("sapphire_sword",
             () -> new SwordItem(VerseToolTiers.SAPPHIRE, new Item.Properties()
                     .attributes(SwordItem.createAttributes(VerseToolTiers.SAPPHIRE, 6.0f, -2.4f))));
+
+    public static final DeferredItem<SwordItem> DRAGONRITE_SWORD = ITEMS.register("dragonrite_sword",
+            () -> new SwordItem(VerseToolTiers.DRAGONRITE, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(VerseToolTiers.DRAGONRITE, 10.0f, -2.4f))));
 
     //Tools
     public static final DeferredItem<PickaxeItem> BOSKALT_PICKAXE = ITEMS.register("boskalt_pickaxe",
@@ -205,6 +228,22 @@ public class VerseItems {
             () -> new HoeItem(VerseToolTiers.SAPPHIRE, new Item.Properties()
                     .attributes(HoeItem.createAttributes(VerseToolTiers.SAPPHIRE, 0f, -0.0f))));
 
+    public static final DeferredItem<PickaxeItem> DRAGONRITE_PICKAXE = ITEMS.register("dragonrite_pickaxe",
+            () -> new PickaxeItem(VerseToolTiers.DRAGONRITE, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(VerseToolTiers.DRAGONRITE, 8.0f, -2.8f))));
+
+    public static final DeferredItem<AxeItem> DRAGONRITE_AXE = ITEMS.register("dragonrite_axe",
+            () -> new AxeItem(VerseToolTiers.DRAGONRITE, new Item.Properties()
+                    .attributes(AxeItem.createAttributes(VerseToolTiers.DRAGONRITE, 12.0f, -3.0f))));
+
+    public static final DeferredItem<ShovelItem> DRAGONRITE_SHOVEL = ITEMS.register("dragonrite_shovel",
+            () -> new ShovelItem(VerseToolTiers.DRAGONRITE, new Item.Properties()
+                    .attributes(ShovelItem.createAttributes(VerseToolTiers.DRAGONRITE, 8.5f, -3.0f))));
+
+    public static final DeferredItem<HoeItem> DRAGONRITE_HOE = ITEMS.register("dragonrite_hoe",
+            () -> new HoeItem(VerseToolTiers.DRAGONRITE, new Item.Properties()
+                    .attributes(HoeItem.createAttributes(VerseToolTiers.DRAGONRITE, 0f, -0.0f))));
+
     //Crafting Items
     public static final DeferredItem<Item> AMBER_LENS_CORE = ITEMS.register("amber_lens_core",
             () -> new Item(new Item.Properties()));
@@ -222,7 +261,8 @@ public class VerseItems {
             () -> new EnchantedScrolls(new Item.Properties()));
 
     //Upgrade Templates
-
+    public static final DeferredItem<Item> DRAGONRITE_UPGRADE_SMITHING_TEMPLATE = ITEMS.register("dragonrite_upgrade_smithing_template",
+            () -> new Item(new Item.Properties()));
 
     //Registers The Items. DO NOT TOUCH!!!
     public static void register(IEventBus eventBus) {

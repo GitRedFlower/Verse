@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "verse:dragonrite_scrap"
+    },
+    "B": {
+      "item": "verse:diamond_nugget"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "ABB",
+    "BB "
+  ],
+  "result": {
+    "count": 1,
+    "id": "verse:dragonrite_ingot"
+  }
+}
