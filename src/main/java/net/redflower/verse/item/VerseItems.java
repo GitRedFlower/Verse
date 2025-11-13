@@ -20,8 +20,14 @@ public class VerseItems {
     public static final DeferredItem<Item> RAW_BOSKALT = ITEMS.register("raw_boskalt",
             () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> DRAGONRITE_SCRAP = ITEMS.register("dragonrite_scrap",
+            () -> new Item(new Item.Properties()));
+
     //Ingots
     public static final DeferredItem<Item> BOSKALT_INGOT = ITEMS.register("boskalt_ingot",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> DRAGONRITE_INGOT = ITEMS.register("dragonrite_ingot",
             () -> new Item(new Item.Properties()));
 
     //Gems
@@ -214,6 +220,8 @@ public class VerseItems {
     //Enchanted Scrolls
     public static final DeferredItem<Item> ENCHANTED_WEAK_SCROLL = ITEMS.register("enchanted_weak_scroll",
             () -> new EnchantedScrolls(new Item.Properties()));
+
+    //Upgrade Templates
 
 
     //Registers The Items. DO NOT TOUCH!!!

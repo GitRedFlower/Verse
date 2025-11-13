@@ -1,7 +1,8 @@
-// 1.21.1	2025-11-09T19:04:32.234817138	Block States: verse
+// 1.21.1	2025-11-12T22:45:11.581462217	Block States: verse
 90fd76107293d102961eed5bf338e7994086e28d assets/verse/blockstates/amber_ore.json
 0b1f6a5600e3aa7d1d4a7ac20a7ebf2bf2dc4724 assets/verse/blockstates/block_of_amber.json
 0badcbda4cab1e13456e8143dddfa0489bb2f64b assets/verse/blockstates/block_of_boskalt.json
+76d4692b9b68b5371c03799fedd4c762f60d1001 assets/verse/blockstates/block_of_dragonrite.json
 df992aeffe434650a75bc23b42a7cc258a5ce193 assets/verse/blockstates/block_of_garnet.json
 6151018737c08c310769c7c9267fbcce65f7f1de assets/verse/blockstates/block_of_raw_boskalt.json
 0eae8d0a7cfffd8a2b22baafbb9b91e7ed90a2be assets/verse/blockstates/block_of_sapphire.json
@@ -11,12 +12,14 @@ f2e50392df8f9c6d5b08397a1b6a6bef570ca96e assets/verse/blockstates/boskalt_ore.js
 a62e99e6a2e3841ffd1361a9e7cd617eda2efbf7 assets/verse/blockstates/deepslate_garnet_ore.json
 f2446199a3103ca4cb756e6ec91336cea69ce7ce assets/verse/blockstates/deepslate_quartz_ore.json
 f5b4670166c912e5fd54524138359be2f8fd03fc assets/verse/blockstates/deepslate_sapphire_ore.json
+f196f0c0ba177ff3c1f84fdf51ac431f2847a69b assets/verse/blockstates/endstone_dragonrite_ore.json
 b1f926784c7e3bac1aa0a09d944c5494556d01d6 assets/verse/blockstates/garnet_ore.json
 89dcd43a9b735f58edcf5d2cd67103c5a8a430b3 assets/verse/blockstates/quartz_ore.json
 d63ce353d0fbbc7aefaf88db41c6a8e08fa481a5 assets/verse/blockstates/sapphire_ore.json
 d3276a44152ee176446a57ed5a4561ba8aeb8be0 assets/verse/models/block/amber_ore.json
 76508409da26fa16ff1d6a5e8157a95a6f388b79 assets/verse/models/block/block_of_amber.json
 28e6a21a41d65765519eb645c80b75c74ac38275 assets/verse/models/block/block_of_boskalt.json
+f8d301a84300e984587cb6fa8cf86bcf78628fd1 assets/verse/models/block/block_of_dragonrite.json
 ddc1a9fde2db16555f028449d09e6277d0584aec assets/verse/models/block/block_of_garnet.json
 f8f3ddb18d829776cb60e33b4f90cfabf24398d8 assets/verse/models/block/block_of_raw_boskalt.json
 8c16cd5cafb90959c25bca8854ded8faf1406941 assets/verse/models/block/block_of_sapphire.json
@@ -26,12 +29,14 @@ a9243ed94daaa753c0a06fb11d918c6e138c556a assets/verse/models/block/deepslate_bos
 3d0a4cc4ed20d9f272b3b7fd107851772798e0a4 assets/verse/models/block/deepslate_garnet_ore.json
 c2031f22637f10c9a7f7bcff9e03f776b0ddd06b assets/verse/models/block/deepslate_quartz_ore.json
 f2d1f883520be912544311053cea5af5d372fced assets/verse/models/block/deepslate_sapphire_ore.json
+faf5fffd2103d222ee5bab4190a14ad7adbb64be assets/verse/models/block/endstone_dragonrite_ore.json
 319e8f699de3308560d3d53984107a200d725a34 assets/verse/models/block/garnet_ore.json
 9c09ac02b377153c88fe0310646d0099242a8726 assets/verse/models/block/quartz_ore.json
 cc0d9185c8ab0343911c9fcc3a2b72d93a9bf237 assets/verse/models/block/sapphire_ore.json
 87d349226b58b64a5ccddee5b137cad1cc72e62c assets/verse/models/item/amber_ore.json
 0d504c80f21d1550760f01c233b4be91f321bc73 assets/verse/models/item/block_of_amber.json
 46960c87fe92ad89c6b7da6cfda1058c161d5cc9 assets/verse/models/item/block_of_boskalt.json
+29e03cb5e1a63b47ee1591a7ef4921bb8a73c99b assets/verse/models/item/block_of_dragonrite.json
 d23b5a5aaf5f922dea4a8f7d8e3506a50a88150b assets/verse/models/item/block_of_garnet.json
 48ad7423ba04914b69af042fea8e1949756247f5 assets/verse/models/item/block_of_raw_boskalt.json
 414dcb43f779f18b0c5af3efff6af1c0262b0cb4 assets/verse/models/item/block_of_sapphire.json
@@ -41,6 +46,7 @@ af5858e9509b11b1d8f9755cad40624420f3b4ba assets/verse/models/item/deepslate_bosk
 0da0c6097e12ed47a1a37dedaa78f6a9d6f4a902 assets/verse/models/item/deepslate_garnet_ore.json
 284f796d7e90105d5d71a5819b724ede37c56025 assets/verse/models/item/deepslate_quartz_ore.json
 63f0475957ef41a763f7c89d58986bdeee12b229 assets/verse/models/item/deepslate_sapphire_ore.json
+3e539387f658a948d1bdcb8ceeb12e095b77f596 assets/verse/models/item/endstone_dragonrite_ore.json
 6ebfebf60a741e4799958f72f7dbc9b0f368c698 assets/verse/models/item/garnet_ore.json
 665a21f26efe5373136961ae4388f88b4a50071e assets/verse/models/item/quartz_ore.json
 da47939a9e751c52c70fae042abe3e5b39d7883b assets/verse/models/item/sapphire_ore.json

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "dragonrite",
+  "ingredient": {
+    "item": "verse:endstone_dragonrite_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "verse:dragonrite_scrap"
+  }
+}

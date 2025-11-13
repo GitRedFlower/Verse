@@ -1,8 +1,9 @@
-// 1.21.1	2025-11-09T19:04:32.236805062	Loot Tables
+// 1.21.1	2025-11-12T22:45:11.583432582	Loot Tables
 bc5dcb0a01206ddcffddcec4e7b01b562da6d315 data/verse/loot_table/blocks/altar.json
 83d5b55ddc7024241bbee5947217e253b4c4957a data/verse/loot_table/blocks/amber_ore.json
 c94942093eae0e108cb3dd022c598a42566b8ba4 data/verse/loot_table/blocks/block_of_amber.json
 44ea856cd0f1eaa47168a9a9808bb1e805210ff6 data/verse/loot_table/blocks/block_of_boskalt.json
+269b51ba766f1176b044de8a468149d44269e831 data/verse/loot_table/blocks/block_of_dragonrite.json
 eb37d834fabaa330e2f04cb7f7b9078a783e593d data/verse/loot_table/blocks/block_of_garnet.json
 914cbc8318f22426c369e5890826803f6977e88b data/verse/loot_table/blocks/block_of_raw_boskalt.json
 31f0acbf4bced520bc08393af1dca4d15d2e545f data/verse/loot_table/blocks/block_of_sapphire.json
@@ -12,6 +13,7 @@ de4d77827a7a303809681f08946402cb6057d119 data/verse/loot_table/blocks/deepslate_
 91f9fd81f2cbe9acedcd6dcaab47bfd5126ca9d0 data/verse/loot_table/blocks/deepslate_garnet_ore.json
 3635a5df4e2109b7da62026206cd22fdaa881cec data/verse/loot_table/blocks/deepslate_quartz_ore.json
 cffa53ee57b5239835d81fbd127cba2cd47113bb data/verse/loot_table/blocks/deepslate_sapphire_ore.json
+6c698b348db98e17903f708e28fcec5dca78d773 data/verse/loot_table/blocks/endstone_dragonrite_ore.json
 e7f5c5cc776b9e7aaf92f01a3b73b3af648a37ff data/verse/loot_table/blocks/garnet_ore.json
 4e16a8bdd391de9b0ec7bf0df0abada06187c38e data/verse/loot_table/blocks/quartz_ore.json
 42effacc40cfc423a1b91d9ea9059672c38a58bd data/verse/loot_table/blocks/sapphire_ore.json

@@ -15,7 +15,7 @@ public class VerseBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        //Ores
+        //Overworld Ores
         blockWIthItem(VerseBlocks.BOSKALT_ORE);
         blockWIthItem(VerseBlocks.DEEPSLATE_BOSKALT_ORE);
         blockWIthItem(VerseBlocks.GARNET_ORE);
@@ -27,6 +27,11 @@ public class VerseBlockStateProvider extends BlockStateProvider {
         blockWIthItem(VerseBlocks.AMBER_ORE);
         blockWIthItem(VerseBlocks.DEEPSLATE_AMBER_ORE);
 
+        //Nether Ores
+
+        //End Ores
+        blockWIthItem(VerseBlocks.ENDSTONE_DRAGONRITE_ORE);
+
         //Raw Material Blocks
         blockWIthItem(VerseBlocks.BLOCK_OF_RAW_BOSKALT);
 
@@ -36,6 +41,7 @@ public class VerseBlockStateProvider extends BlockStateProvider {
         blockWIthItem(VerseBlocks.BLOCK_OF_GARNET);
         blockWIthItem(VerseBlocks.BLOCK_OF_SAPPHIRE);
         blockWIthItem(VerseBlocks.BLOCK_OF_AMBER);
+        blockWIthItem(VerseBlocks.BLOCK_OF_DRAGONRITE);
 
     }
 

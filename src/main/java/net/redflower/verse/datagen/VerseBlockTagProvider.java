@@ -37,7 +37,9 @@ public class VerseBlockTagProvider extends BlockTagsProvider {
                 .add(VerseBlocks.DEEPSLATE_QUARTZ_ORE.get())
                 .add(VerseBlocks.AMBER_ORE.get())
                 .add(VerseBlocks.DEEPSLATE_AMBER_ORE.get())
-                .add(VerseBlocks.BLOCK_OF_AMBER.get());
+                .add(VerseBlocks.BLOCK_OF_AMBER.get())
+                .add(VerseBlocks.ENDSTONE_DRAGONRITE_ORE.get())
+                .add(VerseBlocks.BLOCK_OF_DRAGONRITE.get());
 
 
         //Stone Level
@@ -62,9 +64,18 @@ public class VerseBlockTagProvider extends BlockTagsProvider {
                 .add(VerseBlocks.DEEPSLATE_AMBER_ORE.get())
                 .add(VerseBlocks.BLOCK_OF_AMBER.get());
 
+        //Diamond Level
+        tag(BlockTags.NEEDS_DIAMOND_TOOL)
+                .add(VerseBlocks.ENDSTONE_DRAGONRITE_ORE.get())
+                .add(VerseBlocks.BLOCK_OF_DRAGONRITE.get());
+
         //Beacon Base Blocks
         tag(BlockTags.BEACON_BASE_BLOCKS)
-                .add(VerseBlocks.BLOCK_OF_GARNET.get());
+                .add(VerseBlocks.BLOCK_OF_GARNET.get())
+                .add(VerseBlocks.BLOCK_OF_SAPPHIRE.get())
+                .add(VerseBlocks.BLOCK_OF_BOSKALT.get())
+                .add(VerseBlocks.BLOCK_OF_DRAGONRITE.get());
+
 
         //Custom Tool Tiers Setup
         //Boskalt Setup

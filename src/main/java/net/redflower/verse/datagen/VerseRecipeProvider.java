@@ -27,6 +27,7 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
         List<ItemLike> SAPPHIRE_SMELT = List.of(VerseBlocks.SAPPHIRE_ORE, VerseBlocks.DEEPSLATE_SAPPHIRE_ORE);
         List<ItemLike> QUARTZ_SMELT = List.of(VerseBlocks.QUARTZ_ORE, VerseBlocks.DEEPSLATE_QUARTZ_ORE);
         List<ItemLike> AMBER_SMELT = List.of(VerseBlocks.AMBER_ORE, VerseBlocks.DEEPSLATE_AMBER_ORE);
+        List<ItemLike> DRAGONRITE_SMELT = List.of(VerseBlocks.ENDSTONE_DRAGONRITE_ORE);
 
         //Shaped
         //Blocks
@@ -68,6 +69,14 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
                 .pattern("AAA")
                 .define('A', VerseItems.AMBER.get())
                 .unlockedBy("has_amber", has(VerseItems.AMBER))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseBlocks.BLOCK_OF_DRAGONRITE)
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', VerseItems.DRAGONRITE_INGOT.get())
+                .unlockedBy("has_dragonrite_ingot", has(VerseItems.DRAGONRITE_INGOT))
                 .save(recipeOutput);
 
         //Armor
@@ -460,6 +469,7 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
         oreSmelting(recipeOutput, SAPPHIRE_SMELT, RecipeCategory.MISC, VerseItems.SAPPHIRE, 0.25f, 200, "sapphire");
         oreSmelting(recipeOutput, QUARTZ_SMELT, RecipeCategory.MISC, VerseItems.QUARTZ, 0.25f, 200, "quartz");
         oreSmelting(recipeOutput, AMBER_SMELT, RecipeCategory.MISC, VerseItems.AMBER, 0.25f, 200, "amber");
+        oreSmelting(recipeOutput, DRAGONRITE_SMELT, RecipeCategory.MISC, VerseItems.DRAGONRITE_SCRAP, 0.25f, 200, "dragonrite");
 
         //blasting
         oreBlasting(recipeOutput, BOSKALT_SMELT, RecipeCategory.MISC, VerseItems.BOSKALT_INGOT, 0.25f, 100, "boskalt");
@@ -467,6 +477,7 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
         oreBlasting(recipeOutput, SAPPHIRE_SMELT, RecipeCategory.MISC, VerseItems.SAPPHIRE, 0.25f, 100, "sapphire");
         oreBlasting(recipeOutput, QUARTZ_SMELT, RecipeCategory.MISC, VerseItems.QUARTZ, 0.25f, 100, "quartz");
         oreBlasting(recipeOutput, AMBER_SMELT, RecipeCategory.MISC, VerseItems.AMBER, 0.25f, 100, "amber");
+        oreBlasting(recipeOutput, DRAGONRITE_SMELT, RecipeCategory.MISC, VerseItems.DRAGONRITE_SCRAP, 0.25f, 100, "dragonrite");
 
         //Vanilla Override Recipes
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.QUARTZ_BLOCK)
@@ -505,7 +516,7 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
                 .unlockedBy("has_quartz_gems", has(Tags.Items.GEMS_QUARTZ))
                 .save(recipeOutput);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.OBSERVER)
+        ShapedRecipeBuilder.shaped(RecipeCategory.REDSTONE, Items.OBSERVER)
                 .pattern("BBB")
                 .pattern("CCA")
                 .pattern("BBB")

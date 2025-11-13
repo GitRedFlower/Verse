@@ -34,6 +34,8 @@ public class VerseBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(VerseBlocks.BLOCK_OF_SAPPHIRE.get());
         dropSelf(VerseBlocks.BLOCK_OF_AMBER.get());
         dropSelf(VerseBlocks.ALTAR.get());
+        dropSelf(VerseBlocks.ENDSTONE_DRAGONRITE_ORE.get());
+        dropSelf(VerseBlocks.BLOCK_OF_DRAGONRITE.get());
 
         //Ore Drops
         //Multiple Drops

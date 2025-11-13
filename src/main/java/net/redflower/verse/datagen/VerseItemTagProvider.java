@@ -27,7 +27,8 @@ public class VerseItemTagProvider extends ItemTagsProvider {
                 .add(VerseItems.GARNET.get())
                 .add(VerseItems.SAPPHIRE.get())
                 .add(VerseItems.QUARTZ.get())
-                .add(VerseItems.AMBER.get());
+                .add(VerseItems.AMBER.get())
+                .add(VerseItems.DRAGONRITE_INGOT.get());
 
         //Gems
         this.tag(Tags.Items.GEMS)

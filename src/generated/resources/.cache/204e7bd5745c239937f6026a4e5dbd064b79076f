@@ -1,4 +1,4 @@
-// 1.21.1	2025-11-09T19:39:44.748353185	Item Models: verse
+// 1.21.1	2025-11-12T22:45:11.582399836	Item Models: verse
 2c7e1372223d21a2a099a6949787d347378cf781 assets/verse/models/item/amber.json
 646b97304ad3431807ed9f425cb87b0a74cdfce8 assets/verse/models/item/amber_lens.json
 4c27ffab937ba7dbc3acc6d8564f3e54ba045d2a assets/verse/models/item/amber_lens_core.json
@@ -55,6 +55,8 @@ c880e4a5e995973f5167d70ee966ec389d8e5088 assets/verse/models/item/boskalt_shovel
 1b750d5056fbd3356a5883db24d5d135cdde778d assets/verse/models/item/coal_apple.json
 c6311105fd3387a96374110c9dc78ec0b6df4fc9 assets/verse/models/item/copper_apple.json
 c57425e579784258e6fc1fcdcef265ae173e3f15 assets/verse/models/item/diamond_apple.json
+bdc03002287a242d6f521f176dbf1930f36657f1 assets/verse/models/item/dragonrite_ingot.json
+ba085feda7a1ad5f74696d50046310b2addcd4c1 assets/verse/models/item/dragonrite_scrap.json
 b69d414aeecfcf13c1fb4eb855bd6ffbe4d025ba assets/verse/models/item/emerald_apple.json
 bbc05bc8a04991fc34025b68912b6bc8c4a14ac5 assets/verse/models/item/enchanted_coal_apple.json
 f12b66aa3ba19bec3ec337e5115040208d248f01 assets/verse/models/item/enchanted_copper_apple.json

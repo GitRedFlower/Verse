@@ -79,6 +79,13 @@ public class VerseBlocks {
                     .strength(4.5f)
                     .sound(SoundType.DEEPSLATE)));
 
+    //End Ores
+    public static final DeferredBlock<Block> ENDSTONE_DRAGONRITE_ORE = registerBlock("endstone_dragonrite_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3f)
+                    .sound(SoundType.STONE)));
+
     //Raw Material Blocks
     public static final DeferredBlock<Block> BLOCK_OF_RAW_BOSKALT = registerBlock("block_of_raw_boskalt",
             () -> new Block(BlockBehaviour.Properties.of()
@@ -110,6 +117,13 @@ public class VerseBlocks {
                     .requiresCorrectToolForDrops()
                     .strength(3f)
                     .sound(SoundType.METAL)));
+
+    public static final DeferredBlock<Block> BLOCK_OF_DRAGONRITE = registerBlock("block_of_dragonrite",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3f)
+                    .sound(SoundType.METAL)));
+
 
     //Functional Block
     public static final DeferredBlock<Block> ALTAR = registerBlock("altar",

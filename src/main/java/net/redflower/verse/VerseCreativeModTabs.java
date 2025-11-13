@@ -21,7 +21,7 @@ public class VerseCreativeModTabs {
                     .icon(() -> new ItemStack(VerseBlocks.BOSKALT_ORE.get()))
                     .title(Component.translatable("creativetab.verse.blocks"))
                     .displayItems((itemDisplayParameters, output) -> {
-                        //Ores
+                        //Overworld Ores
                         output.accept(VerseBlocks.BOSKALT_ORE);
                         output.accept(VerseBlocks.DEEPSLATE_BOSKALT_ORE);
                         output.accept(VerseBlocks.QUARTZ_ORE);
@@ -33,6 +33,11 @@ public class VerseCreativeModTabs {
                         output.accept(VerseBlocks.SAPPHIRE_ORE);
                         output.accept(VerseBlocks.DEEPSLATE_SAPPHIRE_ORE);
 
+                        //Nether Ores
+
+                        //End Ores
+                        output.accept(VerseBlocks.ENDSTONE_DRAGONRITE_ORE);
+
                         //Raw Ore Blocks
                         output.accept(VerseBlocks.BLOCK_OF_RAW_BOSKALT);
 
@@ -41,6 +46,7 @@ public class VerseCreativeModTabs {
                         output.accept(VerseBlocks.BLOCK_OF_AMBER);
                         output.accept(VerseBlocks.BLOCK_OF_GARNET);
                         output.accept(VerseBlocks.BLOCK_OF_SAPPHIRE);
+                        output.accept(VerseBlocks.BLOCK_OF_DRAGONRITE);
 
                         //Functional Blocks
                         output.accept(VerseBlocks.ALTAR);
@@ -55,15 +61,25 @@ public class VerseCreativeModTabs {
                     .displayItems((itemDisplayParameters, output) -> {
                         //Raw Items
                         output.accept(VerseItems.RAW_BOSKALT);
+                        output.accept(VerseItems.DRAGONRITE_SCRAP);
 
-                        //Ingots
-                        output.accept(VerseItems.BOSKALT_INGOT);
-
-                        //Gems
+                        //Other Items
                         output.accept(VerseItems.QUARTZ);
                         output.accept(VerseItems.AMBER);
+
+                        //Tier 1 Materials
+                        output.accept(VerseItems.BOSKALT_INGOT);
+
+                        //Tier 2 Materials
                         output.accept(VerseItems.GARNET);
                         output.accept(VerseItems.SAPPHIRE);
+
+                        //Tier 3 Materials
+
+                        //Tier 4 Materials
+                        output.accept(VerseItems.DRAGONRITE_INGOT);
+
+                        //Tier 5 Materials
 
                         //Tools
                         output.accept(VerseItems.BOSKALT_SHOVEL);

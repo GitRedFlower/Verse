@@ -41,9 +41,11 @@ public class VerseItemModelProvider extends ItemModelProvider {
     protected void registerModels() {
         //Raw Material
         basicItem(VerseItems.RAW_BOSKALT.get());
+        basicItem(VerseItems.DRAGONRITE_SCRAP.get());
 
         //Ingots
         basicItem(VerseItems.BOSKALT_INGOT.get());
+        basicItem(VerseItems.DRAGONRITE_INGOT.get());
 
         //Gems
         basicItem(VerseItems.GARNET.get());

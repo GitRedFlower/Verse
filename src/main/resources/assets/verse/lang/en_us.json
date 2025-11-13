@@ -10,18 +10,23 @@
   "block.verse.amber_ore" : "Amber Ore",
   "block.verse.deepslate_amber_ore" : "Deepslate Amber Ore",
 
+  "block.verse.endstone_dragonrite_ore" : "Endstone Dragonrite Ore",
+
   "block.verse.block_of_raw_boskalt" : "Block of Raw Boskalt",
 
   "block.verse.block_of_boskalt" : "Block of Boskalt",
   "block.verse.block_of_garnet" : "Block of Garnet",
   "block.verse.block_of_sapphire" : "Block of Sapphire",
   "block.verse.block_of_amber" : "Block of Amber",
+  "block.verse.block_of_dragonrite" : "Block of Dragonrite",
 
   "block.verse.altar" : "Altar",
 
   "item.verse.raw_boskalt" : "Raw Boskalt",
+  "item.verse.dragonrite_scrap" : "Dragonrite Scrap",
 
   "item.verse.boskalt_ingot" : "Boskalt Ingot",
+  "item.verse.dragonrite_ingot" : "Dragonrite Ingot",
 
   "item.verse.garnet" : "Garnet",
   "item.verse.sapphire" : "Sapphire",
