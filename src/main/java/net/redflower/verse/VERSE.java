@@ -1,20 +1,23 @@
 package net.redflower.verse;
 
-import net.redflower.verse.block.VerseBlocks;
-import net.redflower.verse.item.VerseItems;
-import org.slf4j.Logger;
-
 import com.mojang.logging.LogUtils;
-
-
+import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.ModContainer;
+import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
-import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.neoforge.client.event.RegisterMenuScreensEvent;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
+import net.redflower.verse.block.VerseBlocks;
+import net.redflower.verse.block.entity.VerseBlockEntities;
+import net.redflower.verse.item.VerseItems;
+import net.redflower.verse.screen.VerseMenus;
+import net.redflower.verse.screen.custom.AltarScreen;
+import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(VERSE.MODID)
@@ -31,6 +34,8 @@ public class VERSE {
         VerseItems.register(modEventBus);
         VerseBlocks.register(modEventBus);
         VerseCreativeModTabs.register(modEventBus);
+        VerseMenus.register(modEventBus);
+        VerseBlockEntities.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -50,7 +55,14 @@ public class VERSE {
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
-        // Do something when the server starts
-        LOGGER.info("HELLO from server starting");
+
     }
+
+    @EventBusSubscriber(modid = MODID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
+        public static class ClientModEvents {
+            @SubscribeEvent
+            public static void registerScreens(RegisterMenuScreensEvent event) {
+                event.register(VerseMenus.ALTAR_MENU.get(), AltarScreen::new);
+            }
+        }
 }
