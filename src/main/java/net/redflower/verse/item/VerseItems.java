@@ -30,6 +30,9 @@ public class VerseItems {
     public static final DeferredItem<Item> DRAGONRITE_INGOT = ITEMS.register("dragonrite_ingot",
             () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> EMERITE_INGOT = ITEMS.register("emerite_ingot",
+            () -> new Item(new Item.Properties()));
+
     //Gems
     public static final DeferredItem<Item> GARNET = ITEMS.register("garnet",
             () -> new Item(new Item.Properties()));
@@ -90,6 +93,12 @@ public class VerseItems {
 
     //Nuggets
     public static final DeferredItem<Item> DIAMOND_NUGGET = ITEMS.register("diamond_nugget",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> SAPPHIRE_NUGGET = ITEMS.register("sapphire_nugget",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> GARNET_NUGGET = ITEMS.register("garnet_nugget",
             () -> new Item(new Item.Properties()));
 
     //Armor
@@ -161,6 +170,23 @@ public class VerseItems {
             () -> new ArmorItem(VerseArmorMaterials.DRAGONRITE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
                     new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(41))));
 
+    //Emerite
+    public static final DeferredItem<ArmorItem> EMERITE_HELMET = ITEMS.register("emerite_helmet",
+            () -> new ArmorItem(VerseArmorMaterials.EMERITE_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(41))));
+
+    public static final DeferredItem<ArmorItem> EMERITE_CHESTPLATE = ITEMS.register("emerite_chestplate",
+            () -> new ArmorItem(VerseArmorMaterials.EMERITE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(41))));
+
+    public static final DeferredItem<ArmorItem> EMERITE_LEGGINGS = ITEMS.register("emerite_leggings",
+            () -> new ArmorItem(VerseArmorMaterials.EMERITE_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(41))));
+
+    public static final DeferredItem<ArmorItem> EMERITE_BOOTS = ITEMS.register("emerite_boots",
+            () -> new ArmorItem(VerseArmorMaterials.EMERITE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(41))));
+
     //Weapons
     //Swords
     public static final DeferredItem<SwordItem> BOSKALT_SWORD = ITEMS.register("boskalt_sword",
@@ -178,6 +204,10 @@ public class VerseItems {
     public static final DeferredItem<SwordItem> DRAGONRITE_SWORD = ITEMS.register("dragonrite_sword",
             () -> new SwordItem(VerseToolTiers.DRAGONRITE, new Item.Properties()
                     .attributes(SwordItem.createAttributes(VerseToolTiers.DRAGONRITE, 10.0f, -2.4f))));
+
+    public static final DeferredItem<SwordItem> EMERITE_SWORD = ITEMS.register("emerite_sword",
+            () -> new SwordItem(VerseToolTiers.EMERITE, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(VerseToolTiers.EMERITE, 7.0f, -2.4f))));
 
     //Tools
     public static final DeferredItem<PickaxeItem> BOSKALT_PICKAXE = ITEMS.register("boskalt_pickaxe",
@@ -244,6 +274,22 @@ public class VerseItems {
             () -> new HoeItem(VerseToolTiers.DRAGONRITE, new Item.Properties()
                     .attributes(HoeItem.createAttributes(VerseToolTiers.DRAGONRITE, 0f, -0.0f))));
 
+    public static final DeferredItem<PickaxeItem> EMERITE_PICKAXE = ITEMS.register("emerite_pickaxe",
+            () -> new PickaxeItem(VerseToolTiers.EMERITE, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(VerseToolTiers.EMERITE, 5.0f, -2.8f))));
+
+    public static final DeferredItem<AxeItem> EMERITE_AXE = ITEMS.register("emerite_axe",
+            () -> new AxeItem(VerseToolTiers.EMERITE, new Item.Properties()
+                    .attributes(AxeItem.createAttributes(VerseToolTiers.EMERITE, 9.0f, -3.0f))));
+
+    public static final DeferredItem<ShovelItem> EMERITE_SHOVEL = ITEMS.register("emerite_shovel",
+            () -> new ShovelItem(VerseToolTiers.EMERITE, new Item.Properties()
+                    .attributes(ShovelItem.createAttributes(VerseToolTiers.EMERITE, 5.5f, -3.0f))));
+
+    public static final DeferredItem<HoeItem> EMERITE_HOE = ITEMS.register("emerite_hoe",
+            () -> new HoeItem(VerseToolTiers.EMERITE, new Item.Properties()
+                    .attributes(HoeItem.createAttributes(VerseToolTiers.EMERITE, 0f, -0.0f))));
+
     //Crafting Items
     public static final DeferredItem<Item> AMBER_LENS_CORE = ITEMS.register("amber_lens_core",
             () -> new Item(new Item.Properties()));
@@ -262,6 +308,9 @@ public class VerseItems {
 
     //Upgrade Templates
     public static final DeferredItem<Item> DRAGONRITE_UPGRADE_SMITHING_TEMPLATE = ITEMS.register("dragonrite_upgrade_smithing_template",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> EMERITE_UPGRADE_SMITHING_TEMPLATE = ITEMS.register("emerite_upgrade_smithing_template",
             () -> new Item(new Item.Properties()));
 
     //Registers The Items. DO NOT TOUCH!!!

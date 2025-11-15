@@ -4,7 +4,7 @@
     "item": "verse:dragonrite_ingot"
   },
   "base": {
-    "item": "minecraft:netherite_helmet"
+    "tag": "verse:tier_3_helmet"
   },
   "result": {
     "count": 1,

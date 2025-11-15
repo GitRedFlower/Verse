@@ -39,7 +39,8 @@ public class VerseBlockTagProvider extends BlockTagsProvider {
                 .add(VerseBlocks.DEEPSLATE_AMBER_ORE.get())
                 .add(VerseBlocks.BLOCK_OF_AMBER.get())
                 .add(VerseBlocks.ENDSTONE_DRAGONRITE_ORE.get())
-                .add(VerseBlocks.BLOCK_OF_DRAGONRITE.get());
+                .add(VerseBlocks.BLOCK_OF_DRAGONRITE.get())
+                .add(VerseBlocks.BLOCK_OF_EMERITE.get());
 
 
         //Stone Level
@@ -67,14 +68,17 @@ public class VerseBlockTagProvider extends BlockTagsProvider {
         //Diamond Level
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(VerseBlocks.ENDSTONE_DRAGONRITE_ORE.get())
-                .add(VerseBlocks.BLOCK_OF_DRAGONRITE.get());
+                .add(VerseBlocks.BLOCK_OF_DRAGONRITE.get())
+                .add(VerseBlocks.BLOCK_OF_EMERITE.get());
 
         //Beacon Base Blocks
         tag(BlockTags.BEACON_BASE_BLOCKS)
                 .add(VerseBlocks.BLOCK_OF_GARNET.get())
                 .add(VerseBlocks.BLOCK_OF_SAPPHIRE.get())
                 .add(VerseBlocks.BLOCK_OF_BOSKALT.get())
-                .add(VerseBlocks.BLOCK_OF_DRAGONRITE.get());
+                .add(VerseBlocks.BLOCK_OF_DRAGONRITE.get())
+                .add(VerseBlocks.BLOCK_OF_EMERITE.get());
+
 
 
         //Custom Tool Tiers Setup
@@ -93,5 +97,21 @@ public class VerseBlockTagProvider extends BlockTagsProvider {
         tag(VerseTags.Blocks.INCORRECT_FOR_GARNET_TOOL)
                 .addTag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
                 .remove(VerseTags.Blocks.NEEDS_GARNET_TOOL);
+
+        //Dragonrite Setup
+        tag(VerseTags.Blocks.NEEDS_DRAGONRITE_TOOL)
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
+
+        tag(VerseTags.Blocks.INCORRECT_FOR_DRAGONRITE_TOOL)
+                .addTag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
+                .remove(VerseTags.Blocks.NEEDS_DRAGONRITE_TOOL);
+
+        //Emerite Setup
+        tag(VerseTags.Blocks.NEEDS_EMERITE_TOOL)
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
+
+        tag(VerseTags.Blocks.INCORRECT_FOR_EMERITE_TOOL)
+                .addTag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
+                .remove(VerseTags.Blocks.NEEDS_DRAGONRITE_TOOL);
     }
 }

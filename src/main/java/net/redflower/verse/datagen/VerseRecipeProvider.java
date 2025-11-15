@@ -4,6 +4,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -81,6 +82,14 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
                 .pattern("AAA")
                 .define('A', VerseItems.DRAGONRITE_INGOT.get())
                 .unlockedBy("has_dragonrite_ingot", has(VerseItems.DRAGONRITE_INGOT))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseBlocks.BLOCK_OF_EMERITE)
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', VerseItems.EMERITE_INGOT.get())
+                .unlockedBy("has_emerite_ingot", has(VerseItems.EMERITE_INGOT))
                 .save(recipeOutput);
 
         //Armor
@@ -397,6 +406,22 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
                 .unlockedBy("has_diamond_nugget", has(VerseItems.DIAMOND_NUGGET))
                 .save(recipeOutput, "diamond_from_diamond_nugget");
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.SAPPHIRE)
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', VerseItems.SAPPHIRE_NUGGET)
+                .unlockedBy("has_sapphire_nugget", has(VerseItems.SAPPHIRE_NUGGET))
+                .save(recipeOutput, "sapphire_from_sapphire_nugget");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.GARNET)
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', VerseItems.GARNET_NUGGET)
+                .unlockedBy("has_garnet_nugget", has(VerseItems.GARNET_NUGGET))
+                .save(recipeOutput, "garnet_from_garnet_nugget");
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.DRAGONRITE_INGOT)
                 .pattern("AAA")
                 .pattern("ABB")
@@ -404,6 +429,17 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
                 .define('A', VerseItems.DRAGONRITE_SCRAP)
                 .define('B', VerseItems.DIAMOND_NUGGET)
                 .unlockedBy("has_dragonrite_scrap", has(VerseItems.DRAGONRITE_SCRAP))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.EMERITE_INGOT)
+                .pattern("AAA")
+                .pattern("BCD")
+                .pattern("BCD")
+                .define('A', Items.EMERALD)
+                .define('B', VerseItems.DIAMOND_NUGGET)
+                .define('C', VerseItems.SAPPHIRE_NUGGET)
+                .define('D', VerseItems.GARNET_NUGGET)
+                .unlockedBy("has_emerite_ingot", has(VerseItems.EMERITE_INGOT))
                 .save(recipeOutput);
 
         //Enchanted Shards
@@ -464,9 +500,19 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
                 .pattern("BAB")
                 .define('A', VerseItems.DRAGONRITE_INGOT.get())
                 .define('B', Items.END_STONE)
-                .define('C', VerseTags.Items.TIER_2_UPGRADE)
+                .define('C', VerseTags.Items.TIER_3_UPGRADE)
                 .unlockedBy("has_dragonrite_ingot", has(VerseItems.DRAGONRITE_INGOT))
                 .save(recipeOutput, "dragonrite_upgrade_template_from_template");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.EMERITE_UPGRADE_SMITHING_TEMPLATE.get())
+                .pattern("BAB")
+                .pattern("ACA")
+                .pattern("BAB")
+                .define('A', VerseItems.EMERITE_INGOT.get())
+                .define('B', Items.STONE)
+                .define('C', VerseBlocks.BLOCK_OF_EMERITE.get())
+                .unlockedBy("has_emerite_ingot", has(VerseItems.EMERITE_INGOT))
+                .save(recipeOutput, "emerite_upgrade_template_from_template");
 
         //Shapeless
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VerseItems.RAW_BOSKALT.get(), 9)
@@ -499,8 +545,19 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
                 .unlockedBy("has_diamond", has(Items.DIAMOND))
                 .save(recipeOutput);
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VerseItems.SAPPHIRE_NUGGET.get(), 9)
+                .requires(VerseItems.SAPPHIRE)
+                .unlockedBy("has_sapphire", has(VerseItems.SAPPHIRE))
+                .save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VerseItems.GARNET_NUGGET.get(), 9)
+                .requires(VerseItems.GARNET)
+                .unlockedBy("has_garnet", has(VerseItems.GARNET))
+                .save(recipeOutput);
+
         //Smithing Template Duplication
         copySmithingTemplate(recipeOutput, VerseItems.DRAGONRITE_UPGRADE_SMITHING_TEMPLATE.get(), Items.END_STONE);
+        copySmithingTemplate(recipeOutput, VerseItems.EMERITE_UPGRADE_SMITHING_TEMPLATE.get(), Items.STONE);
 
         //Ore Smelting
         oreSmelting(recipeOutput, BOSKALT_SMELT, RecipeCategory.MISC, VerseItems.BOSKALT_INGOT, 0.25f, 200, "boskalt");
@@ -520,24 +577,44 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
 
         //Smithing
         //Dragonrite
-        customSmithing(recipeOutput, Items.NETHERITE_SWORD, RecipeCategory.MISC, VerseItems.DRAGONRITE_SWORD.get(),
+        customSmithing(recipeOutput, VerseTags.Items.TIER_3_SWORD, RecipeCategory.MISC, VerseItems.DRAGONRITE_SWORD.get(),
                 VerseItems.DRAGONRITE_UPGRADE_SMITHING_TEMPLATE.get(), VerseItems.DRAGONRITE_INGOT.get());
-        customSmithing(recipeOutput, Items.NETHERITE_SHOVEL, RecipeCategory.MISC, VerseItems.DRAGONRITE_SHOVEL.get(),
+        customSmithing(recipeOutput, VerseTags.Items.TIER_3_SHOVEL, RecipeCategory.MISC, VerseItems.DRAGONRITE_SHOVEL.get(),
                 VerseItems.DRAGONRITE_UPGRADE_SMITHING_TEMPLATE.get(), VerseItems.DRAGONRITE_INGOT.get());
-        customSmithing(recipeOutput, Items.NETHERITE_PICKAXE, RecipeCategory.MISC, VerseItems.DRAGONRITE_PICKAXE.get(),
+        customSmithing(recipeOutput, VerseTags.Items.TIER_3_PICKAXE, RecipeCategory.MISC, VerseItems.DRAGONRITE_PICKAXE.get(),
                 VerseItems.DRAGONRITE_UPGRADE_SMITHING_TEMPLATE.get(), VerseItems.DRAGONRITE_INGOT.get());
-        customSmithing(recipeOutput, Items.NETHERITE_AXE, RecipeCategory.MISC, VerseItems.DRAGONRITE_AXE.get(),
+        customSmithing(recipeOutput, VerseTags.Items.TIER_3_AXE, RecipeCategory.MISC, VerseItems.DRAGONRITE_AXE.get(),
                 VerseItems.DRAGONRITE_UPGRADE_SMITHING_TEMPLATE.get(), VerseItems.DRAGONRITE_INGOT.get());
-        customSmithing(recipeOutput, Items.NETHERITE_HOE, RecipeCategory.MISC, VerseItems.DRAGONRITE_HOE.get(),
+        customSmithing(recipeOutput, VerseTags.Items.TIER_3_HOE, RecipeCategory.MISC, VerseItems.DRAGONRITE_HOE.get(),
                 VerseItems.DRAGONRITE_UPGRADE_SMITHING_TEMPLATE.get(), VerseItems.DRAGONRITE_INGOT.get());
-        customSmithing(recipeOutput, Items.NETHERITE_HELMET, RecipeCategory.MISC, VerseItems.DRAGONRITE_HELMET.get(),
+        customSmithing(recipeOutput, VerseTags.Items.TIER_3_HELMET, RecipeCategory.MISC, VerseItems.DRAGONRITE_HELMET.get(),
                 VerseItems.DRAGONRITE_UPGRADE_SMITHING_TEMPLATE.get(), VerseItems.DRAGONRITE_INGOT.get());
-        customSmithing(recipeOutput, Items.NETHERITE_CHESTPLATE, RecipeCategory.MISC, VerseItems.DRAGONRITE_CHESTPLATE.get(),
+        customSmithing(recipeOutput, VerseTags.Items.TIER_3_CHESTPLATE, RecipeCategory.MISC, VerseItems.DRAGONRITE_CHESTPLATE.get(),
                 VerseItems.DRAGONRITE_UPGRADE_SMITHING_TEMPLATE.get(), VerseItems.DRAGONRITE_INGOT.get());
-        customSmithing(recipeOutput, Items.NETHERITE_LEGGINGS, RecipeCategory.MISC, VerseItems.DRAGONRITE_LEGGINGS.get(),
+        customSmithing(recipeOutput, VerseTags.Items.TIER_3_LEGGINGS, RecipeCategory.MISC, VerseItems.DRAGONRITE_LEGGINGS.get(),
                 VerseItems.DRAGONRITE_UPGRADE_SMITHING_TEMPLATE.get(), VerseItems.DRAGONRITE_INGOT.get());
-        customSmithing(recipeOutput, Items.NETHERITE_BOOTS, RecipeCategory.MISC, VerseItems.DRAGONRITE_BOOTS.get(),
+        customSmithing(recipeOutput, VerseTags.Items.TIER_3_BOOTS, RecipeCategory.MISC, VerseItems.DRAGONRITE_BOOTS.get(),
                 VerseItems.DRAGONRITE_UPGRADE_SMITHING_TEMPLATE.get(), VerseItems.DRAGONRITE_INGOT.get());
+
+        //Emerite
+        customSmithing(recipeOutput, VerseTags.Items.TIER_2_SWORD, RecipeCategory.MISC, VerseItems.EMERITE_SWORD.get(),
+                VerseItems.EMERITE_UPGRADE_SMITHING_TEMPLATE.get(), VerseItems.EMERITE_INGOT.get());
+        customSmithing(recipeOutput, VerseTags.Items.TIER_2_SHOVEL, RecipeCategory.MISC, VerseItems.EMERITE_SHOVEL.get(),
+                VerseItems.EMERITE_UPGRADE_SMITHING_TEMPLATE.get(), VerseItems.EMERITE_INGOT.get());
+        customSmithing(recipeOutput, VerseTags.Items.TIER_2_PICKAXE, RecipeCategory.MISC, VerseItems.EMERITE_PICKAXE.get(),
+                VerseItems.EMERITE_UPGRADE_SMITHING_TEMPLATE.get(), VerseItems.EMERITE_INGOT.get());
+        customSmithing(recipeOutput, VerseTags.Items.TIER_2_AXE, RecipeCategory.MISC, VerseItems.EMERITE_AXE.get(),
+                VerseItems.EMERITE_UPGRADE_SMITHING_TEMPLATE.get(), VerseItems.EMERITE_INGOT.get());
+        customSmithing(recipeOutput, VerseTags.Items.TIER_2_HOE, RecipeCategory.MISC, VerseItems.EMERITE_HOE.get(),
+                VerseItems.EMERITE_UPGRADE_SMITHING_TEMPLATE.get(), VerseItems.EMERITE_INGOT.get());
+        customSmithing(recipeOutput, VerseTags.Items.TIER_2_HELMET, RecipeCategory.MISC, VerseItems.EMERITE_HELMET.get(),
+                VerseItems.EMERITE_UPGRADE_SMITHING_TEMPLATE.get(), VerseItems.EMERITE_INGOT.get());
+        customSmithing(recipeOutput, VerseTags.Items.TIER_2_CHESTPLATE, RecipeCategory.MISC, VerseItems.EMERITE_CHESTPLATE.get(),
+                VerseItems.EMERITE_UPGRADE_SMITHING_TEMPLATE.get(), VerseItems.EMERITE_INGOT.get());
+        customSmithing(recipeOutput, VerseTags.Items.TIER_2_LEGGINGS, RecipeCategory.MISC, VerseItems.EMERITE_LEGGINGS.get(),
+                VerseItems.EMERITE_UPGRADE_SMITHING_TEMPLATE.get(), VerseItems.EMERITE_INGOT.get());
+        customSmithing(recipeOutput, VerseTags.Items.TIER_2_BOOTS, RecipeCategory.MISC, VerseItems.EMERITE_BOOTS.get(),
+                VerseItems.EMERITE_UPGRADE_SMITHING_TEMPLATE.get(), VerseItems.EMERITE_INGOT.get());
 
 
 
@@ -600,11 +677,22 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
     }
 
     //Custom Recipes
+    //Smithing Recipe without tag for input item
     protected static void customSmithing(RecipeOutput recipeOutput, Item inputItem, RecipeCategory category, ItemLike resultItem, Item template, Item upgradeMaterial) {
         SmithingTransformRecipeBuilder.smithing(
                 Ingredient.of(template), Ingredient.of(inputItem),
                 Ingredient.of(upgradeMaterial), category, (Item) resultItem
         )
+                .unlocks("has_netherite", has(Items.NETHERITE_INGOT))
+                .save(recipeOutput, VERSE.MODID + ":" + getItemName(resultItem));
+    }
+
+    //Smithing Recipe with tag for input item
+    protected static void customSmithing(RecipeOutput recipeOutput, TagKey<Item> inputItem, RecipeCategory category, Item resultItem, Item template, Item upgradeMaterial) {
+        SmithingTransformRecipeBuilder.smithing(
+                        Ingredient.of(template), Ingredient.of(inputItem),
+                        Ingredient.of(upgradeMaterial), category, (Item) resultItem
+                )
                 .unlocks("has_netherite", has(Items.NETHERITE_INGOT))
                 .save(recipeOutput, VERSE.MODID + ":" + getItemName(resultItem));
     }

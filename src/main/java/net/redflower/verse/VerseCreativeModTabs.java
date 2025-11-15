@@ -47,6 +47,7 @@ public class VerseCreativeModTabs {
                         output.accept(VerseBlocks.BLOCK_OF_GARNET);
                         output.accept(VerseBlocks.BLOCK_OF_SAPPHIRE);
                         output.accept(VerseBlocks.BLOCK_OF_DRAGONRITE);
+                        output.accept(VerseBlocks.BLOCK_OF_EMERITE);
 
                         //Functional Blocks
                         output.accept(VerseBlocks.ALTAR);
@@ -75,6 +76,7 @@ public class VerseCreativeModTabs {
                         output.accept(VerseItems.SAPPHIRE);
 
                         //Tier 3 Materials
+                        output.accept(VerseItems.EMERITE_INGOT);
 
                         //Tier 4 Materials
                         output.accept(VerseItems.DRAGONRITE_INGOT);
@@ -83,6 +85,8 @@ public class VerseCreativeModTabs {
 
                         //Nuggets
                         output.accept(VerseItems.DIAMOND_NUGGET);
+                        output.accept(VerseItems.SAPPHIRE_NUGGET);
+                        output.accept(VerseItems.GARNET_NUGGET);
 
                         //Tools
                         //Tier 1
@@ -102,6 +106,10 @@ public class VerseCreativeModTabs {
                         output.accept(VerseItems.SAPPHIRE_HOE);
 
                         //Tier 3
+                        output.accept(VerseItems.EMERITE_SHOVEL);
+                        output.accept(VerseItems.EMERITE_PICKAXE);
+                        output.accept(VerseItems.EMERITE_AXE);
+                        output.accept(VerseItems.EMERITE_HOE);
 
                         //Tier 4
                         output.accept(VerseItems.DRAGONRITE_SHOVEL);
@@ -120,6 +128,7 @@ public class VerseCreativeModTabs {
                         output.accept(VerseItems.SAPPHIRE_SWORD);
 
                         //Tier 3
+                        output.accept(VerseItems.EMERITE_SWORD);
 
                         //Tier 4
                         output.accept(VerseItems.DRAGONRITE_SWORD);
@@ -144,6 +153,10 @@ public class VerseCreativeModTabs {
                         output.accept(VerseItems.SAPPHIRE_BOOTS);
 
                         //Tier 3
+                        output.accept(VerseItems.EMERITE_HELMET);
+                        output.accept(VerseItems.EMERITE_CHESTPLATE);
+                        output.accept(VerseItems.EMERITE_LEGGINGS);
+                        output.accept(VerseItems.EMERITE_BOOTS);
 
                         //Tier 4
                         output.accept(VerseItems.DRAGONRITE_HELMET);
@@ -177,6 +190,7 @@ public class VerseCreativeModTabs {
                         output.accept(VerseItems.ENCHANTED_DIAMOND_APPLE);
 
                         //Smithing Templates
+                        output.accept(VerseItems.EMERITE_UPGRADE_SMITHING_TEMPLATE);
                         output.accept(VerseItems.DRAGONRITE_UPGRADE_SMITHING_TEMPLATE);
 
                         //Enchanted Shards

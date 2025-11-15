@@ -124,6 +124,12 @@ public class VerseBlocks {
                     .strength(3f)
                     .sound(SoundType.METAL)));
 
+    public static final DeferredBlock<Block> BLOCK_OF_EMERITE = registerBlock("block_of_emerite",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3f)
+                    .sound(SoundType.METAL)));
+
 
     //Functional Block
     public static final DeferredBlock<Block> ALTAR = registerBlock("altar",

@@ -46,6 +46,7 @@ public class VerseItemModelProvider extends ItemModelProvider {
         //Ingots
         basicItem(VerseItems.BOSKALT_INGOT.get());
         basicItem(VerseItems.DRAGONRITE_INGOT.get());
+        basicItem(VerseItems.EMERITE_INGOT.get());
 
         //Gems
         basicItem(VerseItems.GARNET.get());
@@ -55,6 +56,8 @@ public class VerseItemModelProvider extends ItemModelProvider {
 
         //Nuggets
         basicItem(VerseItems.DIAMOND_NUGGET.get());
+        basicItem(VerseItems.SAPPHIRE_NUGGET.get());
+        basicItem(VerseItems.GARNET_NUGGET.get());
 
         //Crafting Items
         basicItem(VerseItems.AMBER_LENS_CORE.get());
@@ -89,6 +92,7 @@ public class VerseItemModelProvider extends ItemModelProvider {
 
         //Smithing Templates
         basicItem(VerseItems.DRAGONRITE_UPGRADE_SMITHING_TEMPLATE.get());
+        basicItem(VerseItems.EMERITE_UPGRADE_SMITHING_TEMPLATE.get());
 
 
         //Weapons
@@ -97,6 +101,7 @@ public class VerseItemModelProvider extends ItemModelProvider {
         handheldItem(VerseItems.GARNET_SWORD);
         handheldItem(VerseItems.SAPPHIRE_SWORD);
         handheldItem(VerseItems.DRAGONRITE_SWORD);
+        handheldItem(VerseItems.EMERITE_SWORD);
 
         //Tools
         handheldItem(VerseItems.BOSKALT_SHOVEL);
@@ -115,6 +120,10 @@ public class VerseItemModelProvider extends ItemModelProvider {
         handheldItem(VerseItems.DRAGONRITE_PICKAXE);
         handheldItem(VerseItems.DRAGONRITE_AXE);
         handheldItem(VerseItems.DRAGONRITE_HOE);
+        handheldItem(VerseItems.EMERITE_SHOVEL);
+        handheldItem(VerseItems.EMERITE_PICKAXE);
+        handheldItem(VerseItems.EMERITE_AXE);
+        handheldItem(VerseItems.EMERITE_HOE);
 
         //Armor
         //Boskalt
@@ -140,6 +149,13 @@ public class VerseItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(VerseItems.DRAGONRITE_CHESTPLATE);
         trimmedArmorItem(VerseItems.DRAGONRITE_LEGGINGS);
         trimmedArmorItem(VerseItems.DRAGONRITE_BOOTS);
+
+        //Emerite
+        //Dragonrite
+        trimmedArmorItem(VerseItems.EMERITE_HELMET);
+        trimmedArmorItem(VerseItems.EMERITE_CHESTPLATE);
+        trimmedArmorItem(VerseItems.EMERITE_LEGGINGS);
+        trimmedArmorItem(VerseItems.EMERITE_BOOTS);
     }
 
     // Created by El_Redstoniano, Obtained from Modding by Kaupenjoe

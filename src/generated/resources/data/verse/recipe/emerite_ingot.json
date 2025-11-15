@@ -1,0 +1,27 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:emerald"
+    },
+    "B": {
+      "item": "verse:diamond_nugget"
+    },
+    "C": {
+      "item": "verse:sapphire_nugget"
+    },
+    "D": {
+      "item": "verse:garnet_nugget"
+    }
+  },
+  "pattern": [
+    "AAA",
+    "BCD",
+    "BCD"
+  ],
+  "result": {
+    "count": 1,
+    "id": "verse:emerite_ingot"
+  }
+}

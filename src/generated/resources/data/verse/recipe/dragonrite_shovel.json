@@ -4,7 +4,7 @@
     "item": "verse:dragonrite_ingot"
   },
   "base": {
-    "item": "minecraft:netherite_shovel"
+    "tag": "verse:tier_3_shovel"
   },
   "result": {
     "count": 1,

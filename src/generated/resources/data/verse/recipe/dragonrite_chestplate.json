@@ -4,7 +4,7 @@
     "item": "verse:dragonrite_ingot"
   },
   "base": {
-    "item": "minecraft:netherite_chestplate"
+    "tag": "verse:tier_3_chestplate"
   },
   "result": {
     "count": 1,

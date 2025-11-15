@@ -19,6 +19,7 @@
   "block.verse.block_of_sapphire" : "Block of Sapphire",
   "block.verse.block_of_amber" : "Block of Amber",
   "block.verse.block_of_dragonrite" : "Block of Dragonrite",
+  "block.verse.block_of_emerite" : "Block of Emerite",
 
   "block.verse.altar" : "Altar",
 
@@ -27,6 +28,7 @@
 
   "item.verse.boskalt_ingot" : "Boskalt Ingot",
   "item.verse.dragonrite_ingot" : "Dragonrite Ingot",
+  "item.verse.emerite_ingot" : "Emerite Ingot",
 
   "item.verse.garnet" : "Garnet",
   "item.verse.sapphire" : "Sapphire",
@@ -34,6 +36,8 @@
   "item.verse.amber" : "Amber",
 
   "item.verse.diamond_nugget" : "Diamond Nugget",
+  "item.verse.sapphire_nugget" : "Sapphire Nugget",
+  "item.verse.garnet_nugget" : "Garnet Nugget",
 
   "item.verse.amber_lens_core" : "Amber Lens Core",
 
@@ -59,6 +63,11 @@
   "item.verse.dragonrite_leggings" : "Dragonrite Leggings",
   "item.verse.dragonrite_boots" : "Dragonrite Boots",
 
+  "item.verse.emerite_helmet" : "Emerite Helmet",
+  "item.verse.emerite_chestplate" : "Emerite Chestplate",
+  "item.verse.emerite_leggings" : "Emerite Leggings",
+  "item.verse.emerite_boots" : "Emerite Boots",
+
   "item.verse.boskalt_shovel" : "Boskalt Shovel",
   "item.verse.boskalt_pickaxe" : "Boskalt Pickaxe",
   "item.verse.boskalt_axe" : "Boskalt Axe",
@@ -79,10 +88,16 @@
   "item.verse.dragonrite_axe" : "Dragonrite Axe",
   "item.verse.dragonrite_hoe" : "Dragonrite Hoe",
 
+  "item.verse.emerite_shovel" : "Emerite Shovel",
+  "item.verse.emerite_pickaxe" : "Emerite Pickaxe",
+  "item.verse.emerite_axe" : "Emerite Axe",
+  "item.verse.emerite_hoe" : "Emerite Hoe",
+
   "item.verse.boskalt_sword" : "Boskalt Sword",
   "item.verse.garnet_sword" : "Garnet Sword",
   "item.verse.sapphire_sword" : "Sapphire Sword",
   "item.verse.dragonrite_sword" : "Dragonrite Sword",
+  "item.verse.emerite_sword" : "Emerite Sword",
 
   "item.verse.coal_apple" : "Coal Apple",
   "item.verse.copper_apple" : "Copper Apple",
@@ -101,6 +116,8 @@
   "item.verse.enchanted_diamond_apple" : "Enchanted Diamond Apple",
 
   "item.verse.dragonrite_upgrade_smithing_template" : "Smithing Template",
+  "item.verse.emerite_upgrade_smithing_template" : "Smithing Template",
+
 
   "item.verse.enchanted_weak_shard" : "Weak Enchanted Shard",
 

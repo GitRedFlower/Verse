@@ -4,7 +4,7 @@
     "item": "verse:dragonrite_ingot"
   },
   "base": {
-    "item": "minecraft:netherite_pickaxe"
+    "tag": "verse:tier_3_pickaxe"
   },
   "result": {
     "count": 1,

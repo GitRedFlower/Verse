@@ -42,6 +42,7 @@ public class VerseBlockStateProvider extends BlockStateProvider {
         blockWIthItem(VerseBlocks.BLOCK_OF_SAPPHIRE);
         blockWIthItem(VerseBlocks.BLOCK_OF_AMBER);
         blockWIthItem(VerseBlocks.BLOCK_OF_DRAGONRITE);
+        blockWIthItem(VerseBlocks.BLOCK_OF_EMERITE);
 
     }
 

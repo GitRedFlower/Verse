@@ -4,7 +4,7 @@
     "item": "verse:dragonrite_ingot"
   },
   "base": {
-    "item": "minecraft:netherite_boots"
+    "tag": "verse:tier_3_boots"
   },
   "result": {
     "count": 1,

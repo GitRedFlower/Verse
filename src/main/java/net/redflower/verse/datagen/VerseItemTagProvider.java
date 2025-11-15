@@ -30,7 +30,8 @@ public class VerseItemTagProvider extends ItemTagsProvider {
                 .add(VerseItems.SAPPHIRE.get())
                 .add(VerseItems.QUARTZ.get())
                 .add(VerseItems.AMBER.get())
-                .add(VerseItems.DRAGONRITE_INGOT.get());
+                .add(VerseItems.DRAGONRITE_INGOT.get())
+                .add(VerseItems.EMERITE_INGOT.get());
 
         //Gems
         this.tag(Tags.Items.GEMS)
@@ -44,8 +45,92 @@ public class VerseItemTagProvider extends ItemTagsProvider {
                 .add(VerseItems.QUARTZ.get());
 
         //Smithing Templates
-        tag(VerseTags.Items.TIER_2_UPGRADE)
-                .add(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE);
+        tag(VerseTags.Items.TIER_3_UPGRADE)
+                .add(Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE)
+                .add(VerseItems.EMERITE_UPGRADE_SMITHING_TEMPLATE.get());
+
+        //Tier 2 Armor and Tools
+        tag(VerseTags.Items.TIER_2_SWORD)
+                .add(Items.DIAMOND_SWORD)
+                .add(VerseItems.SAPPHIRE_SWORD.get())
+                .add(VerseItems.GARNET_SWORD.get());
+
+        tag(VerseTags.Items.TIER_2_SHOVEL)
+                .add(Items.DIAMOND_SHOVEL)
+                .add(VerseItems.SAPPHIRE_SHOVEL.get())
+                .add(VerseItems.GARNET_SHOVEL.get());
+
+        tag(VerseTags.Items.TIER_2_PICKAXE)
+                .add(Items.DIAMOND_PICKAXE)
+                .add(VerseItems.SAPPHIRE_PICKAXE.get())
+                .add(VerseItems.GARNET_PICKAXE.get());
+
+        tag(VerseTags.Items.TIER_2_AXE)
+                .add(Items.DIAMOND_AXE)
+                .add(VerseItems.SAPPHIRE_AXE.get())
+                .add(VerseItems.GARNET_AXE.get());
+
+        tag(VerseTags.Items.TIER_2_HOE)
+                .add(Items.DIAMOND_HOE)
+                .add(VerseItems.SAPPHIRE_HOE.get())
+                .add(VerseItems.GARNET_HOE.get());
+
+        tag(VerseTags.Items.TIER_2_HELMET)
+                .add(Items.DIAMOND_HELMET)
+                .add(VerseItems.SAPPHIRE_HELMET.get())
+                .add(VerseItems.GARNET_HELMET.get());
+
+        tag(VerseTags.Items.TIER_2_CHESTPLATE)
+                .add(Items.DIAMOND_CHESTPLATE)
+                .add(VerseItems.SAPPHIRE_CHESTPLATE.get())
+                .add(VerseItems.GARNET_CHESTPLATE.get());
+
+        tag(VerseTags.Items.TIER_2_LEGGINGS)
+                .add(Items.DIAMOND_LEGGINGS)
+                .add(VerseItems.SAPPHIRE_LEGGINGS.get())
+                .add(VerseItems.GARNET_LEGGINGS.get());
+
+        tag(VerseTags.Items.TIER_2_BOOTS)
+                .add(Items.DIAMOND_BOOTS)
+                .add(VerseItems.SAPPHIRE_BOOTS.get())
+                .add(VerseItems.GARNET_BOOTS.get());
+
+        //Tier 3 Armor and Tools
+        tag(VerseTags.Items.TIER_3_SWORD)
+                .add(Items.NETHERITE_SWORD)
+                .add(VerseItems.EMERITE_SWORD.get());
+
+        tag(VerseTags.Items.TIER_3_SHOVEL)
+                .add(Items.NETHERITE_SHOVEL)
+                .add(VerseItems.EMERITE_SHOVEL.get());
+
+        tag(VerseTags.Items.TIER_3_PICKAXE)
+                .add(Items.NETHERITE_PICKAXE)
+                .add(VerseItems.EMERITE_PICKAXE.get());
+
+        tag(VerseTags.Items.TIER_3_AXE)
+                .add(Items.NETHERITE_AXE)
+                .add(VerseItems.EMERITE_AXE.get());
+
+        tag(VerseTags.Items.TIER_3_HOE)
+                .add(Items.NETHERITE_HOE)
+                .add(VerseItems.EMERITE_HOE.get());
+
+        tag(VerseTags.Items.TIER_3_HELMET)
+                .add(Items.NETHERITE_HELMET)
+                .add(VerseItems.EMERITE_HELMET.get());
+
+        tag(VerseTags.Items.TIER_3_CHESTPLATE)
+                .add(Items.NETHERITE_CHESTPLATE)
+                .add(VerseItems.EMERITE_CHESTPLATE.get());
+
+        tag(VerseTags.Items.TIER_3_LEGGINGS)
+                .add(Items.NETHERITE_LEGGINGS)
+                .add(VerseItems.EMERITE_LEGGINGS.get());
+
+        tag(VerseTags.Items.TIER_3_BOOTS)
+                .add(Items.NETHERITE_BOOTS)
+                .add(VerseItems.EMERITE_BOOTS.get());
 
         //Weapons
         //Swords

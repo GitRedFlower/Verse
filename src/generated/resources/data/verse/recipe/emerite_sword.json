@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "verse:emerite_ingot"
+  },
+  "base": {
+    "tag": "verse:tier_2_sword"
+  },
+  "result": {
+    "count": 1,
+    "id": "verse:emerite_sword"
+  },
+  "template": {
+    "item": "verse:emerite_upgrade_smithing_template"
+  }
+}

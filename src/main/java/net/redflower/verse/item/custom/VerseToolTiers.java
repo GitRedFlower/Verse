@@ -19,4 +19,7 @@ public class VerseToolTiers {
 
     public static final Tier DRAGONRITE = new SimpleTier(VerseTags.Blocks.INCORRECT_FOR_DRAGONRITE_TOOL,
             250, 6.0f, 0.0f,14, () -> Ingredient.of(VerseItems.DRAGONRITE_INGOT));
+
+    public static final Tier EMERITE = new SimpleTier(VerseTags.Blocks.INCORRECT_FOR_EMERITE_TOOL,
+            2031, 9.0f, 0.0f,15, () -> Ingredient.of(VerseItems.EMERITE_INGOT));
 }

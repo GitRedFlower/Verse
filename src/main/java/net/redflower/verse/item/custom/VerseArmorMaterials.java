@@ -56,6 +56,15 @@ public class VerseArmorMaterials {
                 attribute.put(ArmorItem.Type.BODY, 14);
             }), 16, 4.0f, 0.2f, VerseItems.DRAGONRITE_INGOT, SoundEvents.ARMOR_EQUIP_NETHERITE);
 
+    public static final Holder<ArmorMaterial> EMERITE_ARMOR_MATERIAL = register("emerite",
+            Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
+                attribute.put(ArmorItem.Type.BOOTS, 3);
+                attribute.put(ArmorItem.Type.LEGGINGS, 6);
+                attribute.put(ArmorItem.Type.CHESTPLATE, 8);
+                attribute.put(ArmorItem.Type.HELMET, 3);
+                attribute.put(ArmorItem.Type.BODY, 12);
+            }), 15, 3.0f, 0.1f, VerseItems.EMERITE_INGOT, SoundEvents.ARMOR_EQUIP_DIAMOND);
+
     private static Holder<ArmorMaterial> register(String name, EnumMap<ArmorItem.Type, Integer> typeProtection,
                                                   int enchantability, float toughness, float knockbackResistance,
                                                   Supplier<Item> ingredientItem, Holder<SoundEvent> soundType) {

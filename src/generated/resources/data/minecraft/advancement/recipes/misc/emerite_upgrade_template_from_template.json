@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_emerite_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "verse:emerite_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "minecraft:emerite_upgrade_template_from_template"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_emerite_ingot"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "minecraft:emerite_upgrade_template_from_template"
+    ]
+  }
+}

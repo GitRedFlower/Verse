@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "verse:emerite_ingot"
+  },
+  "base": {
+    "tag": "verse:tier_2_leggings"
+  },
+  "result": {
+    "count": 1,
+    "id": "verse:emerite_leggings"
+  },
+  "template": {
+    "item": "verse:emerite_upgrade_smithing_template"
+  }
+}
