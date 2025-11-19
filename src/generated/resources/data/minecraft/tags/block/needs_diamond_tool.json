@@ -2,6 +2,8 @@
   "values": [
     "verse:endstone_dragonrite_ore",
     "verse:block_of_dragonrite",
-    "verse:block_of_emerite"
+    "verse:block_of_emerite",
+    "verse:block_of_echo_shard",
+    "verse:block_of_sculk_steel"
   ]
 }

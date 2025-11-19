@@ -47,6 +47,7 @@ public class VerseItemModelProvider extends ItemModelProvider {
         basicItem(VerseItems.BOSKALT_INGOT.get());
         basicItem(VerseItems.DRAGONRITE_INGOT.get());
         basicItem(VerseItems.EMERITE_INGOT.get());
+        basicItem(VerseItems.SCULK_STEEL_INGOT.get());
 
         //Gems
         basicItem(VerseItems.GARNET.get());
@@ -93,6 +94,7 @@ public class VerseItemModelProvider extends ItemModelProvider {
         //Smithing Templates
         basicItem(VerseItems.DRAGONRITE_UPGRADE_SMITHING_TEMPLATE.get());
         basicItem(VerseItems.EMERITE_UPGRADE_SMITHING_TEMPLATE.get());
+        basicItem(VerseItems.SCULK_STEEL_UPGRADE_SMITHING_TEMPLATE.get());
 
 
         //Weapons
@@ -102,6 +104,7 @@ public class VerseItemModelProvider extends ItemModelProvider {
         handheldItem(VerseItems.SAPPHIRE_SWORD);
         handheldItem(VerseItems.DRAGONRITE_SWORD);
         handheldItem(VerseItems.EMERITE_SWORD);
+        handheldItem(VerseItems.SCULK_STEEL_SWORD);
 
         //Tools
         handheldItem(VerseItems.BOSKALT_SHOVEL);
@@ -124,6 +127,10 @@ public class VerseItemModelProvider extends ItemModelProvider {
         handheldItem(VerseItems.EMERITE_PICKAXE);
         handheldItem(VerseItems.EMERITE_AXE);
         handheldItem(VerseItems.EMERITE_HOE);
+        handheldItem(VerseItems.SCULK_STEEL_SHOVEL);
+        handheldItem(VerseItems.SCULK_STEEL_PICKAXE);
+        handheldItem(VerseItems.SCULK_STEEL_AXE);
+        handheldItem(VerseItems.SCULK_STEEL_HOE);
 
         //Armor
         //Boskalt
@@ -151,11 +158,16 @@ public class VerseItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(VerseItems.DRAGONRITE_BOOTS);
 
         //Emerite
-        //Dragonrite
         trimmedArmorItem(VerseItems.EMERITE_HELMET);
         trimmedArmorItem(VerseItems.EMERITE_CHESTPLATE);
         trimmedArmorItem(VerseItems.EMERITE_LEGGINGS);
         trimmedArmorItem(VerseItems.EMERITE_BOOTS);
+
+        //Sculk Steel
+        trimmedArmorItem(VerseItems.SCULK_STEEL_HELMET);
+        trimmedArmorItem(VerseItems.SCULK_STEEL_CHESTPLATE);
+        trimmedArmorItem(VerseItems.SCULK_STEEL_LEGGINGS);
+        trimmedArmorItem(VerseItems.SCULK_STEEL_BOOTS);
     }
 
     // Created by El_Redstoniano, Obtained from Modding by Kaupenjoe

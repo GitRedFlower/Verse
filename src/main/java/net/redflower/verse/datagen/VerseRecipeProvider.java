@@ -92,6 +92,31 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
                 .unlockedBy("has_emerite_ingot", has(VerseItems.EMERITE_INGOT))
                 .save(recipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseBlocks.BLOCK_OF_ECHO_SHARD)
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', Items.ECHO_SHARD)
+                .unlockedBy("has_echo_shard", has(Items.ECHO_SHARD))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.SCULK_STEEL_INGOT)
+                .pattern("BBB")
+                .pattern("BAB")
+                .pattern("BBB")
+                .define('A', VerseBlocks.BLOCK_OF_ECHO_SHARD)
+                .define('B', VerseItems.BOSKALT_INGOT)
+                .unlockedBy("has_block_of_echo_shard", has(VerseBlocks.BLOCK_OF_ECHO_SHARD))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseBlocks.BLOCK_OF_SCULK_STEEL)
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', VerseItems.SCULK_STEEL_INGOT.get())
+                .unlockedBy("has_sculk_steel_ingot", has(VerseItems.SCULK_STEEL_INGOT))
+                .save(recipeOutput);
+
         //Armor
         //Boskalt
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.BOSKALT_HELMET)
@@ -514,6 +539,16 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
                 .unlockedBy("has_emerite_ingot", has(VerseItems.EMERITE_INGOT))
                 .save(recipeOutput, "emerite_upgrade_template_from_template");
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.SCULK_STEEL_UPGRADE_SMITHING_TEMPLATE.get())
+                .pattern("BAB")
+                .pattern("ACA")
+                .pattern("BAB")
+                .define('A', VerseItems.SCULK_STEEL_INGOT.get())
+                .define('B', Items.SCULK)
+                .define('C', VerseItems.DRAGONRITE_UPGRADE_SMITHING_TEMPLATE.get())
+                .unlockedBy("has_sculk_steel_ingot", has(VerseItems.SCULK_STEEL_INGOT))
+                .save(recipeOutput, "sculk_steel_upgrade_template_from_template");
+
         //Shapeless
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VerseItems.RAW_BOSKALT.get(), 9)
                 .requires(VerseBlocks.BLOCK_OF_RAW_BOSKALT)
@@ -558,6 +593,7 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
         //Smithing Template Duplication
         copySmithingTemplate(recipeOutput, VerseItems.DRAGONRITE_UPGRADE_SMITHING_TEMPLATE.get(), Items.END_STONE);
         copySmithingTemplate(recipeOutput, VerseItems.EMERITE_UPGRADE_SMITHING_TEMPLATE.get(), Items.STONE);
+        copySmithingTemplate(recipeOutput, VerseItems.SCULK_STEEL_UPGRADE_SMITHING_TEMPLATE.get(), Items.SCULK);
 
         //Ore Smelting
         oreSmelting(recipeOutput, BOSKALT_SMELT, RecipeCategory.MISC, VerseItems.BOSKALT_INGOT, 0.25f, 200, "boskalt");
@@ -615,6 +651,26 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
                 VerseItems.EMERITE_UPGRADE_SMITHING_TEMPLATE.get(), VerseItems.EMERITE_INGOT.get());
         customSmithing(recipeOutput, VerseTags.Items.TIER_2_BOOTS, RecipeCategory.MISC, VerseItems.EMERITE_BOOTS.get(),
                 VerseItems.EMERITE_UPGRADE_SMITHING_TEMPLATE.get(), VerseItems.EMERITE_INGOT.get());
+
+        //Sculk Steel
+        customSmithing(recipeOutput, VerseTags.Items.TIER_3_SWORD, RecipeCategory.MISC, VerseItems.SCULK_STEEL_SWORD.get(),
+                VerseItems.SCULK_STEEL_UPGRADE_SMITHING_TEMPLATE.get(), VerseItems.SCULK_STEEL_INGOT.get());
+        customSmithing(recipeOutput, VerseTags.Items.TIER_3_SHOVEL, RecipeCategory.MISC, VerseItems.SCULK_STEEL_SHOVEL.get(),
+                VerseItems.SCULK_STEEL_UPGRADE_SMITHING_TEMPLATE.get(), VerseItems.SCULK_STEEL_INGOT.get());
+        customSmithing(recipeOutput, VerseTags.Items.TIER_3_PICKAXE, RecipeCategory.MISC, VerseItems.SCULK_STEEL_PICKAXE.get(),
+                VerseItems.SCULK_STEEL_UPGRADE_SMITHING_TEMPLATE.get(), VerseItems.SCULK_STEEL_INGOT.get());
+        customSmithing(recipeOutput, VerseTags.Items.TIER_3_AXE, RecipeCategory.MISC, VerseItems.SCULK_STEEL_AXE.get(),
+                VerseItems.SCULK_STEEL_UPGRADE_SMITHING_TEMPLATE.get(), VerseItems.SCULK_STEEL_INGOT.get());
+        customSmithing(recipeOutput, VerseTags.Items.TIER_3_HOE, RecipeCategory.MISC, VerseItems.SCULK_STEEL_HOE.get(),
+                VerseItems.SCULK_STEEL_UPGRADE_SMITHING_TEMPLATE.get(), VerseItems.SCULK_STEEL_INGOT.get());
+        customSmithing(recipeOutput, VerseTags.Items.TIER_3_HELMET, RecipeCategory.MISC, VerseItems.SCULK_STEEL_HELMET.get(),
+                VerseItems.SCULK_STEEL_UPGRADE_SMITHING_TEMPLATE.get(), VerseItems.SCULK_STEEL_INGOT.get());
+        customSmithing(recipeOutput, VerseTags.Items.TIER_3_CHESTPLATE, RecipeCategory.MISC, VerseItems.SCULK_STEEL_CHESTPLATE.get(),
+                VerseItems.SCULK_STEEL_UPGRADE_SMITHING_TEMPLATE.get(), VerseItems.SCULK_STEEL_INGOT.get());
+        customSmithing(recipeOutput, VerseTags.Items.TIER_3_LEGGINGS, RecipeCategory.MISC, VerseItems.SCULK_STEEL_LEGGINGS.get(),
+                VerseItems.SCULK_STEEL_UPGRADE_SMITHING_TEMPLATE.get(), VerseItems.SCULK_STEEL_INGOT.get());
+        customSmithing(recipeOutput, VerseTags.Items.TIER_3_BOOTS, RecipeCategory.MISC, VerseItems.SCULK_STEEL_BOOTS.get(),
+                VerseItems.SCULK_STEEL_UPGRADE_SMITHING_TEMPLATE.get(), VerseItems.SCULK_STEEL_INGOT.get());
 
 
 

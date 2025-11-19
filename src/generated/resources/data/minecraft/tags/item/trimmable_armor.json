@@ -15,6 +15,14 @@
     "verse:dragonrite_helmet",
     "verse:dragonrite_chestplate",
     "verse:dragonrite_leggings",
-    "verse:dragonrite_boots"
+    "verse:dragonrite_boots",
+    "verse:emerite_helmet",
+    "verse:emerite_chestplate",
+    "verse:emerite_leggings",
+    "verse:emerite_boots",
+    "verse:sculk_steel_helmet",
+    "verse:sculk_steel_chestplate",
+    "verse:sculk_steel_leggings",
+    "verse:sculk_steel_boots"
   ]
 }

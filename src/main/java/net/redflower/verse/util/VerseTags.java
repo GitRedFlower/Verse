@@ -27,6 +27,9 @@ public class VerseTags {
         public static final TagKey<Block> NEEDS_EMERITE_TOOL = createTag("needs_emerite_tool");
         public static final TagKey<Block> INCORRECT_FOR_EMERITE_TOOL = createTag("incorrect_for_emerite_tool");
 
+        public static final TagKey<Block> NEEDS_SCULK_STEEL_TOOL = createTag("needs_sculk_steel_tool");
+        public static final TagKey<Block> INCORRECT_FOR_SCULK_STEEL_TOOL = createTag("incorrect_for_sculk_steel_tool");
+
 
 
         private static TagKey<Block> createTag(String name) {

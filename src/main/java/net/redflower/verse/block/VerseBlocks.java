@@ -130,6 +130,18 @@ public class VerseBlocks {
                     .strength(3f)
                     .sound(SoundType.METAL)));
 
+    public static final DeferredBlock<Block> BLOCK_OF_ECHO_SHARD = registerBlock("block_of_echo_shard",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3f)
+                    .sound(SoundType.METAL)));
+
+    public static final DeferredBlock<Block> BLOCK_OF_SCULK_STEEL = registerBlock("block_of_sculk_steel",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3f)
+                    .sound(SoundType.METAL)));
+
 
     //Functional Block
     public static final DeferredBlock<Block> ALTAR = registerBlock("altar",

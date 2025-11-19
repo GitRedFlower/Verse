@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "verse:block/block_of_echo_shard"
+    }
+  }
+}

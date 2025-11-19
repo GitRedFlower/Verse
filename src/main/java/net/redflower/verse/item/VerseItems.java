@@ -33,6 +33,9 @@ public class VerseItems {
     public static final DeferredItem<Item> EMERITE_INGOT = ITEMS.register("emerite_ingot",
             () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> SCULK_STEEL_INGOT = ITEMS.register("sculk_steel_ingot",
+            () -> new Item(new Item.Properties()));
+
     //Gems
     public static final DeferredItem<Item> GARNET = ITEMS.register("garnet",
             () -> new Item(new Item.Properties()));
@@ -187,6 +190,23 @@ public class VerseItems {
             () -> new ArmorItem(VerseArmorMaterials.EMERITE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
                     new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(41))));
 
+    //Sculk Steel
+    public static final DeferredItem<ArmorItem> SCULK_STEEL_HELMET = ITEMS.register("sculk_steel_helmet",
+            () -> new ArmorItem(VerseArmorMaterials.SCULK_STEEL_ARMOR_MATERIAL, ArmorItem.Type.HELMET,
+                    new Item.Properties().durability(ArmorItem.Type.HELMET.getDurability(41))));
+
+    public static final DeferredItem<ArmorItem> SCULK_STEEL_CHESTPLATE = ITEMS.register("sculk_steel_chestplate",
+            () -> new ArmorItem(VerseArmorMaterials.SCULK_STEEL_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE,
+                    new Item.Properties().durability(ArmorItem.Type.CHESTPLATE.getDurability(41))));
+
+    public static final DeferredItem<ArmorItem> SCULK_STEEL_LEGGINGS = ITEMS.register("sculk_steel_leggings",
+            () -> new ArmorItem(VerseArmorMaterials.SCULK_STEEL_ARMOR_MATERIAL, ArmorItem.Type.LEGGINGS,
+                    new Item.Properties().durability(ArmorItem.Type.LEGGINGS.getDurability(41))));
+
+    public static final DeferredItem<ArmorItem> SCULK_STEEL_BOOTS = ITEMS.register("sculk_steel_boots",
+            () -> new ArmorItem(VerseArmorMaterials.DRAGONRITE_ARMOR_MATERIAL, ArmorItem.Type.BOOTS,
+                    new Item.Properties().durability(ArmorItem.Type.BOOTS.getDurability(41))));
+
     //Weapons
     //Swords
     public static final DeferredItem<SwordItem> BOSKALT_SWORD = ITEMS.register("boskalt_sword",
@@ -208,6 +228,10 @@ public class VerseItems {
     public static final DeferredItem<SwordItem> EMERITE_SWORD = ITEMS.register("emerite_sword",
             () -> new SwordItem(VerseToolTiers.EMERITE, new Item.Properties()
                     .attributes(SwordItem.createAttributes(VerseToolTiers.EMERITE, 7.0f, -2.4f))));
+
+    public static final DeferredItem<SwordItem> SCULK_STEEL_SWORD = ITEMS.register("sculk_steel_sword",
+            () -> new SwordItem(VerseToolTiers.SCULK_STEEL, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(VerseToolTiers.SCULK_STEEL, 10.0f, -2.4f))));
 
     //Tools
     public static final DeferredItem<PickaxeItem> BOSKALT_PICKAXE = ITEMS.register("boskalt_pickaxe",
@@ -290,6 +314,22 @@ public class VerseItems {
             () -> new HoeItem(VerseToolTiers.EMERITE, new Item.Properties()
                     .attributes(HoeItem.createAttributes(VerseToolTiers.EMERITE, 0f, -0.0f))));
 
+    public static final DeferredItem<PickaxeItem> SCULK_STEEL_PICKAXE = ITEMS.register("sculk_steel_pickaxe",
+            () -> new PickaxeItem(VerseToolTiers.SCULK_STEEL, new Item.Properties()
+                    .attributes(PickaxeItem.createAttributes(VerseToolTiers.SCULK_STEEL, 8.0f, -2.8f))));
+
+    public static final DeferredItem<AxeItem> SCULK_STEEL_AXE = ITEMS.register("sculk_steel_axe",
+            () -> new AxeItem(VerseToolTiers.SCULK_STEEL, new Item.Properties()
+                    .attributes(AxeItem.createAttributes(VerseToolTiers.SCULK_STEEL, 12.0f, -3.0f))));
+
+    public static final DeferredItem<ShovelItem> SCULK_STEEL_SHOVEL = ITEMS.register("sculk_steel_shovel",
+            () -> new ShovelItem(VerseToolTiers.SCULK_STEEL, new Item.Properties()
+                    .attributes(ShovelItem.createAttributes(VerseToolTiers.SCULK_STEEL, 8.5f, -3.0f))));
+
+    public static final DeferredItem<HoeItem> SCULK_STEEL_HOE = ITEMS.register("sculk_steel_hoe",
+            () -> new HoeItem(VerseToolTiers.SCULK_STEEL, new Item.Properties()
+                    .attributes(HoeItem.createAttributes(VerseToolTiers.SCULK_STEEL, 0f, -0.0f))));
+
     //Crafting Items
     public static final DeferredItem<Item> AMBER_LENS_CORE = ITEMS.register("amber_lens_core",
             () -> new Item(new Item.Properties()));
@@ -311,6 +351,9 @@ public class VerseItems {
             () -> new Item(new Item.Properties()));
 
     public static final DeferredItem<Item> EMERITE_UPGRADE_SMITHING_TEMPLATE = ITEMS.register("emerite_upgrade_smithing_template",
+            () -> new Item(new Item.Properties()));
+
+    public static final DeferredItem<Item> SCULK_STEEL_UPGRADE_SMITHING_TEMPLATE = ITEMS.register("sculk_steel_upgrade_smithing_template",
             () -> new Item(new Item.Properties()));
 
     //Registers The Items. DO NOT TOUCH!!!

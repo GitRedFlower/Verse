@@ -40,8 +40,9 @@ public class VerseBlockTagProvider extends BlockTagsProvider {
                 .add(VerseBlocks.BLOCK_OF_AMBER.get())
                 .add(VerseBlocks.ENDSTONE_DRAGONRITE_ORE.get())
                 .add(VerseBlocks.BLOCK_OF_DRAGONRITE.get())
-                .add(VerseBlocks.BLOCK_OF_EMERITE.get());
-
+                .add(VerseBlocks.BLOCK_OF_EMERITE.get())
+                .add(VerseBlocks.BLOCK_OF_ECHO_SHARD.get())
+                .add(VerseBlocks.BLOCK_OF_SCULK_STEEL.get());
 
         //Stone Level
         tag(BlockTags.NEEDS_STONE_TOOL)
@@ -69,7 +70,9 @@ public class VerseBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(VerseBlocks.ENDSTONE_DRAGONRITE_ORE.get())
                 .add(VerseBlocks.BLOCK_OF_DRAGONRITE.get())
-                .add(VerseBlocks.BLOCK_OF_EMERITE.get());
+                .add(VerseBlocks.BLOCK_OF_EMERITE.get())
+                .add(VerseBlocks.BLOCK_OF_ECHO_SHARD.get())
+                .add(VerseBlocks.BLOCK_OF_SCULK_STEEL.get());
 
         //Beacon Base Blocks
         tag(BlockTags.BEACON_BASE_BLOCKS)
@@ -113,5 +116,13 @@ public class VerseBlockTagProvider extends BlockTagsProvider {
         tag(VerseTags.Blocks.INCORRECT_FOR_EMERITE_TOOL)
                 .addTag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
                 .remove(VerseTags.Blocks.NEEDS_DRAGONRITE_TOOL);
+
+        //Sculk Steel Setup
+        tag(VerseTags.Blocks.NEEDS_SCULK_STEEL_TOOL)
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
+
+        tag(VerseTags.Blocks.INCORRECT_FOR_SCULK_STEEL_TOOL)
+                .addTag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
+                .remove(VerseTags.Blocks.NEEDS_SCULK_STEEL_TOOL);
     }
 }

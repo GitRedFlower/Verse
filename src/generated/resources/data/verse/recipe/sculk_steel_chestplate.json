@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "verse:sculk_steel_ingot"
+  },
+  "base": {
+    "tag": "verse:tier_3_chestplate"
+  },
+  "result": {
+    "count": 1,
+    "id": "verse:sculk_steel_chestplate"
+  },
+  "template": {
+    "item": "verse:sculk_steel_upgrade_smithing_template"
+  }
+}

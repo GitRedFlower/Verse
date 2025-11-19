@@ -43,6 +43,8 @@ public class VerseBlockStateProvider extends BlockStateProvider {
         blockWIthItem(VerseBlocks.BLOCK_OF_AMBER);
         blockWIthItem(VerseBlocks.BLOCK_OF_DRAGONRITE);
         blockWIthItem(VerseBlocks.BLOCK_OF_EMERITE);
+        blockWIthItem(VerseBlocks.BLOCK_OF_ECHO_SHARD);
+        blockWIthItem(VerseBlocks.BLOCK_OF_SCULK_STEEL);
 
     }
 

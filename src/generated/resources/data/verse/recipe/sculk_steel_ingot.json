@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "verse:block_of_echo_shard"
+    },
+    "B": {
+      "item": "verse:boskalt_ingot"
+    }
+  },
+  "pattern": [
+    "BBB",
+    "BAB",
+    "BBB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "verse:sculk_steel_ingot"
+  }
+}

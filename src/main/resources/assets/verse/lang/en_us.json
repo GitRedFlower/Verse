@@ -20,6 +20,8 @@
   "block.verse.block_of_amber" : "Block of Amber",
   "block.verse.block_of_dragonrite" : "Block of Dragonrite",
   "block.verse.block_of_emerite" : "Block of Emerite",
+  "block.verse.block_of_echo_shard" : "Block of Echo Shard",
+  "block.verse.block_of_sculk_steel" : "Block of Sculk Steel",
 
   "block.verse.altar" : "Altar",
 
@@ -29,6 +31,7 @@
   "item.verse.boskalt_ingot" : "Boskalt Ingot",
   "item.verse.dragonrite_ingot" : "Dragonrite Ingot",
   "item.verse.emerite_ingot" : "Emerite Ingot",
+  "item.verse.sculk_steel_ingot" : "Sculk Steel Ingot",
 
   "item.verse.garnet" : "Garnet",
   "item.verse.sapphire" : "Sapphire",
@@ -68,6 +71,11 @@
   "item.verse.emerite_leggings" : "Emerite Leggings",
   "item.verse.emerite_boots" : "Emerite Boots",
 
+  "item.verse.sculk_steel_helmet" : "Sculk Steel Helmet",
+  "item.verse.sculk_steel_chestplate" : "Sculk Steel Chestplate",
+  "item.verse.sculk_steel_leggings" : "Sculk Steel Leggings",
+  "item.verse.sculk_steel_boots" : "Sculk Steel Boots",
+
   "item.verse.boskalt_shovel" : "Boskalt Shovel",
   "item.verse.boskalt_pickaxe" : "Boskalt Pickaxe",
   "item.verse.boskalt_axe" : "Boskalt Axe",
@@ -93,11 +101,17 @@
   "item.verse.emerite_axe" : "Emerite Axe",
   "item.verse.emerite_hoe" : "Emerite Hoe",
 
+  "item.verse.sculk_steel_shovel" : "Sculk Steel Shovel",
+  "item.verse.sculk_steel_pickaxe" : "Sculk Steel Pickaxe",
+  "item.verse.sculk_steel_axe" : "Sculk Steel Axe",
+  "item.verse.sculk_steel_hoe" : "Sculk Steel Hoe",
+
   "item.verse.boskalt_sword" : "Boskalt Sword",
   "item.verse.garnet_sword" : "Garnet Sword",
   "item.verse.sapphire_sword" : "Sapphire Sword",
   "item.verse.dragonrite_sword" : "Dragonrite Sword",
   "item.verse.emerite_sword" : "Emerite Sword",
+  "item.verse.sculk_steel_sword" : "Sculk Steel Sword",
 
   "item.verse.coal_apple" : "Coal Apple",
   "item.verse.copper_apple" : "Copper Apple",
@@ -117,6 +131,7 @@
 
   "item.verse.dragonrite_upgrade_smithing_template" : "Smithing Template",
   "item.verse.emerite_upgrade_smithing_template" : "Smithing Template",
+  "item.verse.sculk_steel_upgrade_smithing_template" : "Smithing Template",
 
 
   "item.verse.enchanted_weak_shard" : "Weak Enchanted Shard",

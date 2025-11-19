@@ -31,7 +31,8 @@ public class VerseItemTagProvider extends ItemTagsProvider {
                 .add(VerseItems.QUARTZ.get())
                 .add(VerseItems.AMBER.get())
                 .add(VerseItems.DRAGONRITE_INGOT.get())
-                .add(VerseItems.EMERITE_INGOT.get());
+                .add(VerseItems.EMERITE_INGOT.get())
+                .add(VerseItems.SCULK_STEEL_INGOT.get());
 
         //Gems
         this.tag(Tags.Items.GEMS)
@@ -138,7 +139,9 @@ public class VerseItemTagProvider extends ItemTagsProvider {
                 .add(VerseItems.BOSKALT_SWORD.get())
                 .add(VerseItems.GARNET_SWORD.get())
                 .add(VerseItems.SAPPHIRE_SWORD.get())
-                .add(VerseItems.DRAGONRITE_SWORD.get());
+                .add(VerseItems.DRAGONRITE_SWORD.get())
+                .add(VerseItems.EMERITE_SWORD.get())
+                .add(VerseItems.SCULK_STEEL_SWORD.get());
 
         //Tools
         //Shovels
@@ -146,28 +149,36 @@ public class VerseItemTagProvider extends ItemTagsProvider {
                 .add(VerseItems.BOSKALT_SHOVEL.get())
                 .add(VerseItems.GARNET_SHOVEL.get())
                 .add(VerseItems.SAPPHIRE_SHOVEL.get())
-                .add(VerseItems.DRAGONRITE_SHOVEL.get());
+                .add(VerseItems.DRAGONRITE_SHOVEL.get())
+                .add(VerseItems.EMERITE_SHOVEL.get())
+                .add(VerseItems.SCULK_STEEL_SHOVEL.get());
 
         //Pickaxes
         tag(ItemTags.PICKAXES)
                 .add(VerseItems.BOSKALT_PICKAXE.get())
                 .add(VerseItems.GARNET_PICKAXE.get())
                 .add(VerseItems.SAPPHIRE_PICKAXE.get())
-                .add(VerseItems.DRAGONRITE_PICKAXE.get());
+                .add(VerseItems.DRAGONRITE_PICKAXE.get())
+                .add(VerseItems.EMERITE_PICKAXE.get())
+                .add(VerseItems.SCULK_STEEL_PICKAXE.get());
 
         //Axes
         tag(ItemTags.AXES)
                 .add(VerseItems.BOSKALT_AXE.get())
                 .add(VerseItems.GARNET_AXE.get())
                 .add(VerseItems.SAPPHIRE_AXE.get())
-                .add(VerseItems.DRAGONRITE_AXE.get());
+                .add(VerseItems.DRAGONRITE_AXE.get())
+                .add(VerseItems.EMERITE_AXE.get())
+                .add(VerseItems.SCULK_STEEL_AXE.get());
 
         //Hoes
         tag(ItemTags.HOES)
                 .add(VerseItems.BOSKALT_HOE.get())
                 .add(VerseItems.GARNET_HOE.get())
                 .add(VerseItems.SAPPHIRE_HOE.get())
-                .add(VerseItems.DRAGONRITE_HOE.get());
+                .add(VerseItems.DRAGONRITE_HOE.get())
+                .add(VerseItems.EMERITE_HOE.get())
+                .add(VerseItems.SCULK_STEEL_HOE.get());
 
         //Armor
         //Trimmable Armor
@@ -187,7 +198,15 @@ public class VerseItemTagProvider extends ItemTagsProvider {
                 .add(VerseItems.DRAGONRITE_HELMET.get())
                 .add(VerseItems.DRAGONRITE_CHESTPLATE.get())
                 .add(VerseItems.DRAGONRITE_LEGGINGS.get())
-                .add(VerseItems.DRAGONRITE_BOOTS.get());
+                .add(VerseItems.DRAGONRITE_BOOTS.get())
+                .add(VerseItems.EMERITE_HELMET.get())
+                .add(VerseItems.EMERITE_CHESTPLATE.get())
+                .add(VerseItems.EMERITE_LEGGINGS.get())
+                .add(VerseItems.EMERITE_BOOTS.get())
+                .add(VerseItems.SCULK_STEEL_HELMET.get())
+                .add(VerseItems.SCULK_STEEL_CHESTPLATE.get())
+                .add(VerseItems.SCULK_STEEL_LEGGINGS.get())
+                .add(VerseItems.SCULK_STEEL_BOOTS.get());
 
         //Make Armor Enchantable
         tag(ItemTags.ARMOR_ENCHANTABLE)
@@ -206,7 +225,15 @@ public class VerseItemTagProvider extends ItemTagsProvider {
                 .add(VerseItems.DRAGONRITE_HELMET.get())
                 .add(VerseItems.DRAGONRITE_CHESTPLATE.get())
                 .add(VerseItems.DRAGONRITE_LEGGINGS.get())
-                .add(VerseItems.DRAGONRITE_BOOTS.get());
+                .add(VerseItems.DRAGONRITE_BOOTS.get())
+                .add(VerseItems.EMERITE_HELMET.get())
+                .add(VerseItems.EMERITE_CHESTPLATE.get())
+                .add(VerseItems.EMERITE_LEGGINGS.get())
+                .add(VerseItems.EMERITE_BOOTS.get())
+                .add(VerseItems.SCULK_STEEL_HELMET.get())
+                .add(VerseItems.SCULK_STEEL_CHESTPLATE.get())
+                .add(VerseItems.SCULK_STEEL_LEGGINGS.get())
+                .add(VerseItems.SCULK_STEEL_BOOTS.get());
 
 
         //Make Armor Durability Enchantable
@@ -226,6 +253,14 @@ public class VerseItemTagProvider extends ItemTagsProvider {
                 .add(VerseItems.DRAGONRITE_HELMET.get())
                 .add(VerseItems.DRAGONRITE_CHESTPLATE.get())
                 .add(VerseItems.DRAGONRITE_LEGGINGS.get())
-                .add(VerseItems.DRAGONRITE_BOOTS.get());
+                .add(VerseItems.DRAGONRITE_BOOTS.get())
+                .add(VerseItems.EMERITE_HELMET.get())
+                .add(VerseItems.EMERITE_CHESTPLATE.get())
+                .add(VerseItems.EMERITE_LEGGINGS.get())
+                .add(VerseItems.EMERITE_BOOTS.get())
+                .add(VerseItems.SCULK_STEEL_HELMET.get())
+                .add(VerseItems.SCULK_STEEL_CHESTPLATE.get())
+                .add(VerseItems.SCULK_STEEL_LEGGINGS.get())
+                .add(VerseItems.SCULK_STEEL_BOOTS.get());
     }
 }

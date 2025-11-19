@@ -1,15 +1,15 @@
-// 1.21.1	2025-11-14T22:15:27.363871442	Tags for minecraft:item mod id verse
+// 1.21.1	2025-11-18T23:18:02.411391817	Tags for minecraft:item mod id verse
 8c04d7550b0f90236195a0236fb4fb73fc5ef346 data/c/tags/item/gems.json
 7da706d853e40866ce4f49134c65ef909636174d data/c/tags/item/gems/quartz.json
-a43705b00bc65551abbf1956745094675d113476 data/minecraft/tags/item/axes.json
-44f564748f1243c9fcbdae13c218754083f29b2b data/minecraft/tags/item/beacon_payment_items.json
-74a696b78d0bc7b421d615f084d307cf64d25f73 data/minecraft/tags/item/enchantable/armor.json
-74a696b78d0bc7b421d615f084d307cf64d25f73 data/minecraft/tags/item/enchantable/durability.json
-56f0bc040218beb662c4c849e6fd6523c4c420ba data/minecraft/tags/item/hoes.json
-042449ad1f14a7c7feec8e6a3d40ce34dfc80068 data/minecraft/tags/item/pickaxes.json
-beacac70ba4e0e8fd4db93b5a96b7272e94b1598 data/minecraft/tags/item/shovels.json
-dca7c8facf041dbc6ab1933174b58f68ebc08959 data/minecraft/tags/item/swords.json
-1f729533ebe94c39dad2c01e549f36e5e9088317 data/minecraft/tags/item/trimmable_armor.json
+a2d8ae310a794300695f8582f6a3543602ea5c5f data/minecraft/tags/item/axes.json
+03173484d3b54880887b7bb9e1266034f2d2c45d data/minecraft/tags/item/beacon_payment_items.json
+6f907bbb933d741a7e6f7b69f2819794f5ce15ab data/minecraft/tags/item/enchantable/armor.json
+6f907bbb933d741a7e6f7b69f2819794f5ce15ab data/minecraft/tags/item/enchantable/durability.json
+d168120acb602820d5f2e2a287642d1df70a6b51 data/minecraft/tags/item/hoes.json
+f22774cc0fbf051bf8ca05ac8d476dae7dd98da1 data/minecraft/tags/item/pickaxes.json
+03ab2500af504b7bcaf237df89ea13ed08c57224 data/minecraft/tags/item/shovels.json
+6bf9ebfdf3527529d4a89c9e6abfc89154aad6a1 data/minecraft/tags/item/swords.json
+c8e6b44df211484023b6bc94306d1b9a73dccfed data/minecraft/tags/item/trimmable_armor.json
 b9f5a47089cba3930c22c534c09ba7d36f52dc0e data/verse/tags/item/tier_2_axe.json
 e56232d9e8495e1c62e3fa2eb6577edcbd76b262 data/verse/tags/item/tier_2_boots.json
 ecf705262c5b7fbc1ecc1ad9646c50debaf1d9c7 data/verse/tags/item/tier_2_chestplate.json

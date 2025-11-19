@@ -48,6 +48,8 @@ public class VerseCreativeModTabs {
                         output.accept(VerseBlocks.BLOCK_OF_SAPPHIRE);
                         output.accept(VerseBlocks.BLOCK_OF_DRAGONRITE);
                         output.accept(VerseBlocks.BLOCK_OF_EMERITE);
+                        output.accept(VerseBlocks.BLOCK_OF_ECHO_SHARD);
+                        output.accept(VerseBlocks.BLOCK_OF_SCULK_STEEL);
 
                         //Functional Blocks
                         output.accept(VerseBlocks.ALTAR);
@@ -80,6 +82,7 @@ public class VerseCreativeModTabs {
 
                         //Tier 4 Materials
                         output.accept(VerseItems.DRAGONRITE_INGOT);
+                        output.accept(VerseItems.SCULK_STEEL_INGOT);
 
                         //Tier 5 Materials
 
@@ -116,6 +119,10 @@ public class VerseCreativeModTabs {
                         output.accept(VerseItems.DRAGONRITE_PICKAXE);
                         output.accept(VerseItems.DRAGONRITE_AXE);
                         output.accept(VerseItems.DRAGONRITE_HOE);
+                        output.accept(VerseItems.SCULK_STEEL_SHOVEL);
+                        output.accept(VerseItems.SCULK_STEEL_PICKAXE);
+                        output.accept(VerseItems.SCULK_STEEL_AXE);
+                        output.accept(VerseItems.SCULK_STEEL_HOE);
 
                         //Tier 5
 
@@ -132,6 +139,7 @@ public class VerseCreativeModTabs {
 
                         //Tier 4
                         output.accept(VerseItems.DRAGONRITE_SWORD);
+                        output.accept(VerseItems.SCULK_STEEL_SWORD);
 
                         //Tier 5
 
@@ -163,6 +171,10 @@ public class VerseCreativeModTabs {
                         output.accept(VerseItems.DRAGONRITE_CHESTPLATE);
                         output.accept(VerseItems.DRAGONRITE_LEGGINGS);
                         output.accept(VerseItems.DRAGONRITE_BOOTS);
+                        output.accept(VerseItems.SCULK_STEEL_HELMET);
+                        output.accept(VerseItems.SCULK_STEEL_CHESTPLATE);
+                        output.accept(VerseItems.SCULK_STEEL_LEGGINGS);
+                        output.accept(VerseItems.SCULK_STEEL_BOOTS);
 
                         //Tier 5
 
@@ -192,6 +204,7 @@ public class VerseCreativeModTabs {
                         //Smithing Templates
                         output.accept(VerseItems.EMERITE_UPGRADE_SMITHING_TEMPLATE);
                         output.accept(VerseItems.DRAGONRITE_UPGRADE_SMITHING_TEMPLATE);
+                        output.accept(VerseItems.SCULK_STEEL_UPGRADE_SMITHING_TEMPLATE);
 
                         //Enchanted Shards
                         output.accept(VerseItems.ENCHANTED_WEAK_SHARD);
