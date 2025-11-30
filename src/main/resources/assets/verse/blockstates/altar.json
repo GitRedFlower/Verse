@@ -1,19 +1,7 @@
 {
   "variants": {
-    "facing=north": {
-      "model": "verse:block/altar"
-    },
-    "facing=south": {
-      "model": "verse:block/altar",
-      "y": 180
-    },
-    "facing=east": {
-      "model": "verse:block/altar",
-      "y": 90
-    },
-    "facing=west": {
-      "model": "verse:block/altar",
-      "y": 270
+    "" : {
+      "model" : "verse:block/altar"
     }
   }
 }
