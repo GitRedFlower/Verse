@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_boskalt_ore": {
+    "has_deepslate_boskalt_ore": {
       "conditions": {
         "items": [
           {
-            "items": "verse:boskalt_ore"
+            "items": "verse:deepslate_boskalt_ore"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:boskalt_ingot_from_blasting_boskalt_ore"
+        "recipe": "verse:boskalt_ingot_from_blasting_deepslate_boskalt_ore"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_boskalt_ore"
+      "has_deepslate_boskalt_ore"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:boskalt_ingot_from_blasting_boskalt_ore"
+      "verse:boskalt_ingot_from_blasting_deepslate_boskalt_ore"
     ]
   }
 }

@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_deepslate_sapphire_ore": {
+    "has_sapphire_ore": {
       "conditions": {
         "items": [
           {
-            "items": "verse:deepslate_sapphire_ore"
+            "items": "verse:sapphire_ore"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:sapphire_from_blasting_deepslate_sapphire_ore"
+        "recipe": "verse:sapphirefrom_smelting_sapphire_ore"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_deepslate_sapphire_ore"
+      "has_sapphire_ore"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:sapphire_from_blasting_deepslate_sapphire_ore"
+      "verse:sapphirefrom_smelting_sapphire_ore"
     ]
   }
 }

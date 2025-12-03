@@ -7,7 +7,7 @@ import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
@@ -732,7 +732,7 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
                 .save(recipeOutput);
     }
 
-    //Custom Recipes
+    //Custom Recipe Methods / override minecraft namespace for furnaces and blast furnaces
     //Smithing Recipe without tag for input item
     protected static void customSmithing(RecipeOutput recipeOutput, Item inputItem, RecipeCategory category, ItemLike resultItem, Item template, Item upgradeMaterial) {
         SmithingTransformRecipeBuilder.smithing(
@@ -751,5 +751,21 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
                 )
                 .unlocks("has_netherite", has(Items.NETHERITE_INGOT))
                 .save(recipeOutput, VERSE.MODID + ":" + getItemName(resultItem));
+    }
+
+    protected static void oreSmelting(RecipeOutput recipeOutput, List<ItemLike> ingredients, RecipeCategory category, ItemLike result, float experience, int cookingTime, String group) {
+        oreCooking(recipeOutput, RecipeSerializer.SMELTING_RECIPE, SmeltingRecipe::new, ingredients, category, result, experience, cookingTime, group, "from_smelting");
+    }
+
+    protected static void oreBlasting(RecipeOutput recipeOutput, List<ItemLike> ingredients, RecipeCategory category, ItemLike result, float experience, int cookingTime, String group) {
+        oreCooking(recipeOutput, RecipeSerializer.BLASTING_RECIPE, BlastingRecipe::new, ingredients, category, result, experience, cookingTime, group, "_from_blasting");
+    }
+
+    //Changes the minecraft namespace to the verse namespace
+    protected static <T extends AbstractCookingRecipe> void oreCooking(RecipeOutput recipeOutput, RecipeSerializer<T> pCookingSerializer, AbstractCookingRecipe.Factory<T> factory, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup, String pRecipeName) {
+        for(ItemLike itemlike : pIngredients) {
+            SimpleCookingRecipeBuilder.generic(Ingredient.of(itemlike), pCategory, pResult, pExperience, pCookingTime, pCookingSerializer, factory).group(pGroup).unlockedBy(getHasName(itemlike), has(itemlike))
+                    .save(recipeOutput, VERSE.MODID + ":" + getItemName(pResult) + pRecipeName + "_" + getItemName(itemlike));
+        }
     }
 }

@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_deepslate_amber_ore": {
+    "has_deepslate_quartz_ore": {
       "conditions": {
         "items": [
           {
-            "items": "verse:deepslate_amber_ore"
+            "items": "verse:deepslate_quartz_ore"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:amber_from_blasting_deepslate_amber_ore"
+        "recipe": "verse:quartzfrom_smelting_deepslate_quartz_ore"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_deepslate_amber_ore"
+      "has_deepslate_quartz_ore"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:amber_from_blasting_deepslate_amber_ore"
+      "verse:quartzfrom_smelting_deepslate_quartz_ore"
     ]
   }
 }

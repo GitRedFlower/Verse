@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_quartz_ore": {
+    "has_raw_boskalt": {
       "conditions": {
         "items": [
           {
-            "items": "verse:quartz_ore"
+            "items": "verse:raw_boskalt"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "minecraft:quartz_from_blasting_quartz_ore"
+        "recipe": "verse:boskalt_ingot_from_blasting_raw_boskalt"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_quartz_ore"
+      "has_raw_boskalt"
     ]
   ],
   "rewards": {
     "recipes": [
-      "minecraft:quartz_from_blasting_quartz_ore"
+      "verse:boskalt_ingot_from_blasting_raw_boskalt"
     ]
   }
 }
