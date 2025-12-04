@@ -101,6 +101,14 @@ public class VerseBlockTagProvider extends BlockTagsProvider {
                 .addTag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
                 .remove(VerseTags.Blocks.NEEDS_GARNET_TOOL);
 
+        //Sapphire Setup
+        tag(VerseTags.Blocks.NEEDS_SAPPHIRE_TOOL)
+                .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
+
+        tag(VerseTags.Blocks.INCORRECT_FOR_SAPPHIRE_TOOL)
+                .addTag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
+                .remove(VerseTags.Blocks.NEEDS_SAPPHIRE_TOOL);
+
         //Dragonrite Setup
         tag(VerseTags.Blocks.NEEDS_DRAGONRITE_TOOL)
                 .addTag(BlockTags.NEEDS_DIAMOND_TOOL);
