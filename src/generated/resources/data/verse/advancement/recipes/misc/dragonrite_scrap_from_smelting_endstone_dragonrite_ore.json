@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_deepslate_boskalt_ore": {
+    "has_endstone_dragonrite_ore": {
       "conditions": {
         "items": [
           {
-            "items": "verse:deepslate_boskalt_ore"
+            "items": "verse:endstone_dragonrite_ore"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "verse:boskalt_ingotfrom_smelting_deepslate_boskalt_ore"
+        "recipe": "verse:dragonrite_scrap_from_smelting_endstone_dragonrite_ore"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_deepslate_boskalt_ore"
+      "has_endstone_dragonrite_ore"
     ]
   ],
   "rewards": {
     "recipes": [
-      "verse:boskalt_ingotfrom_smelting_deepslate_boskalt_ore"
+      "verse:dragonrite_scrap_from_smelting_endstone_dragonrite_ore"
     ]
   }
 }

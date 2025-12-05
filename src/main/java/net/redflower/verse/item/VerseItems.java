@@ -1,5 +1,7 @@
 package net.redflower.verse.item;
 
+import net.minecraft.ChatFormatting;
+import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.*;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -9,9 +11,12 @@ import net.redflower.verse.item.custom.VerseArmorMaterials;
 import net.redflower.verse.item.custom.VerseFoodProperties;
 import net.redflower.verse.item.custom.VerseFuelItem;
 import net.redflower.verse.item.custom.VerseToolTiers;
+import net.redflower.verse.item.custom.itemType.CustomSmithingTemplates;
 import net.redflower.verse.item.custom.itemType.EnchantedApple;
 import net.redflower.verse.item.custom.itemType.EnchantedScrolls;
 import net.redflower.verse.item.custom.itemType.EnchantedShards;
+
+import java.util.List;
 
 public class VerseItems {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(VERSE.MODID);
@@ -347,14 +352,32 @@ public class VerseItems {
             () -> new EnchantedScrolls(new Item.Properties()));
 
     //Upgrade Templates
-    public static final DeferredItem<Item> DRAGONRITE_UPGRADE_SMITHING_TEMPLATE = ITEMS.register("dragonrite_upgrade_smithing_template",
-            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DRAGONRITE_UPGRADE_SMITHING_TEMPLATE = ITEMS.register("dragonrite_upgrade_smithing_template", () -> new CustomSmithingTemplates(
+            Component.translatable("item." + VERSE.MODID + ".smithing_template.dragonrite_upgrade.applies_to").withStyle(ChatFormatting.BLUE),
+            Component.translatable("item." + VERSE.MODID + ".smithing_template.dragonrite_upgrade.ingredients").withStyle(ChatFormatting.BLUE),
+            Component.translatable("item." + VERSE.MODID + ".smithing_template.dragonrite_upgrade.name").withStyle(ChatFormatting.GRAY),
+            Component.translatable("item." + VERSE.MODID + ".smithing_template.dragonrite_upgrade.base_slot_description"),
+            Component.translatable("item." + VERSE.MODID + ".smithing_template.dragonrite_upgrade.additions_slot_description"),
+            CustomSmithingTemplates.createTrimmableMaterialIconList(), List.of(VERSE.location("item/empty_slot_ingot"))
+    ));
 
-    public static final DeferredItem<Item> EMERITE_UPGRADE_SMITHING_TEMPLATE = ITEMS.register("emerite_upgrade_smithing_template",
-            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> EMERITE_UPGRADE_SMITHING_TEMPLATE = ITEMS.register("emerite_upgrade_smithing_template", () -> new CustomSmithingTemplates(
+            Component.translatable("item." + VERSE.MODID + ".smithing_template.emerite_upgrade.applies_to").withStyle(ChatFormatting.BLUE),
+            Component.translatable("item." + VERSE.MODID + ".smithing_template.emerite_upgrade.ingredients").withStyle(ChatFormatting.BLUE),
+            Component.translatable("item." + VERSE.MODID + ".smithing_template.emerite_upgrade.name").withStyle(ChatFormatting.GRAY),
+            Component.translatable("item." + VERSE.MODID + ".smithing_template.emerite_upgrade.base_slot_description"),
+            Component.translatable("item." + VERSE.MODID + ".smithing_template.emerite_upgrade.additions_slot_description"),
+            CustomSmithingTemplates.createTrimmableMaterialIconList(), List.of(VERSE.location("item/empty_slot_ingot"))
+    ));
 
-    public static final DeferredItem<Item> SCULK_STEEL_UPGRADE_SMITHING_TEMPLATE = ITEMS.register("sculk_steel_upgrade_smithing_template",
-            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> SCULK_STEEL_UPGRADE_SMITHING_TEMPLATE = ITEMS.register("sculk_steel_upgrade_smithing_template", () -> new CustomSmithingTemplates(
+            Component.translatable("item." + VERSE.MODID + ".smithing_template.sculk_steel_upgrade.applies_to").withStyle(ChatFormatting.BLUE),
+            Component.translatable("item." + VERSE.MODID + ".smithing_template.sculk_steel_upgrade.ingredients").withStyle(ChatFormatting.BLUE),
+            Component.translatable("item." + VERSE.MODID + ".smithing_template.sculk_steel_upgrade.name").withStyle(ChatFormatting.GRAY),
+            Component.translatable("item." + VERSE.MODID + ".smithing_template.sculk_steel_upgrade.base_slot_description"),
+            Component.translatable("item." + VERSE.MODID + ".smithing_template.sculk_steel_upgrade.additions_slot_description"),
+            CustomSmithingTemplates.createTrimmableMaterialIconList(), List.of(VERSE.location("item/empty_slot_ingot"))
+    ));
 
     //Registers The Items. DO NOT TOUCH!!!
     public static void register(IEventBus eventBus) {

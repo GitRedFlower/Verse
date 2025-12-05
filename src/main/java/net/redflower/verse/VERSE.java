@@ -1,5 +1,6 @@
 package net.redflower.verse;
 
+import net.minecraft.resources.ResourceLocation;
 import net.redflower.verse.block.VerseBlocks;
 import net.redflower.verse.item.VerseItems;
 import org.slf4j.Logger;
@@ -45,6 +46,10 @@ public class VERSE {
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
 
+    }
+
+    public static ResourceLocation location(String path) {
+        return ResourceLocation.fromNamespaceAndPath(MODID, path);
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

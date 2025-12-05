@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "verse:quartzfrom_smelting_quartz_ore"
+        "recipe": "verse:quartz_from_smelting_quartz_ore"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "verse:quartzfrom_smelting_quartz_ore"
+      "verse:quartz_from_smelting_quartz_ore"
     ]
   }
 }

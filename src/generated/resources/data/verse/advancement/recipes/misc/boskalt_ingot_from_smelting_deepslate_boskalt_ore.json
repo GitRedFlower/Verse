@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_deepslate_quartz_ore": {
+    "has_deepslate_boskalt_ore": {
       "conditions": {
         "items": [
           {
-            "items": "verse:deepslate_quartz_ore"
+            "items": "verse:deepslate_boskalt_ore"
           }
         ]
       },
@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "verse:quartzfrom_smelting_deepslate_quartz_ore"
+        "recipe": "verse:boskalt_ingot_from_smelting_deepslate_boskalt_ore"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -21,12 +21,12 @@
   "requirements": [
     [
       "has_the_recipe",
-      "has_deepslate_quartz_ore"
+      "has_deepslate_boskalt_ore"
     ]
   ],
   "rewards": {
     "recipes": [
-      "verse:quartzfrom_smelting_deepslate_quartz_ore"
+      "verse:boskalt_ingot_from_smelting_deepslate_boskalt_ore"
     ]
   }
 }

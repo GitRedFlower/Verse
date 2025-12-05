@@ -133,6 +133,24 @@
   "item.verse.emerite_upgrade_smithing_template" : "Smithing Template",
   "item.verse.sculk_steel_upgrade_smithing_template" : "Smithing Template",
 
+  "item.verse.smithing_template.dragonrite_upgrade.ingredients" : "Dragonrite Ingot",
+  "item.verse.smithing_template.dragonrite_upgrade.applies_to" : "Netherite or Emerite Equipment",
+  "item.verse.smithing_template.dragonrite_upgrade.base_slot_description" : "Add Netherite or Emerite armor, weapon or tool",
+  "item.verse.smithing_template.dragonrite_upgrade.additions_slot_description" : "Add Dragonrite Ingot",
+  "item.verse.smithing_template.dragonrite_upgrade.name" : "Dragonrite Upgrade",
+
+  "item.verse.smithing_template.emerite_upgrade.ingredients" : "Emerite Ingot",
+  "item.verse.smithing_template.emerite_upgrade.applies_to" : "Diamond, Sapphire or Garnet Equipment",
+  "item.verse.smithing_template.emerite_upgrade.base_slot_description" : "Add Diamond, Sapphire or Garnet armor, weapon or tool",
+  "item.verse.smithing_template.emerite_upgrade.additions_slot_description" : "Add Emerite Ingot",
+  "item.verse.smithing_template.emerite_upgrade.name" : "Emerite Upgrade",
+
+  "item.verse.smithing_template.sculk_steel_upgrade.ingredients" : "Sculk Steel Ingot",
+  "item.verse.smithing_template.sculk_steel_upgrade.applies_to" : "Netherite or Emerite Equipment",
+  "item.verse.smithing_template.sculk_steel_upgrade.base_slot_description" : "Add Netherite or Emerite armor, weapon or tool",
+  "item.verse.smithing_template.sculk_steel_upgrade.additions_slot_description" : "Add Sculk Steel Ingot",
+  "item.verse.smithing_template.sculk_steel_upgrade.name" : "Sculk Steel Upgrade",
+
 
   "item.verse.enchanted_weak_shard" : "Weak Enchanted Shard",
 
