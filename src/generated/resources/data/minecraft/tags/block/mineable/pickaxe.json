@@ -20,6 +20,22 @@
     "verse:block_of_dragonrite",
     "verse:block_of_emerite",
     "verse:block_of_echo_shard",
-    "verse:block_of_sculk_steel"
+    "verse:block_of_sculk_steel",
+    "verse:compressed_coal_ore",
+    "verse:compressed_deepslate_coal_ore",
+    "verse:compressed_iron_ore",
+    "verse:compressed_deepslate_iron_ore",
+    "verse:compressed_copper_ore",
+    "verse:compressed_deepslate_copper_ore",
+    "verse:compressed_gold_ore",
+    "verse:compressed_deepslate_gold_ore",
+    "verse:compressed_lapis_ore",
+    "verse:compressed_deepslate_lapis_ore",
+    "verse:compressed_redstone_ore",
+    "verse:compressed_deepslate_redstone_ore",
+    "verse:compressed_emerald_ore",
+    "verse:compressed_deepslate_emerald_ore",
+    "verse:compressed_diamond_ore",
+    "verse:compressed_deepslate_diamond_ore"
   ]
 }

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "blocks",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "diamond",
+  "ingredient": {
+    "item": "verse:compressed_deepslate_diamond_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:diamond_block"
+  }
+}

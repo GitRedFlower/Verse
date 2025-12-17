@@ -16,6 +16,7 @@ public class VerseBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         //Overworld Ores
+        //Regular Ores
         blockWIthItem(VerseBlocks.BOSKALT_ORE);
         blockWIthItem(VerseBlocks.DEEPSLATE_BOSKALT_ORE);
         blockWIthItem(VerseBlocks.GARNET_ORE);
@@ -26,6 +27,24 @@ public class VerseBlockStateProvider extends BlockStateProvider {
         blockWIthItem(VerseBlocks.DEEPSLATE_QUARTZ_ORE);
         blockWIthItem(VerseBlocks.AMBER_ORE);
         blockWIthItem(VerseBlocks.DEEPSLATE_AMBER_ORE);
+
+        //Compressed Ores
+        blockWIthItem(VerseBlocks.COMPRESSED_COAL_ORE);
+        blockWIthItem(VerseBlocks.COMPRESSED_DEEPSLATE_COAL_ORE);
+        blockWIthItem(VerseBlocks.COMPRESSED_COPPER_ORE);
+        blockWIthItem(VerseBlocks.COMPRESSED_DEEPSLATE_COPPER_ORE);
+        blockWIthItem(VerseBlocks.COMPRESSED_IRON_ORE);
+        blockWIthItem(VerseBlocks.COMPRESSED_DEEPSLATE_IRON_ORE);
+        blockWIthItem(VerseBlocks.COMPRESSED_GOLD_ORE);
+        blockWIthItem(VerseBlocks.COMPRESSED_DEEPSLATE_GOLD_ORE);
+        blockWIthItem(VerseBlocks.COMPRESSED_LAPIS_ORE);
+        blockWIthItem(VerseBlocks.COMPRESSED_DEEPSLATE_LAPIS_ORE);
+        blockWIthItem(VerseBlocks.COMPRESSED_REDSTONE_ORE);
+        blockWIthItem(VerseBlocks.COMPRESSED_DEEPSLATE_REDSTONE_ORE);
+        blockWIthItem(VerseBlocks.COMPRESSED_EMERALD_ORE);
+        blockWIthItem(VerseBlocks.COMPRESSED_DEEPSLATE_EMERALD_ORE);
+        blockWIthItem(VerseBlocks.COMPRESSED_DIAMOND_ORE);
+        blockWIthItem(VerseBlocks.COMPRESSED_DEEPSLATE_DIAMOND_ORE);
 
         //Nether Ores
 

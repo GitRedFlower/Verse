@@ -48,6 +48,55 @@ public class VerseBlocks {
                     .strength(3f)
                     .sound(SoundType.STONE)));
 
+    //Compressed Stone Ores
+    public static final DeferredBlock<Block> COMPRESSED_COAL_ORE = registerBlock("compressed_coal_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3f)
+                    .sound(SoundType.STONE)));
+
+    public static final DeferredBlock<Block> COMPRESSED_IRON_ORE = registerBlock("compressed_iron_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3f)
+                    .sound(SoundType.STONE)));
+
+    public static final DeferredBlock<Block> COMPRESSED_COPPER_ORE = registerBlock("compressed_copper_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3f)
+                    .sound(SoundType.STONE)));
+
+    public static final DeferredBlock<Block> COMPRESSED_GOLD_ORE = registerBlock("compressed_gold_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3f)
+                    .sound(SoundType.STONE)));
+
+    public static final DeferredBlock<Block> COMPRESSED_REDSTONE_ORE = registerBlock("compressed_redstone_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3f)
+                    .sound(SoundType.STONE)));
+
+    public static final DeferredBlock<Block> COMPRESSED_EMERALD_ORE = registerBlock("compressed_emerald_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3f)
+                    .sound(SoundType.STONE)));
+
+    public static final DeferredBlock<Block> COMPRESSED_LAPIS_ORE = registerBlock("compressed_lapis_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3f)
+                    .sound(SoundType.STONE)));
+
+    public static final DeferredBlock<Block> COMPRESSED_DIAMOND_ORE = registerBlock("compressed_diamond_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3f)
+                    .sound(SoundType.STONE)));
+
     //Deepslate Ores
     public static final DeferredBlock<Block> DEEPSLATE_BOSKALT_ORE = registerBlock("deepslate_boskalt_ore",
             () -> new Block(BlockBehaviour.Properties.of()
@@ -74,6 +123,55 @@ public class VerseBlocks {
                     .sound(SoundType.DEEPSLATE)));
 
     public static final DeferredBlock<Block> DEEPSLATE_AMBER_ORE = registerBlock("deepslate_amber_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(4.5f)
+                    .sound(SoundType.DEEPSLATE)));
+
+    //Compressed Deepslate Ores
+    public static final DeferredBlock<Block> COMPRESSED_DEEPSLATE_COAL_ORE = registerBlock("compressed_deepslate_coal_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(4.5f)
+                    .sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> COMPRESSED_DEEPSLATE_IRON_ORE = registerBlock("compressed_deepslate_iron_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(4.5f)
+                    .sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> COMPRESSED_DEEPSLATE_COPPER_ORE = registerBlock("compressed_deepslate_copper_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(4.5f)
+                    .sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> COMPRESSED_DEEPSLATE_GOLD_ORE = registerBlock("compressed_deepslate_gold_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(4.5f)
+                    .sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> COMPRESSED_DEEPSLATE_REDSTONE_ORE = registerBlock("compressed_deepslate_redstone_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(4.5f)
+                    .sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> COMPRESSED_DEEPSLATE_EMERALD_ORE = registerBlock("compressed_deepslate_emerald_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(4.5f)
+                    .sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> COMPRESSED_DEEPSLATE_LAPIS_ORE = registerBlock("compressed_deepslate_lapis_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(4.5f)
+                    .sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> COMPRESSED_DEEPSLATE_DIAMOND_ORE = registerBlock("compressed_deepslate_diamond_ore",
             () -> new Block(BlockBehaviour.Properties.of()
                     .requiresCorrectToolForDrops()
                     .strength(4.5f)

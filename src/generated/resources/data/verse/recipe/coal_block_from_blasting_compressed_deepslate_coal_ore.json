@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "blocks",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "coal",
+  "ingredient": {
+    "item": "verse:compressed_deepslate_coal_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "minecraft:coal_block"
+  }
+}

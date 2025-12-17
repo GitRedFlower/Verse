@@ -42,7 +42,23 @@ public class VerseBlockTagProvider extends BlockTagsProvider {
                 .add(VerseBlocks.BLOCK_OF_DRAGONRITE.get())
                 .add(VerseBlocks.BLOCK_OF_EMERITE.get())
                 .add(VerseBlocks.BLOCK_OF_ECHO_SHARD.get())
-                .add(VerseBlocks.BLOCK_OF_SCULK_STEEL.get());
+                .add(VerseBlocks.BLOCK_OF_SCULK_STEEL.get())
+                .add(VerseBlocks.COMPRESSED_COAL_ORE.get())
+                .add(VerseBlocks.COMPRESSED_DEEPSLATE_COAL_ORE.get())
+                .add(VerseBlocks.COMPRESSED_IRON_ORE.get())
+                .add(VerseBlocks.COMPRESSED_DEEPSLATE_IRON_ORE.get())
+                .add(VerseBlocks.COMPRESSED_COPPER_ORE.get())
+                .add(VerseBlocks.COMPRESSED_DEEPSLATE_COPPER_ORE.get())
+                .add(VerseBlocks.COMPRESSED_GOLD_ORE.get())
+                .add(VerseBlocks.COMPRESSED_DEEPSLATE_GOLD_ORE.get())
+                .add(VerseBlocks.COMPRESSED_LAPIS_ORE.get())
+                .add(VerseBlocks.COMPRESSED_DEEPSLATE_LAPIS_ORE.get())
+                .add(VerseBlocks.COMPRESSED_REDSTONE_ORE.get())
+                .add(VerseBlocks.COMPRESSED_DEEPSLATE_REDSTONE_ORE.get())
+                .add(VerseBlocks.COMPRESSED_EMERALD_ORE.get())
+                .add(VerseBlocks.COMPRESSED_DEEPSLATE_EMERALD_ORE.get())
+                .add(VerseBlocks.COMPRESSED_DIAMOND_ORE.get())
+                .add(VerseBlocks.COMPRESSED_DEEPSLATE_DIAMOND_ORE.get());
 
         //Stone Level
         tag(BlockTags.NEEDS_STONE_TOOL)

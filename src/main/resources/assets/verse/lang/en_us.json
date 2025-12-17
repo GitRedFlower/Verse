@@ -10,6 +10,23 @@
   "block.verse.amber_ore" : "Amber Ore",
   "block.verse.deepslate_amber_ore" : "Deepslate Amber Ore",
 
+  "block.verse.compressed_coal_ore" : "Compressed Coal Ore",
+  "block.verse.compressed_deepslate_coal_ore" : "Compressed Deepslate Coal Ore",
+  "block.verse.compressed_iron_ore" : "Compressed Iron Ore",
+  "block.verse.compressed_deepslate_iron_ore" : "Compressed Deepslate Iron Ore",
+  "block.verse.compressed_copper_ore" : "Compressed Copper Ore",
+  "block.verse.compressed_deepslate_copper_ore" : "Compressed Deepslate Copper Ore",
+  "block.verse.compressed_gold_ore" : "Compressed Gold Ore",
+  "block.verse.compressed_deepslate_gold_ore" : "Compressed Deepslate Gold Ore",
+  "block.verse.compressed_lapis_ore" : "Compressed Lapis Ore",
+  "block.verse.compressed_deepslate_lapis_ore" : "Compressed Deepslate Lapis Ore",
+  "block.verse.compressed_redstone_ore" : "Compressed Redstone Ore",
+  "block.verse.compressed_deepslate_redstone_ore" : "Compressed Deepslate Redstone Ore",
+  "block.verse.compressed_emerald_ore" : "Compressed Emerald Ore",
+  "block.verse.compressed_deepslate_emerald_ore" : "Compressed Deepslate Emerald Ore",
+  "block.verse.compressed_diamond_ore" : "Compressed Diamond Ore",
+  "block.verse.compressed_deepslate_diamond_ore" : "Compressed Deepslate Diamond Ore",
+
   "block.verse.endstone_dragonrite_ore" : "Endstone Dragonrite Ore",
 
   "block.verse.block_of_raw_boskalt" : "Block of Raw Boskalt",

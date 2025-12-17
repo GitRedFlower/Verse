@@ -22,6 +22,7 @@ public class VerseCreativeModTabs {
                     .title(Component.translatable("creativetab.verse.blocks"))
                     .displayItems((itemDisplayParameters, output) -> {
                         //Overworld Ores
+                        //Regular Ores
                         output.accept(VerseBlocks.BOSKALT_ORE);
                         output.accept(VerseBlocks.DEEPSLATE_BOSKALT_ORE);
                         output.accept(VerseBlocks.QUARTZ_ORE);
@@ -32,6 +33,24 @@ public class VerseCreativeModTabs {
                         output.accept(VerseBlocks.DEEPSLATE_GARNET_ORE);
                         output.accept(VerseBlocks.SAPPHIRE_ORE);
                         output.accept(VerseBlocks.DEEPSLATE_SAPPHIRE_ORE);
+
+                        //Compressed Ores
+                        output.accept(VerseBlocks.COMPRESSED_COAL_ORE);
+                        output.accept(VerseBlocks.COMPRESSED_DEEPSLATE_COAL_ORE);
+                        output.accept(VerseBlocks.COMPRESSED_IRON_ORE);
+                        output.accept(VerseBlocks.COMPRESSED_DEEPSLATE_IRON_ORE);
+                        output.accept(VerseBlocks.COMPRESSED_COPPER_ORE);
+                        output.accept(VerseBlocks.COMPRESSED_DEEPSLATE_COPPER_ORE);
+                        output.accept(VerseBlocks.COMPRESSED_GOLD_ORE);
+                        output.accept(VerseBlocks.COMPRESSED_DEEPSLATE_GOLD_ORE);
+                        output.accept(VerseBlocks.COMPRESSED_REDSTONE_ORE);
+                        output.accept(VerseBlocks.COMPRESSED_DEEPSLATE_REDSTONE_ORE);
+                        output.accept(VerseBlocks.COMPRESSED_EMERALD_ORE);
+                        output.accept(VerseBlocks.COMPRESSED_DEEPSLATE_EMERALD_ORE);
+                        output.accept(VerseBlocks.COMPRESSED_LAPIS_ORE);
+                        output.accept(VerseBlocks.COMPRESSED_DEEPSLATE_LAPIS_ORE);
+                        output.accept(VerseBlocks.COMPRESSED_DIAMOND_ORE);
+                        output.accept(VerseBlocks.COMPRESSED_DEEPSLATE_DIAMOND_ORE);
 
                         //Nether Ores
 

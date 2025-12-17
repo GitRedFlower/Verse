@@ -6,6 +6,7 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.data.loot.BlockLootSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
@@ -42,10 +43,45 @@ public class VerseBlockLootTableProvider extends BlockLootSubProvider {
 
         //Ore Drops
         //Multiple Drops
+        //Regular Ores
         add(VerseBlocks.BOSKALT_ORE.get(),
                block -> createMultipleOreDrops(VerseBlocks.BOSKALT_ORE.get(), VerseItems.RAW_BOSKALT.get(), 2, 5));
         add(VerseBlocks.DEEPSLATE_BOSKALT_ORE.get(),
                 block -> createMultipleOreDrops(VerseBlocks.DEEPSLATE_BOSKALT_ORE.get(), VerseItems.RAW_BOSKALT.get(), 2, 5));
+
+        //Compressed Ores
+        add(VerseBlocks.COMPRESSED_COAL_ORE.get(),
+                block -> createMultipleOreDrops(VerseBlocks.COMPRESSED_COAL_ORE.get(), Items.COAL,4,7));
+        add(VerseBlocks.COMPRESSED_DEEPSLATE_COAL_ORE.get(),
+                block -> createMultipleOreDrops(VerseBlocks.COMPRESSED_DEEPSLATE_COAL_ORE.get(), Items.COAL,4,7));
+        add(VerseBlocks.COMPRESSED_IRON_ORE.get(),
+                block -> createMultipleOreDrops(VerseBlocks.COMPRESSED_IRON_ORE.get(), Items.RAW_IRON,4,7));
+        add(VerseBlocks.COMPRESSED_DEEPSLATE_IRON_ORE.get(),
+                block -> createMultipleOreDrops(VerseBlocks.COMPRESSED_DEEPSLATE_IRON_ORE.get(), Items.RAW_IRON,4,7));
+        add(VerseBlocks.COMPRESSED_COPPER_ORE.get(),
+                block -> createMultipleOreDrops(VerseBlocks.COMPRESSED_COPPER_ORE.get(), Items.RAW_COPPER,4,7));
+        add(VerseBlocks.COMPRESSED_DEEPSLATE_COPPER_ORE.get(),
+                block -> createMultipleOreDrops(VerseBlocks.COMPRESSED_DEEPSLATE_COPPER_ORE.get(), Items.RAW_COPPER,4,7));
+        add(VerseBlocks.COMPRESSED_GOLD_ORE.get(),
+                block -> createMultipleOreDrops(VerseBlocks.COMPRESSED_GOLD_ORE.get(), Items.RAW_GOLD,4,7));
+        add(VerseBlocks.COMPRESSED_DEEPSLATE_GOLD_ORE.get(),
+                block -> createMultipleOreDrops(VerseBlocks.COMPRESSED_DEEPSLATE_GOLD_ORE.get(), Items.RAW_GOLD,4,7));
+        add(VerseBlocks.COMPRESSED_REDSTONE_ORE.get(),
+                block -> createMultipleOreDrops(VerseBlocks.COMPRESSED_REDSTONE_ORE.get(), Items.REDSTONE,4,7));
+        add(VerseBlocks.COMPRESSED_DEEPSLATE_REDSTONE_ORE.get(),
+                block -> createMultipleOreDrops(VerseBlocks.COMPRESSED_DEEPSLATE_REDSTONE_ORE.get(), Items.REDSTONE,4,7));
+        add(VerseBlocks.COMPRESSED_EMERALD_ORE.get(),
+                block -> createMultipleOreDrops(VerseBlocks.COMPRESSED_EMERALD_ORE.get(), Items.EMERALD,4,7));
+        add(VerseBlocks.COMPRESSED_DEEPSLATE_EMERALD_ORE.get(),
+                block -> createMultipleOreDrops(VerseBlocks.COMPRESSED_DEEPSLATE_EMERALD_ORE.get(), Items.EMERALD,4,7));
+        add(VerseBlocks.COMPRESSED_LAPIS_ORE.get(),
+                block -> createMultipleOreDrops(VerseBlocks.COMPRESSED_LAPIS_ORE.get(), Items.LAPIS_LAZULI,4,7));
+        add(VerseBlocks.COMPRESSED_DEEPSLATE_LAPIS_ORE.get(),
+                block -> createMultipleOreDrops(VerseBlocks.COMPRESSED_DEEPSLATE_LAPIS_ORE.get(), Items.LAPIS_LAZULI,4,7));
+        add(VerseBlocks.COMPRESSED_DIAMOND_ORE.get(),
+                block -> createMultipleOreDrops(VerseBlocks.COMPRESSED_DIAMOND_ORE.get(), Items.DIAMOND,4,7));
+        add(VerseBlocks.COMPRESSED_DEEPSLATE_DIAMOND_ORE.get(),
+                block -> createMultipleOreDrops(VerseBlocks.COMPRESSED_DEEPSLATE_DIAMOND_ORE.get(), Items.DIAMOND,4,7));
 
         //Single Drops
         add(VerseBlocks.GARNET_ORE.get(),
