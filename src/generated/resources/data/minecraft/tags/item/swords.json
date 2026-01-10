@@ -14,6 +14,15 @@
     "verse:netherite_broadsword",
     "verse:dragonrite_broadsword",
     "verse:emerite_broadsword",
-    "verse:sculk_steel_broadsword"
+    "verse:sculk_steel_broadsword",
+    "verse:iron_knife",
+    "verse:boskalt_knife",
+    "verse:garnet_knife",
+    "verse:sapphire_knife",
+    "verse:diamond_knife",
+    "verse:netherite_knife",
+    "verse:dragonrite_knife",
+    "verse:emerite_knife",
+    "verse:sculk_steel_knife"
   ]
 }

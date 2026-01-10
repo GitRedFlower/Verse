@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "verse:boskalt_ingot"
+    },
+    "B": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "   ",
+    " A ",
+    "B  "
+  ],
+  "result": {
+    "count": 1,
+    "id": "verse:boskalt_knife"
+  }
+}

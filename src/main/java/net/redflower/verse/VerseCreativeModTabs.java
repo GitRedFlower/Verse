@@ -174,6 +174,24 @@ public class VerseCreativeModTabs {
                         output.accept(VerseItems.DRAGONRITE_BROADSWORD);
                         output.accept(VerseItems.SCULK_STEEL_BROADSWORD);
 
+                        //Broadswords
+                        //Tier 1
+                        output.accept(VerseItems.IRON_KNIFE);
+                        output.accept(VerseItems.BOSKALT_KNIFE);
+
+                        //Tier 2
+                        output.accept(VerseItems.DIAMOND_KNIFE);
+                        output.accept(VerseItems.SAPPHIRE_KNIFE);
+                        output.accept(VerseItems.GARNET_KNIFE);
+
+                        //Tier 3
+                        output.accept(VerseItems.NETHERITE_KNIFE);
+                        output.accept(VerseItems.EMERITE_KNIFE);
+
+                        //Tier 4
+                        output.accept(VerseItems.DRAGONRITE_KNIFE);
+                        output.accept(VerseItems.SCULK_STEEL_KNIFE);
+
                         //Armor
                         //Tier 1
                         output.accept(VerseItems.BOSKALT_HELMET);

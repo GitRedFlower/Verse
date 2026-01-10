@@ -159,7 +159,16 @@ public class VerseItemTagProvider extends ItemTagsProvider {
                 .add(VerseItems.NETHERITE_BROADSWORD.get())
                 .add(VerseItems.DRAGONRITE_BROADSWORD.get())
                 .add(VerseItems.EMERITE_BROADSWORD.get())
-                .add(VerseItems.SCULK_STEEL_BROADSWORD.get());
+                .add(VerseItems.SCULK_STEEL_BROADSWORD.get())
+                .add(VerseItems.IRON_KNIFE.get())
+                .add(VerseItems.BOSKALT_KNIFE.get())
+                .add(VerseItems.GARNET_KNIFE.get())
+                .add(VerseItems.SAPPHIRE_KNIFE.get())
+                .add(VerseItems.DIAMOND_KNIFE.get())
+                .add(VerseItems.NETHERITE_KNIFE.get())
+                .add(VerseItems.DRAGONRITE_KNIFE.get())
+                .add(VerseItems.EMERITE_KNIFE.get())
+                .add(VerseItems.SCULK_STEEL_KNIFE.get());
 
 
         //Tools

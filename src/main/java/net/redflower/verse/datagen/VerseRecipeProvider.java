@@ -413,6 +413,52 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
                 .unlockedBy("has_block_of_sapphire", has(VerseBlocks.BLOCK_OF_SAPPHIRE))
                 .save(recipeOutput);
 
+        //Knifes
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.IRON_KNIFE)
+                .pattern("   ")
+                .pattern(" A ")
+                .pattern("B  ")
+                .define('A', Items.IRON_INGOT)
+                .define('B', Items.STICK)
+                .unlockedBy("has_iron_ingot", has(Items.IRON_INGOT))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.BOSKALT_KNIFE)
+                .pattern("   ")
+                .pattern(" A ")
+                .pattern("B  ")
+                .define('A', VerseItems.BOSKALT_INGOT.get())
+                .define('B', Items.STICK)
+                .unlockedBy("has_boskalt_ingot", has(VerseItems.BOSKALT_INGOT))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.DIAMOND_KNIFE)
+                .pattern("   ")
+                .pattern(" A ")
+                .pattern("B  ")
+                .define('A', Items.DIAMOND)
+                .define('B', Items.STICK)
+                .unlockedBy("has_diamond", has(Items.DIAMOND))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.GARNET_KNIFE)
+                .pattern("   ")
+                .pattern(" A ")
+                .pattern("B  ")
+                .define('A', VerseItems.GARNET.get())
+                .define('B', Items.STICK)
+                .unlockedBy("has_garnet", has(VerseItems.GARNET))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.SAPPHIRE_KNIFE)
+                .pattern("   ")
+                .pattern(" A ")
+                .pattern("B  ")
+                .define('A', VerseItems.SAPPHIRE.get())
+                .define('B', Items.STICK)
+                .unlockedBy("has_sapphire", has(VerseItems.SAPPHIRE))
+                .save(recipeOutput);
+
         //Food
         //Ore Apples
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.COAL_APPLE)
@@ -704,6 +750,8 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
                 VerseItems.EMERITE_UPGRADE_SMITHING_TEMPLATE.get(), VerseItems.EMERITE_INGOT.get());
         customSmithing(recipeOutput, VerseTags.Items.TIER_2_BROADSWORD, RecipeCategory.MISC, VerseItems.EMERITE_BROADSWORD.get(),
                 VerseItems.EMERITE_UPGRADE_SMITHING_TEMPLATE.get(), VerseBlocks.BLOCK_OF_EMERITE.get());
+        customSmithing(recipeOutput, VerseTags.Items.TIER_2_KNIFE, RecipeCategory.MISC, VerseItems.EMERITE_KNIFE.get(),
+                VerseItems.EMERITE_UPGRADE_SMITHING_TEMPLATE.get(), VerseItems.EMERITE_INGOT.get());
 
         //Dragonrite
         customSmithing(recipeOutput, VerseTags.Items.TIER_3_SWORD, RecipeCategory.MISC, VerseItems.DRAGONRITE_SWORD.get(),
@@ -726,6 +774,8 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
                 VerseItems.DRAGONRITE_UPGRADE_SMITHING_TEMPLATE.get(), VerseItems.DRAGONRITE_INGOT.get());
         customSmithing(recipeOutput, VerseTags.Items.TIER_3_BROADSWORD, RecipeCategory.MISC, VerseItems.DRAGONRITE_BROADSWORD.get(),
                 VerseItems.DRAGONRITE_UPGRADE_SMITHING_TEMPLATE.get(), VerseBlocks.BLOCK_OF_DRAGONRITE.get());
+        customSmithing(recipeOutput, VerseTags.Items.TIER_3_KNIFE, RecipeCategory.MISC, VerseItems.DRAGONRITE_KNIFE.get(),
+                VerseItems.DRAGONRITE_UPGRADE_SMITHING_TEMPLATE.get(), VerseItems.DRAGONRITE_INGOT.get());
 
         //Sculk Steel
         customSmithing(recipeOutput, VerseTags.Items.TIER_3_SWORD, RecipeCategory.MISC, VerseItems.SCULK_STEEL_SWORD.get(),
@@ -748,6 +798,8 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
                 VerseItems.SCULK_STEEL_UPGRADE_SMITHING_TEMPLATE.get(), VerseItems.SCULK_STEEL_INGOT.get());
         customSmithing(recipeOutput, VerseTags.Items.TIER_3_BROADSWORD, RecipeCategory.MISC, VerseItems.SCULK_STEEL_BROADSWORD.get(),
                 VerseItems.SCULK_STEEL_UPGRADE_SMITHING_TEMPLATE.get(), VerseBlocks.BLOCK_OF_SCULK_STEEL.get());
+        customSmithing(recipeOutput, VerseTags.Items.TIER_3_KNIFE, RecipeCategory.MISC, VerseItems.SCULK_STEEL_KNIFE.get(),
+                VerseItems.SCULK_STEEL_UPGRADE_SMITHING_TEMPLATE.get(), VerseItems.SCULK_STEEL_INGOT.get());
 
 
 

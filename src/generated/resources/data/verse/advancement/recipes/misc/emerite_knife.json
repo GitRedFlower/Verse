@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "verse:emerite_knife"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_verse:emerite_ingot": {
+      "conditions": {
+        "items": [
+          {
+            "items": "verse:emerite_ingot"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_verse:emerite_ingot"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "verse:emerite_knife"
+    ]
+  }
+}

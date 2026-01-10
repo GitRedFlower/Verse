@@ -140,6 +140,16 @@
   "item.verse.emerite_broadsword" : "Emerite Broadsword",
   "item.verse.sculk_steel_broadsword" : "Sculk Steel Broadsword",
 
+  "item.verse.iron_knife" : "Iron Knife",
+  "item.verse.boskalt_knife" : "Boskalt Knife",
+  "item.verse.garnet_knife" : "Garnet Knife",
+  "item.verse.sapphire_knife" : "Sapphire Knife",
+  "item.verse.diamond_knife" : "Diamond Knife",
+  "item.verse.netherite_knife" : "Netherite Knife",
+  "item.verse.dragonrite_knife" : "Dragonrite Knife",
+  "item.verse.emerite_knife" : "Emerite Knife",
+  "item.verse.sculk_steel_knife" : "Sculk Steel Knife",
+
   "item.verse.coal_apple" : "Coal Apple",
   "item.verse.copper_apple" : "Copper Apple",
   "item.verse.iron_apple" : "Iron Apple",

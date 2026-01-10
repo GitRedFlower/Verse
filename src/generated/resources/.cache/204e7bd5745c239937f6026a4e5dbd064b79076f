@@ -1,4 +1,4 @@
-// 1.21.1	2026-01-09T22:22:13.624197759	Item Models: verse
+// 1.21.1	2026-01-09T23:04:00.479152263	Item Models: verse
 2c7e1372223d21a2a099a6949787d347378cf781 assets/verse/models/item/amber.json
 646b97304ad3431807ed9f425cb87b0a74cdfce8 assets/verse/models/item/amber_lens.json
 4c27ffab937ba7dbc3acc6d8564f3e54ba045d2a assets/verse/models/item/amber_lens_core.json
@@ -39,6 +39,7 @@ fb4dda6472c1959b42e8b79bb4ab263fac8c6b2c assets/verse/models/item/boskalt_helmet
 af61afe49af7def312f54c420d81cd4fac4b7d73 assets/verse/models/item/boskalt_helmet_redstone_trim.json
 445a90a979cf10eea69b0ca8814b9404dfe293e4 assets/verse/models/item/boskalt_hoe.json
 0888a2ced82800c031a0b222e85bc212840bcb0c assets/verse/models/item/boskalt_ingot.json
+089aadbbebca99714853f42db3dae3ddc298cab5 assets/verse/models/item/boskalt_knife.json
 e29e9f3d4648cd9ff316e92a38d2a1a11728e6ef assets/verse/models/item/boskalt_leggings.json
 e77a9901f6f5631727ee7e3b34b34df4fcf6e9d8 assets/verse/models/item/boskalt_leggings_amethyst_trim.json
 40b2c74c1efe1ee372acedf07761b9fa07a6f0e5 assets/verse/models/item/boskalt_leggings_copper_trim.json
@@ -57,6 +58,7 @@ c880e4a5e995973f5167d70ee966ec389d8e5088 assets/verse/models/item/boskalt_shovel
 c6311105fd3387a96374110c9dc78ec0b6df4fc9 assets/verse/models/item/copper_apple.json
 c57425e579784258e6fc1fcdcef265ae173e3f15 assets/verse/models/item/diamond_apple.json
 a3d46dbe5ebfb7aa60059bc2186983ae5ea97bd6 assets/verse/models/item/diamond_broadsword.json
+79bc1c2a78826b1d71349542aa9079dc2e0c8fc6 assets/verse/models/item/diamond_knife.json
 c81d9a68e47af7697a1772b5f1573723d9752f9a assets/verse/models/item/diamond_nugget.json
 82c01edea2513f2bfe7c7b55150ff9f83d5315bd assets/verse/models/item/dragonrite_axe.json
 9d9b5de5b1e27b0839964e97ec4dd02b53cb5a95 assets/verse/models/item/dragonrite_boots.json
@@ -95,6 +97,7 @@ f8f16e615ee9eb0715a6ec261108461858b02824 assets/verse/models/item/dragonrite_hel
 a92a33a10c99bbca1de5923ebf239a667c9b9d0e assets/verse/models/item/dragonrite_helmet_redstone_trim.json
 f31aecc738f3580157395db9098ccd8f56a9a6d3 assets/verse/models/item/dragonrite_hoe.json
 bdc03002287a242d6f521f176dbf1930f36657f1 assets/verse/models/item/dragonrite_ingot.json
+657ec56119d1180fb85640ab727b62ceecac77ad assets/verse/models/item/dragonrite_knife.json
 90a50c2e13f3596bd2346dca3100c8cc0ef7e531 assets/verse/models/item/dragonrite_leggings.json
 6c733a4a8f66857c7ef94ed310fda7984af7584c assets/verse/models/item/dragonrite_leggings_amethyst_trim.json
 acac2f82f621384f8fe4c8b850918f3597e8cfdb assets/verse/models/item/dragonrite_leggings_copper_trim.json
@@ -149,6 +152,7 @@ c8717ab77aa8bc97477ac5168d81f633f12cc91d assets/verse/models/item/emerite_helmet
 0c03592870587a256d4ecfaa5c271b6152735df6 assets/verse/models/item/emerite_helmet_redstone_trim.json
 4059ee159f76b52b44caf4262043d022f3ed0d6f assets/verse/models/item/emerite_hoe.json
 a94a252d466a8f073de4327c58841e47567d2138 assets/verse/models/item/emerite_ingot.json
+6137665809abce500ddb7c4d4c116af203aed25b assets/verse/models/item/emerite_knife.json
 8480261473719d3db167413f4bdb6f137c6e53a2 assets/verse/models/item/emerite_leggings.json
 9b90aac637a82a652b3e576051205bbfaec611b2 assets/verse/models/item/emerite_leggings_amethyst_trim.json
 564d9134b608d1865a21999dc576ca6f100406bd assets/verse/models/item/emerite_leggings_copper_trim.json
@@ -210,6 +214,7 @@ a2d9678af1f33a630b693ea4578bbe1ba3a9e019 assets/verse/models/item/garnet_helmet_
 bd300eb9246b083330849f5075ecd2101e0737f5 assets/verse/models/item/garnet_helmet_quartz_trim.json
 90b521d710f0ed5174fe2d2602857fc9ca6f11e5 assets/verse/models/item/garnet_helmet_redstone_trim.json
 df4fae240648f0e6ef86444b04844223884987ad assets/verse/models/item/garnet_hoe.json
+c40c1c62ca2b38e410388533c7e94694444f72c1 assets/verse/models/item/garnet_knife.json
 5bf5a8c497a09e87c14106e14c5463f7727192a1 assets/verse/models/item/garnet_leggings.json
 042f2479e6ec5fc9f7782f17c6726e42214a7a94 assets/verse/models/item/garnet_leggings_amethyst_trim.json
 516ed57d7185e1ae7511f21c4234ecf6a994c773 assets/verse/models/item/garnet_leggings_copper_trim.json
@@ -227,8 +232,10 @@ ccf5f48a54103abfae705d84a8a8cb7a1d7a7761 assets/verse/models/item/garnet_shovel.
 918fa623ccfbd6c6338b3da4dcef3efd4dcfb3d0 assets/verse/models/item/garnet_sword.json
 a34e4080117107e4f1f0e1a20e54d9ceeb396677 assets/verse/models/item/iron_apple.json
 85f9a5e4c5aafd7aa452806c9472793591c3fdd0 assets/verse/models/item/iron_broadsword.json
+fa729be88774dda7c476935356c338faf92c8f85 assets/verse/models/item/iron_knife.json
 083ee4d1d51cc07184a8539744336f3f360c86d8 assets/verse/models/item/lapis_apple.json
 7c496c68ff7cb7470a58b8faab339ff79a65e89f assets/verse/models/item/netherite_broadsword.json
+d82499e9f28711ae1b651a0031e1b72c03dcbb34 assets/verse/models/item/netherite_knife.json
 fad1e1a7d5c62895f17880569fddebd96645ecdc assets/verse/models/item/quartz.json
 58611f16697303fd9b30ca1abf52daf56641fdf2 assets/verse/models/item/raw_boskalt.json
 629dfe74d8c15e4364457610b69a2265eea27e47 assets/verse/models/item/redstone_apple.json
@@ -269,6 +276,7 @@ a21d2ae28630c1764af06dbd1d89f5729ec46786 assets/verse/models/item/sapphire_helme
 ecf1d6130bd734d024a80ccd889f95ed33b53306 assets/verse/models/item/sapphire_helmet_quartz_trim.json
 23e030e818eb02b9fd461bf000bbbb61857e2dc9 assets/verse/models/item/sapphire_helmet_redstone_trim.json
 259691ebca323e4f815d2491356263253349f71f assets/verse/models/item/sapphire_hoe.json
+ba371d37a6e633ae6735d72c3bdf82ec7487b44c assets/verse/models/item/sapphire_knife.json
 e03b69540708ac768980ea31cd888b03b3efa9b5 assets/verse/models/item/sapphire_leggings.json
 205204ab19bed6098c3f636c8eb209756bcbbd06 assets/verse/models/item/sapphire_leggings_amethyst_trim.json
 36d5d035c8f5a4fe289c708e5a0db4e56a97002d assets/verse/models/item/sapphire_leggings_copper_trim.json
@@ -321,6 +329,7 @@ c517b08db1bcd3c6ef796dc269778c343cb2686f assets/verse/models/item/sculk_steel_he
 b77d89265404268358279701d80179afc1240028 assets/verse/models/item/sculk_steel_helmet_redstone_trim.json
 ff32799dbc71d821bbabe6c06cabb4a059d90eb7 assets/verse/models/item/sculk_steel_hoe.json
 f0c166670719d6de48ce3173db8b293bd86afcc8 assets/verse/models/item/sculk_steel_ingot.json
+b3e068a6b4525b9cc309be2a4c92342dc5f1ad11 assets/verse/models/item/sculk_steel_knife.json
 f591e9c0894999f666e890f97f3e853a90aff475 assets/verse/models/item/sculk_steel_leggings.json
 85c44d0b6ba4298b7e5359b94d121e89f643b669 assets/verse/models/item/sculk_steel_leggings_amethyst_trim.json
 d54a1bf8e394cadfa8e89eb5640c2ef8e2c1a849 assets/verse/models/item/sculk_steel_leggings_copper_trim.json

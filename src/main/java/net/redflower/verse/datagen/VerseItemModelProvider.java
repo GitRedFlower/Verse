@@ -117,6 +117,17 @@ public class VerseItemModelProvider extends ItemModelProvider {
         handheldItem(VerseItems.EMERITE_BROADSWORD);
         handheldItem(VerseItems.SCULK_STEEL_BROADSWORD);
 
+        //Knifes
+        handheldItem(VerseItems.IRON_KNIFE);
+        handheldItem(VerseItems.BOSKALT_KNIFE);
+        handheldItem(VerseItems.GARNET_KNIFE);
+        handheldItem(VerseItems.SAPPHIRE_KNIFE);
+        handheldItem(VerseItems.DIAMOND_KNIFE);
+        handheldItem(VerseItems.NETHERITE_KNIFE);
+        handheldItem(VerseItems.DRAGONRITE_KNIFE);
+        handheldItem(VerseItems.EMERITE_KNIFE);
+        handheldItem(VerseItems.SCULK_STEEL_KNIFE);
+
         //Tools
         handheldItem(VerseItems.BOSKALT_SHOVEL);
         handheldItem(VerseItems.BOSKALT_PICKAXE);

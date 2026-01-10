@@ -376,6 +376,47 @@ public class VerseItems {
             () -> new SwordItem(VerseToolTiers.SCULK_STEEL, new Item.Properties()
                     .attributes(SwordItem.createAttributes(VerseToolTiers.SCULK_STEEL, 21.0f, -3.3f))));
 
+    //Knifes
+    //Tier 1 Knife
+    public static final DeferredItem<SwordItem> IRON_KNIFE = ITEMS.register("iron_knife",
+            () -> new SwordItem(Tiers.IRON, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(Tiers.IRON, 1.0f, -1.2f))));
+
+    public static final DeferredItem<SwordItem> BOSKALT_KNIFE = ITEMS.register("boskalt_knife",
+            () -> new SwordItem(VerseToolTiers.BOSKALT, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(VerseToolTiers.BOSKALT, 3.0f, -1.2f))));
+
+    //Tier 2 Knife
+    public static final DeferredItem<SwordItem> DIAMOND_KNIFE = ITEMS.register("diamond_knife",
+            () -> new SwordItem(Tiers.DIAMOND, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(Tiers.DIAMOND, 1.0f, -1.2f))));
+
+    public static final DeferredItem<SwordItem> SAPPHIRE_KNIFE = ITEMS.register("sapphire_knife",
+            () -> new SwordItem(VerseToolTiers.SAPPHIRE, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(VerseToolTiers.SAPPHIRE, 4.0f, -1.2f))));
+
+    public static final DeferredItem<SwordItem> GARNET_KNIFE = ITEMS.register("garnet_knife",
+            () -> new SwordItem(VerseToolTiers.GARNET, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(VerseToolTiers.GARNET, 4.0f, -1.2f))));
+
+    //Tier 3 Knife
+    public static final DeferredItem<SwordItem> NETHERITE_KNIFE = ITEMS.register("netherite_knife",
+            () -> new SwordItem(Tiers.NETHERITE, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(Tiers.NETHERITE, 1.0f, -1.2f))));
+
+    public static final DeferredItem<SwordItem> EMERITE_KNIFE = ITEMS.register("emerite_knife",
+            () -> new SwordItem(VerseToolTiers.EMERITE, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(VerseToolTiers.EMERITE, 5.0f, -1.2f))));
+
+    //Tier 4 Knife
+    public static final DeferredItem<SwordItem> DRAGONRITE_KNIFE = ITEMS.register("dragonrite_knife",
+            () -> new SwordItem(VerseToolTiers.DRAGONRITE, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(VerseToolTiers.DRAGONRITE, 8.0f, -1.2f))));
+
+    public static final DeferredItem<SwordItem> SCULK_STEEL_KNIFE = ITEMS.register("sculk_steel_knife",
+            () -> new SwordItem(VerseToolTiers.SCULK_STEEL, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(VerseToolTiers.SCULK_STEEL, 8.0f, -1.2f))));
+
     //Crafting Items
     public static final DeferredItem<Item> AMBER_LENS_CORE = ITEMS.register("amber_lens_core",
             () -> new Item(new Item.Properties()));

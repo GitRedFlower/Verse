@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "verse:dragonrite_ingot"
+  },
+  "base": {
+    "tag": "verse:tier_3_knife"
+  },
+  "result": {
+    "count": 1,
+    "id": "verse:dragonrite_knife"
+  },
+  "template": {
+    "item": "verse:dragonrite_upgrade_smithing_template"
+  }
+}
