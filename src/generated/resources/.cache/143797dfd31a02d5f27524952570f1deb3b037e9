@@ -1,4 +1,4 @@
-// 1.21.1	2026-01-09T23:04:00.478099881	Tags for minecraft:item mod id verse
+// 1.21.1	2026-01-09T23:21:53.040128628	Tags for minecraft:item mod id verse
 8c04d7550b0f90236195a0236fb4fb73fc5ef346 data/c/tags/item/gems.json
 7da706d853e40866ce4f49134c65ef909636174d data/c/tags/item/gems/quartz.json
 a2d8ae310a794300695f8582f6a3543602ea5c5f data/minecraft/tags/item/axes.json
@@ -16,6 +16,7 @@ ba1e3b60559200a0a4ec231b055f55a9cf4687f4 data/verse/tags/item/tier_2_broadsword.
 ecf705262c5b7fbc1ecc1ad9646c50debaf1d9c7 data/verse/tags/item/tier_2_chestplate.json
 f1cc40e0f2884c703388e5fd0f9d9e273b8e36b4 data/verse/tags/item/tier_2_helmet.json
 35aae981651e44937e8ead783879930a2383bd14 data/verse/tags/item/tier_2_hoe.json
+1f99bd4d1168da4cd390d06b745b8902bae0dcb1 data/verse/tags/item/tier_2_knife.json
 c1f176a1f1f315e43884d53c260cab612295dfa4 data/verse/tags/item/tier_2_leggings.json
 0e506c2e1b45f0424a8f69e097e375f60b9691e4 data/verse/tags/item/tier_2_pickaxe.json
 2c5521b8e9aaa9c0a64ad9032dedf9e8696c9534 data/verse/tags/item/tier_2_shovel.json
@@ -26,6 +27,7 @@ c1f176a1f1f315e43884d53c260cab612295dfa4 data/verse/tags/item/tier_2_leggings.js
 41850616a9038c097afcaf8c185d147be67e0653 data/verse/tags/item/tier_3_chestplate.json
 c870d6768131b43b301a4d20aaa6c17dd9abf1a2 data/verse/tags/item/tier_3_helmet.json
 364daed9be4701542abfd8c7b7f6bfcdb083276a data/verse/tags/item/tier_3_hoe.json
+5b2fb21b178aa9459cdfbdc8d00267e7513df000 data/verse/tags/item/tier_3_knife.json
 5f78d997ec8d298daa95abb85889807345fc8317 data/verse/tags/item/tier_3_leggings.json
 7c5e35bc95556ca5470ee6277b7511aa4866d4ba data/verse/tags/item/tier_3_pickaxe.json
 6fc5fab909783b54f85f55d91b6eab9ba92431c2 data/verse/tags/item/tier_3_shovel.json

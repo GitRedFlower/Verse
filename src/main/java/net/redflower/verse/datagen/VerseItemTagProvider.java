@@ -101,6 +101,11 @@ public class VerseItemTagProvider extends ItemTagsProvider {
                 .add(VerseItems.SAPPHIRE_BROADSWORD.get())
                 .add(VerseItems.GARNET_BROADSWORD.get());
 
+        tag(VerseTags.Items.TIER_2_KNIFE)
+                .add(VerseItems.DIAMOND_KNIFE.get())
+                .add(VerseItems.SAPPHIRE_KNIFE.get())
+                .add(VerseItems.GARNET_KNIFE.get());
+
         //Tier 3 Armor and Tools
         tag(VerseTags.Items.TIER_3_SWORD)
                 .add(Items.NETHERITE_SWORD)
@@ -141,6 +146,10 @@ public class VerseItemTagProvider extends ItemTagsProvider {
         tag(VerseTags.Items.TIER_3_BROADSWORD)
                 .add(VerseItems.NETHERITE_BROADSWORD.get())
                 .add(VerseItems.EMERITE_BROADSWORD.get());
+
+        tag(VerseTags.Items.TIER_3_KNIFE)
+                .add(VerseItems.NETHERITE_KNIFE.get())
+                .add(VerseItems.EMERITE_KNIFE.get());
 
         //Weapons
         //Swords

@@ -859,6 +859,30 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
                 .define('C', Items.REDSTONE_TORCH)
                 .unlockedBy("has_quartz_gems", has(Tags.Items.GEMS_QUARTZ))
                 .save(recipeOutput);
+
+        //Netherite
+        customSmithing(recipeOutput, VerseTags.Items.TIER_2_SWORD, RecipeCategory.MISC, Items.NETHERITE_SWORD,
+                Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE, Items.NETHERITE_INGOT);
+        customSmithing(recipeOutput, VerseTags.Items.TIER_2_SHOVEL, RecipeCategory.MISC, Items.NETHERITE_SHOVEL,
+                Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE, Items.NETHERITE_INGOT);
+        customSmithing(recipeOutput, VerseTags.Items.TIER_2_PICKAXE, RecipeCategory.MISC, Items.NETHERITE_PICKAXE,
+                Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE, Items.NETHERITE_INGOT);
+        customSmithing(recipeOutput, VerseTags.Items.TIER_2_AXE, RecipeCategory.MISC, Items.NETHERITE_AXE,
+                Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE, Items.NETHERITE_INGOT);
+        customSmithing(recipeOutput, VerseTags.Items.TIER_2_HOE, RecipeCategory.MISC, Items.NETHERITE_HOE,
+                Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE, Items.NETHERITE_INGOT);
+        customSmithing(recipeOutput, VerseTags.Items.TIER_2_HELMET, RecipeCategory.MISC, Items.NETHERITE_HELMET,
+                Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE, Items.NETHERITE_INGOT);
+        customSmithing(recipeOutput, VerseTags.Items.TIER_2_CHESTPLATE, RecipeCategory.MISC, Items.NETHERITE_CHESTPLATE,
+                Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE, Items.NETHERITE_INGOT);
+        customSmithing(recipeOutput, VerseTags.Items.TIER_2_LEGGINGS, RecipeCategory.MISC, Items.NETHERITE_LEGGINGS,
+                Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE, Items.NETHERITE_INGOT);
+        customSmithing(recipeOutput, VerseTags.Items.TIER_2_BOOTS, RecipeCategory.MISC, Items.NETHERITE_BOOTS,
+                Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE, Items.NETHERITE_INGOT);
+        customSmithing(recipeOutput, VerseTags.Items.TIER_2_BROADSWORD, RecipeCategory.MISC, VerseItems.NETHERITE_BROADSWORD.get(),
+                Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE, Items.NETHERITE_BLOCK);
+        customSmithing(recipeOutput, VerseTags.Items.TIER_2_KNIFE, RecipeCategory.MISC, VerseItems.NETHERITE_KNIFE.get(),
+                Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE, Items.NETHERITE_INGOT);
     }
 
     //Custom Recipe Methods / override minecraft namespace for furnaces and blast furnaces
