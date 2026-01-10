@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_block_of_boskalt": {
+      "conditions": {
+        "items": [
+          {
+            "items": "verse:block_of_boskalt"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "verse:boskalt_broadsword"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_block_of_boskalt"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "verse:boskalt_broadsword"
+    ]
+  }
+}

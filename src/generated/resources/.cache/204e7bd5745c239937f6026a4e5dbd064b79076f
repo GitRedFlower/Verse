@@ -1,4 +1,4 @@
-// 1.21.1	2025-11-18T23:18:02.412807344	Item Models: verse
+// 1.21.1	2026-01-09T22:22:13.624197759	Item Models: verse
 2c7e1372223d21a2a099a6949787d347378cf781 assets/verse/models/item/amber.json
 646b97304ad3431807ed9f425cb87b0a74cdfce8 assets/verse/models/item/amber_lens.json
 4c27ffab937ba7dbc3acc6d8564f3e54ba045d2a assets/verse/models/item/amber_lens_core.json
@@ -14,6 +14,7 @@ ab44d80e3a3ae9d3dcccb96a113554a722ebd88d assets/verse/models/item/boskalt_boots_
 42f9158f07adbd9a7b01f953fbf337c80d580997 assets/verse/models/item/boskalt_boots_netherite_trim.json
 3d4f3997ee766ed8f4b7b7423022c46322db1944 assets/verse/models/item/boskalt_boots_quartz_trim.json
 e095d48b2f27551c154e2ccce1b345d105ffd632 assets/verse/models/item/boskalt_boots_redstone_trim.json
+31fffde1be99ea8d0754590d9916525b98b29599 assets/verse/models/item/boskalt_broadsword.json
 4728d8662c5587cb50e48b988445ec09381a3f63 assets/verse/models/item/boskalt_chestplate.json
 12f25c6376044e7c5e4575c093814f23d49b3ee2 assets/verse/models/item/boskalt_chestplate_amethyst_trim.json
 b0ad022a754c4f275e87f2f27151cd29142ee684 assets/verse/models/item/boskalt_chestplate_copper_trim.json
@@ -55,6 +56,7 @@ c880e4a5e995973f5167d70ee966ec389d8e5088 assets/verse/models/item/boskalt_shovel
 1b750d5056fbd3356a5883db24d5d135cdde778d assets/verse/models/item/coal_apple.json
 c6311105fd3387a96374110c9dc78ec0b6df4fc9 assets/verse/models/item/copper_apple.json
 c57425e579784258e6fc1fcdcef265ae173e3f15 assets/verse/models/item/diamond_apple.json
+a3d46dbe5ebfb7aa60059bc2186983ae5ea97bd6 assets/verse/models/item/diamond_broadsword.json
 c81d9a68e47af7697a1772b5f1573723d9752f9a assets/verse/models/item/diamond_nugget.json
 82c01edea2513f2bfe7c7b55150ff9f83d5315bd assets/verse/models/item/dragonrite_axe.json
 9d9b5de5b1e27b0839964e97ec4dd02b53cb5a95 assets/verse/models/item/dragonrite_boots.json
@@ -68,6 +70,7 @@ f7c489f0c7bc5f958b7d2d28fb510cb57db1aa5f assets/verse/models/item/dragonrite_boo
 4088b789aacfdd5be43b3734f3ae59693db2f9ec assets/verse/models/item/dragonrite_boots_netherite_trim.json
 172007e6d155c433d3739a119e01066200e52cbe assets/verse/models/item/dragonrite_boots_quartz_trim.json
 838f8298efe4e96ac470610cda999bc5d3e8f8ee assets/verse/models/item/dragonrite_boots_redstone_trim.json
+99296edafbf47c61770a0fac281539cc6b09a640 assets/verse/models/item/dragonrite_broadsword.json
 bd950bc11e403f71e5b45a8ed10748feee065773 assets/verse/models/item/dragonrite_chestplate.json
 da047ef85cee3560458e7735d2bfbace01c5811e assets/verse/models/item/dragonrite_chestplate_amethyst_trim.json
 35f40478f4dcc55280e576c25d174d4d119c8d66 assets/verse/models/item/dragonrite_chestplate_copper_trim.json
@@ -121,6 +124,7 @@ b97e1f6c7ea94fcbcc91fff0abc6bae61a1a8bb9 assets/verse/models/item/emerite_boots_
 3e776e6797d5412aebf8bfab0fa851c61ba03a20 assets/verse/models/item/emerite_boots_netherite_trim.json
 c2a250af7d3173a3d0483b595826290620da6691 assets/verse/models/item/emerite_boots_quartz_trim.json
 b9d2877aa8ead14827359f15af6b52b8bdaf045b assets/verse/models/item/emerite_boots_redstone_trim.json
+87478d4019653360c3e336ea1931ba3d35b18f79 assets/verse/models/item/emerite_broadsword.json
 1f112004a9109c7da7f6660217b7870be12c957a assets/verse/models/item/emerite_chestplate.json
 bf532f90633a38b63f8eea572db532099214a004 assets/verse/models/item/emerite_chestplate_amethyst_trim.json
 45e05c8b34e052e628eae72f5414221a17a31ffc assets/verse/models/item/emerite_chestplate_copper_trim.json
@@ -182,6 +186,7 @@ df4d0c1744a07caedd9eb3f398882de3b17496c5 assets/verse/models/item/garnet_boots_g
 729f524ad226e269befd61ac474215cc942abb36 assets/verse/models/item/garnet_boots_netherite_trim.json
 3b453e84df1b4a1288c1edb63953e7a638aab944 assets/verse/models/item/garnet_boots_quartz_trim.json
 6a6ce3bb4f7e3c93a30f066a9aa19b15e84a3783 assets/verse/models/item/garnet_boots_redstone_trim.json
+eca216a949dcc8b461769e2c7a1460bdae4342b0 assets/verse/models/item/garnet_broadsword.json
 50dc95bbe4a677be58cedde71edf82eefdab94e5 assets/verse/models/item/garnet_chestplate.json
 f2160ea328ef0f7960d80a33031498d45c516ca3 assets/verse/models/item/garnet_chestplate_amethyst_trim.json
 a532c606ed6b081ae73b4589eef6b89c30811e0b assets/verse/models/item/garnet_chestplate_copper_trim.json
@@ -221,7 +226,9 @@ e5277a4b366506fb3a73613c6839604e0e6ff300 assets/verse/models/item/garnet_nugget.
 ccf5f48a54103abfae705d84a8a8cb7a1d7a7761 assets/verse/models/item/garnet_shovel.json
 918fa623ccfbd6c6338b3da4dcef3efd4dcfb3d0 assets/verse/models/item/garnet_sword.json
 a34e4080117107e4f1f0e1a20e54d9ceeb396677 assets/verse/models/item/iron_apple.json
+85f9a5e4c5aafd7aa452806c9472793591c3fdd0 assets/verse/models/item/iron_broadsword.json
 083ee4d1d51cc07184a8539744336f3f360c86d8 assets/verse/models/item/lapis_apple.json
+7c496c68ff7cb7470a58b8faab339ff79a65e89f assets/verse/models/item/netherite_broadsword.json
 fad1e1a7d5c62895f17880569fddebd96645ecdc assets/verse/models/item/quartz.json
 58611f16697303fd9b30ca1abf52daf56641fdf2 assets/verse/models/item/raw_boskalt.json
 629dfe74d8c15e4364457610b69a2265eea27e47 assets/verse/models/item/redstone_apple.json
@@ -238,6 +245,7 @@ b3a1f84797abfbda9bf2ae52895494de2babaa97 assets/verse/models/item/sapphire_boots
 635bd49f347076194a36b5e989da7c369273e4f3 assets/verse/models/item/sapphire_boots_netherite_trim.json
 735dacf16687bafa2a165c72418efd6a7c8bd897 assets/verse/models/item/sapphire_boots_quartz_trim.json
 812a93745b8858e2fa1a7fdecef12183e471ba14 assets/verse/models/item/sapphire_boots_redstone_trim.json
+3438e0c4e72dc526f6f97b13b1cd140728aa6516 assets/verse/models/item/sapphire_broadsword.json
 24b113e8de9d436d8203771d6837f1924e7d77d0 assets/verse/models/item/sapphire_chestplate.json
 ae2618f5177eaa982359dcd6645027876e0c5c26 assets/verse/models/item/sapphire_chestplate_amethyst_trim.json
 0e6e737242798258d42184e4837d1b621c8554e3 assets/verse/models/item/sapphire_chestplate_copper_trim.json
@@ -288,6 +296,7 @@ bad3dc16df9909c904e92ef92f5000b36311403d assets/verse/models/item/sculk_steel_bo
 b465b015377aa21fa4bd3084596e76e0a0a6a950 assets/verse/models/item/sculk_steel_boots_netherite_trim.json
 bf7b2e3948912e4bf214db29edfd42b1a82fc912 assets/verse/models/item/sculk_steel_boots_quartz_trim.json
 8c43f35d19ad85d8066c1f8f979a88aa6ed685e3 assets/verse/models/item/sculk_steel_boots_redstone_trim.json
+868c87f2a557069625f21da9a7459ad4ef90b4a1 assets/verse/models/item/sculk_steel_broadsword.json
 3508f2059d6c6fcd204f2f0b7e900a507536eb9a assets/verse/models/item/sculk_steel_chestplate.json
 7c7308b8ff3e44f9029c8d9b7af55735bd03abd2 assets/verse/models/item/sculk_steel_chestplate_amethyst_trim.json
 6c11af82b7e9301d65e4af6142cce8620466d780 assets/verse/models/item/sculk_steel_chestplate_copper_trim.json

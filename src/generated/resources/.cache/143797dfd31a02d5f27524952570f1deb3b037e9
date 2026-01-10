@@ -1,4 +1,4 @@
-// 1.21.1	2025-11-18T23:18:02.411391817	Tags for minecraft:item mod id verse
+// 1.21.1	2026-01-09T22:35:49.714919465	Tags for minecraft:item mod id verse
 8c04d7550b0f90236195a0236fb4fb73fc5ef346 data/c/tags/item/gems.json
 7da706d853e40866ce4f49134c65ef909636174d data/c/tags/item/gems/quartz.json
 a2d8ae310a794300695f8582f6a3543602ea5c5f data/minecraft/tags/item/axes.json
@@ -8,10 +8,11 @@ a2d8ae310a794300695f8582f6a3543602ea5c5f data/minecraft/tags/item/axes.json
 d168120acb602820d5f2e2a287642d1df70a6b51 data/minecraft/tags/item/hoes.json
 f22774cc0fbf051bf8ca05ac8d476dae7dd98da1 data/minecraft/tags/item/pickaxes.json
 03ab2500af504b7bcaf237df89ea13ed08c57224 data/minecraft/tags/item/shovels.json
-6bf9ebfdf3527529d4a89c9e6abfc89154aad6a1 data/minecraft/tags/item/swords.json
+62d4751995a638b5a52ea7d28383ae99b3506f1b data/minecraft/tags/item/swords.json
 c8e6b44df211484023b6bc94306d1b9a73dccfed data/minecraft/tags/item/trimmable_armor.json
 b9f5a47089cba3930c22c534c09ba7d36f52dc0e data/verse/tags/item/tier_2_axe.json
 e56232d9e8495e1c62e3fa2eb6577edcbd76b262 data/verse/tags/item/tier_2_boots.json
+ba1e3b60559200a0a4ec231b055f55a9cf4687f4 data/verse/tags/item/tier_2_broadsword.json
 ecf705262c5b7fbc1ecc1ad9646c50debaf1d9c7 data/verse/tags/item/tier_2_chestplate.json
 f1cc40e0f2884c703388e5fd0f9d9e273b8e36b4 data/verse/tags/item/tier_2_helmet.json
 35aae981651e44937e8ead783879930a2383bd14 data/verse/tags/item/tier_2_hoe.json
@@ -21,6 +22,7 @@ c1f176a1f1f315e43884d53c260cab612295dfa4 data/verse/tags/item/tier_2_leggings.js
 036cd9487115cce2e65d4231ded9698e63f4d1e2 data/verse/tags/item/tier_2_sword.json
 78abe06cd59db4f540477797241536fa5b523880 data/verse/tags/item/tier_3_axe.json
 55e03b8033ad597292d8e89239c7c9f16992f5cb data/verse/tags/item/tier_3_boots.json
+4b406f4bc989bfd4356f89081108aecdd445d1e1 data/verse/tags/item/tier_3_broadsword.json
 41850616a9038c097afcaf8c185d147be67e0653 data/verse/tags/item/tier_3_chestplate.json
 c870d6768131b43b301a4d20aaa6c17dd9abf1a2 data/verse/tags/item/tier_3_helmet.json
 364daed9be4701542abfd8c7b7f6bfcdb083276a data/verse/tags/item/tier_3_hoe.json

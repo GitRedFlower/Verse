@@ -96,6 +96,11 @@ public class VerseItemTagProvider extends ItemTagsProvider {
                 .add(VerseItems.SAPPHIRE_BOOTS.get())
                 .add(VerseItems.GARNET_BOOTS.get());
 
+        tag(VerseTags.Items.TIER_2_BROADSWORD)
+                .add(VerseItems.DIAMOND_BROADSWORD.get())
+                .add(VerseItems.SAPPHIRE_BROADSWORD.get())
+                .add(VerseItems.GARNET_BROADSWORD.get());
+
         //Tier 3 Armor and Tools
         tag(VerseTags.Items.TIER_3_SWORD)
                 .add(Items.NETHERITE_SWORD)
@@ -133,6 +138,10 @@ public class VerseItemTagProvider extends ItemTagsProvider {
                 .add(Items.NETHERITE_BOOTS)
                 .add(VerseItems.EMERITE_BOOTS.get());
 
+        tag(VerseTags.Items.TIER_3_BROADSWORD)
+                .add(VerseItems.NETHERITE_BROADSWORD.get())
+                .add(VerseItems.EMERITE_BROADSWORD.get());
+
         //Weapons
         //Swords
         tag(ItemTags.SWORDS)
@@ -141,7 +150,17 @@ public class VerseItemTagProvider extends ItemTagsProvider {
                 .add(VerseItems.SAPPHIRE_SWORD.get())
                 .add(VerseItems.DRAGONRITE_SWORD.get())
                 .add(VerseItems.EMERITE_SWORD.get())
-                .add(VerseItems.SCULK_STEEL_SWORD.get());
+                .add(VerseItems.SCULK_STEEL_SWORD.get())
+                .add(VerseItems.IRON_BROADSWORD.get())
+                .add(VerseItems.BOSKALT_BROADSWORD.get())
+                .add(VerseItems.GARNET_BROADSWORD.get())
+                .add(VerseItems.SAPPHIRE_BROADSWORD.get())
+                .add(VerseItems.DIAMOND_BROADSWORD.get())
+                .add(VerseItems.NETHERITE_BROADSWORD.get())
+                .add(VerseItems.DRAGONRITE_BROADSWORD.get())
+                .add(VerseItems.EMERITE_BROADSWORD.get())
+                .add(VerseItems.SCULK_STEEL_BROADSWORD.get());
+
 
         //Tools
         //Shovels

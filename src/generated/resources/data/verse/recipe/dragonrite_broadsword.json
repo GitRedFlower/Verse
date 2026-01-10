@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "verse:block_of_dragonrite"
+  },
+  "base": {
+    "tag": "verse:tier_3_broadsword"
+  },
+  "result": {
+    "count": 1,
+    "id": "verse:dragonrite_broadsword"
+  },
+  "template": {
+    "item": "verse:dragonrite_upgrade_smithing_template"
+  }
+}

@@ -103,8 +103,6 @@ public class VerseCreativeModTabs {
                         output.accept(VerseItems.DRAGONRITE_INGOT);
                         output.accept(VerseItems.SCULK_STEEL_INGOT);
 
-                        //Tier 5 Materials
-
                         //Nuggets
                         output.accept(VerseItems.DIAMOND_NUGGET);
                         output.accept(VerseItems.SAPPHIRE_NUGGET);
@@ -143,8 +141,6 @@ public class VerseCreativeModTabs {
                         output.accept(VerseItems.SCULK_STEEL_AXE);
                         output.accept(VerseItems.SCULK_STEEL_HOE);
 
-                        //Tier 5
-
                         //Swords
                         //Tier 1
                         output.accept(VerseItems.BOSKALT_SWORD);
@@ -160,7 +156,23 @@ public class VerseCreativeModTabs {
                         output.accept(VerseItems.DRAGONRITE_SWORD);
                         output.accept(VerseItems.SCULK_STEEL_SWORD);
 
-                        //Tier 5
+                        //Broadswords
+                        //Tier 1
+                        output.accept(VerseItems.IRON_BROADSWORD);
+                        output.accept(VerseItems.BOSKALT_BROADSWORD);
+
+                        //Tier 2
+                        output.accept(VerseItems.DIAMOND_BROADSWORD);
+                        output.accept(VerseItems.SAPPHIRE_BROADSWORD);
+                        output.accept(VerseItems.GARNET_BROADSWORD);
+
+                        //Tier 3
+                        output.accept(VerseItems.NETHERITE_BROADSWORD);
+                        output.accept(VerseItems.EMERITE_BROADSWORD);
+
+                        //Tier 4
+                        output.accept(VerseItems.DRAGONRITE_BROADSWORD);
+                        output.accept(VerseItems.SCULK_STEEL_BROADSWORD);
 
                         //Armor
                         //Tier 1
@@ -194,8 +206,6 @@ public class VerseCreativeModTabs {
                         output.accept(VerseItems.SCULK_STEEL_CHESTPLATE);
                         output.accept(VerseItems.SCULK_STEEL_LEGGINGS);
                         output.accept(VerseItems.SCULK_STEEL_BOOTS);
-
-                        //Tier 5
 
                         //Crafting Items
                         output.accept(VerseItems.AMBER_LENS_CORE);

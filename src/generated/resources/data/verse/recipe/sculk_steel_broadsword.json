@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "verse:block_of_sculk_steel"
+  },
+  "base": {
+    "tag": "verse:tier_3_broadsword"
+  },
+  "result": {
+    "count": 1,
+    "id": "verse:sculk_steel_broadsword"
+  },
+  "template": {
+    "item": "verse:sculk_steel_upgrade_smithing_template"
+  }
+}

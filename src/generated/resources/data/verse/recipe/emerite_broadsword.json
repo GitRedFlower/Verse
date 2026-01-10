@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:smithing_transform",
+  "addition": {
+    "item": "verse:block_of_emerite"
+  },
+  "base": {
+    "tag": "verse:tier_2_broadsword"
+  },
+  "result": {
+    "count": 1,
+    "id": "verse:emerite_broadsword"
+  },
+  "template": {
+    "item": "verse:emerite_upgrade_smithing_template"
+  }
+}

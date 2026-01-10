@@ -334,6 +334,47 @@ public class VerseItems {
     public static final DeferredItem<HoeItem> SCULK_STEEL_HOE = ITEMS.register("sculk_steel_hoe",
             () -> new HoeItem(VerseToolTiers.SCULK_STEEL, new Item.Properties()
                     .attributes(HoeItem.createAttributes(VerseToolTiers.SCULK_STEEL, 0f, -0.0f))));
+    
+    //Broadswords
+    //Tier 1 Broadsword
+    public static final DeferredItem<SwordItem> IRON_BROADSWORD = ITEMS.register("iron_broadsword",
+            () -> new SwordItem(Tiers.IRON, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(Tiers.IRON, 9.0f, -3.3f))));
+
+    public static final DeferredItem<SwordItem> BOSKALT_BROADSWORD = ITEMS.register("boskalt_broadsword",
+            () -> new SwordItem(VerseToolTiers.BOSKALT, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(VerseToolTiers.BOSKALT, 11.0f, -3.3f))));
+
+    //Tier 2 Broadsword
+    public static final DeferredItem<SwordItem> DIAMOND_BROADSWORD = ITEMS.register("diamond_broadsword",
+            () -> new SwordItem(Tiers.DIAMOND, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(Tiers.DIAMOND, 10.0f, -3.3f))));
+
+    public static final DeferredItem<SwordItem> SAPPHIRE_BROADSWORD = ITEMS.register("sapphire_broadsword",
+            () -> new SwordItem(VerseToolTiers.SAPPHIRE, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(VerseToolTiers.SAPPHIRE, 13.0f, -3.3f))));
+
+    public static final DeferredItem<SwordItem> GARNET_BROADSWORD = ITEMS.register("garnet_broadsword",
+            () -> new SwordItem(VerseToolTiers.GARNET, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(VerseToolTiers.GARNET, 13.0f, -3.3f))));
+
+    //Tier 3 Broadsword
+    public static final DeferredItem<SwordItem> NETHERITE_BROADSWORD = ITEMS.register("netherite_broadsword",
+            () -> new SwordItem(Tiers.NETHERITE, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(Tiers.NETHERITE, 11.0f, -3.3f))));
+
+    public static final DeferredItem<SwordItem> EMERITE_BROADSWORD = ITEMS.register("emerite_broadsword",
+            () -> new SwordItem(VerseToolTiers.EMERITE, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(VerseToolTiers.EMERITE, 15.0f, -3.3f))));
+
+    //Tier 4 Broadsword
+    public static final DeferredItem<SwordItem> DRAGONRITE_BROADSWORD = ITEMS.register("dragonrite_broadsword",
+            () -> new SwordItem(VerseToolTiers.DRAGONRITE, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(VerseToolTiers.DRAGONRITE, 21.0f, -3.3f))));
+
+    public static final DeferredItem<SwordItem> SCULK_STEEL_BROADSWORD = ITEMS.register("sculk_steel_broadsword",
+            () -> new SwordItem(VerseToolTiers.SCULK_STEEL, new Item.Properties()
+                    .attributes(SwordItem.createAttributes(VerseToolTiers.SCULK_STEEL, 21.0f, -3.3f))));
 
     //Crafting Items
     public static final DeferredItem<Item> AMBER_LENS_CORE = ITEMS.register("amber_lens_core",
