@@ -243,7 +243,16 @@ public class VerseBlocks {
 
     //Functional Block
     public static final DeferredBlock<Block> ALTAR = registerBlock("altar",
-            () -> new AltarBlock(BlockBehaviour.Properties.of().noOcclusion()));
+            () -> new AltarBlock(BlockBehaviour.Properties.of().noOcclusion()
+                    .requiresCorrectToolForDrops()
+                    .strength(3f)
+                    .sound(SoundType.STONE)));
+
+    public static final DeferredBlock<Block> REINFORCED_STONE = registerBlock("reinforced_stone",
+            () -> new AltarBlock(BlockBehaviour.Properties.of().noOcclusion()
+                    .requiresCorrectToolForDrops()
+                    .strength(3f)
+                    .sound(SoundType.COPPER)));
 
 
     //Registers The Blocks. DO NOT TOUCH!!!!

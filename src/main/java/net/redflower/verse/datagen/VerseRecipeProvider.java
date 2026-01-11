@@ -598,6 +598,15 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
                 .unlockedBy("has_enchanted_weak_shard", has(VerseItems.ENCHANTED_WEAK_SHARD))
                 .save(recipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseBlocks.REINFORCED_STONE)
+                .pattern("BAB")
+                .pattern("ABA")
+                .pattern("BAB")
+                .define('A', Items.STONE)
+                .define('B', Items.COPPER_INGOT)
+                .unlockedBy("has_copper_ingot", has(Items.COPPER_INGOT))
+                .save(recipeOutput);
+
         //Crafting Items
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.AMBER_LENS_CORE.get())
                 .pattern("AAA")

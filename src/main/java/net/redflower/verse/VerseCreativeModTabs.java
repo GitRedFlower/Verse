@@ -71,6 +71,7 @@ public class VerseCreativeModTabs {
                         output.accept(VerseBlocks.BLOCK_OF_SCULK_STEEL);
 
                         //Functional Blocks
+                        output.accept(VerseBlocks.REINFORCED_STONE);
                         output.accept(VerseBlocks.ALTAR);
                     })
                     .build());

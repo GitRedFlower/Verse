@@ -58,7 +58,8 @@ public class VerseBlockTagProvider extends BlockTagsProvider {
                 .add(VerseBlocks.COMPRESSED_EMERALD_ORE.get())
                 .add(VerseBlocks.COMPRESSED_DEEPSLATE_EMERALD_ORE.get())
                 .add(VerseBlocks.COMPRESSED_DIAMOND_ORE.get())
-                .add(VerseBlocks.COMPRESSED_DEEPSLATE_DIAMOND_ORE.get());
+                .add(VerseBlocks.COMPRESSED_DEEPSLATE_DIAMOND_ORE.get())
+                .add(VerseBlocks.REINFORCED_STONE.get());
 
         //Stone Level
         tag(BlockTags.NEEDS_STONE_TOOL)
@@ -80,7 +81,8 @@ public class VerseBlockTagProvider extends BlockTagsProvider {
                 .add(VerseBlocks.DEEPSLATE_QUARTZ_ORE.get())
                 .add(VerseBlocks.AMBER_ORE.get())
                 .add(VerseBlocks.DEEPSLATE_AMBER_ORE.get())
-                .add(VerseBlocks.BLOCK_OF_AMBER.get());
+                .add(VerseBlocks.BLOCK_OF_AMBER.get())
+                .add(VerseBlocks.REINFORCED_STONE.get());
 
         //Diamond Level
         tag(BlockTags.NEEDS_DIAMOND_TOOL)

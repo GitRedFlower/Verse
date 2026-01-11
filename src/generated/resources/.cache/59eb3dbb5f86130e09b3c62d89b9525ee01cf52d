@@ -1,4 +1,4 @@
-// 1.21.1	2025-12-16T23:50:22.730800309	Loot Tables
+// 1.21.1	2026-01-10T22:18:27.287559832	Loot Tables
 bc5dcb0a01206ddcffddcec4e7b01b562da6d315 data/verse/loot_table/blocks/altar.json
 83d5b55ddc7024241bbee5947217e253b4c4957a data/verse/loot_table/blocks/amber_ore.json
 c94942093eae0e108cb3dd022c598a42566b8ba4 data/verse/loot_table/blocks/block_of_amber.json
@@ -35,4 +35,5 @@ cffa53ee57b5239835d81fbd127cba2cd47113bb data/verse/loot_table/blocks/deepslate_
 6c698b348db98e17903f708e28fcec5dca78d773 data/verse/loot_table/blocks/endstone_dragonrite_ore.json
 e7f5c5cc776b9e7aaf92f01a3b73b3af648a37ff data/verse/loot_table/blocks/garnet_ore.json
 4e16a8bdd391de9b0ec7bf0df0abada06187c38e data/verse/loot_table/blocks/quartz_ore.json
+a77b14cf44a8d199ff651c8c70618b147148315e data/verse/loot_table/blocks/reinforced_stone.json
 42effacc40cfc423a1b91d9ea9059672c38a58bd data/verse/loot_table/blocks/sapphire_ore.json

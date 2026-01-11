@@ -1,4 +1,4 @@
-// 1.21.1	2026-01-10T21:45:04.550307574	Recipes
+// 1.21.1	2026-01-10T22:18:27.287974056	Recipes
 d1247089169faa2fbe0ae39b2db0a985a95fca71 data/minecraft/advancement/recipes/misc/comparator.json
 8358c04bd502024864e5f1514ca5fe59fa01f954 data/minecraft/advancement/recipes/misc/daylight_detector.json
 9afad7cea1702bca8c4c2b1c303abc13f2395ee5 data/minecraft/advancement/recipes/misc/diamond_from_diamond_nugget.json
@@ -167,6 +167,7 @@ d5407627ba37d1283a2cba8c947bcd4426bbb7ab data/verse/advancement/recipes/misc/raw
 5d14d228f738f368f2f9e15f348f62fc6374fbbf data/verse/advancement/recipes/misc/redstone_block_from_blasting_compressed_redstone_ore.json
 7febb76f44b68a8aa78a677284f6b3b977d1b41f data/verse/advancement/recipes/misc/redstone_block_from_smelting_compressed_deepslate_redstone_ore.json
 38fc443f894b880c21789643a490b298432a2896 data/verse/advancement/recipes/misc/redstone_block_from_smelting_compressed_redstone_ore.json
+378c9de893ea0eec95125b8f34fb7f77c0f0f016 data/verse/advancement/recipes/misc/reinforced_stone.json
 91ddc1a3ccd63a3aa069e57276679d84a3aba5fb data/verse/advancement/recipes/misc/sapphire.json
 d3df5302e28fbed8d14737606df2bf3d710bd692 data/verse/advancement/recipes/misc/sapphire_axe.json
 eb6f2a5daae51026d18ae27ab086318be1ed34df data/verse/advancement/recipes/misc/sapphire_boots.json
@@ -340,6 +341,7 @@ a50801b05f72a633e0f7f7f113d9880e174e71a2 data/verse/recipe/quartz_from_smelting_
 0d950bf004936c4c158b81de92152807c0eae05a data/verse/recipe/redstone_block_from_blasting_compressed_redstone_ore.json
 51647ae2e0aeb450cf28d84c1d3c1ce2bdd22cd7 data/verse/recipe/redstone_block_from_smelting_compressed_deepslate_redstone_ore.json
 19ec41b826bd467c708b5b9cdfc8163cc589385b data/verse/recipe/redstone_block_from_smelting_compressed_redstone_ore.json
+d6dd1b228acda54064ecbecc2f6caa2ccbb6ef1a data/verse/recipe/reinforced_stone.json
 afe8ab341146c52e4444c01cf1892009731e2f9d data/verse/recipe/sapphire.json
 18adf3a3ef0ca6c0a96c386c913865f83ca47ec7 data/verse/recipe/sapphire_axe.json
 d67a5d9d0a37b96e2dc5f36c7ae21552b457e307 data/verse/recipe/sapphire_boots.json

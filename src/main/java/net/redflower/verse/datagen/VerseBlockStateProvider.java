@@ -65,6 +65,8 @@ public class VerseBlockStateProvider extends BlockStateProvider {
         blockWIthItem(VerseBlocks.BLOCK_OF_ECHO_SHARD);
         blockWIthItem(VerseBlocks.BLOCK_OF_SCULK_STEEL);
 
+        //Other Blocks
+        blockWIthItem(VerseBlocks.REINFORCED_STONE);
     }
 
     private void blockWIthItem(DeferredBlock<?> deferredBlock) {

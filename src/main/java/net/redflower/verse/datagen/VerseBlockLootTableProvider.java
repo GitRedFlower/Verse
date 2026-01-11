@@ -40,6 +40,7 @@ public class VerseBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(VerseBlocks.BLOCK_OF_EMERITE.get());
         dropSelf(VerseBlocks.BLOCK_OF_ECHO_SHARD.get());
         dropSelf(VerseBlocks.BLOCK_OF_SCULK_STEEL.get());
+        dropSelf(VerseBlocks.REINFORCED_STONE.get());
 
         //Ore Drops
         //Multiple Drops
