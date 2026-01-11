@@ -39,5 +39,6 @@ public class DataGenerators {
         generator.addProvider(event.includeClient(), new VerseBlockStateProvider(packOutput,existingFileHelper));
 
         generator.addProvider(event.includeServer(), new VerseDatapackProvider(packOutput, lookupProvider));
+        generator.addProvider(event.includeServer(), new VerseGlobalLootModifierProvider(packOutput, lookupProvider));
     }
 }

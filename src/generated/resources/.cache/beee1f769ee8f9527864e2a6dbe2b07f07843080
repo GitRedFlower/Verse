@@ -1,0 +1,4 @@
+// 1.21.1	2026-01-10T21:17:53.452511945	Global Loot Modifiers : verse
+f4875fd904016179b1865b638f509ad6eb97e56e data/neoforge/loot_modifiers/global_loot_modifiers.json
+39d67df826db71452005a5d53fc4877fe3d97de6 data/verse/loot_modifiers/dragon_scale_from_end_city.json
+fd66cd5051a97951c7b0fc54623e13ad34c12549 data/verse/loot_modifiers/dragonrite_upgrade_from_end_city.json

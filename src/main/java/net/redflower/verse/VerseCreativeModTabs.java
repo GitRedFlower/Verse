@@ -227,6 +227,7 @@ public class VerseCreativeModTabs {
 
                         //Crafting Items
                         output.accept(VerseItems.AMBER_LENS_CORE);
+                        output.accept(VerseItems.DRAGON_SCALE);
 
                         //Fuel Items
                         output.accept(VerseItems.AMBER_LENS);

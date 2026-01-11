@@ -421,6 +421,9 @@ public class VerseItems {
     public static final DeferredItem<Item> AMBER_LENS_CORE = ITEMS.register("amber_lens_core",
             () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> DRAGON_SCALE = ITEMS.register("dragon_scale",
+            () -> new Item(new Item.Properties()));
+
     //Fuel Items
     public static final DeferredItem<Item> AMBER_LENS = ITEMS.register("amber_lens",
             () -> new VerseFuelItem(new Item.Properties(), 20000));

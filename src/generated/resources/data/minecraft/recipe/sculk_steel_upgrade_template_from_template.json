@@ -9,7 +9,7 @@
       "item": "minecraft:sculk"
     },
     "C": {
-      "item": "verse:dragonrite_upgrade_smithing_template"
+      "tag": "verse:tier_3_upgrade"
     }
   },
   "pattern": [

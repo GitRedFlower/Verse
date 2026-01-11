@@ -1,4 +1,4 @@
-// 1.21.1	2026-01-09T23:20:29.070389392	Recipes
+// 1.21.1	2026-01-10T21:25:16.860450463	Recipes
 d1247089169faa2fbe0ae39b2db0a985a95fca71 data/minecraft/advancement/recipes/misc/comparator.json
 8358c04bd502024864e5f1514ca5fe59fa01f954 data/minecraft/advancement/recipes/misc/daylight_detector.json
 9afad7cea1702bca8c4c2b1c303abc13f2395ee5 data/minecraft/advancement/recipes/misc/diamond_from_diamond_nugget.json
@@ -22,7 +22,7 @@ b9d4e420f27d221e8eccf174bb078ab789804cd5 data/minecraft/recipe/granite.json
 daabac95edd76bda2884c59190ca3b8345692c32 data/minecraft/recipe/observer.json
 68e3379eb88bad7ed6cc62eb5f0cac069f110443 data/minecraft/recipe/quartz_block.json
 9422a2bc2659304a02350d81b913312bff2fbd00 data/minecraft/recipe/sapphire_from_sapphire_nugget.json
-37f4797d4ec7f538240c14724e1a465dc48bbd90 data/minecraft/recipe/sculk_steel_upgrade_template_from_template.json
+20b5326612f2f1e8f5dd1edef650ca3f11afc361 data/minecraft/recipe/sculk_steel_upgrade_template_from_template.json
 fcdc02e4e93ec8d35786e3a1dcea38185744e09e data/verse/advancement/recipes/misc/altar.json
 157be5f5ca0c48357859fd76a73adb39f328ae4f data/verse/advancement/recipes/misc/amber.json
 546b1919f7f2fb9821d0ccad6331ad94de254e08 data/verse/advancement/recipes/misc/amber_from_blasting_amber_ore.json

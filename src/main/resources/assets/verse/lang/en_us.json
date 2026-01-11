@@ -60,6 +60,7 @@
   "item.verse.garnet_nugget" : "Garnet Nugget",
 
   "item.verse.amber_lens_core" : "Amber Lens Core",
+  "item.verse.dragon_scale" : "Dragon Scale",
 
   "item.verse.amber_lens" : "Amber Lens",
 
@@ -195,5 +196,7 @@
 
 
   "creativetab.verse.blocks" : "Verse Blocks",
-  "creativetab.verse.items" : "Verse Items"
+  "creativetab.verse.items" : "Verse Items",
+
+  "verse.jei.info.dragon_scale" : "Found In End Cities With a 65% Chance"
 }

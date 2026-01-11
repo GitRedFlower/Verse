@@ -1,21 +1,19 @@
 package net.redflower.verse;
 
-import net.minecraft.resources.ResourceLocation;
-import net.redflower.verse.block.VerseBlocks;
-import net.redflower.verse.item.VerseItems;
-import org.slf4j.Logger;
-
 import com.mojang.logging.LogUtils;
-
-
+import net.minecraft.resources.ResourceLocation;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.bus.api.SubscribeEvent;
+import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.config.ModConfig;
-import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
+import net.redflower.verse.block.VerseBlocks;
+import net.redflower.verse.item.VerseItems;
+import net.redflower.verse.loot.VerseLootModifier;
+import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(VERSE.MODID)
@@ -32,6 +30,7 @@ public class VERSE {
         VerseItems.register(modEventBus);
         VerseBlocks.register(modEventBus);
         VerseCreativeModTabs.register(modEventBus);
+        VerseLootModifier.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

@@ -646,7 +646,7 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
                 .pattern("BAB")
                 .define('A', VerseItems.SCULK_STEEL_INGOT.get())
                 .define('B', Items.SCULK)
-                .define('C', VerseItems.DRAGONRITE_UPGRADE_SMITHING_TEMPLATE.get())
+                .define('C', VerseTags.Items.TIER_3_UPGRADE)
                 .unlockedBy("has_sculk_steel_ingot", has(VerseItems.SCULK_STEEL_INGOT))
                 .save(recipeOutput, "sculk_steel_upgrade_template_from_template");
 
