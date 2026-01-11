@@ -3,22 +3,25 @@
   "category": "misc",
   "key": {
     "A": {
-      "item": "verse:emerite_ingot"
+      "item": "minecraft:netherite_scrap"
     },
     "B": {
-      "item": "minecraft:stone"
+      "item": "minecraft:netherrack"
     },
     "C": {
       "item": "verse:upgrade_template_base"
+    },
+    "D": {
+      "item": "minecraft:gold_ingot"
     }
   },
   "pattern": [
     "BAB",
-    "ACA",
+    "DCD",
     "BAB"
   ],
   "result": {
     "count": 1,
-    "id": "verse:emerite_upgrade_smithing_template"
+    "id": "minecraft:netherite_upgrade_smithing_template"
   }
 }

@@ -1,4 +1,4 @@
-// 1.21.1	2026-01-09T23:56:08.18588086	Item Models: verse
+// 1.21.1	2026-01-10T21:38:54.4313507	Item Models: verse
 2c7e1372223d21a2a099a6949787d347378cf781 assets/verse/models/item/amber.json
 646b97304ad3431807ed9f425cb87b0a74cdfce8 assets/verse/models/item/amber_lens.json
 4c27ffab937ba7dbc3acc6d8564f3e54ba045d2a assets/verse/models/item/amber_lens_core.json
@@ -346,3 +346,4 @@ ad55b47de7286cc2c3fb6026c025108a5e3b0c76 assets/verse/models/item/sculk_steel_le
 78b509bca0aaf3fa555e97966b54b526e42d725d assets/verse/models/item/sculk_steel_shovel.json
 be30a6369fde037248004c90831dbea3573af65b assets/verse/models/item/sculk_steel_sword.json
 86acac931ee6e3d7fdba7ede75fe66bc538831a5 assets/verse/models/item/sculk_steel_upgrade_smithing_template.json
+a5c1a690eb6edba6397fa925ee95f1820fa539c5 assets/verse/models/item/upgrade_template_base.json

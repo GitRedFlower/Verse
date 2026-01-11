@@ -620,15 +620,25 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
                 .save(recipeOutput);
 
         //Smithing Templates Crafting
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.DRAGONRITE_UPGRADE_SMITHING_TEMPLATE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.UPGRADE_TEMPLATE_BASE.get())
+                .pattern("AAA")
+                .pattern("ABA")
+                .pattern("AAA")
+                .define('A', VerseItems.BOSKALT_INGOT.get())
+                .define('B', Items.STONE)
+                .unlockedBy("has_boskalt_ingot", has(VerseItems.BOSKALT_INGOT))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.NETHERITE_UPGRADE_SMITHING_TEMPLATE)
                 .pattern("BAB")
-                .pattern("ACA")
+                .pattern("DCD")
                 .pattern("BAB")
-                .define('A', VerseItems.DRAGONRITE_INGOT.get())
-                .define('B', Items.END_STONE)
-                .define('C', VerseTags.Items.TIER_3_UPGRADE)
-                .unlockedBy("has_dragonrite_ingot", has(VerseItems.DRAGONRITE_INGOT))
-                .save(recipeOutput, "dragonrite_upgrade_template_from_template");
+                .define('A', Items.NETHERITE_SCRAP)
+                .define('B', Items.NETHERRACK)
+                .define('C', VerseItems.UPGRADE_TEMPLATE_BASE.get())
+                .define('D', Items.GOLD_INGOT)
+                .unlockedBy("has_netherite_ingot", has(Items.NETHERITE_INGOT))
+                .save(recipeOutput, "netherite_upgrade_template_from_template");
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.EMERITE_UPGRADE_SMITHING_TEMPLATE.get())
                 .pattern("BAB")
@@ -636,15 +646,25 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
                 .pattern("BAB")
                 .define('A', VerseItems.EMERITE_INGOT.get())
                 .define('B', Items.STONE)
-                .define('C', VerseBlocks.BLOCK_OF_EMERITE.get())
+                .define('C', VerseItems.UPGRADE_TEMPLATE_BASE.get())
                 .unlockedBy("has_emerite_ingot", has(VerseItems.EMERITE_INGOT))
                 .save(recipeOutput, "emerite_upgrade_template_from_template");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.DRAGONRITE_UPGRADE_SMITHING_TEMPLATE.get())
+                .pattern("BAB")
+                .pattern("ACA")
+                .pattern("BAB")
+                .define('A', VerseItems.DRAGONRITE_SCRAP.get())
+                .define('B', Items.END_STONE)
+                .define('C', VerseTags.Items.TIER_3_UPGRADE)
+                .unlockedBy("has_dragonrite_ingot", has(VerseItems.DRAGONRITE_INGOT))
+                .save(recipeOutput, "dragonrite_upgrade_template_from_template");
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.SCULK_STEEL_UPGRADE_SMITHING_TEMPLATE.get())
                 .pattern("BAB")
                 .pattern("ACA")
                 .pattern("BAB")
-                .define('A', VerseItems.SCULK_STEEL_INGOT.get())
+                .define('A', Items.ECHO_SHARD)
                 .define('B', Items.SCULK)
                 .define('C', VerseTags.Items.TIER_3_UPGRADE)
                 .unlockedBy("has_sculk_steel_ingot", has(VerseItems.SCULK_STEEL_INGOT))

@@ -63,6 +63,7 @@ public class VerseItemModelProvider extends ItemModelProvider {
         //Crafting Items
         basicItem(VerseItems.AMBER_LENS_CORE.get());
         basicItem(VerseItems.DRAGON_SCALE.get());
+        basicItem(VerseItems.UPGRADE_TEMPLATE_BASE.get());
 
         //Fuels
         basicItem(VerseItems.AMBER_LENS.get());

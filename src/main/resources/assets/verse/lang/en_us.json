@@ -167,6 +167,7 @@
   "item.verse.enchanted_emerald_apple" : "Enchanted Emerald Apple",
   "item.verse.enchanted_diamond_apple" : "Enchanted Diamond Apple",
 
+  "item.verse.upgrade_template_base" : "Upgrade Template Base",
   "item.verse.dragonrite_upgrade_smithing_template" : "Smithing Template",
   "item.verse.emerite_upgrade_smithing_template" : "Smithing Template",
   "item.verse.sculk_steel_upgrade_smithing_template" : "Smithing Template",
@@ -193,7 +194,6 @@
   "item.verse.enchanted_weak_shard" : "Weak Enchanted Shard",
 
   "item.verse.enchanted_weak_scroll" : "Weak Enchanted Scroll",
-
 
   "creativetab.verse.blocks" : "Verse Blocks",
   "creativetab.verse.items" : "Verse Items",
