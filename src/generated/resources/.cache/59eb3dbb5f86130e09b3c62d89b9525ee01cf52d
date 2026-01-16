@@ -1,4 +1,4 @@
-// 1.21.1	2026-01-10T22:18:27.287559832	Loot Tables
+// 1.21.1	2026-01-15T18:18:55.375139418	Loot Tables
 bc5dcb0a01206ddcffddcec4e7b01b562da6d315 data/verse/loot_table/blocks/altar.json
 83d5b55ddc7024241bbee5947217e253b4c4957a data/verse/loot_table/blocks/amber_ore.json
 c94942093eae0e108cb3dd022c598a42566b8ba4 data/verse/loot_table/blocks/block_of_amber.json
@@ -10,7 +10,8 @@ eb37d834fabaa330e2f04cb7f7b9078a783e593d data/verse/loot_table/blocks/block_of_g
 914cbc8318f22426c369e5890826803f6977e88b data/verse/loot_table/blocks/block_of_raw_boskalt.json
 31f0acbf4bced520bc08393af1dca4d15d2e545f data/verse/loot_table/blocks/block_of_sapphire.json
 11c6c8eefbde64577726247ca3f988b39846be6b data/verse/loot_table/blocks/block_of_sculk_steel.json
-5b5957771ba97d8331488d2ff9b84a90058d7a8e data/verse/loot_table/blocks/boskalt_ore.json
+d14dcd3b74dc3ad546f58428bc2af184ab4a19af data/verse/loot_table/blocks/boskalt_ore.json
+1badeb1530991668bad5396d8a99b47d60f54a5c data/verse/loot_table/blocks/cobbled_dark_stone.json
 fead3c5b9d4bbc2467e6fa639258dd8182657d0f data/verse/loot_table/blocks/compressed_coal_ore.json
 28ed4a373b88afcb3a1b725cad418a898ffbacb5 data/verse/loot_table/blocks/compressed_copper_ore.json
 b7c8025fff0811b979dc8ae91384dc18cadc74a8 data/verse/loot_table/blocks/compressed_deepslate_coal_ore.json
@@ -27,8 +28,9 @@ a8b27c15646700f2272f0dc48790c3173fb7be65 data/verse/loot_table/blocks/compressed
 a5a8b062a9d040ad2ef9459bb834c91e2e1181ed data/verse/loot_table/blocks/compressed_iron_ore.json
 f28f47718ef17f4f04a38635a3ab5473b8112c94 data/verse/loot_table/blocks/compressed_lapis_ore.json
 5d24987fe2bcfd80297fd75d0877809566a7a9bc data/verse/loot_table/blocks/compressed_redstone_ore.json
+1405f66b6508ab38cc71a647621db06d3fbe499d data/verse/loot_table/blocks/dark_stone.json
 a377aaa8dbdd3f462bba3d9cc98fbb9e3cfdb3cb data/verse/loot_table/blocks/deepslate_amber_ore.json
-de4d77827a7a303809681f08946402cb6057d119 data/verse/loot_table/blocks/deepslate_boskalt_ore.json
+10dfdc109c9f68831f449c38888676d5724b0646 data/verse/loot_table/blocks/deepslate_boskalt_ore.json
 91f9fd81f2cbe9acedcd6dcaab47bfd5126ca9d0 data/verse/loot_table/blocks/deepslate_garnet_ore.json
 3635a5df4e2109b7da62026206cd22fdaa881cec data/verse/loot_table/blocks/deepslate_quartz_ore.json
 cffa53ee57b5239835d81fbd127cba2cd47113bb data/verse/loot_table/blocks/deepslate_sapphire_ore.json
@@ -37,3 +39,4 @@ e7f5c5cc776b9e7aaf92f01a3b73b3af648a37ff data/verse/loot_table/blocks/garnet_ore
 4e16a8bdd391de9b0ec7bf0df0abada06187c38e data/verse/loot_table/blocks/quartz_ore.json
 a77b14cf44a8d199ff651c8c70618b147148315e data/verse/loot_table/blocks/reinforced_stone.json
 42effacc40cfc423a1b91d9ea9059672c38a58bd data/verse/loot_table/blocks/sapphire_ore.json
+ef44c902e4358e73183668fd88b1ca022eb32277 data/verse/loot_table/blocks/silt.json

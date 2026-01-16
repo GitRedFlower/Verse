@@ -155,6 +155,7 @@ public class VerseItemModelProvider extends ItemModelProvider {
         handheldItem(VerseItems.SCULK_STEEL_PICKAXE);
         handheldItem(VerseItems.SCULK_STEEL_AXE);
         handheldItem(VerseItems.SCULK_STEEL_HOE);
+        handheldItem(VerseItems.FLINT_AND_BOSKALT);
 
         //Armor
         //Boskalt

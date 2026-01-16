@@ -41,14 +41,18 @@ public class VerseBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(VerseBlocks.BLOCK_OF_ECHO_SHARD.get());
         dropSelf(VerseBlocks.BLOCK_OF_SCULK_STEEL.get());
         dropSelf(VerseBlocks.REINFORCED_STONE.get());
+        dropSelf(VerseBlocks.SILT.get());
+        dropSelf(VerseBlocks.COBBLED_DARK_STONE.get());
+
+        //Silk Touch Drops
+        add(VerseBlocks.DARK_STONE.get(),
+                block -> createSilkDrop(VerseBlocks.DARK_STONE.get(), VerseBlocks.COBBLED_DARK_STONE.get()));
+
 
         //Ore Drops
         //Multiple Drops
         //Regular Ores
-        add(VerseBlocks.BOSKALT_ORE.get(),
-               block -> createMultipleOreDrops(VerseBlocks.BOSKALT_ORE.get(), VerseItems.RAW_BOSKALT.get(), 2, 5));
-        add(VerseBlocks.DEEPSLATE_BOSKALT_ORE.get(),
-                block -> createMultipleOreDrops(VerseBlocks.DEEPSLATE_BOSKALT_ORE.get(), VerseItems.RAW_BOSKALT.get(), 2, 5));
+
 
         //Compressed Ores
         add(VerseBlocks.COMPRESSED_COAL_ORE.get(),
@@ -85,6 +89,10 @@ public class VerseBlockLootTableProvider extends BlockLootSubProvider {
                 block -> createMultipleOreDrops(VerseBlocks.COMPRESSED_DEEPSLATE_DIAMOND_ORE.get(), Items.DIAMOND,4,7));
 
         //Single Drops
+        add(VerseBlocks.BOSKALT_ORE.get(),
+                block -> createOreDrop(VerseBlocks.BOSKALT_ORE.get(), VerseItems.RAW_BOSKALT.get()));
+        add(VerseBlocks.DEEPSLATE_BOSKALT_ORE.get(),
+                block -> createOreDrop(VerseBlocks.DEEPSLATE_BOSKALT_ORE.get(), VerseItems.RAW_BOSKALT.get()));
         add(VerseBlocks.GARNET_ORE.get(),
                 block -> createOreDrop(VerseBlocks.GARNET_ORE.get(), VerseItems.GARNET.get()));
         add(VerseBlocks.DEEPSLATE_GARNET_ORE.get(),
@@ -103,13 +111,16 @@ public class VerseBlockLootTableProvider extends BlockLootSubProvider {
                 block -> createOreDrop(VerseBlocks.DEEPSLATE_AMBER_ORE.get(), VerseItems.AMBER.get()));
     }
 
-    //Creates Multiple Ore Drops. Created By Modding by Kaupenjoe. DO NOT TOUCH!!!!
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {
         HolderLookup.RegistryLookup<Enchantment> registryLookup = this.registries.lookupOrThrow(Registries.ENCHANTMENT);
         return this.createSilkTouchDispatchTable(pBlock,
                 this.applyExplosionDecay(pBlock, LootItem.lootTableItem(item)
                         .apply(SetItemCountFunction.setCount(UniformGenerator.between(minDrops,maxDrops)))
                         .apply(ApplyBonusCount.addOreBonusCount(registryLookup.getOrThrow(Enchantments.FORTUNE)))));
+    }
+
+    protected LootTable.Builder createSilkDrop(Block normal, Block other) {
+        return this.createSilkTouchDispatchTable(normal,this.applyExplosionDecay(normal, LootItem.lootTableItem(other)));
     }
 
     @Override

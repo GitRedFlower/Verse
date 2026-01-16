@@ -4,6 +4,8 @@
     "verse:deepslate_boskalt_ore",
     "verse:block_of_raw_boskalt",
     "verse:block_of_boskalt",
-    "verse:altar"
+    "verse:altar",
+    "verse:dark_stone",
+    "verse:cobbled_dark_stone"
   ]
 }

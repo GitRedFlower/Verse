@@ -1,4 +1,8 @@
 {
+  "block.verse.silt" : "Silt",
+
+  "block.verse.dark_stone" : "Dark Stone",
+
   "block.verse.boskalt_ore" : "Boskalt Ore",
   "block.verse.deepslate_boskalt_ore" : "Deepslate Boskalt Ore",
   "block.verse.garnet_ore" : "Garnet Ore",
@@ -39,6 +43,8 @@
   "block.verse.block_of_emerite" : "Block of Emerite",
   "block.verse.block_of_echo_shard" : "Block of Echo Shard",
   "block.verse.block_of_sculk_steel" : "Block of Sculk Steel",
+
+  "block.verse.cobbled_dark_stone" : "Cobbled Dark Stone",
 
   "block.verse.reinforced_stone" : "Reinforced Stone",
   "block.verse.altar" : "Altar",
@@ -195,6 +201,8 @@
   "item.verse.enchanted_weak_shard" : "Weak Enchanted Shard",
 
   "item.verse.enchanted_weak_scroll" : "Weak Enchanted Scroll",
+
+  "item.verse.flint_and_boskalt" : "Flint and Boskalt",
 
   "creativetab.verse.blocks" : "Verse Blocks",
   "creativetab.verse.items" : "Verse Items",

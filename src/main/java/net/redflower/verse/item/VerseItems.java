@@ -11,10 +11,9 @@ import net.redflower.verse.item.custom.VerseArmorMaterials;
 import net.redflower.verse.item.custom.VerseFoodProperties;
 import net.redflower.verse.item.custom.VerseFuelItem;
 import net.redflower.verse.item.custom.VerseToolTiers;
+import net.redflower.verse.item.custom.itemType.BasicItemWithGlint;
 import net.redflower.verse.item.custom.itemType.CustomSmithingTemplates;
-import net.redflower.verse.item.custom.itemType.EnchantedApple;
-import net.redflower.verse.item.custom.itemType.EnchantedScrolls;
-import net.redflower.verse.item.custom.itemType.EnchantedShards;
+import net.redflower.verse.item.custom.itemType.FlintBoskalt;
 
 import java.util.List;
 
@@ -79,25 +78,25 @@ public class VerseItems {
 
     //Enchanted Ore Apples
     public static final DeferredItem<Item> ENCHANTED_COAL_APPLE = ITEMS.register("enchanted_coal_apple",
-            () -> new EnchantedApple(new Item.Properties().food(VerseFoodProperties.ENCHANTED_COAL_APPLE)));
+            () -> new BasicItemWithGlint(new Item.Properties().food(VerseFoodProperties.ENCHANTED_COAL_APPLE)));
 
     public static final DeferredItem<Item> ENCHANTED_COPPER_APPLE = ITEMS.register("enchanted_copper_apple",
-            () -> new EnchantedApple(new Item.Properties().food(VerseFoodProperties.ENCHANTED_COPPER_APPLE)));
+            () -> new BasicItemWithGlint(new Item.Properties().food(VerseFoodProperties.ENCHANTED_COPPER_APPLE)));
 
     public static final DeferredItem<Item> ENCHANTED_IRON_APPLE = ITEMS.register("enchanted_iron_apple",
-            () -> new EnchantedApple(new Item.Properties().food(VerseFoodProperties.ENCHANTED_IRON_APPLE)));
+            () -> new BasicItemWithGlint(new Item.Properties().food(VerseFoodProperties.ENCHANTED_IRON_APPLE)));
 
     public static final DeferredItem<Item> ENCHANTED_REDSTONE_APPLE = ITEMS.register("enchanted_redstone_apple",
-            () -> new EnchantedApple(new Item.Properties().food(VerseFoodProperties.ENCHANTED_REDSTONE_APPLE)));
+            () -> new BasicItemWithGlint(new Item.Properties().food(VerseFoodProperties.ENCHANTED_REDSTONE_APPLE)));
 
     public static final DeferredItem<Item> ENCHANTED_LAPIS_APPLE = ITEMS.register("enchanted_lapis_apple",
-            () -> new EnchantedApple(new Item.Properties().food(VerseFoodProperties.ENCHANTED_LAPIS_APPLE)));
+            () -> new BasicItemWithGlint(new Item.Properties().food(VerseFoodProperties.ENCHANTED_LAPIS_APPLE)));
 
     public static final DeferredItem<Item> ENCHANTED_EMERALD_APPLE = ITEMS.register("enchanted_emerald_apple",
-            () -> new EnchantedApple(new Item.Properties().food(VerseFoodProperties.ENCHANTED_EMERALD_APPLE)));
+            () -> new BasicItemWithGlint(new Item.Properties().food(VerseFoodProperties.ENCHANTED_EMERALD_APPLE)));
 
     public static final DeferredItem<Item> ENCHANTED_DIAMOND_APPLE = ITEMS.register("enchanted_diamond_apple",
-            () -> new EnchantedApple(new Item.Properties().food(VerseFoodProperties.ENCHANTED_DIAMOND_APPLE)));
+            () -> new BasicItemWithGlint(new Item.Properties().food(VerseFoodProperties.ENCHANTED_DIAMOND_APPLE)));
 
     //Nuggets
     public static final DeferredItem<Item> DIAMOND_NUGGET = ITEMS.register("diamond_nugget",
@@ -380,42 +379,42 @@ public class VerseItems {
     //Tier 1 Knife
     public static final DeferredItem<SwordItem> IRON_KNIFE = ITEMS.register("iron_knife",
             () -> new SwordItem(Tiers.IRON, new Item.Properties()
-                    .attributes(SwordItem.createAttributes(Tiers.IRON, 1.0f, -1.2f))));
+                    .attributes(SwordItem.createAttributes(Tiers.IRON, 1.0f, -1.4f))));
 
     public static final DeferredItem<SwordItem> BOSKALT_KNIFE = ITEMS.register("boskalt_knife",
             () -> new SwordItem(VerseToolTiers.BOSKALT, new Item.Properties()
-                    .attributes(SwordItem.createAttributes(VerseToolTiers.BOSKALT, 3.0f, -1.2f))));
+                    .attributes(SwordItem.createAttributes(VerseToolTiers.BOSKALT, 3.0f, -1.4f))));
 
     //Tier 2 Knife
     public static final DeferredItem<SwordItem> DIAMOND_KNIFE = ITEMS.register("diamond_knife",
             () -> new SwordItem(Tiers.DIAMOND, new Item.Properties()
-                    .attributes(SwordItem.createAttributes(Tiers.DIAMOND, 1.0f, -1.2f))));
+                    .attributes(SwordItem.createAttributes(Tiers.DIAMOND, 1.0f, -1.4f))));
 
     public static final DeferredItem<SwordItem> SAPPHIRE_KNIFE = ITEMS.register("sapphire_knife",
             () -> new SwordItem(VerseToolTiers.SAPPHIRE, new Item.Properties()
-                    .attributes(SwordItem.createAttributes(VerseToolTiers.SAPPHIRE, 4.0f, -1.2f))));
+                    .attributes(SwordItem.createAttributes(VerseToolTiers.SAPPHIRE, 4.0f, -1.4f))));
 
     public static final DeferredItem<SwordItem> GARNET_KNIFE = ITEMS.register("garnet_knife",
             () -> new SwordItem(VerseToolTiers.GARNET, new Item.Properties()
-                    .attributes(SwordItem.createAttributes(VerseToolTiers.GARNET, 4.0f, -1.2f))));
+                    .attributes(SwordItem.createAttributes(VerseToolTiers.GARNET, 4.0f, -1.4f))));
 
     //Tier 3 Knife
     public static final DeferredItem<SwordItem> NETHERITE_KNIFE = ITEMS.register("netherite_knife",
             () -> new SwordItem(Tiers.NETHERITE, new Item.Properties()
-                    .attributes(SwordItem.createAttributes(Tiers.NETHERITE, 1.0f, -1.2f))));
+                    .attributes(SwordItem.createAttributes(Tiers.NETHERITE, 1.0f, -1.4f))));
 
     public static final DeferredItem<SwordItem> EMERITE_KNIFE = ITEMS.register("emerite_knife",
             () -> new SwordItem(VerseToolTiers.EMERITE, new Item.Properties()
-                    .attributes(SwordItem.createAttributes(VerseToolTiers.EMERITE, 5.0f, -1.2f))));
+                    .attributes(SwordItem.createAttributes(VerseToolTiers.EMERITE, 5.0f, -1.4f))));
 
     //Tier 4 Knife
     public static final DeferredItem<SwordItem> DRAGONRITE_KNIFE = ITEMS.register("dragonrite_knife",
             () -> new SwordItem(VerseToolTiers.DRAGONRITE, new Item.Properties()
-                    .attributes(SwordItem.createAttributes(VerseToolTiers.DRAGONRITE, 8.0f, -1.2f))));
+                    .attributes(SwordItem.createAttributes(VerseToolTiers.DRAGONRITE, 8.0f, -1.4f))));
 
     public static final DeferredItem<SwordItem> SCULK_STEEL_KNIFE = ITEMS.register("sculk_steel_knife",
             () -> new SwordItem(VerseToolTiers.SCULK_STEEL, new Item.Properties()
-                    .attributes(SwordItem.createAttributes(VerseToolTiers.SCULK_STEEL, 8.0f, -1.2f))));
+                    .attributes(SwordItem.createAttributes(VerseToolTiers.SCULK_STEEL, 8.0f, -1.4f))));
 
     //Crafting Items
     public static final DeferredItem<Item> AMBER_LENS_CORE = ITEMS.register("amber_lens_core",
@@ -433,11 +432,11 @@ public class VerseItems {
 
     //Enchanted Shards
     public static final DeferredItem<Item> ENCHANTED_WEAK_SHARD = ITEMS.register("enchanted_weak_shard",
-            () -> new EnchantedShards(new Item.Properties()));
+            () -> new BasicItemWithGlint(new Item.Properties()));
 
     //Enchanted Scrolls
     public static final DeferredItem<Item> ENCHANTED_WEAK_SCROLL = ITEMS.register("enchanted_weak_scroll",
-            () -> new EnchantedScrolls(new Item.Properties()));
+            () -> new BasicItemWithGlint(new Item.Properties()));
 
     //Upgrade Templates
     public static final DeferredItem<Item> DRAGONRITE_UPGRADE_SMITHING_TEMPLATE = ITEMS.register("dragonrite_upgrade_smithing_template", () -> new CustomSmithingTemplates(
@@ -466,6 +465,10 @@ public class VerseItems {
             Component.translatable("item." + VERSE.MODID + ".smithing_template.sculk_steel_upgrade.additions_slot_description"),
             CustomSmithingTemplates.createTrimmableMaterialIconList(), List.of(VERSE.location("item/empty_slot_ingot"))
     ));
+
+    //Portal Lighter
+    public static final DeferredItem<Item> FLINT_AND_BOSKALT = ITEMS.register("flint_and_boskalt",
+            () -> new FlintBoskalt(new Item.Properties().durability(64)));
 
     //Registers The Items. DO NOT TOUCH!!!
     public static void register(IEventBus eventBus) {

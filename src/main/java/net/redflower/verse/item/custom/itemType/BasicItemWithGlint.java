@@ -3,9 +3,9 @@ package net.redflower.verse.item.custom.itemType;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 
-public class EnchantedApple extends Item {
+public class BasicItemWithGlint extends Item {
 
-    public EnchantedApple(Properties properties) {
+    public BasicItemWithGlint(Properties properties) {
         super(properties);
     }
 

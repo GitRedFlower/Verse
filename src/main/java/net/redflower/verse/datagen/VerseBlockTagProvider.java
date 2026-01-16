@@ -59,7 +59,13 @@ public class VerseBlockTagProvider extends BlockTagsProvider {
                 .add(VerseBlocks.COMPRESSED_DEEPSLATE_EMERALD_ORE.get())
                 .add(VerseBlocks.COMPRESSED_DIAMOND_ORE.get())
                 .add(VerseBlocks.COMPRESSED_DEEPSLATE_DIAMOND_ORE.get())
-                .add(VerseBlocks.REINFORCED_STONE.get());
+                .add(VerseBlocks.REINFORCED_STONE.get())
+                .add(VerseBlocks.DARK_STONE.get())
+                .add(VerseBlocks.COBBLED_DARK_STONE.get());
+
+        //Needs Shovel
+        tag(BlockTags.MINEABLE_WITH_SHOVEL)
+                .add(VerseBlocks.SILT.get());
 
         //Stone Level
         tag(BlockTags.NEEDS_STONE_TOOL)
@@ -67,7 +73,9 @@ public class VerseBlockTagProvider extends BlockTagsProvider {
                 .add(VerseBlocks.DEEPSLATE_BOSKALT_ORE.get())
                 .add(VerseBlocks.BLOCK_OF_RAW_BOSKALT.get())
                 .add(VerseBlocks.BLOCK_OF_BOSKALT.get())
-                .add(VerseBlocks.ALTAR.get());
+                .add(VerseBlocks.ALTAR.get())
+                .add(VerseBlocks.DARK_STONE.get())
+                .add(VerseBlocks.COBBLED_DARK_STONE.get());
 
         //Iron Level
         tag(BlockTags.NEEDS_IRON_TOOL)
@@ -150,5 +158,9 @@ public class VerseBlockTagProvider extends BlockTagsProvider {
         tag(VerseTags.Blocks.INCORRECT_FOR_SCULK_STEEL_TOOL)
                 .addTag(BlockTags.INCORRECT_FOR_DIAMOND_TOOL)
                 .remove(VerseTags.Blocks.NEEDS_SCULK_STEEL_TOOL);
+
+        //Dimensions
+        tag(VerseTags.Blocks.MINERS_DREAM_INFINBURN)
+                .add(VerseBlocks.DARK_STONE.get());
     }
 }

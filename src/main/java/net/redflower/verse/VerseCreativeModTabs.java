@@ -18,9 +18,17 @@ public class VerseCreativeModTabs {
 
     public static final Supplier<CreativeModeTab> VERSE_BLOCKS_TAB = CREATIVE_MODE_TAB.register("verse_blocks_tab",
             () -> CreativeModeTab.builder()
-                    .icon(() -> new ItemStack(VerseBlocks.BOSKALT_ORE.get()))
+                    .icon(() -> new ItemStack(VerseBlocks.BLOCK_OF_DRAGONRITE.get()))
                     .title(Component.translatable("creativetab.verse.blocks"))
                     .displayItems((itemDisplayParameters, output) -> {
+                        //Natural Blocks
+                        //Surface
+                        output.accept(VerseBlocks.SILT);
+
+                        //Stones
+                        output.accept(VerseBlocks.DARK_STONE);
+
+                        //Ores
                         //Overworld Ores
                         //Regular Ores
                         output.accept(VerseBlocks.BOSKALT_ORE);
@@ -57,6 +65,8 @@ public class VerseCreativeModTabs {
                         //End Ores
                         output.accept(VerseBlocks.ENDSTONE_DRAGONRITE_ORE);
 
+                        //Miners Dream
+
                         //Raw Ore Blocks
                         output.accept(VerseBlocks.BLOCK_OF_RAW_BOSKALT);
 
@@ -70,6 +80,9 @@ public class VerseCreativeModTabs {
                         output.accept(VerseBlocks.BLOCK_OF_ECHO_SHARD);
                         output.accept(VerseBlocks.BLOCK_OF_SCULK_STEEL);
 
+                        //Other Blocks
+                        output.accept(VerseBlocks.COBBLED_DARK_STONE);
+
                         //Functional Blocks
                         output.accept(VerseBlocks.REINFORCED_STONE);
                         output.accept(VerseBlocks.ALTAR);
@@ -78,7 +91,7 @@ public class VerseCreativeModTabs {
 
     public static final Supplier<CreativeModeTab> VERSE_ITEMS_TAB = CREATIVE_MODE_TAB.register("verse_items_tab",
             () -> CreativeModeTab.builder()
-                    .icon(() -> new ItemStack(VerseItems.BOSKALT_INGOT.get()))
+                    .icon(() -> new ItemStack(VerseItems.DRAGONRITE_INGOT.get()))
                     .withTabsBefore(ResourceLocation.fromNamespaceAndPath(VERSE.MODID, "verse_blocks_tab"))
                     .title(Component.translatable("creativetab.verse.items"))
                     .displayItems((itemDisplayParameters, output) -> {
@@ -141,6 +154,9 @@ public class VerseCreativeModTabs {
                         output.accept(VerseItems.SCULK_STEEL_PICKAXE);
                         output.accept(VerseItems.SCULK_STEEL_AXE);
                         output.accept(VerseItems.SCULK_STEEL_HOE);
+
+                        //Other
+                        output.accept(VerseItems.FLINT_AND_BOSKALT);
 
                         //Swords
                         //Tier 1

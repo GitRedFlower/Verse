@@ -42,6 +42,7 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
         List<ItemLike> COMPRESSED_REDSTONE = List.of(VerseBlocks.COMPRESSED_REDSTONE_ORE, VerseBlocks.COMPRESSED_DEEPSLATE_REDSTONE_ORE);
         List<ItemLike> COMPRESSED_EMERALD = List.of(VerseBlocks.COMPRESSED_EMERALD_ORE, VerseBlocks.COMPRESSED_DEEPSLATE_EMERALD_ORE);
         List<ItemLike> COMPRESSED_DIAMOND = List.of(VerseBlocks.COMPRESSED_DIAMOND_ORE, VerseBlocks.COMPRESSED_DEEPSLATE_DIAMOND_ORE);
+        List<ItemLike> DARK_STONE = List.of(VerseBlocks.COBBLED_DARK_STONE.get());
 
         //Shaped
         //Blocks
@@ -679,6 +680,16 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
                 .unlockedBy("has_sculk_steel_ingot", has(VerseItems.SCULK_STEEL_INGOT))
                 .save(recipeOutput, "sculk_steel_upgrade_template_from_template");
 
+        //Blocks
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseBlocks.SILT, 4)
+                .pattern("BA ")
+                .pattern("AB ")
+                .pattern("   ")
+                .define('A', Items.DIRT)
+                .define('B', Items.SAND)
+                .unlockedBy("has_dirt", has(Items.DIRT))
+                .save(recipeOutput);
+
         //Shapeless
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VerseItems.RAW_BOSKALT.get(), 9)
                 .requires(VerseBlocks.BLOCK_OF_RAW_BOSKALT)
@@ -749,13 +760,16 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
         oreBlasting(recipeOutput, AMBER_SMELT, RecipeCategory.MISC, VerseItems.AMBER, 0.25f, 100, "amber");
         oreBlasting(recipeOutput, DRAGONRITE_SMELT, RecipeCategory.MISC, VerseItems.DRAGONRITE_SCRAP, 0.25f, 100, "dragonrite");
         oreBlasting(recipeOutput, COMPRESSED_COAL, RecipeCategory.MISC, Items.COAL_BLOCK, 0.25f, 100, "coal");
-        oreBlasting(recipeOutput, COMPRESSED_COPPER, RecipeCategory.MISC, Items.IRON_BLOCK, 0.25f, 200, "copper");
+        oreBlasting(recipeOutput, COMPRESSED_COPPER, RecipeCategory.MISC, Items.IRON_BLOCK, 0.25f, 100, "copper");
         oreBlasting(recipeOutput, COMPRESSED_IRON, RecipeCategory.MISC, Items.COPPER_BLOCK, 0.25f, 100, "iron");
         oreBlasting(recipeOutput, COMPRESSED_GOLD, RecipeCategory.MISC, Items.GOLD_BLOCK, 0.25f, 100, "gold");
         oreBlasting(recipeOutput, COMPRESSED_LAPIS, RecipeCategory.MISC, Items.LAPIS_BLOCK, 0.25f, 100, "lapis");
         oreBlasting(recipeOutput, COMPRESSED_REDSTONE, RecipeCategory.MISC, Items.REDSTONE_BLOCK, 0.25f, 100, "redstone");
         oreBlasting(recipeOutput, COMPRESSED_EMERALD, RecipeCategory.MISC, Items.EMERALD_BLOCK, 0.25f, 100, "emerald");
         oreBlasting(recipeOutput, COMPRESSED_DIAMOND, RecipeCategory.MISC, Items.DIAMOND_BLOCK, 0.25f, 100, "diamond");
+
+        //Other Smelting
+        oreSmelting(recipeOutput, DARK_STONE, RecipeCategory.MISC, VerseBlocks.DARK_STONE.get(), 0.25f, 200, "dark_stone");
 
         //Smithing
         //Emerite

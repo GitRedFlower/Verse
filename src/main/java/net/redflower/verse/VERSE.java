@@ -13,6 +13,7 @@ import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import net.redflower.verse.block.VerseBlocks;
 import net.redflower.verse.item.VerseItems;
 import net.redflower.verse.loot.VerseLootModifier;
+import net.redflower.verse.worldgen.minersdream.MinersDreamDimension;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
@@ -31,6 +32,7 @@ public class VERSE {
         VerseBlocks.register(modEventBus);
         VerseCreativeModTabs.register(modEventBus);
         VerseLootModifier.register(modEventBus);
+        MinersDreamDimension.POI.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

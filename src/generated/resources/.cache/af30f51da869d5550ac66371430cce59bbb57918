@@ -1,4 +1,4 @@
-// 1.21.1	2026-01-10T22:18:27.286200169	Block States: verse
+// 1.21.1	2026-01-15T16:27:37.105227078	Block States: verse
 90fd76107293d102961eed5bf338e7994086e28d assets/verse/blockstates/amber_ore.json
 0b1f6a5600e3aa7d1d4a7ac20a7ebf2bf2dc4724 assets/verse/blockstates/block_of_amber.json
 0badcbda4cab1e13456e8143dddfa0489bb2f64b assets/verse/blockstates/block_of_boskalt.json
@@ -10,6 +10,7 @@ df992aeffe434650a75bc23b42a7cc258a5ce193 assets/verse/blockstates/block_of_garne
 0eae8d0a7cfffd8a2b22baafbb9b91e7ed90a2be assets/verse/blockstates/block_of_sapphire.json
 cbaddeaff94fbebc5092887f00ac35702e510abe assets/verse/blockstates/block_of_sculk_steel.json
 f2e50392df8f9c6d5b08397a1b6a6bef570ca96e assets/verse/blockstates/boskalt_ore.json
+3641366ff455fa566734574ed530ad71b6fa77a5 assets/verse/blockstates/cobbled_dark_stone.json
 64948194adb2c614c442c81d33c001a39aca5e79 assets/verse/blockstates/compressed_coal_ore.json
 c01d9f4b0b1985093c7dcbbd6c000ec3a2400202 assets/verse/blockstates/compressed_copper_ore.json
 ec6fffdf945d00b41075b9fda75cc62068fb60eb assets/verse/blockstates/compressed_deepslate_coal_ore.json
@@ -26,6 +27,7 @@ d3205816be4990d1e2ea01c6835f2e1b5c1f0777 assets/verse/blockstates/compressed_gol
 824832d159aae2b7825a00bb6b2e9155dd997531 assets/verse/blockstates/compressed_iron_ore.json
 9f8c6014562510f39212d88ec36ad3d75874bce3 assets/verse/blockstates/compressed_lapis_ore.json
 896f96ff0fc715ad1c78cb03b018faafb4fdbd92 assets/verse/blockstates/compressed_redstone_ore.json
+559e52b28075b6811b2133840729f252c584efad assets/verse/blockstates/dark_stone.json
 38e25fc04e7f47a951282da3f359eb3c04194949 assets/verse/blockstates/deepslate_amber_ore.json
 3776b479b7908403ba1cf2f0bb0760b993858df3 assets/verse/blockstates/deepslate_boskalt_ore.json
 a62e99e6a2e3841ffd1361a9e7cd617eda2efbf7 assets/verse/blockstates/deepslate_garnet_ore.json
@@ -36,6 +38,7 @@ b1f926784c7e3bac1aa0a09d944c5494556d01d6 assets/verse/blockstates/garnet_ore.jso
 89dcd43a9b735f58edcf5d2cd67103c5a8a430b3 assets/verse/blockstates/quartz_ore.json
 d69386969ab3b049742b7d04203ad6c19c1e9d78 assets/verse/blockstates/reinforced_stone.json
 d63ce353d0fbbc7aefaf88db41c6a8e08fa481a5 assets/verse/blockstates/sapphire_ore.json
+1cf011054c74607d387941c3c6e5936fa4332716 assets/verse/blockstates/silt.json
 d3276a44152ee176446a57ed5a4561ba8aeb8be0 assets/verse/models/block/amber_ore.json
 76508409da26fa16ff1d6a5e8157a95a6f388b79 assets/verse/models/block/block_of_amber.json
 28e6a21a41d65765519eb645c80b75c74ac38275 assets/verse/models/block/block_of_boskalt.json
@@ -47,6 +50,7 @@ f8f3ddb18d829776cb60e33b4f90cfabf24398d8 assets/verse/models/block/block_of_raw_
 8c16cd5cafb90959c25bca8854ded8faf1406941 assets/verse/models/block/block_of_sapphire.json
 c0e142cc343e6c76a75e53b0a15492f4eff61faa assets/verse/models/block/block_of_sculk_steel.json
 4c34ce4540115d9b2543b6092877a6358dc7bacc assets/verse/models/block/boskalt_ore.json
+56319c44337ce0720f16410e5c4c90f103d204c3 assets/verse/models/block/cobbled_dark_stone.json
 03d93af373b47284a4288e5d5c928aa01e090d35 assets/verse/models/block/compressed_coal_ore.json
 f5b16d6d2bab4f6aa872367137a9765330a21562 assets/verse/models/block/compressed_copper_ore.json
 d2f305fa4289df008a0108503c2e71b43de57d80 assets/verse/models/block/compressed_deepslate_coal_ore.json
@@ -63,6 +67,7 @@ a9d5c060db57d4be816b2ad7a574792e214325aa assets/verse/models/block/compressed_de
 9ee0d4beaf16941dee212b10111533a3cd71c857 assets/verse/models/block/compressed_iron_ore.json
 652cc68c9d72dff1c5c187d62bd57a059113af46 assets/verse/models/block/compressed_lapis_ore.json
 82203452a2c06c43cb92800338f1a9539018be0a assets/verse/models/block/compressed_redstone_ore.json
+9641fe27b0416899e4bc9e553405195f56d1871d assets/verse/models/block/dark_stone.json
 95b2990528fe1412c5223fa1f062aa3fe4fc1888 assets/verse/models/block/deepslate_amber_ore.json
 a9243ed94daaa753c0a06fb11d918c6e138c556a assets/verse/models/block/deepslate_boskalt_ore.json
 3d0a4cc4ed20d9f272b3b7fd107851772798e0a4 assets/verse/models/block/deepslate_garnet_ore.json
@@ -73,6 +78,7 @@ faf5fffd2103d222ee5bab4190a14ad7adbb64be assets/verse/models/block/endstone_drag
 9c09ac02b377153c88fe0310646d0099242a8726 assets/verse/models/block/quartz_ore.json
 f7b1addb4e381acd696a4b69ec91910be2c604df assets/verse/models/block/reinforced_stone.json
 cc0d9185c8ab0343911c9fcc3a2b72d93a9bf237 assets/verse/models/block/sapphire_ore.json
+8e528d35831ea3d5eb8636f152e378c5245c7e2a assets/verse/models/block/silt.json
 87d349226b58b64a5ccddee5b137cad1cc72e62c assets/verse/models/item/amber_ore.json
 0d504c80f21d1550760f01c233b4be91f321bc73 assets/verse/models/item/block_of_amber.json
 46960c87fe92ad89c6b7da6cfda1058c161d5cc9 assets/verse/models/item/block_of_boskalt.json
@@ -84,6 +90,7 @@ d23b5a5aaf5f922dea4a8f7d8e3506a50a88150b assets/verse/models/item/block_of_garne
 414dcb43f779f18b0c5af3efff6af1c0262b0cb4 assets/verse/models/item/block_of_sapphire.json
 b879749823c265f597461ebed04ef291c2b809f2 assets/verse/models/item/block_of_sculk_steel.json
 2f35372b48cb5b45338ee93446d59f79c5da176c assets/verse/models/item/boskalt_ore.json
+522cbeca953e2c6e4f0feb08923daeb3c5cc8bd6 assets/verse/models/item/cobbled_dark_stone.json
 5dca94d1d198ad6c3dce1a38278c8abf89223904 assets/verse/models/item/compressed_coal_ore.json
 e88864047bcf9978178f8b26af26ff46a046a06e assets/verse/models/item/compressed_copper_ore.json
 88dbdce958c58512804a975c41c996fb26cb5d5a assets/verse/models/item/compressed_deepslate_coal_ore.json
@@ -100,6 +107,7 @@ b4dc83d31baa5b91fd2e5a9f5b96380586a3a57f assets/verse/models/item/compressed_gol
 81ad6fa6adbd18a46664997f4bfede3cd01cd734 assets/verse/models/item/compressed_iron_ore.json
 06079bba5227307adcce54096fb3b40c29c8a1f8 assets/verse/models/item/compressed_lapis_ore.json
 20f1578c2ea2b83555c6b2862a39d8a090436fb4 assets/verse/models/item/compressed_redstone_ore.json
+917b11b863083b41d7aeaeb50a7a8327b3d78ebd assets/verse/models/item/dark_stone.json
 b5758f2ed45438f7dbc1e075d2649232b00bbe57 assets/verse/models/item/deepslate_amber_ore.json
 af5858e9509b11b1d8f9755cad40624420f3b4ba assets/verse/models/item/deepslate_boskalt_ore.json
 0da0c6097e12ed47a1a37dedaa78f6a9d6f4a902 assets/verse/models/item/deepslate_garnet_ore.json
@@ -110,3 +118,4 @@ af5858e9509b11b1d8f9755cad40624420f3b4ba assets/verse/models/item/deepslate_bosk
 665a21f26efe5373136961ae4388f88b4a50071e assets/verse/models/item/quartz_ore.json
 02cb1eac25bdb92409075689807778f562dce257 assets/verse/models/item/reinforced_stone.json
 da47939a9e751c52c70fae042abe3e5b39d7883b assets/verse/models/item/sapphire_ore.json
+175101eae2add57cb08cd2c3ad15d53cbe31dfab assets/verse/models/item/silt.json

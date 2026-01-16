@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "blocks",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "dark_stone",
+  "ingredient": {
+    "item": "verse:cobbled_dark_stone"
+  },
+  "result": {
+    "count": 1,
+    "id": "verse:dark_stone"
+  }
+}

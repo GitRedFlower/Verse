@@ -15,6 +15,13 @@ public class VerseBlockStateProvider extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
+        //Natural Blocks
+        //Surface
+        blockWIthItem(VerseBlocks.SILT);
+
+        //Stones
+        blockWIthItem(VerseBlocks.DARK_STONE);
+
         //Overworld Ores
         //Regular Ores
         blockWIthItem(VerseBlocks.BOSKALT_ORE);
@@ -67,6 +74,7 @@ public class VerseBlockStateProvider extends BlockStateProvider {
 
         //Other Blocks
         blockWIthItem(VerseBlocks.REINFORCED_STONE);
+        blockWIthItem(VerseBlocks.COBBLED_DARK_STONE);
     }
 
     private void blockWIthItem(DeferredBlock<?> deferredBlock) {

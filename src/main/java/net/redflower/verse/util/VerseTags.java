@@ -31,6 +31,8 @@ public class VerseTags {
         public static final TagKey<Block> INCORRECT_FOR_SCULK_STEEL_TOOL = createTag("incorrect_for_sculk_steel_tool");
 
 
+        //Dimensions
+        public static final TagKey<Block> MINERS_DREAM_INFINBURN = createTag("miners_dream_infinburn");
 
         private static TagKey<Block> createTag(String name) {
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(VERSE.MODID, name));

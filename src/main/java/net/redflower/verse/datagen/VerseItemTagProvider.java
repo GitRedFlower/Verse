@@ -4,11 +4,13 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
 import net.minecraft.tags.ItemTags;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.redflower.verse.VERSE;
+import net.redflower.verse.block.VerseBlocks;
 import net.redflower.verse.item.VerseItems;
 import net.redflower.verse.util.VerseTags;
 import org.jetbrains.annotations.Nullable;
@@ -299,5 +301,12 @@ public class VerseItemTagProvider extends ItemTagsProvider {
                 .add(VerseItems.SCULK_STEEL_CHESTPLATE.get())
                 .add(VerseItems.SCULK_STEEL_LEGGINGS.get())
                 .add(VerseItems.SCULK_STEEL_BOOTS.get());
+
+        //Blocks
+        tag(ItemTags.STONE_TOOL_MATERIALS)
+                .add(Item.byBlock(VerseBlocks.COBBLED_DARK_STONE.get()));
+
+        tag(ItemTags.STONE_CRAFTING_MATERIALS)
+                .add(Item.byBlock(VerseBlocks.COBBLED_DARK_STONE.get()));
     }
 }

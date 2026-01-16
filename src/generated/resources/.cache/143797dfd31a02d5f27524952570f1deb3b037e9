@@ -1,4 +1,4 @@
-// 1.21.1	2026-01-09T23:21:53.040128628	Tags for minecraft:item mod id verse
+// 1.21.1	2026-01-15T17:57:55.528453038	Tags for minecraft:item mod id verse
 8c04d7550b0f90236195a0236fb4fb73fc5ef346 data/c/tags/item/gems.json
 7da706d853e40866ce4f49134c65ef909636174d data/c/tags/item/gems/quartz.json
 a2d8ae310a794300695f8582f6a3543602ea5c5f data/minecraft/tags/item/axes.json
@@ -8,6 +8,8 @@ a2d8ae310a794300695f8582f6a3543602ea5c5f data/minecraft/tags/item/axes.json
 d168120acb602820d5f2e2a287642d1df70a6b51 data/minecraft/tags/item/hoes.json
 f22774cc0fbf051bf8ca05ac8d476dae7dd98da1 data/minecraft/tags/item/pickaxes.json
 03ab2500af504b7bcaf237df89ea13ed08c57224 data/minecraft/tags/item/shovels.json
+df5477c8af218e423989fcd629d7a97783e014ba data/minecraft/tags/item/stone_crafting_materials.json
+df5477c8af218e423989fcd629d7a97783e014ba data/minecraft/tags/item/stone_tool_materials.json
 47e459cecc6f99c9d49377cd5330c9eb9809d15a data/minecraft/tags/item/swords.json
 c8e6b44df211484023b6bc94306d1b9a73dccfed data/minecraft/tags/item/trimmable_armor.json
 b9f5a47089cba3930c22c534c09ba7d36f52dc0e data/verse/tags/item/tier_2_axe.json

@@ -1,4 +1,6 @@
-// 1.21.1	2026-01-09T20:23:11.840853032	Registries
+// 1.21.1	2026-01-15T20:43:00.62621347	Registries
+ebc9dcb42baeba22678a6231c2a6ff7b685e6aa3 data/verse/dimension/miners_dream.json
+4bcfe21f33949dd255fc59016753281e3543bf30 data/verse/dimension_type/miners_dream.json
 53a1ca577283c8cac9721b9c240af06e2b706a07 data/verse/neoforge/biome_modifier/add_end_dragonrite_ore.json
 5b41a5ad297ce2aa9bb9424b9653b68fa6f36f61 data/verse/neoforge/biome_modifier/add_overworld_amber_ore.json
 a784cbb731a557e445b3aa7bc6b5d6e5b2e590a1 data/verse/neoforge/biome_modifier/add_overworld_boskalt_ore.json
@@ -27,6 +29,7 @@ a9a95121d2a4e36423d48d32ab70c4fe198365f2 data/verse/worldgen/configured_feature/
 3e9d829c9e3e7822cdc52b44ccea5fb90e6447e2 data/verse/worldgen/configured_feature/overworld_garnet_ore.json
 74f5547bdfd8b1cde9009dc28a9e1307d5d66385 data/verse/worldgen/configured_feature/overworld_quartz_ore.json
 8702b7f0ed206d0f2fa6c5db2c8c782c63f4c09a data/verse/worldgen/configured_feature/overworld_sapphire_ore.json
+77416637b344f008e15cb468dbd151b2d377c192 data/verse/worldgen/noise_settings/miners_dream.json
 6ef733a51599fce94939fd6b3dfa1d106e28f87b data/verse/worldgen/placed_feature/end_dragonrite_ore_placed.json
 9ad09b8e09fb644eb7e9245f7ea960b3df39ad6b data/verse/worldgen/placed_feature/overworld_amber_ore_placed.json
 45cd2ca7cafb9f1a4e1545001783a83aa9b90576 data/verse/worldgen/placed_feature/overworld_boskalt_ore_placed.json

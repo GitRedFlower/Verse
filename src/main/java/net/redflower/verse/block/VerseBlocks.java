@@ -3,6 +3,7 @@ package net.redflower.verse.block;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
@@ -10,12 +11,27 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.redflower.verse.VERSE;
 import net.redflower.verse.block.custom.AltarBlock;
+import net.redflower.verse.block.custom.MinersDreamPortalBlock;
 import net.redflower.verse.item.VerseItems;
 
 import java.util.function.Supplier;
 
 public class VerseBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(VERSE.MODID);
+
+    //Natural Blocks
+    //Surface
+    public static final DeferredBlock<Block> SILT = registerBlock("silt",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1.5f)
+                    .sound(SoundType.GRAVEL)));
+
+    //Stones
+    public static final DeferredBlock<Block> DARK_STONE = registerBlock("dark_stone",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3f)
+                    .sound(SoundType.STONE)));
 
     //Stone Ores
     public static final DeferredBlock<Block> BOSKALT_ORE = registerBlock("boskalt_ore",
@@ -240,6 +256,13 @@ public class VerseBlocks {
                     .strength(3f)
                     .sound(SoundType.METAL)));
 
+    //Other Blocks
+    public static final DeferredBlock<Block> COBBLED_DARK_STONE = registerBlock("cobbled_dark_stone",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3f)
+                    .sound(SoundType.STONE)));
+
 
     //Functional Block
     public static final DeferredBlock<Block> ALTAR = registerBlock("altar",
@@ -249,10 +272,14 @@ public class VerseBlocks {
                     .sound(SoundType.STONE)));
 
     public static final DeferredBlock<Block> REINFORCED_STONE = registerBlock("reinforced_stone",
-            () -> new AltarBlock(BlockBehaviour.Properties.of().noOcclusion()
+            () -> new Block(BlockBehaviour.Properties.of().noOcclusion()
                     .requiresCorrectToolForDrops()
                     .strength(3f)
                     .sound(SoundType.COPPER)));
+
+    //Portal Blocks AKA: Copy of a Nether Portal Block
+    public static final DeferredBlock<MinersDreamPortalBlock> MINERS_DREAM_PORTAL = BLOCKS.register("miners_dream_portal",
+            () -> new MinersDreamPortalBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_PORTAL).noLootTable()));
 
 
     //Registers The Blocks. DO NOT TOUCH!!!!

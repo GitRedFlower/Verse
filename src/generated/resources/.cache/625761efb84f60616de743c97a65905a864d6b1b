@@ -1,15 +1,17 @@
-// 1.21.1	2026-01-10T22:18:27.284999905	Tags for minecraft:block mod id verse
+// 1.21.1	2026-01-15T18:28:08.656735734	Tags for minecraft:block mod id verse
 c670749494433974d68ab80c368c3237473bf9ec data/minecraft/tags/block/beacon_base_blocks.json
-747d3d097aa763e920d8d645c1dca515b78abd31 data/minecraft/tags/block/mineable/pickaxe.json
+8f4b7ed4f31ae3acb91baeab4b5920f8769a837e data/minecraft/tags/block/mineable/pickaxe.json
+d7daa577002fd3fffa5220b787d3821138bec5fc data/minecraft/tags/block/mineable/shovel.json
 30f5af700b57c2b32515376016b595c36fe2a550 data/minecraft/tags/block/needs_diamond_tool.json
 450ebc4ad56858da678de829d6965ece731ea982 data/minecraft/tags/block/needs_iron_tool.json
-fdb644abc135a40d3f4207bcb65aa456940267b7 data/minecraft/tags/block/needs_stone_tool.json
+9b6dfee6cd221dc779d3028a92e9d527edd7fc80 data/minecraft/tags/block/needs_stone_tool.json
 3e8bac74d26c066f1bb688adb672ba6608b3b767 data/verse/tags/block/incorrect_for_boskalt_tool.json
 d702db07085c47f5afae4f2c4c73ea9a190b8527 data/verse/tags/block/incorrect_for_dragonrite_tool.json
 d702db07085c47f5afae4f2c4c73ea9a190b8527 data/verse/tags/block/incorrect_for_emerite_tool.json
 bc659d93135a920b1dfb0ed83373724064563597 data/verse/tags/block/incorrect_for_garnet_tool.json
 f658ea97c9e8798c5881670ee81b9a1492e90305 data/verse/tags/block/incorrect_for_sapphire_tool.json
 e945beaa7a9428ec8668ecdfc9f79d2f2487cf98 data/verse/tags/block/incorrect_for_sculk_steel_tool.json
+db757dbc197c32827097d42f381478b549bc03d4 data/verse/tags/block/miners_dream_infinburn.json
 32b13946c4cd1f944b029659ccce5fcb2adad4ff data/verse/tags/block/needs_boskalt_tool.json
 a249c46329a41538f49a564e1f14338aaf1be5a0 data/verse/tags/block/needs_dragonrite_tool.json
 a249c46329a41538f49a564e1f14338aaf1be5a0 data/verse/tags/block/needs_emerite_tool.json
