@@ -468,7 +468,7 @@ public class VerseItems {
 
     //Portal Lighter
     public static final DeferredItem<Item> FLINT_AND_BOSKALT = ITEMS.register("flint_and_boskalt",
-            () -> new FlintBoskalt(new Item.Properties().durability(64)));
+            () -> new FlintBoskalt(new Item.Properties().stacksTo(1)));
 
     //Registers The Items. DO NOT TOUCH!!!
     public static void register(IEventBus eventBus) {

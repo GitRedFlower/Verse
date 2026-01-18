@@ -43,6 +43,9 @@ public class VerseBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(VerseBlocks.REINFORCED_STONE.get());
         dropSelf(VerseBlocks.SILT.get());
         dropSelf(VerseBlocks.COBBLED_DARK_STONE.get());
+        dropSelf(VerseBlocks.LIMESTONE.get());
+        dropSelf(VerseBlocks.MARBLE.get());
+        dropSelf(VerseBlocks.MILVI.get());
 
         //Silk Touch Drops
         add(VerseBlocks.DARK_STONE.get(),

@@ -1,4 +1,4 @@
-// 1.21.1	2026-01-15T18:20:52.192687072	Recipes
+// 1.21.1	2026-01-15T21:31:27.002511201	Recipes
 d1247089169faa2fbe0ae39b2db0a985a95fca71 data/minecraft/advancement/recipes/misc/comparator.json
 8358c04bd502024864e5f1514ca5fe59fa01f954 data/minecraft/advancement/recipes/misc/daylight_detector.json
 9afad7cea1702bca8c4c2b1c303abc13f2395ee5 data/minecraft/advancement/recipes/misc/diamond_from_diamond_nugget.json
@@ -114,6 +114,7 @@ c7b05b195e0a6666234ee4f678519a8be3ba2f63 data/verse/advancement/recipes/misc/eme
 d96739975e366a074e550bf74a76d26632a95c57 data/verse/advancement/recipes/misc/emerite_upgrade_smithing_template.json
 4ce5e5d7a29df16f8014e3ff25fcd430c73deae9 data/verse/advancement/recipes/misc/enchanted_weak_scroll.json
 12048a4ae2c0e689d9f31601d6cd30c8fe683eba data/verse/advancement/recipes/misc/enchanted_weak_shard.json
+c276993d2c2d02a415c08fc41ff8fb237a5eef8a data/verse/advancement/recipes/misc/flint_and_boskalt.json
 cc3696089197d2fcebd83e421404ededf45d4d05 data/verse/advancement/recipes/misc/garnet.json
 dc57c7d06d7986f3522941b55bdc747b7c3f8f89 data/verse/advancement/recipes/misc/garnet_axe.json
 1712b9df75757ea95d9bc047ad3418a6239a6dc5 data/verse/advancement/recipes/misc/garnet_boots.json
@@ -290,6 +291,7 @@ ec7db15be4e2cc307a6e5b083392d8cf08100713 data/verse/recipe/emerite_pickaxe.json
 edea9768d93b80700d025ae499b7c455e2f12fb9 data/verse/recipe/emerite_upgrade_smithing_template.json
 e661ee3535a8d28fc8b4b7b78e769e83c1467fd8 data/verse/recipe/enchanted_weak_scroll.json
 173f8f7405da76ef66587fea5cdb9c385330c6ce data/verse/recipe/enchanted_weak_shard.json
+58028b2fac7d24ae5c0638dd3750aab7034d6930 data/verse/recipe/flint_and_boskalt.json
 b2ffd0876fc7aab3429d4aecf55b657ee988d3f8 data/verse/recipe/garnet.json
 4e0024780443f927856faa5af1ff1645d517e5f3 data/verse/recipe/garnet_axe.json
 1bfb4bbf321d3bf2b865bb1f16d8b1ea562a616b data/verse/recipe/garnet_boots.json

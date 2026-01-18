@@ -731,6 +731,12 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
                 .unlockedBy("has_garnet", has(VerseItems.GARNET))
                 .save(recipeOutput);
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VerseItems.FLINT_AND_BOSKALT.get())
+                .requires(VerseItems.BOSKALT_INGOT.get())
+                .requires(Items.FLINT)
+                .unlockedBy("has_boskalt_ingot", has(VerseItems.BOSKALT_INGOT))
+                .save(recipeOutput);
+
         //Smithing Template Duplication
         copySmithingTemplate(recipeOutput, VerseItems.DRAGONRITE_UPGRADE_SMITHING_TEMPLATE.get(), Items.END_STONE);
         copySmithingTemplate(recipeOutput, VerseItems.EMERITE_UPGRADE_SMITHING_TEMPLATE.get(), Items.STONE);

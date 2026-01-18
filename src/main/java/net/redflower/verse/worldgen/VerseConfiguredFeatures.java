@@ -1,34 +1,43 @@
 package net.redflower.verse.worldgen;
 
+import net.minecraft.core.HolderGetter;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
+import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.resources.ResourceKey;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.util.random.SimpleWeightedRandomList;
+import net.minecraft.util.valueproviders.ConstantInt;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.VegetationPatchConfiguration;
+import net.minecraft.world.level.levelgen.feature.stateproviders.WeightedStateProvider;
+import net.minecraft.world.level.levelgen.placement.CaveSurface;
 import net.minecraft.world.level.levelgen.structure.templatesystem.BlockMatchTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.RuleTest;
 import net.minecraft.world.level.levelgen.structure.templatesystem.TagMatchTest;
 import net.redflower.verse.VERSE;
 import net.redflower.verse.block.VerseBlocks;
+import net.redflower.verse.util.VerseTags;
 
 import java.util.List;
 
 public class VerseConfiguredFeatures {
 
 
-    //Overworld
+    //Overworld Ores
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_QUARTZ_ORE_KEY = registerKey("overworld_quartz_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_AMBER_ORE_KEY = registerKey("overworld_amber_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_BOSKALT_ORE_KEY = registerKey("overworld_boskalt_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SAPPHIRE_ORE_KEY = registerKey("overworld_sapphire_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_GARNET_ORE_KEY = registerKey("overworld_garnet_ore");
 
-    //Overworld Compressed
+    //Overworld Compressed Ores
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_COMPRESSED_COAL_ORE_KEY = registerKey("overworld_compressed_coal_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_COMPRESSED_COPPER_ORE_KEY = registerKey("overworld_compressed_copper_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_COMPRESSED_IRON_ORE_KEY = registerKey("overworld_compressed_iron_ore");
@@ -38,17 +47,34 @@ public class VerseConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_COMPRESSED_LAPIS_ORE_KEY = registerKey("overworld_compressed_lapis_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_COMPRESSED_DIAMOND_ORE_KEY = registerKey("overworld_compressed_diamond_ore");
 
-    //End
+    //End Ores
     public static final ResourceKey<ConfiguredFeature<?, ?>> END_DRAGONRITE_ORE_KEY = registerKey("end_dragonrite_ore");
 
+    //Miners Dream
+    //Dirty Caves
+    public static final ResourceKey<ConfiguredFeature<?, ?>> TOP_LAYER_SILT = registerKey("top_layer_silt");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> SILT_BLOB = registerKey("silt_blob");
 
+    //Limestone Caves
+    public static final ResourceKey<ConfiguredFeature<?, ?>> TOP_LAYER_LIMESTONE = registerKey("top_layer_limestone");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> LIMESTONE_BLOB = registerKey("limestone_blob");
+
+    //Marble Caves
+    public static final ResourceKey<ConfiguredFeature<?, ?>> TOP_LAYER_MARBLE = registerKey("top_layer_marble");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> MARBLE_BLOB = registerKey("marble_blob");
+
+    //Mystical Caves
+    public static final ResourceKey<ConfiguredFeature<?, ?>> TOP_LAYER_MILVI = registerKey("top_layer_milvi");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> MILVI_BLOB = registerKey("milvi_blob");
 
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
+        HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
         //What Blocks Get Replaced
         RuleTest stoneReplaceables = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
         RuleTest deepslateReplaceables = new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
         RuleTest endstoneReplaceables = new BlockMatchTest(Blocks.END_STONE);
+        RuleTest darkStoneReplaceables = new BlockMatchTest(VerseBlocks.DARK_STONE.get());
 
         //Overworld Setup Blocks
         List<OreConfiguration.TargetBlockState> overworldQuartzOres = List.of(
@@ -105,14 +131,14 @@ public class VerseConfiguredFeatures {
                 OreConfiguration.target(deepslateReplaceables, VerseBlocks.COMPRESSED_DEEPSLATE_DIAMOND_ORE.get().defaultBlockState()));
 
 
-        //Overworld Setup
+        //Overworld Ores Setup
         register(context, OVERWORLD_QUARTZ_ORE_KEY, Feature.ORE, new OreConfiguration(overworldQuartzOres, 10));
         register(context, OVERWORLD_AMBER_ORE_KEY, Feature.ORE, new OreConfiguration(overworldAmberOres, 8));
         register(context, OVERWORLD_BOSKALT_ORE_KEY, Feature.ORE, new OreConfiguration(overworldBoskaltOres, 10));
         register(context, OVERWORLD_SAPPHIRE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldSapphireOres, 4));
         register(context, OVERWORLD_GARNET_ORE_KEY, Feature.ORE, new OreConfiguration(overworldGarnetOres, 4));
 
-        //Overworld Compressed Setup
+        //Overworld Compressed Ores Setup
         register(context, OVERWORLD_COMPRESSED_COAL_ORE_KEY, Feature.ORE, new OreConfiguration(overworldCompressedCoalOres, 3));
         register(context, OVERWORLD_COMPRESSED_COPPER_ORE_KEY, Feature.ORE, new OreConfiguration(overworldCompressedCopperOres, 3));
         register(context, OVERWORLD_COMPRESSED_IRON_ORE_KEY, Feature.ORE, new OreConfiguration(overworldCompressedIronOres, 3));
@@ -122,13 +148,30 @@ public class VerseConfiguredFeatures {
         register(context, OVERWORLD_COMPRESSED_LAPIS_ORE_KEY, Feature.ORE, new OreConfiguration(overworldCompressedLapisOres, 3));
         register(context, OVERWORLD_COMPRESSED_DIAMOND_ORE_KEY, Feature.ORE, new OreConfiguration(overworldCompressedDiamondOres, 3));
 
-        //End Setup
+        //End Ores Setup
         register(context, END_DRAGONRITE_ORE_KEY, Feature.ORE, new OreConfiguration(endstoneReplaceables,
                 VerseBlocks.ENDSTONE_DRAGONRITE_ORE.get().defaultBlockState(), 4));
+
+        //Miners Dream
+        //Dirty Plains
+        register(context, TOP_LAYER_SILT, Feature.VEGETATION_PATCH, new VegetationPatchConfiguration(VerseTags.Blocks.MINERS_DREAM_CARVER, new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(VerseBlocks.SILT.get().defaultBlockState(), 1).add(VerseBlocks.SILT.get().defaultBlockState(), 2)), PlacementUtils.inlinePlaced(configuredFeatures.getOrThrow(TOP_LAYER_SILT)), CaveSurface.FLOOR, ConstantInt.of(1), 0, 3, 0, UniformInt.of(1, 5), 0.3f));
+        register(context, SILT_BLOB, Feature.ORE, new OreConfiguration(darkStoneReplaceables, VerseBlocks.SILT.get().defaultBlockState(), 45));
+
+        //Limestone Caves
+        register(context, TOP_LAYER_LIMESTONE, Feature.VEGETATION_PATCH, new VegetationPatchConfiguration(VerseTags.Blocks.MINERS_DREAM_CARVER, new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(VerseBlocks.LIMESTONE.get().defaultBlockState(), 1).add(VerseBlocks.LIMESTONE.get().defaultBlockState(), 2)), PlacementUtils.inlinePlaced(configuredFeatures.getOrThrow(TOP_LAYER_SILT)), CaveSurface.FLOOR, ConstantInt.of(1), 0, 3, 0, UniformInt.of(1, 5), 0.3f));
+        register(context, LIMESTONE_BLOB, Feature.ORE, new OreConfiguration(darkStoneReplaceables, VerseBlocks.LIMESTONE.get().defaultBlockState(), 60));
+
+        //Marble Caves
+        register(context, TOP_LAYER_MARBLE, Feature.VEGETATION_PATCH, new VegetationPatchConfiguration(VerseTags.Blocks.MINERS_DREAM_CARVER, new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(VerseBlocks.MARBLE.get().defaultBlockState(), 1).add(VerseBlocks.MARBLE.get().defaultBlockState(), 2)), PlacementUtils.inlinePlaced(configuredFeatures.getOrThrow(TOP_LAYER_SILT)), CaveSurface.FLOOR, ConstantInt.of(1), 0, 3, 0, UniformInt.of(1, 5), 0.3f));
+        register(context, MARBLE_BLOB, Feature.ORE, new OreConfiguration(darkStoneReplaceables, VerseBlocks.MARBLE.get().defaultBlockState(), 60));
+
+        //Mystical Caves
+        register(context, TOP_LAYER_MILVI, Feature.VEGETATION_PATCH, new VegetationPatchConfiguration(VerseTags.Blocks.MINERS_DREAM_CARVER, new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(VerseBlocks.MILVI.get().defaultBlockState(), 1).add(VerseBlocks.MILVI.get().defaultBlockState(), 2)), PlacementUtils.inlinePlaced(configuredFeatures.getOrThrow(TOP_LAYER_SILT)), CaveSurface.FLOOR, ConstantInt.of(1), 0, 3, 0, UniformInt.of(1, 5), 0.3f));
+        register(context, MILVI_BLOB, Feature.ORE, new OreConfiguration(darkStoneReplaceables, VerseBlocks.MILVI.get().defaultBlockState(), 35));
     }
     
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey (String name) {
-        return ResourceKey.create(Registries.CONFIGURED_FEATURE, ResourceLocation.fromNamespaceAndPath(VERSE.MODID, name));
+        return ResourceKey.create(Registries.CONFIGURED_FEATURE, VERSE.location(name));
     }
 
     private static <FC extends FeatureConfiguration, F extends Feature<FC>> void register (BootstrapContext<ConfiguredFeature<?, ?>> context,

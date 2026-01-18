@@ -33,6 +33,24 @@ public class VerseBlocks {
                     .strength(3f)
                     .sound(SoundType.STONE)));
 
+    public static final DeferredBlock<Block> LIMESTONE = registerBlock("limestone",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3f)
+                    .sound(SoundType.STONE)));
+
+    public static final DeferredBlock<Block> MARBLE = registerBlock("marble",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3.5f)
+                    .sound(SoundType.STONE)));
+
+    public static final DeferredBlock<Block> MILVI = registerBlock("milvi",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3.5f)
+                    .sound(SoundType.STONE)));
+
     //Stone Ores
     public static final DeferredBlock<Block> BOSKALT_ORE = registerBlock("boskalt_ore",
             () -> new Block(BlockBehaviour.Properties.of()

@@ -18,22 +18,22 @@ public class MinersDreamNoiseRouter {
     public static NoiseRouter minersDream(HolderGetter<DensityFunction> density, HolderGetter<NormalNoise.NoiseParameters> noise) {
         DensityFunction shiftX = new DensityFunctions.HolderHolder(density.getOrThrow(SHIFT_X));
         DensityFunction shiftZ = new DensityFunctions.HolderHolder(density.getOrThrow(SHIFT_Z));
-        DensityFunction temperature = DensityFunctions.shiftedNoise2d(shiftX, shiftZ, 2.7, noise.getOrThrow(Noises.TEMPERATURE));
-        DensityFunction vegetation = DensityFunctions.shiftedNoise2d(shiftX, shiftZ, 0.9, noise.getOrThrow(Noises.VEGETATION));
+        DensityFunction temperature = DensityFunctions.shiftedNoise2d(shiftX, shiftZ, 2.4, noise.getOrThrow(Noises.TEMPERATURE));
+        DensityFunction vegetation = DensityFunctions.shiftedNoise2d(shiftX, shiftZ, 0.5, noise.getOrThrow(Noises.VEGETATION));
 
         DensityFunction finalDensity = DensityFunctions.mul(
                 DensityFunctions.constant(0.64),
                 DensityFunctions.interpolated(DensityFunctions.blendDensity(DensityFunctions.add(
                         DensityFunctions.constant(2.5),
                         DensityFunctions.mul(
-                                DensityFunctions.yClampedGradient(-20, 60, 0, 1),
+                                DensityFunctions.yClampedGradient(-8, 15, 0, 1),
                                 DensityFunctions.add(
                                         DensityFunctions.constant(-1.4),
                                         DensityFunctions.mul(
                                                 DensityFunctions.yClampedGradient(-64, 320, 1, 0),
                                                 DensityFunctions.add(
                                                         DensityFunctions.constant(-0.85),
-                                                        DensityFunctions.noise(noise.getOrThrow(Noises.GRAVEL), 5, 9)
+                                                        DensityFunctions.noise(noise.getOrThrow(Noises.GRAVEL), 3, 9)
                                                 )
                                         )
                                 )

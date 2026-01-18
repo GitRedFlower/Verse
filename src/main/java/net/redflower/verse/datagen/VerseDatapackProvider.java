@@ -8,8 +8,10 @@ import net.neoforged.neoforge.common.data.DatapackBuiltinEntriesProvider;
 import net.neoforged.neoforge.registries.NeoForgeRegistries;
 import net.redflower.verse.VERSE;
 import net.redflower.verse.worldgen.VerseBiomeModifiers;
+import net.redflower.verse.worldgen.VerseCarvers;
 import net.redflower.verse.worldgen.VerseConfiguredFeatures;
 import net.redflower.verse.worldgen.VersePlacedFeatures;
+import net.redflower.verse.worldgen.minersdream.MinersDreamBiomes;
 import net.redflower.verse.worldgen.minersdream.MinersDreamDimension;
 import net.redflower.verse.worldgen.minersdream.generation.MinersDreamGen;
 
@@ -24,7 +26,9 @@ public class VerseDatapackProvider extends DatapackBuiltinEntriesProvider {
             .add(NeoForgeRegistries.Keys.BIOME_MODIFIERS, VerseBiomeModifiers::bootstrap)
             .add(Registries.DIMENSION_TYPE, MinersDreamDimension::bootstrap)
             .add(Registries.LEVEL_STEM, MinersDreamGen::levelBootstrap)
-            .add(Registries.NOISE_SETTINGS, MinersDreamGen::noiseBootstrap);
+            .add(Registries.NOISE_SETTINGS, MinersDreamGen::noiseBootstrap)
+            .add(Registries.BIOME, MinersDreamBiomes::bootstrap)
+            .add(Registries.CONFIGURED_CARVER, VerseCarvers::bootstrap);
 
     public VerseDatapackProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
         super(output, registries, BUILDER, Set.of(VERSE.MODID));

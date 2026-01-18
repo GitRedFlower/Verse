@@ -6,6 +6,9 @@
     "verse:block_of_boskalt",
     "verse:altar",
     "verse:dark_stone",
-    "verse:cobbled_dark_stone"
+    "verse:cobbled_dark_stone",
+    "verse:limestone",
+    "verse:marble",
+    "verse:milvi"
   ]
 }

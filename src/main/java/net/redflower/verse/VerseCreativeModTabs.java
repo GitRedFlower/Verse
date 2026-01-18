@@ -22,11 +22,14 @@ public class VerseCreativeModTabs {
                     .title(Component.translatable("creativetab.verse.blocks"))
                     .displayItems((itemDisplayParameters, output) -> {
                         //Natural Blocks
-                        //Surface
+                        //Dirt / Dirt Like
                         output.accept(VerseBlocks.SILT);
 
                         //Stones
                         output.accept(VerseBlocks.DARK_STONE);
+                        output.accept(VerseBlocks.LIMESTONE);
+                        output.accept(VerseBlocks.MARBLE);
+                        output.accept(VerseBlocks.MILVI);
 
                         //Ores
                         //Overworld Ores

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "verse:boskalt_ingot"
+    },
+    {
+      "item": "minecraft:flint"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "verse:flint_and_boskalt"
+  }
+}

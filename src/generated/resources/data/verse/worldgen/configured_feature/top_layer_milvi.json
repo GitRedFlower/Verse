@@ -1,0 +1,38 @@
+{
+  "type": "minecraft:vegetation_patch",
+  "config": {
+    "depth": 1,
+    "extra_bottom_block_chance": 0.0,
+    "extra_edge_column_chance": 0.3,
+    "ground_state": {
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        {
+          "data": {
+            "Name": "verse:milvi"
+          },
+          "weight": 1
+        },
+        {
+          "data": {
+            "Name": "verse:milvi"
+          },
+          "weight": 2
+        }
+      ]
+    },
+    "replaceable": "#verse:miners_dream_carver",
+    "surface": "floor",
+    "vegetation_chance": 0.0,
+    "vegetation_feature": {
+      "feature": "verse:top_layer_silt",
+      "placement": []
+    },
+    "vertical_range": 3,
+    "xz_radius": {
+      "type": "minecraft:uniform",
+      "max_inclusive": 5,
+      "min_inclusive": 1
+    }
+  }
+}

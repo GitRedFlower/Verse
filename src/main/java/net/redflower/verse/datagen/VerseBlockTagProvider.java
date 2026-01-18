@@ -61,7 +61,10 @@ public class VerseBlockTagProvider extends BlockTagsProvider {
                 .add(VerseBlocks.COMPRESSED_DEEPSLATE_DIAMOND_ORE.get())
                 .add(VerseBlocks.REINFORCED_STONE.get())
                 .add(VerseBlocks.DARK_STONE.get())
-                .add(VerseBlocks.COBBLED_DARK_STONE.get());
+                .add(VerseBlocks.COBBLED_DARK_STONE.get())
+                .add(VerseBlocks.LIMESTONE.get())
+                .add(VerseBlocks.MARBLE.get())
+                .add(VerseBlocks.MILVI.get());
 
         //Needs Shovel
         tag(BlockTags.MINEABLE_WITH_SHOVEL)
@@ -75,7 +78,10 @@ public class VerseBlockTagProvider extends BlockTagsProvider {
                 .add(VerseBlocks.BLOCK_OF_BOSKALT.get())
                 .add(VerseBlocks.ALTAR.get())
                 .add(VerseBlocks.DARK_STONE.get())
-                .add(VerseBlocks.COBBLED_DARK_STONE.get());
+                .add(VerseBlocks.COBBLED_DARK_STONE.get())
+                .add(VerseBlocks.LIMESTONE.get())
+                .add(VerseBlocks.MARBLE.get())
+                .add(VerseBlocks.MILVI.get());
 
         //Iron Level
         tag(BlockTags.NEEDS_IRON_TOOL)
@@ -161,6 +167,9 @@ public class VerseBlockTagProvider extends BlockTagsProvider {
 
         //Dimensions
         tag(VerseTags.Blocks.MINERS_DREAM_INFINBURN)
+                .add(VerseBlocks.DARK_STONE.get());
+
+        tag(VerseTags.Blocks.MINERS_DREAM_CARVER)
                 .add(VerseBlocks.DARK_STONE.get());
     }
 }

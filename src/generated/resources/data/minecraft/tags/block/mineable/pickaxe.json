@@ -39,6 +39,9 @@
     "verse:compressed_deepslate_diamond_ore",
     "verse:reinforced_stone",
     "verse:dark_stone",
-    "verse:cobbled_dark_stone"
+    "verse:cobbled_dark_stone",
+    "verse:limestone",
+    "verse:marble",
+    "verse:milvi"
   ]
 }

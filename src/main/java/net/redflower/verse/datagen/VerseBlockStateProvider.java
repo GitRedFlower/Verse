@@ -21,6 +21,9 @@ public class VerseBlockStateProvider extends BlockStateProvider {
 
         //Stones
         blockWIthItem(VerseBlocks.DARK_STONE);
+        blockWIthItem(VerseBlocks.LIMESTONE);
+        blockWIthItem(VerseBlocks.MARBLE);
+        blockWIthItem(VerseBlocks.MILVI);
 
         //Overworld Ores
         //Regular Ores

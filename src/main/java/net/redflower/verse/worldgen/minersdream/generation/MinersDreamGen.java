@@ -6,7 +6,6 @@ import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.level.biome.Biome;
-import net.minecraft.world.level.biome.Biomes;
 import net.minecraft.world.level.biome.Climate;
 import net.minecraft.world.level.biome.MultiNoiseBiomeSource;
 import net.minecraft.world.level.block.Blocks;
@@ -17,6 +16,7 @@ import net.minecraft.world.level.levelgen.placement.CaveSurface;
 import net.minecraft.world.level.levelgen.synth.NormalNoise;
 import net.redflower.verse.VERSE;
 import net.redflower.verse.block.VerseBlocks;
+import net.redflower.verse.worldgen.minersdream.MinersDreamBiomes;
 import net.redflower.verse.worldgen.minersdream.MinersDreamDimension;
 
 import java.util.List;
@@ -28,10 +28,10 @@ public class MinersDreamGen {
 
     private static LevelStem levelStem(HolderGetter<Biome> biomes, HolderGetter<NoiseGeneratorSettings> noiseSettings, HolderGetter<DimensionType> dimensions) {
         NoiseBasedChunkGenerator chunkGenerator = new NoiseBasedChunkGenerator(MultiNoiseBiomeSource.createFromList(new Climate.ParameterList<>(List.of(
-                Pair.of(Climate.parameters(-0.5f, -0.5f, 0, 0, 0, 0, 0), biomes.getOrThrow(Biomes.DESERT)),
-                Pair.of(Climate.parameters(0.61f, 0.4f, 0, 0, 0, 0, 0), biomes.getOrThrow(Biomes.MEADOW)),
-                Pair.of(Climate.parameters(-0.63f, 0.53f, 0, 0, 0, 0, 0), biomes.getOrThrow(Biomes.FOREST)),
-                Pair.of(Climate.parameters(0.7f, -0.3f, 0, 0, 0, 0, 0), biomes.getOrThrow(Biomes.CRIMSON_FOREST))
+                Pair.of(Climate.parameters(-0.8f, -0.8f, 0, 0, 0, 0, 0), biomes.getOrThrow(MinersDreamBiomes.DIRTY_CAVES)),
+                Pair.of(Climate.parameters(-0.55f, -0.55f, 0, 0, 0, 0, 0), biomes.getOrThrow(MinersDreamBiomes.LIMESTONE_CAVES)),
+                Pair.of(Climate.parameters(0.55f, 0.55f, 0, 0, 0, 0, 0), biomes.getOrThrow(MinersDreamBiomes.MARBLE_CAVES)),
+                Pair.of(Climate.parameters(0.74f, 0.74f, 0, 0, 0, 0, 0), biomes.getOrThrow(MinersDreamBiomes.MYSTICAL_CAVES))
         ))), noiseSettings.getOrThrow(MINERS_DREAM_GEN));
         return new LevelStem(dimensions.getOrThrow(MinersDreamDimension.MINERS_DREAM), chunkGenerator);
     }
@@ -43,19 +43,18 @@ public class MinersDreamGen {
     }
 
     private static NoiseGeneratorSettings noiseSettings(HolderGetter<DensityFunction> densityFunction, HolderGetter<NormalNoise.NoiseParameters> noise) {
-        SurfaceRules.RuleSource bedrockFloor = SurfaceRules.ifTrue(SurfaceRules.verticalGradient("bedrock_floor", VerticalAnchor.bottom(), VerticalAnchor.aboveBottom(5)), SurfaceRules.state(Blocks.BEDROCK.defaultBlockState()));
-        SurfaceRules.RuleSource bedrockRoof = SurfaceRules.ifTrue(SurfaceRules.not(SurfaceRules.verticalGradient("bedrock_roof", VerticalAnchor.belowTop(5), VerticalAnchor.top())), SurfaceRules.state(Blocks.BEDROCK.defaultBlockState()));
-        SurfaceRules.RuleSource echoSoilLayer = SurfaceRules.ifTrue(SurfaceRules.isBiome(Biomes.CRIMSON_FOREST), SurfaceRules.ifTrue(SurfaceRules.stoneDepthCheck(0, true, CaveSurface.FLOOR), SurfaceRules.state(VerseBlocks.DARK_STONE.get().defaultBlockState())));
-        SurfaceRules.RuleSource biomeSurfaceLayer = SurfaceRules.ifTrue(SurfaceRules.stoneDepthCheck(0, false, CaveSurface.FLOOR), SurfaceRules.sequence(
-                SurfaceRules.ifTrue(SurfaceRules.isBiome(Biomes.DESERT), SurfaceRules.state(Blocks.AIR.defaultBlockState())),
-                SurfaceRules.ifTrue(SurfaceRules.isBiome(Biomes.MEADOW), SurfaceRules.state(Blocks.AIR.defaultBlockState())),
+        SurfaceRules.RuleSource bedrockFloor = SurfaceRules.ifTrue(SurfaceRules.verticalGradient("bedrock_floor", VerticalAnchor.bottom(), VerticalAnchor.aboveBottom(7)), SurfaceRules.state(Blocks.BEDROCK.defaultBlockState()));
+        SurfaceRules.RuleSource bedrockRoof = SurfaceRules.ifTrue(SurfaceRules.not(SurfaceRules.verticalGradient("bedrock_roof", VerticalAnchor.belowTop(7), VerticalAnchor.top())), SurfaceRules.state(Blocks.BEDROCK.defaultBlockState()));
+
+        SurfaceRules.RuleSource topBiomeLayer = SurfaceRules.ifTrue(SurfaceRules.stoneDepthCheck(0, false, CaveSurface.FLOOR), SurfaceRules.sequence(
+                SurfaceRules.ifTrue(SurfaceRules.isBiome(MinersDreamBiomes.DIRTY_CAVES), SurfaceRules.state(VerseBlocks.SILT.get().defaultBlockState())),
+                SurfaceRules.ifTrue(SurfaceRules.isBiome(MinersDreamBiomes.LIMESTONE_CAVES), SurfaceRules.state(VerseBlocks.LIMESTONE.get().defaultBlockState())),
+                SurfaceRules.ifTrue(SurfaceRules.isBiome(MinersDreamBiomes.MARBLE_CAVES), SurfaceRules.state(VerseBlocks.MARBLE.get().defaultBlockState())),
+                SurfaceRules.ifTrue(SurfaceRules.isBiome(MinersDreamBiomes.MYSTICAL_CAVES), SurfaceRules.state(VerseBlocks.MILVI.get().defaultBlockState())),
                 SurfaceRules.state(VerseBlocks.DARK_STONE.get().defaultBlockState())
         ));
-        SurfaceRules.RuleSource deepslateFloor = SurfaceRules.ifTrue(SurfaceRules.verticalGradient("deepslate_floor", VerticalAnchor.bottom(), VerticalAnchor.aboveBottom(12)), SurfaceRules.state(VerseBlocks.DARK_STONE.get().defaultBlockState()));
-        SurfaceRules.RuleSource deepslateRoof = SurfaceRules.ifTrue(SurfaceRules.not(SurfaceRules.verticalGradient("deepslate_roof", VerticalAnchor.belowTop(12), VerticalAnchor.top())), SurfaceRules.state(VerseBlocks.DARK_STONE.get().defaultBlockState()));
-        SurfaceRules.RuleSource gloomslate = SurfaceRules.ifTrue(SurfaceRules.isBiome(Biomes.FOREST), SurfaceRules.state(VerseBlocks.DARK_STONE.get().defaultBlockState()));
 
-        return new NoiseGeneratorSettings(NoiseSettings.create(-64, 320, 1, 1), VerseBlocks.DARK_STONE.get().defaultBlockState(), Blocks.LAVA.defaultBlockState(), MinersDreamNoiseRouter.minersDream(densityFunction, noise), SurfaceRules.sequence(bedrockFloor, bedrockRoof, echoSoilLayer, biomeSurfaceLayer, deepslateFloor, deepslateRoof, gloomslate), List.of(), 17, false, false, true, false);
+        return new NoiseGeneratorSettings(NoiseSettings.create(-64, 320, 1, 2), VerseBlocks.DARK_STONE.get().defaultBlockState(), Blocks.LAVA.defaultBlockState(), MinersDreamNoiseRouter.minersDream(densityFunction, noise), SurfaceRules.sequence(bedrockFloor, bedrockRoof, topBiomeLayer), List.of(), 10, false, false, true, false);
     }
 
     public static void levelBootstrap(BootstrapContext<LevelStem> context) {
