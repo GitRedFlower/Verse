@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "boskalt",
+  "ingredient": {
+    "item": "verse:limestone_boskalt_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "verse:boskalt_ingot"
+  }
+}

@@ -30,14 +30,15 @@ import java.util.List;
 public class VerseConfiguredFeatures {
 
 
-    //Overworld Ores
+    //Overworld
+    //Ores
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_QUARTZ_ORE_KEY = registerKey("overworld_quartz_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_AMBER_ORE_KEY = registerKey("overworld_amber_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_BOSKALT_ORE_KEY = registerKey("overworld_boskalt_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_SAPPHIRE_ORE_KEY = registerKey("overworld_sapphire_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_GARNET_ORE_KEY = registerKey("overworld_garnet_ore");
 
-    //Overworld Compressed Ores
+    //Compressed Ores
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_COMPRESSED_COAL_ORE_KEY = registerKey("overworld_compressed_coal_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_COMPRESSED_COPPER_ORE_KEY = registerKey("overworld_compressed_copper_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_COMPRESSED_IRON_ORE_KEY = registerKey("overworld_compressed_iron_ore");
@@ -47,7 +48,8 @@ public class VerseConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_COMPRESSED_LAPIS_ORE_KEY = registerKey("overworld_compressed_lapis_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_COMPRESSED_DIAMOND_ORE_KEY = registerKey("overworld_compressed_diamond_ore");
 
-    //End Ores
+    //End
+    //Ores
     public static final ResourceKey<ConfiguredFeature<?, ?>> END_DRAGONRITE_ORE_KEY = registerKey("end_dragonrite_ore");
 
     //Miners Dream
@@ -67,6 +69,21 @@ public class VerseConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> TOP_LAYER_MILVI = registerKey("top_layer_milvi");
     public static final ResourceKey<ConfiguredFeature<?, ?>> MILVI_BLOB = registerKey("milvi_blob");
 
+    //Ores
+    public static final ResourceKey<ConfiguredFeature<?, ?>> MINERS_DREAM_COAL_ORE = registerKey("miners_dream_coal_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> MINERS_DREAM_IRON_ORE = registerKey("miners_dream_iron_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> MINERS_DREAM_BOSKALT_ORE = registerKey("miners_dream_boskalt_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> MINERS_DREAM_COPPER_ORE = registerKey("miners_dream_copper_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> MINERS_DREAM_QUARTZ_ORE = registerKey("miners_dream_quartz_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> MINERS_DREAM_GOLD_ORE = registerKey("miners_dream_gold_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> MINERS_DREAM_REDSTONE_ORE = registerKey("miners_dream_redstone_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> MINERS_DREAM_EMERALD_ORE = registerKey("miners_dream_emerald_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> MINERS_DREAM_LAPIS_ORE = registerKey("miners_dream_lapis_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> MINERS_DREAM_AMBER_ORE = registerKey("miners_dream_amber_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> MINERS_DREAM_DIAMOND_ORE = registerKey("miners_dream_diamond_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> MINERS_DREAM_GARNET_ORE = registerKey("miners_dream_garnet_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> MINERS_DREAM_SAPPHIRE_ORE = registerKey("miners_dream_sapphire_ore");
+
     public static void bootstrap(BootstrapContext<ConfiguredFeature<?, ?>> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
@@ -75,8 +92,10 @@ public class VerseConfiguredFeatures {
         RuleTest deepslateReplaceables = new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
         RuleTest endstoneReplaceables = new BlockMatchTest(Blocks.END_STONE);
         RuleTest darkStoneReplaceables = new BlockMatchTest(VerseBlocks.DARK_STONE.get());
+        RuleTest limestoneReplaceables = new BlockMatchTest(VerseBlocks.LIMESTONE.get());
+        RuleTest marbleReplaceables = new BlockMatchTest(VerseBlocks.MARBLE.get());
 
-        //Overworld Setup Blocks
+        //Overworld Ores Setup Blocks
         List<OreConfiguration.TargetBlockState> overworldQuartzOres = List.of(
                 OreConfiguration.target(stoneReplaceables, VerseBlocks.QUARTZ_ORE.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceables, VerseBlocks.DEEPSLATE_QUARTZ_ORE.get().defaultBlockState()));
@@ -130,15 +149,82 @@ public class VerseConfiguredFeatures {
                 OreConfiguration.target(stoneReplaceables, VerseBlocks.COMPRESSED_DIAMOND_ORE.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceables, VerseBlocks.COMPRESSED_DEEPSLATE_DIAMOND_ORE.get().defaultBlockState()));
 
+        //Miners Dream Ore Setup Blocks
+        List<OreConfiguration.TargetBlockState> MDCoalOres = List.of(
+                OreConfiguration.target(darkStoneReplaceables, VerseBlocks.DARK_STONE_COAL_ORE.get().defaultBlockState()),
+                OreConfiguration.target(limestoneReplaceables, VerseBlocks.LIMESTONE_COAL_ORE.get().defaultBlockState()),
+                OreConfiguration.target(marbleReplaceables, VerseBlocks.MARBLE_COAL_ORE.get().defaultBlockState()));
 
-        //Overworld Ores Setup
+        List<OreConfiguration.TargetBlockState> MDIronOres = List.of(
+                OreConfiguration.target(darkStoneReplaceables, VerseBlocks.DARK_STONE_IRON_ORE.get().defaultBlockState()),
+                OreConfiguration.target(limestoneReplaceables, VerseBlocks.LIMESTONE_IRON_ORE.get().defaultBlockState()),
+                OreConfiguration.target(marbleReplaceables, VerseBlocks.MARBLE_IRON_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> MDBoskaltOres = List.of(
+                OreConfiguration.target(darkStoneReplaceables, VerseBlocks.DARK_STONE_BOSKALT_ORE.get().defaultBlockState()),
+                OreConfiguration.target(limestoneReplaceables, VerseBlocks.LIMESTONE_BOSKALT_ORE.get().defaultBlockState()),
+                OreConfiguration.target(marbleReplaceables, VerseBlocks.MARBLE_BOSKALT_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> MDCopperOres = List.of(
+                OreConfiguration.target(darkStoneReplaceables, VerseBlocks.DARK_STONE_COPPER_ORE.get().defaultBlockState()),
+                OreConfiguration.target(limestoneReplaceables, VerseBlocks.LIMESTONE_COPPER_ORE.get().defaultBlockState()),
+                OreConfiguration.target(marbleReplaceables, VerseBlocks.MARBLE_COPPER_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> MDQuartzOres = List.of(
+                OreConfiguration.target(darkStoneReplaceables, VerseBlocks.DARK_STONE_QUARTZ_ORE.get().defaultBlockState()),
+                OreConfiguration.target(limestoneReplaceables, VerseBlocks.LIMESTONE_QUARTZ_ORE.get().defaultBlockState()),
+                OreConfiguration.target(marbleReplaceables, VerseBlocks.MARBLE_QUARTZ_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> MDGoldOres = List.of(
+                OreConfiguration.target(darkStoneReplaceables, VerseBlocks.DARK_STONE_GOLD_ORE.get().defaultBlockState()),
+                OreConfiguration.target(limestoneReplaceables, VerseBlocks.LIMESTONE_GOLD_ORE.get().defaultBlockState()),
+                OreConfiguration.target(marbleReplaceables, VerseBlocks.MARBLE_GOLD_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> MDRedstoneOres = List.of(
+                OreConfiguration.target(darkStoneReplaceables, VerseBlocks.DARK_STONE_REDSTONE_ORE.get().defaultBlockState()),
+                OreConfiguration.target(limestoneReplaceables, VerseBlocks.LIMESTONE_REDSTONE_ORE.get().defaultBlockState()),
+                OreConfiguration.target(marbleReplaceables, VerseBlocks.MARBLE_REDSTONE_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> MDEmeraldOres = List.of(
+                OreConfiguration.target(darkStoneReplaceables, VerseBlocks.DARK_STONE_EMERALD_ORE.get().defaultBlockState()),
+                OreConfiguration.target(limestoneReplaceables, VerseBlocks.LIMESTONE_EMERALD_ORE.get().defaultBlockState()),
+                OreConfiguration.target(marbleReplaceables, VerseBlocks.MARBLE_EMERALD_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> MDLapisOres = List.of(
+                OreConfiguration.target(darkStoneReplaceables, VerseBlocks.DARK_STONE_LAPIS_ORE.get().defaultBlockState()),
+                OreConfiguration.target(limestoneReplaceables, VerseBlocks.LIMESTONE_LAPIS_ORE.get().defaultBlockState()),
+                OreConfiguration.target(marbleReplaceables, VerseBlocks.MARBLE_LAPIS_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> MDAmberOres = List.of(
+                OreConfiguration.target(darkStoneReplaceables, VerseBlocks.DARK_STONE_AMBER_ORE.get().defaultBlockState()),
+                OreConfiguration.target(limestoneReplaceables, VerseBlocks.LIMESTONE_AMBER_ORE.get().defaultBlockState()),
+                OreConfiguration.target(marbleReplaceables, VerseBlocks.MARBLE_AMBER_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> MDDiamondOres = List.of(
+                OreConfiguration.target(darkStoneReplaceables, VerseBlocks.DARK_STONE_DIAMOND_ORE.get().defaultBlockState()),
+                OreConfiguration.target(limestoneReplaceables, VerseBlocks.LIMESTONE_DIAMOND_ORE.get().defaultBlockState()),
+                OreConfiguration.target(marbleReplaceables, VerseBlocks.MARBLE_DIAMOND_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> MDGarnetOres = List.of(
+                OreConfiguration.target(darkStoneReplaceables, VerseBlocks.DARK_STONE_GARNET_ORE.get().defaultBlockState()),
+                OreConfiguration.target(limestoneReplaceables, VerseBlocks.LIMESTONE_GARNET_ORE.get().defaultBlockState()),
+                OreConfiguration.target(marbleReplaceables, VerseBlocks.MARBLE_GARNET_ORE.get().defaultBlockState()));
+
+        List<OreConfiguration.TargetBlockState> MDSapphireOres = List.of(
+                OreConfiguration.target(darkStoneReplaceables, VerseBlocks.DARK_STONE_SAPPHIRE_ORE.get().defaultBlockState()),
+                OreConfiguration.target(limestoneReplaceables, VerseBlocks.LIMESTONE_SAPPHIRE_ORE.get().defaultBlockState()),
+                OreConfiguration.target(marbleReplaceables, VerseBlocks.MARBLE_SAPPHIRE_ORE.get().defaultBlockState()));
+
+
+        //Overworld
+        //Ores Setup
         register(context, OVERWORLD_QUARTZ_ORE_KEY, Feature.ORE, new OreConfiguration(overworldQuartzOres, 10));
         register(context, OVERWORLD_AMBER_ORE_KEY, Feature.ORE, new OreConfiguration(overworldAmberOres, 8));
         register(context, OVERWORLD_BOSKALT_ORE_KEY, Feature.ORE, new OreConfiguration(overworldBoskaltOres, 10));
         register(context, OVERWORLD_SAPPHIRE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldSapphireOres, 4));
         register(context, OVERWORLD_GARNET_ORE_KEY, Feature.ORE, new OreConfiguration(overworldGarnetOres, 4));
 
-        //Overworld Compressed Ores Setup
+        //Compressed Ores Setup
         register(context, OVERWORLD_COMPRESSED_COAL_ORE_KEY, Feature.ORE, new OreConfiguration(overworldCompressedCoalOres, 3));
         register(context, OVERWORLD_COMPRESSED_COPPER_ORE_KEY, Feature.ORE, new OreConfiguration(overworldCompressedCopperOres, 3));
         register(context, OVERWORLD_COMPRESSED_IRON_ORE_KEY, Feature.ORE, new OreConfiguration(overworldCompressedIronOres, 3));
@@ -148,7 +234,8 @@ public class VerseConfiguredFeatures {
         register(context, OVERWORLD_COMPRESSED_LAPIS_ORE_KEY, Feature.ORE, new OreConfiguration(overworldCompressedLapisOres, 3));
         register(context, OVERWORLD_COMPRESSED_DIAMOND_ORE_KEY, Feature.ORE, new OreConfiguration(overworldCompressedDiamondOres, 3));
 
-        //End Ores Setup
+        //End
+        //Ores Setup
         register(context, END_DRAGONRITE_ORE_KEY, Feature.ORE, new OreConfiguration(endstoneReplaceables,
                 VerseBlocks.ENDSTONE_DRAGONRITE_ORE.get().defaultBlockState(), 4));
 
@@ -168,6 +255,21 @@ public class VerseConfiguredFeatures {
         //Mystical Caves
         register(context, TOP_LAYER_MILVI, Feature.VEGETATION_PATCH, new VegetationPatchConfiguration(VerseTags.Blocks.MINERS_DREAM_CARVER, new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(VerseBlocks.MILVI.get().defaultBlockState(), 1).add(VerseBlocks.MILVI.get().defaultBlockState(), 2)), PlacementUtils.inlinePlaced(configuredFeatures.getOrThrow(TOP_LAYER_SILT)), CaveSurface.FLOOR, ConstantInt.of(1), 0, 3, 0, UniformInt.of(1, 5), 0.3f));
         register(context, MILVI_BLOB, Feature.ORE, new OreConfiguration(darkStoneReplaceables, VerseBlocks.MILVI.get().defaultBlockState(), 35));
+
+        //Ores
+        register(context, MINERS_DREAM_COAL_ORE, Feature.ORE, new OreConfiguration(MDCoalOres, 7));
+        register(context, MINERS_DREAM_IRON_ORE, Feature.ORE, new OreConfiguration(MDIronOres, 7));
+        register(context, MINERS_DREAM_BOSKALT_ORE, Feature.ORE, new OreConfiguration(MDBoskaltOres, 7));
+        register(context, MINERS_DREAM_COPPER_ORE, Feature.ORE, new OreConfiguration(MDCopperOres, 7));
+        register(context, MINERS_DREAM_QUARTZ_ORE, Feature.ORE, new OreConfiguration(MDQuartzOres, 7));
+        register(context, MINERS_DREAM_GOLD_ORE, Feature.ORE, new OreConfiguration(MDGoldOres, 7));
+        register(context, MINERS_DREAM_REDSTONE_ORE, Feature.ORE, new OreConfiguration(MDRedstoneOres, 7));
+        register(context, MINERS_DREAM_EMERALD_ORE, Feature.ORE, new OreConfiguration(MDEmeraldOres, 7));
+        register(context, MINERS_DREAM_LAPIS_ORE, Feature.ORE, new OreConfiguration(MDLapisOres, 7));
+        register(context, MINERS_DREAM_AMBER_ORE, Feature.ORE, new OreConfiguration(MDAmberOres, 7));
+        register(context, MINERS_DREAM_DIAMOND_ORE, Feature.ORE, new OreConfiguration(MDDiamondOres, 7));
+        register(context, MINERS_DREAM_GARNET_ORE, Feature.ORE, new OreConfiguration(MDGarnetOres, 7));
+        register(context, MINERS_DREAM_SAPPHIRE_ORE, Feature.ORE, new OreConfiguration(MDSapphireOres, 7));
     }
     
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey (String name) {

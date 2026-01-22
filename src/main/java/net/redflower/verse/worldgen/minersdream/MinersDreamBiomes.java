@@ -35,8 +35,24 @@ public class MinersDreamBiomes {
 
         BiomeGenerationSettings.Builder biomeBuilder = new BiomeGenerationSettings.Builder(placedFeature, worldCarver);
         biomeBuilder.addCarver(GenerationStep.Carving.AIR, VerseCarvers.CAVE);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, VersePlacedFeatures.TOP_LAYER_SILT_PLACED_KEY);
-        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_DECORATION, VersePlacedFeatures.SILT_BLOB_PLACED_KEY);
+        //Features
+        biomeBuilder.addFeature(GenerationStep.Decoration.RAW_GENERATION, VersePlacedFeatures.TOP_LAYER_SILT_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.RAW_GENERATION, VersePlacedFeatures.SILT_BLOB_PLACED_KEY);
+
+        //Ores
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_COAL_ORE_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_IRON_ORE_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_BOSKALT_ORE_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_COPPER_ORE_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_QUARTZ_ORE_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_GOLD_ORE_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_REDSTONE_ORE_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_EMERALD_ORE_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_LAPIS_ORE_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_AMBER_ORE_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_DIAMOND_ORE_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_GARNET_ORE_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_SAPPHIRE_ORE_PLACED_KEY);
 
         return (new Biome.BiomeBuilder()).hasPrecipitation(false)
                 .temperature(-0.8f)
@@ -58,8 +74,24 @@ public class MinersDreamBiomes {
 
         BiomeGenerationSettings.Builder biomeBuilder = new BiomeGenerationSettings.Builder(placedFeature, worldCarver);
         biomeBuilder.addCarver(GenerationStep.Carving.AIR, VerseCarvers.CAVE);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, VersePlacedFeatures.TOP_LAYER_LIMESTONE_PLACED_KEY);
-        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_DECORATION, VersePlacedFeatures.LIMESTONE_BLOB_PLACED_KEY);
+        //Features
+        biomeBuilder.addFeature(GenerationStep.Decoration.RAW_GENERATION, VersePlacedFeatures.TOP_LAYER_LIMESTONE_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.RAW_GENERATION, VersePlacedFeatures.LIMESTONE_BLOB_PLACED_KEY);
+
+        //Ores
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_COAL_ORE_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_IRON_ORE_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_BOSKALT_ORE_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_COPPER_ORE_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_QUARTZ_ORE_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_GOLD_ORE_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_REDSTONE_ORE_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_EMERALD_ORE_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_LAPIS_ORE_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_AMBER_ORE_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_DIAMOND_ORE_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_GARNET_ORE_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_SAPPHIRE_ORE_PLACED_KEY);
 
         return (new Biome.BiomeBuilder()).hasPrecipitation(false)
                 .temperature(-0.55f)
@@ -81,8 +113,24 @@ public class MinersDreamBiomes {
 
         BiomeGenerationSettings.Builder biomeBuilder = new BiomeGenerationSettings.Builder(placedFeature, worldCarver);
         biomeBuilder.addCarver(GenerationStep.Carving.AIR, VerseCarvers.CAVE);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, VersePlacedFeatures.TOP_LAYER_MARBLE_PLACED_KEY);
-        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_DECORATION, VersePlacedFeatures.MARBLE_BLOB_PLACED_KEY);
+        //Features
+        biomeBuilder.addFeature(GenerationStep.Decoration.RAW_GENERATION, VersePlacedFeatures.TOP_LAYER_MARBLE_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.RAW_GENERATION, VersePlacedFeatures.MARBLE_BLOB_PLACED_KEY);
+
+        //Ores
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_COAL_ORE_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_IRON_ORE_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_BOSKALT_ORE_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_COPPER_ORE_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_QUARTZ_ORE_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_GOLD_ORE_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_REDSTONE_ORE_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_EMERALD_ORE_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_LAPIS_ORE_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_AMBER_ORE_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_DIAMOND_ORE_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_GARNET_ORE_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_SAPPHIRE_ORE_PLACED_KEY);
 
         return (new Biome.BiomeBuilder()).hasPrecipitation(false)
                 .temperature(0.55f)
@@ -106,8 +154,24 @@ public class MinersDreamBiomes {
 
         BiomeGenerationSettings.Builder biomeBuilder = new BiomeGenerationSettings.Builder(placedFeature, worldCarver);
         biomeBuilder.addCarver(GenerationStep.Carving.AIR, VerseCarvers.CAVE);
-        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, VersePlacedFeatures.TOP_LAYER_MILVI_PLACED_KEY);
-        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_DECORATION, VersePlacedFeatures.MILVI_BLOB_PLACED_KEY);
+        //Features
+        biomeBuilder.addFeature(GenerationStep.Decoration.RAW_GENERATION, VersePlacedFeatures.TOP_LAYER_MILVI_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.RAW_GENERATION, VersePlacedFeatures.MILVI_BLOB_PLACED_KEY);
+
+        //Ores
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_COAL_ORE_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_IRON_ORE_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_BOSKALT_ORE_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_COPPER_ORE_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_QUARTZ_ORE_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_GOLD_ORE_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_REDSTONE_ORE_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_EMERALD_ORE_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_LAPIS_ORE_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_AMBER_ORE_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_DIAMOND_ORE_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_GARNET_ORE_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_SAPPHIRE_ORE_PLACED_KEY);
 
         return (new Biome.BiomeBuilder()).hasPrecipitation(false)
                 .temperature(0.74f)
@@ -124,19 +188,6 @@ public class MinersDreamBiomes {
 
 
     }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     public static ResourceKey<Biome> create(String name) {
         return ResourceKey.create(Registries.BIOME, VERSE.location(name));

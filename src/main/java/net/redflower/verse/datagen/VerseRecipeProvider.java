@@ -28,12 +28,25 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
 
     @Override
     protected void buildRecipes(RecipeOutput recipeOutput) {
-        List<ItemLike> BOSKALT_SMELT = List.of(VerseItems.RAW_BOSKALT, VerseBlocks.BOSKALT_ORE, VerseBlocks.DEEPSLATE_BOSKALT_ORE);
-        List<ItemLike> GARNET_SMELT = List.of(VerseBlocks.GARNET_ORE, VerseBlocks.DEEPSLATE_GARNET_ORE);
-        List<ItemLike> SAPPHIRE_SMELT = List.of(VerseBlocks.SAPPHIRE_ORE, VerseBlocks.DEEPSLATE_SAPPHIRE_ORE);
-        List<ItemLike> QUARTZ_SMELT = List.of(VerseBlocks.QUARTZ_ORE, VerseBlocks.DEEPSLATE_QUARTZ_ORE);
-        List<ItemLike> AMBER_SMELT = List.of(VerseBlocks.AMBER_ORE, VerseBlocks.DEEPSLATE_AMBER_ORE);
-        List<ItemLike> DRAGONRITE_SMELT = List.of(VerseBlocks.ENDSTONE_DRAGONRITE_ORE);
+        //Vanilla
+        List<ItemLike> V_COAL = List.of(VerseBlocks.DARK_STONE_COAL_ORE, VerseBlocks.LIMESTONE_COAL_ORE, VerseBlocks.MARBLE_COAL_ORE);
+        List<ItemLike> V_IRON = List.of(VerseBlocks.DARK_STONE_IRON_ORE, VerseBlocks.LIMESTONE_IRON_ORE, VerseBlocks.MARBLE_IRON_ORE);
+        List<ItemLike> V_COPPER = List.of(VerseBlocks.DARK_STONE_COPPER_ORE, VerseBlocks.LIMESTONE_COPPER_ORE, VerseBlocks.MARBLE_COPPER_ORE);
+        List<ItemLike> V_GOLD = List.of(VerseBlocks.DARK_STONE_GOLD_ORE,  VerseBlocks.LIMESTONE_GOLD_ORE, VerseBlocks.MARBLE_GOLD_ORE);
+        List<ItemLike> V_REDSTONE = List.of(VerseBlocks.DARK_STONE_REDSTONE_ORE,  VerseBlocks.LIMESTONE_REDSTONE_ORE, VerseBlocks.MARBLE_REDSTONE_ORE);
+        List<ItemLike> V_EMERALD = List.of(VerseBlocks.DARK_STONE_EMERALD_ORE, VerseBlocks.LIMESTONE_EMERALD_ORE, VerseBlocks.MARBLE_EMERALD_ORE);
+        List<ItemLike> V_LAPIS = List.of(VerseBlocks.DARK_STONE_LAPIS_ORE,  VerseBlocks.LIMESTONE_LAPIS_ORE, VerseBlocks.MARBLE_LAPIS_ORE);
+        List<ItemLike> V_DIAMOND = List.of(VerseBlocks.DARK_STONE_DIAMOND_ORE,   VerseBlocks.LIMESTONE_DIAMOND_ORE, VerseBlocks.MARBLE_DIAMOND_ORE);
+
+        //Verse
+        List<ItemLike> V_BOSKALT = List.of(VerseItems.RAW_BOSKALT, VerseBlocks.BOSKALT_ORE, VerseBlocks.DEEPSLATE_BOSKALT_ORE, VerseBlocks.DARK_STONE_BOSKALT_ORE, VerseBlocks.LIMESTONE_BOSKALT_ORE, VerseBlocks.MARBLE_BOSKALT_ORE);
+        List<ItemLike> V_GARNET = List.of(VerseBlocks.GARNET_ORE, VerseBlocks.DEEPSLATE_GARNET_ORE, VerseBlocks.DARK_STONE_GARNET_ORE, VerseBlocks.LIMESTONE_GARNET_ORE, VerseBlocks.MARBLE_GARNET_ORE);
+        List<ItemLike> V_SAPPHIRE = List.of(VerseBlocks.SAPPHIRE_ORE, VerseBlocks.DEEPSLATE_SAPPHIRE_ORE, VerseBlocks.DARK_STONE_SAPPHIRE_ORE, VerseBlocks.LIMESTONE_SAPPHIRE_ORE, VerseBlocks.MARBLE_SAPPHIRE_ORE);
+        List<ItemLike> V_QUARTZ = List.of(VerseBlocks.QUARTZ_ORE, VerseBlocks.DEEPSLATE_QUARTZ_ORE, VerseBlocks.DARK_STONE_QUARTZ_ORE, VerseBlocks.LIMESTONE_QUARTZ_ORE, VerseBlocks.MARBLE_QUARTZ_ORE);
+        List<ItemLike> V_AMBER = List.of(VerseBlocks.AMBER_ORE, VerseBlocks.DEEPSLATE_AMBER_ORE, VerseBlocks.DARK_STONE_AMBER_ORE, VerseBlocks.LIMESTONE_AMBER_ORE, VerseBlocks.MARBLE_AMBER_ORE);
+        List<ItemLike> V_DRAGONRITE = List.of(VerseBlocks.ENDSTONE_DRAGONRITE_ORE);
+
+        //Compressed
         List<ItemLike> COMPRESSED_COAL = List.of(VerseBlocks.COMPRESSED_COAL_ORE, VerseBlocks.COMPRESSED_DEEPSLATE_COAL_ORE);
         List<ItemLike> COMPRESSED_COPPER = List.of(VerseBlocks.COMPRESSED_COPPER_ORE, VerseBlocks.COMPRESSED_DEEPSLATE_COPPER_ORE);
         List<ItemLike> COMPRESSED_IRON = List.of(VerseBlocks.COMPRESSED_IRON_ORE, VerseBlocks.COMPRESSED_DEEPSLATE_IRON_ORE);
@@ -42,6 +55,8 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
         List<ItemLike> COMPRESSED_REDSTONE = List.of(VerseBlocks.COMPRESSED_REDSTONE_ORE, VerseBlocks.COMPRESSED_DEEPSLATE_REDSTONE_ORE);
         List<ItemLike> COMPRESSED_EMERALD = List.of(VerseBlocks.COMPRESSED_EMERALD_ORE, VerseBlocks.COMPRESSED_DEEPSLATE_EMERALD_ORE);
         List<ItemLike> COMPRESSED_DIAMOND = List.of(VerseBlocks.COMPRESSED_DIAMOND_ORE, VerseBlocks.COMPRESSED_DEEPSLATE_DIAMOND_ORE);
+
+        //Other Blocks/Items
         List<ItemLike> DARK_STONE = List.of(VerseBlocks.COBBLED_DARK_STONE.get());
 
         //Shaped
@@ -743,12 +758,25 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
         copySmithingTemplate(recipeOutput, VerseItems.SCULK_STEEL_UPGRADE_SMITHING_TEMPLATE.get(), Items.SCULK);
 
         //Ore Smelting
-        oreSmelting(recipeOutput, BOSKALT_SMELT, RecipeCategory.MISC, VerseItems.BOSKALT_INGOT, 0.25f, 200, "boskalt");
-        oreSmelting(recipeOutput, GARNET_SMELT, RecipeCategory.MISC, VerseItems.GARNET, 0.25f, 200, "garnet");
-        oreSmelting(recipeOutput, SAPPHIRE_SMELT, RecipeCategory.MISC, VerseItems.SAPPHIRE, 0.25f, 200, "sapphire");
-        oreSmelting(recipeOutput, QUARTZ_SMELT, RecipeCategory.MISC, VerseItems.QUARTZ, 0.25f, 200, "quartz");
-        oreSmelting(recipeOutput, AMBER_SMELT, RecipeCategory.MISC, VerseItems.AMBER, 0.25f, 200, "amber");
-        oreSmelting(recipeOutput, DRAGONRITE_SMELT, RecipeCategory.MISC, VerseItems.DRAGONRITE_SCRAP, 0.25f, 200, "dragonrite");
+        //Vanilla
+        oreSmelting(recipeOutput, V_COAL, RecipeCategory.MISC, Items.COAL, 0.25f, 200, "coal");
+        oreSmelting(recipeOutput, V_IRON, RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 200, "iron");
+        oreSmelting(recipeOutput, V_COPPER, RecipeCategory.MISC, Items.COPPER_INGOT, 0.25f, 200, "copper");
+        oreSmelting(recipeOutput, V_GOLD, RecipeCategory.MISC, Items.GOLD_INGOT, 0.25f, 200, "gold");
+        oreSmelting(recipeOutput, V_REDSTONE, RecipeCategory.MISC, Items.REDSTONE, 0.25f, 200, "redstone");
+        oreSmelting(recipeOutput, V_EMERALD, RecipeCategory.MISC, Items.EMERALD, 0.25f, 200, "emerald");
+        oreSmelting(recipeOutput, V_LAPIS, RecipeCategory.MISC, Items.LAPIS_LAZULI, 0.25f, 200, "lapis");
+        oreSmelting(recipeOutput, V_DIAMOND, RecipeCategory.MISC, Items.DIAMOND, 0.25f, 200, "diamond");
+
+        //Verse
+        oreSmelting(recipeOutput, V_BOSKALT, RecipeCategory.MISC, VerseItems.BOSKALT_INGOT, 0.25f, 200, "boskalt");
+        oreSmelting(recipeOutput, V_GARNET, RecipeCategory.MISC, VerseItems.GARNET, 0.25f, 200, "garnet");
+        oreSmelting(recipeOutput, V_SAPPHIRE, RecipeCategory.MISC, VerseItems.SAPPHIRE, 0.25f, 200, "sapphire");
+        oreSmelting(recipeOutput, V_QUARTZ, RecipeCategory.MISC, VerseItems.QUARTZ, 0.25f, 200, "quartz");
+        oreSmelting(recipeOutput, V_AMBER, RecipeCategory.MISC, VerseItems.AMBER, 0.25f, 200, "amber");
+        oreSmelting(recipeOutput, V_DRAGONRITE, RecipeCategory.MISC, VerseItems.DRAGONRITE_SCRAP, 0.25f, 200, "dragonrite");
+
+        //Compressed
         oreSmelting(recipeOutput, COMPRESSED_COAL, RecipeCategory.MISC, Items.COAL_BLOCK, 0.25f, 200, "coal");
         oreSmelting(recipeOutput, COMPRESSED_COPPER, RecipeCategory.MISC, Items.IRON_BLOCK, 0.25f, 200, "copper");
         oreSmelting(recipeOutput, COMPRESSED_IRON, RecipeCategory.MISC, Items.COPPER_BLOCK, 0.25f, 200, "iron");
@@ -758,13 +786,28 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
         oreSmelting(recipeOutput, COMPRESSED_EMERALD, RecipeCategory.MISC, Items.EMERALD_BLOCK, 0.25f, 200, "emerald");
         oreSmelting(recipeOutput, COMPRESSED_DIAMOND, RecipeCategory.MISC, Items.DIAMOND_BLOCK, 0.25f, 200, "diamond");
 
+
+
         //Ore Blasting
-        oreBlasting(recipeOutput, BOSKALT_SMELT, RecipeCategory.MISC, VerseItems.BOSKALT_INGOT, 0.25f, 100, "boskalt");
-        oreBlasting(recipeOutput, GARNET_SMELT, RecipeCategory.MISC, VerseItems.GARNET, 0.25f, 100, "garnet");
-        oreBlasting(recipeOutput, SAPPHIRE_SMELT, RecipeCategory.MISC, VerseItems.SAPPHIRE, 0.25f, 100, "sapphire");
-        oreBlasting(recipeOutput, QUARTZ_SMELT, RecipeCategory.MISC, VerseItems.QUARTZ, 0.25f, 100, "quartz");
-        oreBlasting(recipeOutput, AMBER_SMELT, RecipeCategory.MISC, VerseItems.AMBER, 0.25f, 100, "amber");
-        oreBlasting(recipeOutput, DRAGONRITE_SMELT, RecipeCategory.MISC, VerseItems.DRAGONRITE_SCRAP, 0.25f, 100, "dragonrite");
+        //Vanilla
+        oreBlasting(recipeOutput, V_COAL, RecipeCategory.MISC, Items.COAL, 0.25f, 100, "coal");
+        oreBlasting(recipeOutput, V_IRON, RecipeCategory.MISC, Items.IRON_INGOT, 0.25f, 100, "iron");
+        oreBlasting(recipeOutput, V_COPPER, RecipeCategory.MISC, Items.COPPER_INGOT, 0.25f, 100, "copper");
+        oreBlasting(recipeOutput, V_GOLD, RecipeCategory.MISC, Items.GOLD_INGOT, 0.25f, 100, "gold");
+        oreBlasting(recipeOutput, V_REDSTONE, RecipeCategory.MISC, Items.REDSTONE, 0.25f, 100, "redstone");
+        oreBlasting(recipeOutput, V_EMERALD, RecipeCategory.MISC, Items.EMERALD, 0.25f, 100, "emerald");
+        oreBlasting(recipeOutput, V_LAPIS, RecipeCategory.MISC, Items.LAPIS_LAZULI, 0.25f, 100, "lapis");
+        oreBlasting(recipeOutput, V_DIAMOND, RecipeCategory.MISC, Items.DIAMOND, 0.25f, 100, "diamond");
+
+        //Verse
+        oreBlasting(recipeOutput, V_BOSKALT, RecipeCategory.MISC, VerseItems.BOSKALT_INGOT, 0.25f, 100, "boskalt");
+        oreBlasting(recipeOutput, V_GARNET, RecipeCategory.MISC, VerseItems.GARNET, 0.25f, 100, "garnet");
+        oreBlasting(recipeOutput, V_SAPPHIRE, RecipeCategory.MISC, VerseItems.SAPPHIRE, 0.25f, 100, "sapphire");
+        oreBlasting(recipeOutput, V_QUARTZ, RecipeCategory.MISC, VerseItems.QUARTZ, 0.25f, 100, "quartz");
+        oreBlasting(recipeOutput, V_AMBER, RecipeCategory.MISC, VerseItems.AMBER, 0.25f, 100, "amber");
+        oreBlasting(recipeOutput, V_DRAGONRITE, RecipeCategory.MISC, VerseItems.DRAGONRITE_SCRAP, 0.25f, 100, "dragonrite");
+
+        //Compressed
         oreBlasting(recipeOutput, COMPRESSED_COAL, RecipeCategory.MISC, Items.COAL_BLOCK, 0.25f, 100, "coal");
         oreBlasting(recipeOutput, COMPRESSED_COPPER, RecipeCategory.MISC, Items.IRON_BLOCK, 0.25f, 100, "copper");
         oreBlasting(recipeOutput, COMPRESSED_IRON, RecipeCategory.MISC, Items.COPPER_BLOCK, 0.25f, 100, "iron");

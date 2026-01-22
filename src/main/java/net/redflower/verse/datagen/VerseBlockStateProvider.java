@@ -16,71 +16,118 @@ public class VerseBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         //Natural Blocks
-        //Surface
-        blockWIthItem(VerseBlocks.SILT);
+        //Dirt / Dirt Like
+        blockWithItem(VerseBlocks.SILT);
 
         //Stones
-        blockWIthItem(VerseBlocks.DARK_STONE);
-        blockWIthItem(VerseBlocks.LIMESTONE);
-        blockWIthItem(VerseBlocks.MARBLE);
-        blockWIthItem(VerseBlocks.MILVI);
+        blockWithItem(VerseBlocks.DARK_STONE);
+        blockWithItem(VerseBlocks.LIMESTONE);
+        blockWithItem(VerseBlocks.MARBLE);
+        blockWithItem(VerseBlocks.MILVI);
 
         //Overworld Ores
         //Regular Ores
-        blockWIthItem(VerseBlocks.BOSKALT_ORE);
-        blockWIthItem(VerseBlocks.DEEPSLATE_BOSKALT_ORE);
-        blockWIthItem(VerseBlocks.GARNET_ORE);
-        blockWIthItem(VerseBlocks.DEEPSLATE_GARNET_ORE);
-        blockWIthItem(VerseBlocks.SAPPHIRE_ORE);
-        blockWIthItem(VerseBlocks.DEEPSLATE_SAPPHIRE_ORE);
-        blockWIthItem(VerseBlocks.QUARTZ_ORE);
-        blockWIthItem(VerseBlocks.DEEPSLATE_QUARTZ_ORE);
-        blockWIthItem(VerseBlocks.AMBER_ORE);
-        blockWIthItem(VerseBlocks.DEEPSLATE_AMBER_ORE);
+        blockWithItem(VerseBlocks.BOSKALT_ORE);
+        blockWithItem(VerseBlocks.DEEPSLATE_BOSKALT_ORE);
+        blockWithItem(VerseBlocks.GARNET_ORE);
+        blockWithItem(VerseBlocks.DEEPSLATE_GARNET_ORE);
+        blockWithItem(VerseBlocks.SAPPHIRE_ORE);
+        blockWithItem(VerseBlocks.DEEPSLATE_SAPPHIRE_ORE);
+        blockWithItem(VerseBlocks.QUARTZ_ORE);
+        blockWithItem(VerseBlocks.DEEPSLATE_QUARTZ_ORE);
+        blockWithItem(VerseBlocks.AMBER_ORE);
+        blockWithItem(VerseBlocks.DEEPSLATE_AMBER_ORE);
 
         //Compressed Ores
-        blockWIthItem(VerseBlocks.COMPRESSED_COAL_ORE);
-        blockWIthItem(VerseBlocks.COMPRESSED_DEEPSLATE_COAL_ORE);
-        blockWIthItem(VerseBlocks.COMPRESSED_COPPER_ORE);
-        blockWIthItem(VerseBlocks.COMPRESSED_DEEPSLATE_COPPER_ORE);
-        blockWIthItem(VerseBlocks.COMPRESSED_IRON_ORE);
-        blockWIthItem(VerseBlocks.COMPRESSED_DEEPSLATE_IRON_ORE);
-        blockWIthItem(VerseBlocks.COMPRESSED_GOLD_ORE);
-        blockWIthItem(VerseBlocks.COMPRESSED_DEEPSLATE_GOLD_ORE);
-        blockWIthItem(VerseBlocks.COMPRESSED_LAPIS_ORE);
-        blockWIthItem(VerseBlocks.COMPRESSED_DEEPSLATE_LAPIS_ORE);
-        blockWIthItem(VerseBlocks.COMPRESSED_REDSTONE_ORE);
-        blockWIthItem(VerseBlocks.COMPRESSED_DEEPSLATE_REDSTONE_ORE);
-        blockWIthItem(VerseBlocks.COMPRESSED_EMERALD_ORE);
-        blockWIthItem(VerseBlocks.COMPRESSED_DEEPSLATE_EMERALD_ORE);
-        blockWIthItem(VerseBlocks.COMPRESSED_DIAMOND_ORE);
-        blockWIthItem(VerseBlocks.COMPRESSED_DEEPSLATE_DIAMOND_ORE);
+        blockWithItem(VerseBlocks.COMPRESSED_COAL_ORE);
+        blockWithItem(VerseBlocks.COMPRESSED_DEEPSLATE_COAL_ORE);
+        blockWithItem(VerseBlocks.COMPRESSED_COPPER_ORE);
+        blockWithItem(VerseBlocks.COMPRESSED_DEEPSLATE_COPPER_ORE);
+        blockWithItem(VerseBlocks.COMPRESSED_IRON_ORE);
+        blockWithItem(VerseBlocks.COMPRESSED_DEEPSLATE_IRON_ORE);
+        blockWithItem(VerseBlocks.COMPRESSED_GOLD_ORE);
+        blockWithItem(VerseBlocks.COMPRESSED_DEEPSLATE_GOLD_ORE);
+        blockWithItem(VerseBlocks.COMPRESSED_LAPIS_ORE);
+        blockWithItem(VerseBlocks.COMPRESSED_DEEPSLATE_LAPIS_ORE);
+        blockWithItem(VerseBlocks.COMPRESSED_REDSTONE_ORE);
+        blockWithItem(VerseBlocks.COMPRESSED_DEEPSLATE_REDSTONE_ORE);
+        blockWithItem(VerseBlocks.COMPRESSED_EMERALD_ORE);
+        blockWithItem(VerseBlocks.COMPRESSED_DEEPSLATE_EMERALD_ORE);
+        blockWithItem(VerseBlocks.COMPRESSED_DIAMOND_ORE);
+        blockWithItem(VerseBlocks.COMPRESSED_DEEPSLATE_DIAMOND_ORE);
 
         //Nether Ores
 
         //End Ores
-        blockWIthItem(VerseBlocks.ENDSTONE_DRAGONRITE_ORE);
+        blockWithItem(VerseBlocks.ENDSTONE_DRAGONRITE_ORE);
+
+        //Miners Dream Ores
+        //Dark Stone
+        blockWithItem(VerseBlocks.DARK_STONE_COAL_ORE);
+        blockWithItem(VerseBlocks.DARK_STONE_IRON_ORE);
+        blockWithItem(VerseBlocks.DARK_STONE_COPPER_ORE);
+        blockWithItem(VerseBlocks.DARK_STONE_QUARTZ_ORE);
+        blockWithItem(VerseBlocks.DARK_STONE_GOLD_ORE);
+        blockWithItem(VerseBlocks.DARK_STONE_REDSTONE_ORE);
+        blockWithItem(VerseBlocks.DARK_STONE_EMERALD_ORE);
+        blockWithItem(VerseBlocks.DARK_STONE_LAPIS_ORE);
+        blockWithItem(VerseBlocks.DARK_STONE_DIAMOND_ORE);
+        blockWithItem(VerseBlocks.DARK_STONE_BOSKALT_ORE);
+        blockWithItem(VerseBlocks.DARK_STONE_AMBER_ORE);
+        blockWithItem(VerseBlocks.DARK_STONE_GARNET_ORE);
+        blockWithItem(VerseBlocks.DARK_STONE_SAPPHIRE_ORE);
+
+        //Limestone
+        blockWithItem(VerseBlocks.LIMESTONE_COAL_ORE);
+        blockWithItem(VerseBlocks.LIMESTONE_IRON_ORE);
+        blockWithItem(VerseBlocks.LIMESTONE_COPPER_ORE);
+        blockWithItem(VerseBlocks.LIMESTONE_QUARTZ_ORE);
+        blockWithItem(VerseBlocks.LIMESTONE_GOLD_ORE);
+        blockWithItem(VerseBlocks.LIMESTONE_REDSTONE_ORE);
+        blockWithItem(VerseBlocks.LIMESTONE_EMERALD_ORE);
+        blockWithItem(VerseBlocks.LIMESTONE_LAPIS_ORE);
+        blockWithItem(VerseBlocks.LIMESTONE_DIAMOND_ORE);
+        blockWithItem(VerseBlocks.LIMESTONE_BOSKALT_ORE);
+        blockWithItem(VerseBlocks.LIMESTONE_AMBER_ORE);
+        blockWithItem(VerseBlocks.LIMESTONE_GARNET_ORE);
+        blockWithItem(VerseBlocks.LIMESTONE_SAPPHIRE_ORE);
+
+        //Marble
+        //Limestone
+        blockWithItem(VerseBlocks.MARBLE_COAL_ORE);
+        blockWithItem(VerseBlocks.MARBLE_IRON_ORE);
+        blockWithItem(VerseBlocks.MARBLE_COPPER_ORE);
+        blockWithItem(VerseBlocks.MARBLE_QUARTZ_ORE);
+        blockWithItem(VerseBlocks.MARBLE_GOLD_ORE);
+        blockWithItem(VerseBlocks.MARBLE_REDSTONE_ORE);
+        blockWithItem(VerseBlocks.MARBLE_EMERALD_ORE);
+        blockWithItem(VerseBlocks.MARBLE_LAPIS_ORE);
+        blockWithItem(VerseBlocks.MARBLE_DIAMOND_ORE);
+        blockWithItem(VerseBlocks.MARBLE_BOSKALT_ORE);
+        blockWithItem(VerseBlocks.MARBLE_AMBER_ORE);
+        blockWithItem(VerseBlocks.MARBLE_GARNET_ORE);
+        blockWithItem(VerseBlocks.MARBLE_SAPPHIRE_ORE);
 
         //Raw Material Blocks
-        blockWIthItem(VerseBlocks.BLOCK_OF_RAW_BOSKALT);
+        blockWithItem(VerseBlocks.BLOCK_OF_RAW_BOSKALT);
 
 
         //Material Blocks
-        blockWIthItem(VerseBlocks.BLOCK_OF_BOSKALT);
-        blockWIthItem(VerseBlocks.BLOCK_OF_GARNET);
-        blockWIthItem(VerseBlocks.BLOCK_OF_SAPPHIRE);
-        blockWIthItem(VerseBlocks.BLOCK_OF_AMBER);
-        blockWIthItem(VerseBlocks.BLOCK_OF_DRAGONRITE);
-        blockWIthItem(VerseBlocks.BLOCK_OF_EMERITE);
-        blockWIthItem(VerseBlocks.BLOCK_OF_ECHO_SHARD);
-        blockWIthItem(VerseBlocks.BLOCK_OF_SCULK_STEEL);
+        blockWithItem(VerseBlocks.BLOCK_OF_BOSKALT);
+        blockWithItem(VerseBlocks.BLOCK_OF_GARNET);
+        blockWithItem(VerseBlocks.BLOCK_OF_SAPPHIRE);
+        blockWithItem(VerseBlocks.BLOCK_OF_AMBER);
+        blockWithItem(VerseBlocks.BLOCK_OF_DRAGONRITE);
+        blockWithItem(VerseBlocks.BLOCK_OF_EMERITE);
+        blockWithItem(VerseBlocks.BLOCK_OF_ECHO_SHARD);
+        blockWithItem(VerseBlocks.BLOCK_OF_SCULK_STEEL);
 
         //Other Blocks
-        blockWIthItem(VerseBlocks.REINFORCED_STONE);
-        blockWIthItem(VerseBlocks.COBBLED_DARK_STONE);
+        blockWithItem(VerseBlocks.REINFORCED_STONE);
+        blockWithItem(VerseBlocks.COBBLED_DARK_STONE);
     }
 
-    private void blockWIthItem(DeferredBlock<?> deferredBlock) {
+    private void blockWithItem(DeferredBlock<?> deferredBlock) {
         simpleBlockWithItem(deferredBlock.get(), cubeAll(deferredBlock.get()));
     }
 }

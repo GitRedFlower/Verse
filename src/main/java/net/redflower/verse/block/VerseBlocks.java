@@ -218,6 +218,245 @@ public class VerseBlocks {
                     .strength(3f)
                     .sound(SoundType.STONE)));
 
+    //Miners Dream Ores
+    //Dark Stone
+    public static final DeferredBlock<Block> DARK_STONE_COAL_ORE = registerBlock("dark_stone_coal_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(4.5f)
+                    .sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> DARK_STONE_IRON_ORE = registerBlock("dark_stone_iron_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3.5f)
+                    .sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> DARK_STONE_QUARTZ_ORE = registerBlock("dark_stone_quartz_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3.5f)
+                    .sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> DARK_STONE_COPPER_ORE = registerBlock("dark_stone_copper_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3.5f)
+                    .sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> DARK_STONE_GOLD_ORE = registerBlock("dark_stone_gold_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3.5f)
+                    .sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> DARK_STONE_REDSTONE_ORE = registerBlock("dark_stone_redstone_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3.5f)
+                    .sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> DARK_STONE_EMERALD_ORE = registerBlock("dark_stone_emerald_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3.5f)
+                    .sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> DARK_STONE_LAPIS_ORE = registerBlock("dark_stone_lapis_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3.5f)
+                    .sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> DARK_STONE_DIAMOND_ORE = registerBlock("dark_stone_diamond_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3.5f)
+                    .sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> DARK_STONE_BOSKALT_ORE = registerBlock("dark_stone_boskalt_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3.5f)
+                    .sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> DARK_STONE_AMBER_ORE = registerBlock("dark_stone_amber_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3.5f)
+                    .sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> DARK_STONE_GARNET_ORE = registerBlock("dark_stone_garnet_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3.5f)
+                    .sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> DARK_STONE_SAPPHIRE_ORE = registerBlock("dark_stone_sapphire_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3.5f)
+                    .sound(SoundType.DEEPSLATE)));
+
+    //Limestone
+    public static final DeferredBlock<Block> LIMESTONE_COAL_ORE = registerBlock("limestone_coal_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(4.5f)
+                    .sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> LIMESTONE_IRON_ORE = registerBlock("limestone_iron_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3.5f)
+                    .sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> LIMESTONE_QUARTZ_ORE = registerBlock("limestone_quartz_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3.5f)
+                    .sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> LIMESTONE_COPPER_ORE = registerBlock("limestone_copper_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3.5f)
+                    .sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> LIMESTONE_GOLD_ORE = registerBlock("limestone_gold_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3.5f)
+                    .sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> LIMESTONE_REDSTONE_ORE = registerBlock("limestone_redstone_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3.5f)
+                    .sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> LIMESTONE_EMERALD_ORE = registerBlock("limestone_emerald_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3.5f)
+                    .sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> LIMESTONE_LAPIS_ORE = registerBlock("limestone_lapis_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3.5f)
+                    .sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> LIMESTONE_DIAMOND_ORE = registerBlock("limestone_diamond_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3.5f)
+                    .sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> LIMESTONE_BOSKALT_ORE = registerBlock("limestone_boskalt_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3.5f)
+                    .sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> LIMESTONE_AMBER_ORE = registerBlock("limestone_amber_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3.5f)
+                    .sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> LIMESTONE_GARNET_ORE = registerBlock("limestone_garnet_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3.5f)
+                    .sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> LIMESTONE_SAPPHIRE_ORE = registerBlock("limestone_sapphire_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3.5f)
+                    .sound(SoundType.DEEPSLATE)));
+
+    //Marble
+    public static final DeferredBlock<Block> MARBLE_COAL_ORE = registerBlock("marble_coal_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(4.5f)
+                    .sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> MARBLE_IRON_ORE = registerBlock("marble_iron_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3.5f)
+                    .sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> MARBLE_QUARTZ_ORE = registerBlock("marble_quartz_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3.5f)
+                    .sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> MARBLE_COPPER_ORE = registerBlock("marble_copper_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3.5f)
+                    .sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> MARBLE_GOLD_ORE = registerBlock("marble_gold_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3.5f)
+                    .sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> MARBLE_REDSTONE_ORE = registerBlock("marble_redstone_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3.5f)
+                    .sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> MARBLE_EMERALD_ORE = registerBlock("marble_emerald_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3.5f)
+                    .sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> MARBLE_LAPIS_ORE = registerBlock("marble_lapis_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3.5f)
+                    .sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> MARBLE_DIAMOND_ORE = registerBlock("marble_diamond_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3.5f)
+                    .sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> MARBLE_BOSKALT_ORE = registerBlock("marble_boskalt_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3.5f)
+                    .sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> MARBLE_AMBER_ORE = registerBlock("marble_amber_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3.5f)
+                    .sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> MARBLE_GARNET_ORE = registerBlock("marble_garnet_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3.5f)
+                    .sound(SoundType.DEEPSLATE)));
+
+    public static final DeferredBlock<Block> MARBLE_SAPPHIRE_ORE = registerBlock("marble_sapphire_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3.5f)
+                    .sound(SoundType.DEEPSLATE)));
+
+
     //Raw Material Blocks
     public static final DeferredBlock<Block> BLOCK_OF_RAW_BOSKALT = registerBlock("block_of_raw_boskalt",
             () -> new Block(BlockBehaviour.Properties.of()

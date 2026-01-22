@@ -22,19 +22,29 @@
     "water_fog_color": 9011863
   },
   "features": [
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
-    [],
     [
+      "verse:top_layer_milvi_placed",
       "verse:milvi_blob_placed"
     ],
     [],
+    [],
+    [],
+    [],
+    [],
     [
-      "verse:top_layer_milvi_placed"
+      "verse:miners_dream_coal_ore_placed",
+      "verse:miners_dream_iron_ore_placed",
+      "verse:miners_dream_boskalt_ore_placed",
+      "verse:miners_dream_copper_ore_placed",
+      "verse:miners_dream_quartz_ore_placed",
+      "verse:miners_dream_gold_ore_placed",
+      "verse:miners_dream_redstone_ore_placed",
+      "verse:miners_dream_emerald_ore_placed",
+      "verse:miners_dream_lapis_ore_placed",
+      "verse:miners_dream_amber_ore_placed",
+      "verse:miners_dream_diamond_ore_placed",
+      "verse:miners_dream_garnet_ore_placed",
+      "verse:miners_dream_sapphire_ore_placed"
     ]
   ],
   "has_precipitation": false,

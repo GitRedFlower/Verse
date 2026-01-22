@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "garnet",
+  "ingredient": {
+    "item": "verse:limestone_garnet_ore"
+  },
+  "result": {
+    "count": 1,
+    "id": "verse:garnet"
+  }
+}

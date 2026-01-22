@@ -14,14 +14,15 @@ import java.util.List;
 
 public class VersePlacedFeatures {
 
-    //Overworld Ores
+    //Overworld
+    //Ores
     public static final ResourceKey<PlacedFeature> OVERWORLD_QUARTZ_ORE_PLACED_KEY = registerKey("overworld_quartz_ore_placed");
     public static final ResourceKey<PlacedFeature> OVERWORLD_AMBER_ORE_PLACED_KEY = registerKey("overworld_amber_ore_placed");
     public static final ResourceKey<PlacedFeature> OVERWORLD_BOSKALT_ORE_PLACED_KEY = registerKey("overworld_boskalt_ore_placed");
     public static final ResourceKey<PlacedFeature> OVERWORLD_SAPPHIRE_ORE_PLACED_KEY = registerKey("overworld_sapphire_ore_placed");
     public static final ResourceKey<PlacedFeature> OVERWORLD_GARNET_ORE_PLACED_KEY = registerKey("overworld_garnet_ore_placed");
 
-    //Overworld Compressed Ores
+    //Compressed Ores
     public static final ResourceKey<PlacedFeature> OVERWORLD_COMPRESSED_COAL_PLACED_KEY = registerKey("overworld_compressed_coal_ore_placed");
     public static final ResourceKey<PlacedFeature> OVERWORLD_COMPRESSED_COPPER_PLACED_KEY = registerKey("overworld_compressed_copper_ore_placed");
     public static final ResourceKey<PlacedFeature> OVERWORLD_COMPRESSED_IRON_PLACED_KEY = registerKey("overworld_compressed_iron_ore_placed");
@@ -31,7 +32,8 @@ public class VersePlacedFeatures {
     public static final ResourceKey<PlacedFeature> OVERWORLD_COMPRESSED_LAPIS_PLACED_KEY = registerKey("overworld_compressed_lapis_ore_placed");
     public static final ResourceKey<PlacedFeature> OVERWORLD_COMPRESSED_DIAMOND_PLACED_KEY = registerKey("overworld_compressed_diamond_ore_placed");
 
-    //End Ores
+    //End
+    //Ores
     public static final ResourceKey<PlacedFeature> END_DRAGONRITE_ORE_PLACED_KEY = registerKey("end_dragonrite_ore_placed");
 
     //Miners Dream
@@ -51,10 +53,26 @@ public class VersePlacedFeatures {
     public static final ResourceKey<PlacedFeature> TOP_LAYER_MILVI_PLACED_KEY = registerKey("top_layer_milvi_placed");
     public static final ResourceKey<PlacedFeature> MILVI_BLOB_PLACED_KEY = registerKey("milvi_blob_placed");
 
+    //Ores
+    public static final ResourceKey<PlacedFeature> MINERS_DREAM_COAL_ORE_PLACED_KEY = registerKey("miners_dream_coal_ore_placed");
+    public static final ResourceKey<PlacedFeature> MINERS_DREAM_IRON_ORE_PLACED_KEY = registerKey("miners_dream_iron_ore_placed");
+    public static final ResourceKey<PlacedFeature> MINERS_DREAM_BOSKALT_ORE_PLACED_KEY = registerKey("miners_dream_boskalt_ore_placed");
+    public static final ResourceKey<PlacedFeature> MINERS_DREAM_COPPER_ORE_PLACED_KEY = registerKey("miners_dream_copper_ore_placed");
+    public static final ResourceKey<PlacedFeature> MINERS_DREAM_QUARTZ_ORE_PLACED_KEY = registerKey("miners_dream_quartz_ore_placed");
+    public static final ResourceKey<PlacedFeature> MINERS_DREAM_GOLD_ORE_PLACED_KEY = registerKey("miners_dream_gold_ore_placed");
+    public static final ResourceKey<PlacedFeature> MINERS_DREAM_REDSTONE_ORE_PLACED_KEY = registerKey("miners_dream_redstone_ore_placed");
+    public static final ResourceKey<PlacedFeature> MINERS_DREAM_EMERALD_ORE_PLACED_KEY = registerKey("miners_dream_emerald_ore_placed");
+    public static final ResourceKey<PlacedFeature> MINERS_DREAM_LAPIS_ORE_PLACED_KEY = registerKey("miners_dream_lapis_ore_placed");
+    public static final ResourceKey<PlacedFeature> MINERS_DREAM_AMBER_ORE_PLACED_KEY = registerKey("miners_dream_amber_ore_placed");
+    public static final ResourceKey<PlacedFeature> MINERS_DREAM_DIAMOND_ORE_PLACED_KEY = registerKey("miners_dream_diamond_ore_placed");
+    public static final ResourceKey<PlacedFeature> MINERS_DREAM_GARNET_ORE_PLACED_KEY = registerKey("miners_dream_garnet_ore_placed");
+    public static final ResourceKey<PlacedFeature> MINERS_DREAM_SAPPHIRE_ORE_PLACED_KEY = registerKey("miners_dream_sapphire_ore_placed");
+
     public static void bootstrap(BootstrapContext<PlacedFeature> context) {
         var configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
-        //Overworld Ores
+        //Overworld
+        //Ores
         register(context, OVERWORLD_QUARTZ_ORE_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.OVERWORLD_QUARTZ_ORE_KEY),
                 VerseOrePlacement.commonOrePlacement(14, HeightRangePlacement.triangle(VerticalAnchor.absolute(-15), VerticalAnchor.absolute(95))));
         register(context, OVERWORLD_AMBER_ORE_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.OVERWORLD_AMBER_ORE_KEY),
@@ -66,7 +84,7 @@ public class VersePlacedFeatures {
         register(context, OVERWORLD_GARNET_ORE_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.OVERWORLD_GARNET_ORE_KEY),
                 VerseOrePlacement.commonOrePlacement(6, HeightRangePlacement.triangle(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(16))));
 
-        //Overworld Compressed Ores
+        //Compressed Ores
         register(context, OVERWORLD_COMPRESSED_COAL_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.OVERWORLD_COMPRESSED_COAL_ORE_KEY),
                 VerseOrePlacement.commonOrePlacement(4, HeightRangePlacement.triangle(VerticalAnchor.absolute(0), VerticalAnchor.absolute(300))));
         register(context, OVERWORLD_COMPRESSED_COPPER_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.OVERWORLD_COMPRESSED_COPPER_ORE_KEY),
@@ -84,7 +102,8 @@ public class VersePlacedFeatures {
         register(context, OVERWORLD_COMPRESSED_DIAMOND_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.OVERWORLD_COMPRESSED_DIAMOND_ORE_KEY),
                 VerseOrePlacement.commonOrePlacement(4, HeightRangePlacement.triangle(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(16))));
 
-        //End Ores
+        //End
+        // Ores
         register(context, END_DRAGONRITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.END_DRAGONRITE_ORE_KEY),
                 VerseOrePlacement.commonOrePlacement(4, HeightRangePlacement.uniform(VerticalAnchor.absolute(12), VerticalAnchor.absolute(64))));
 
@@ -102,8 +121,23 @@ public class VersePlacedFeatures {
         register(context, MARBLE_BLOB_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.MARBLE_BLOB), amount(18, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
 
         //Mystical Caves
-        register(context, TOP_LAYER_MILVI_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.TOP_LAYER_MILVI), amount(230, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
-        register(context, MILVI_BLOB_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.MILVI_BLOB), amount(12, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
+        register(context, TOP_LAYER_MILVI_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.TOP_LAYER_MILVI), amount(220, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
+        register(context, MILVI_BLOB_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.MILVI_BLOB), amount(10, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
+
+        //Ores
+        register(context, MINERS_DREAM_COAL_ORE_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.MINERS_DREAM_COAL_ORE), VerseOrePlacement.commonOrePlacement(16, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
+        register(context, MINERS_DREAM_IRON_ORE_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.MINERS_DREAM_IRON_ORE), VerseOrePlacement.commonOrePlacement(16, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
+        register(context, MINERS_DREAM_BOSKALT_ORE_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.MINERS_DREAM_BOSKALT_ORE), VerseOrePlacement.commonOrePlacement(16, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
+        register(context, MINERS_DREAM_COPPER_ORE_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.MINERS_DREAM_COPPER_ORE), VerseOrePlacement.commonOrePlacement(16, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
+        register(context, MINERS_DREAM_QUARTZ_ORE_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.MINERS_DREAM_QUARTZ_ORE), VerseOrePlacement.commonOrePlacement(16, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
+        register(context, MINERS_DREAM_GOLD_ORE_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.MINERS_DREAM_GOLD_ORE), VerseOrePlacement.commonOrePlacement(16, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
+        register(context, MINERS_DREAM_REDSTONE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.MINERS_DREAM_REDSTONE_ORE), VerseOrePlacement.commonOrePlacement(16, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
+        register(context, MINERS_DREAM_EMERALD_ORE_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.MINERS_DREAM_EMERALD_ORE), VerseOrePlacement.commonOrePlacement(16, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
+        register(context, MINERS_DREAM_LAPIS_ORE_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.MINERS_DREAM_LAPIS_ORE), VerseOrePlacement.commonOrePlacement(16, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
+        register(context, MINERS_DREAM_AMBER_ORE_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.MINERS_DREAM_AMBER_ORE), VerseOrePlacement.commonOrePlacement(16, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
+        register(context, MINERS_DREAM_DIAMOND_ORE_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.MINERS_DREAM_DIAMOND_ORE), VerseOrePlacement.commonOrePlacement(16, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
+        register(context, MINERS_DREAM_GARNET_ORE_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.MINERS_DREAM_GARNET_ORE), VerseOrePlacement.commonOrePlacement(16, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
+        register(context, MINERS_DREAM_SAPPHIRE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.MINERS_DREAM_SAPPHIRE_ORE), VerseOrePlacement.commonOrePlacement(16, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
     }
 
     private static List<PlacementModifier> amount(int attempts, PlacementModifier height) {

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "verse:block/limestone_emerald_ore"
+  }
+}

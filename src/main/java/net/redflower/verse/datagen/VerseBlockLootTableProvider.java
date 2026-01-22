@@ -51,13 +51,8 @@ public class VerseBlockLootTableProvider extends BlockLootSubProvider {
         add(VerseBlocks.DARK_STONE.get(),
                 block -> createSilkDrop(VerseBlocks.DARK_STONE.get(), VerseBlocks.COBBLED_DARK_STONE.get()));
 
-
-        //Ore Drops
-        //Multiple Drops
-        //Regular Ores
-
-
-        //Compressed Ores
+        //Ores
+        //Multiple
         add(VerseBlocks.COMPRESSED_COAL_ORE.get(),
                 block -> createMultipleOreDrops(VerseBlocks.COMPRESSED_COAL_ORE.get(), Items.COAL,4,7));
         add(VerseBlocks.COMPRESSED_DEEPSLATE_COAL_ORE.get(),
@@ -91,6 +86,25 @@ public class VerseBlockLootTableProvider extends BlockLootSubProvider {
         add(VerseBlocks.COMPRESSED_DEEPSLATE_DIAMOND_ORE.get(),
                 block -> createMultipleOreDrops(VerseBlocks.COMPRESSED_DEEPSLATE_DIAMOND_ORE.get(), Items.DIAMOND,4,7));
 
+        add(VerseBlocks.DARK_STONE_COPPER_ORE.get(),
+                block -> createMultipleOreDrops(VerseBlocks.DARK_STONE_COPPER_ORE.get(), Items.RAW_COPPER,2,5));
+        add(VerseBlocks.DARK_STONE_REDSTONE_ORE.get(),
+                block -> createMultipleOreDrops(VerseBlocks.DARK_STONE_REDSTONE_ORE.get(), Items.RAW_COPPER,4,5));
+        add(VerseBlocks.DARK_STONE_LAPIS_ORE.get(),
+                block -> createMultipleOreDrops(VerseBlocks.DARK_STONE_LAPIS_ORE.get(), Items.RAW_COPPER,4,9));
+        add(VerseBlocks.LIMESTONE_COPPER_ORE.get(),
+                block -> createMultipleOreDrops(VerseBlocks.LIMESTONE_COPPER_ORE.get(), Items.RAW_COPPER,2,5));
+        add(VerseBlocks.LIMESTONE_REDSTONE_ORE.get(),
+                block -> createMultipleOreDrops(VerseBlocks.LIMESTONE_REDSTONE_ORE.get(), Items.RAW_COPPER,4,5));
+        add(VerseBlocks.LIMESTONE_LAPIS_ORE.get(),
+                block -> createMultipleOreDrops(VerseBlocks.LIMESTONE_LAPIS_ORE.get(), Items.RAW_COPPER,4,9));
+        add(VerseBlocks.MARBLE_COPPER_ORE.get(),
+                block -> createMultipleOreDrops(VerseBlocks.MARBLE_COPPER_ORE.get(), Items.RAW_COPPER,2,5));
+        add(VerseBlocks.MARBLE_REDSTONE_ORE.get(),
+                block -> createMultipleOreDrops(VerseBlocks.MARBLE_REDSTONE_ORE.get(), Items.RAW_COPPER,4,5));
+        add(VerseBlocks.MARBLE_LAPIS_ORE.get(),
+                block -> createMultipleOreDrops(VerseBlocks.MARBLE_LAPIS_ORE.get(), Items.RAW_COPPER,4,9));
+
         //Single Drops
         add(VerseBlocks.BOSKALT_ORE.get(),
                 block -> createOreDrop(VerseBlocks.BOSKALT_ORE.get(), VerseItems.RAW_BOSKALT.get()));
@@ -112,6 +126,68 @@ public class VerseBlockLootTableProvider extends BlockLootSubProvider {
                 block -> createOreDrop(VerseBlocks.AMBER_ORE.get(), VerseItems.AMBER.get()));
         add(VerseBlocks.DEEPSLATE_AMBER_ORE.get(),
                 block -> createOreDrop(VerseBlocks.DEEPSLATE_AMBER_ORE.get(), VerseItems.AMBER.get()));
+
+        add(VerseBlocks.DARK_STONE_BOSKALT_ORE.get(),
+                block -> createOreDrop(VerseBlocks.DARK_STONE_BOSKALT_ORE.get(), VerseItems.RAW_BOSKALT.get()));
+        add(VerseBlocks.DARK_STONE_AMBER_ORE.get(),
+                block -> createOreDrop(VerseBlocks.DARK_STONE_AMBER_ORE.get(), VerseItems.AMBER.get()));
+        add(VerseBlocks.DARK_STONE_GARNET_ORE.get(),
+                block -> createOreDrop(VerseBlocks.DARK_STONE_GARNET_ORE.get(), VerseItems.GARNET.get()));
+        add(VerseBlocks.DARK_STONE_SAPPHIRE_ORE.get(),
+                block -> createOreDrop(VerseBlocks.DARK_STONE_AMBER_ORE.get(), VerseItems.SAPPHIRE.get()));
+        add(VerseBlocks.LIMESTONE_BOSKALT_ORE.get(),
+                block -> createOreDrop(VerseBlocks.LIMESTONE_BOSKALT_ORE.get(), VerseItems.RAW_BOSKALT.get()));
+        add(VerseBlocks.LIMESTONE_AMBER_ORE.get(),
+                block -> createOreDrop(VerseBlocks.LIMESTONE_AMBER_ORE.get(), VerseItems.AMBER.get()));
+        add(VerseBlocks.LIMESTONE_GARNET_ORE.get(),
+                block -> createOreDrop(VerseBlocks.LIMESTONE_GARNET_ORE.get(), VerseItems.GARNET.get()));
+        add(VerseBlocks.LIMESTONE_SAPPHIRE_ORE.get(),
+                block -> createOreDrop(VerseBlocks.LIMESTONE_AMBER_ORE.get(), VerseItems.SAPPHIRE.get()));
+        add(VerseBlocks.MARBLE_BOSKALT_ORE.get(),
+                block -> createOreDrop(VerseBlocks.MARBLE_BOSKALT_ORE.get(), VerseItems.RAW_BOSKALT.get()));
+        add(VerseBlocks.MARBLE_AMBER_ORE.get(),
+                block -> createOreDrop(VerseBlocks.MARBLE_AMBER_ORE.get(), VerseItems.AMBER.get()));
+        add(VerseBlocks.MARBLE_GARNET_ORE.get(),
+                block -> createOreDrop(VerseBlocks.MARBLE_GARNET_ORE.get(), VerseItems.GARNET.get()));
+        add(VerseBlocks.MARBLE_SAPPHIRE_ORE.get(),
+                block -> createOreDrop(VerseBlocks.MARBLE_AMBER_ORE.get(), VerseItems.SAPPHIRE.get()));
+
+        add(VerseBlocks.DARK_STONE_COAL_ORE.get(),
+                block -> createOreDrop(VerseBlocks.DARK_STONE_COAL_ORE.get(), Items.COAL));
+        add(VerseBlocks.DARK_STONE_IRON_ORE.get(),
+                block -> createOreDrop(VerseBlocks.DARK_STONE_IRON_ORE.get(), Items.RAW_IRON));
+        add(VerseBlocks.DARK_STONE_QUARTZ_ORE.get(),
+                block -> createOreDrop(VerseBlocks.DARK_STONE_QUARTZ_ORE.get(), VerseItems.QUARTZ.get()));
+        add(VerseBlocks.DARK_STONE_GOLD_ORE.get(),
+                block -> createOreDrop(VerseBlocks.DARK_STONE_GOLD_ORE.get(), Items.RAW_GOLD_BLOCK));
+        add(VerseBlocks.DARK_STONE_EMERALD_ORE.get(),
+                block -> createOreDrop(VerseBlocks.DARK_STONE_EMERALD_ORE.get(), Items.EMERALD));
+        add(VerseBlocks.DARK_STONE_DIAMOND_ORE.get(),
+                block -> createOreDrop(VerseBlocks.DARK_STONE_DIAMOND_ORE.get(), Items.DIAMOND));
+        add(VerseBlocks.LIMESTONE_COAL_ORE.get(),
+                block -> createOreDrop(VerseBlocks.LIMESTONE_COAL_ORE.get(), Items.COAL));
+        add(VerseBlocks.LIMESTONE_IRON_ORE.get(),
+                block -> createOreDrop(VerseBlocks.LIMESTONE_IRON_ORE.get(), Items.RAW_IRON));
+        add(VerseBlocks.LIMESTONE_QUARTZ_ORE.get(),
+                block -> createOreDrop(VerseBlocks.LIMESTONE_QUARTZ_ORE.get(), VerseItems.QUARTZ.get()));
+        add(VerseBlocks.LIMESTONE_GOLD_ORE.get(),
+                block -> createOreDrop(VerseBlocks.LIMESTONE_GOLD_ORE.get(), Items.RAW_GOLD_BLOCK));
+        add(VerseBlocks.LIMESTONE_EMERALD_ORE.get(),
+                block -> createOreDrop(VerseBlocks.LIMESTONE_EMERALD_ORE.get(), Items.EMERALD));
+        add(VerseBlocks.LIMESTONE_DIAMOND_ORE.get(),
+                block -> createOreDrop(VerseBlocks.LIMESTONE_DIAMOND_ORE.get(), Items.DIAMOND));
+        add(VerseBlocks.MARBLE_COAL_ORE.get(),
+                block -> createOreDrop(VerseBlocks.MARBLE_COAL_ORE.get(), Items.COAL));
+        add(VerseBlocks.MARBLE_IRON_ORE.get(),
+                block -> createOreDrop(VerseBlocks.MARBLE_IRON_ORE.get(), Items.RAW_IRON));
+        add(VerseBlocks.MARBLE_QUARTZ_ORE.get(),
+                block -> createOreDrop(VerseBlocks.MARBLE_QUARTZ_ORE.get(), VerseItems.QUARTZ.get()));
+        add(VerseBlocks.MARBLE_GOLD_ORE.get(),
+                block -> createOreDrop(VerseBlocks.MARBLE_GOLD_ORE.get(), Items.RAW_GOLD_BLOCK));
+        add(VerseBlocks.MARBLE_EMERALD_ORE.get(),
+                block -> createOreDrop(VerseBlocks.MARBLE_EMERALD_ORE.get(), Items.EMERALD));
+        add(VerseBlocks.MARBLE_DIAMOND_ORE.get(),
+                block -> createOreDrop(VerseBlocks.MARBLE_DIAMOND_ORE.get(), Items.DIAMOND));
     }
 
     protected LootTable.Builder createMultipleOreDrops(Block pBlock, Item item, float minDrops, float maxDrops) {

@@ -68,7 +68,51 @@ public class VerseCreativeModTabs {
                         //End Ores
                         output.accept(VerseBlocks.ENDSTONE_DRAGONRITE_ORE);
 
-                        //Miners Dream
+                        //Miners Dream Ores
+                        //Dark Stone
+                        output.accept(VerseBlocks.DARK_STONE_COAL_ORE);
+                        output.accept(VerseBlocks.DARK_STONE_IRON_ORE);
+                        output.accept(VerseBlocks.DARK_STONE_BOSKALT_ORE);
+                        output.accept(VerseBlocks.DARK_STONE_COPPER_ORE);
+                        output.accept(VerseBlocks.DARK_STONE_QUARTZ_ORE);
+                        output.accept(VerseBlocks.DARK_STONE_GOLD_ORE);
+                        output.accept(VerseBlocks.DARK_STONE_REDSTONE_ORE);
+                        output.accept(VerseBlocks.DARK_STONE_EMERALD_ORE);
+                        output.accept(VerseBlocks.DARK_STONE_LAPIS_ORE);
+                        output.accept(VerseBlocks.DARK_STONE_AMBER_ORE);
+                        output.accept(VerseBlocks.DARK_STONE_DIAMOND_ORE);
+                        output.accept(VerseBlocks.DARK_STONE_GARNET_ORE);
+                        output.accept(VerseBlocks.DARK_STONE_SAPPHIRE_ORE);
+
+                        //Limestone
+                        output.accept(VerseBlocks.LIMESTONE_COAL_ORE);
+                        output.accept(VerseBlocks.LIMESTONE_IRON_ORE);
+                        output.accept(VerseBlocks.LIMESTONE_BOSKALT_ORE);
+                        output.accept(VerseBlocks.LIMESTONE_COPPER_ORE);
+                        output.accept(VerseBlocks.LIMESTONE_QUARTZ_ORE);
+                        output.accept(VerseBlocks.LIMESTONE_GOLD_ORE);
+                        output.accept(VerseBlocks.LIMESTONE_REDSTONE_ORE);
+                        output.accept(VerseBlocks.LIMESTONE_EMERALD_ORE);
+                        output.accept(VerseBlocks.LIMESTONE_LAPIS_ORE);
+                        output.accept(VerseBlocks.LIMESTONE_AMBER_ORE);
+                        output.accept(VerseBlocks.LIMESTONE_DIAMOND_ORE);
+                        output.accept(VerseBlocks.LIMESTONE_GARNET_ORE);
+                        output.accept(VerseBlocks.LIMESTONE_SAPPHIRE_ORE);
+
+                        //Marble
+                        output.accept(VerseBlocks.MARBLE_COAL_ORE);
+                        output.accept(VerseBlocks.MARBLE_IRON_ORE);
+                        output.accept(VerseBlocks.MARBLE_BOSKALT_ORE);
+                        output.accept(VerseBlocks.MARBLE_COPPER_ORE);
+                        output.accept(VerseBlocks.MARBLE_QUARTZ_ORE);
+                        output.accept(VerseBlocks.MARBLE_GOLD_ORE);
+                        output.accept(VerseBlocks.MARBLE_REDSTONE_ORE);
+                        output.accept(VerseBlocks.MARBLE_EMERALD_ORE);
+                        output.accept(VerseBlocks.MARBLE_LAPIS_ORE);
+                        output.accept(VerseBlocks.MARBLE_AMBER_ORE);
+                        output.accept(VerseBlocks.MARBLE_DIAMOND_ORE);
+                        output.accept(VerseBlocks.MARBLE_GARNET_ORE);
+                        output.accept(VerseBlocks.MARBLE_SAPPHIRE_ORE);
 
                         //Raw Ore Blocks
                         output.accept(VerseBlocks.BLOCK_OF_RAW_BOSKALT);
