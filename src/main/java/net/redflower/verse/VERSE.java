@@ -22,7 +22,7 @@ public class VERSE {
     public static final String MODID = "verse";
     public static final Logger LOGGER = LogUtils.getLogger();
 
-    // The constructor for the mod class is the first code that is run when your mod is loaded.
+    // The constructor for the mod class is the first code that is run when your mod is loaded. By RED_FLOWER
     // FML will recognize some parameter types like IEventBus or ModContainer and pass them in automatically.
     public VERSE(IEventBus modEventBus, ModContainer modContainer) {
         // Register the commonSetup method for modloading

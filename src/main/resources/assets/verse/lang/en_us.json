@@ -254,5 +254,9 @@
   "creativetab.verse.blocks" : "Verse Blocks",
   "creativetab.verse.items" : "Verse Items",
 
-  "verse.jei.info.dragon_scale" : "Found In End Cities With a 65% Chance"
+  "verse.jei.info.dragon_scale" : "Found In End Cities With a 65% Chance",
+  "verse.jei.info.reinforced_stone" : "Used to create portal to The Miners Dream, hint use Boksalt",
+  "verse.jei.info.flint_and_boskalt" : "Used to light miners dream portal",
+
+  "verse.jei.info.altar" : "Will be Added in 0.2.0-beta"
 }
