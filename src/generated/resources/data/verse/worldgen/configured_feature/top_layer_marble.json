@@ -25,7 +25,7 @@
     "surface": "floor",
     "vegetation_chance": 0.0,
     "vegetation_feature": {
-      "feature": "verse:top_layer_silt",
+      "feature": "verse:top_layer_marble",
       "placement": []
     },
     "vertical_range": 3,

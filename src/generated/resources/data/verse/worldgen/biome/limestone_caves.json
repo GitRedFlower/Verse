@@ -2,7 +2,7 @@
   "carvers": {
     "air": "verse:cave"
   },
-  "downfall": -0.55,
+  "downfall": -0.35,
   "effects": {
     "fog_color": 10592648,
     "mood_sound": {
@@ -59,5 +59,5 @@
     "water_ambient": [],
     "water_creature": []
   },
-  "temperature": -0.55
+  "temperature": -0.35
 }

@@ -31,6 +31,9 @@ public class VerseCreativeModTabs {
                         output.accept(VerseBlocks.MARBLE);
                         output.accept(VerseBlocks.MILVI);
 
+                        //Other Blocks
+                        output.accept(VerseBlocks.MILVI_CRYSTAL);
+
                         //Ores
                         //Overworld Ores
                         //Regular Ores

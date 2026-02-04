@@ -171,5 +171,9 @@ public class VerseBlockTagProvider extends BlockTagsProvider {
 
         tag(VerseTags.Blocks.MINERS_DREAM_CARVER)
                 .add(VerseBlocks.DARK_STONE.get());
+
+        tag(VerseTags.Blocks.MILVI_PLACEABLES)
+                .add(VerseBlocks.DARK_STONE.get())
+                .add(VerseBlocks.MILVI.get());
     }
 }

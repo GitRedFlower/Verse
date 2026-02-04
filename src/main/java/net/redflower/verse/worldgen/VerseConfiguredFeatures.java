@@ -15,6 +15,7 @@ import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
 import net.minecraft.world.level.levelgen.feature.configurations.FeatureConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.OreConfiguration;
+import net.minecraft.world.level.levelgen.feature.configurations.SimpleBlockConfiguration;
 import net.minecraft.world.level.levelgen.feature.configurations.VegetationPatchConfiguration;
 import net.minecraft.world.level.levelgen.feature.stateproviders.WeightedStateProvider;
 import net.minecraft.world.level.levelgen.placement.CaveSurface;
@@ -68,6 +69,7 @@ public class VerseConfiguredFeatures {
     //Mystical Caves
     public static final ResourceKey<ConfiguredFeature<?, ?>> TOP_LAYER_MILVI = registerKey("top_layer_milvi");
     public static final ResourceKey<ConfiguredFeature<?, ?>> MILVI_BLOB = registerKey("milvi_blob");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> MILVI_CRYSTAL = registerKey("milvi_crystal");
 
     //Ores
     public static final ResourceKey<ConfiguredFeature<?, ?>> MINERS_DREAM_COAL_ORE = registerKey("miners_dream_coal_ore");
@@ -245,31 +247,32 @@ public class VerseConfiguredFeatures {
         register(context, SILT_BLOB, Feature.ORE, new OreConfiguration(darkStoneReplaceables, VerseBlocks.SILT.get().defaultBlockState(), 45));
 
         //Limestone Caves
-        register(context, TOP_LAYER_LIMESTONE, Feature.VEGETATION_PATCH, new VegetationPatchConfiguration(VerseTags.Blocks.MINERS_DREAM_CARVER, new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(VerseBlocks.LIMESTONE.get().defaultBlockState(), 1).add(VerseBlocks.LIMESTONE.get().defaultBlockState(), 2)), PlacementUtils.inlinePlaced(configuredFeatures.getOrThrow(TOP_LAYER_SILT)), CaveSurface.FLOOR, ConstantInt.of(1), 0, 3, 0, UniformInt.of(1, 5), 0.3f));
+        register(context, TOP_LAYER_LIMESTONE, Feature.VEGETATION_PATCH, new VegetationPatchConfiguration(VerseTags.Blocks.MINERS_DREAM_CARVER, new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(VerseBlocks.LIMESTONE.get().defaultBlockState(), 1).add(VerseBlocks.LIMESTONE.get().defaultBlockState(), 2)), PlacementUtils.inlinePlaced(configuredFeatures.getOrThrow(TOP_LAYER_LIMESTONE)), CaveSurface.FLOOR, ConstantInt.of(1), 0, 3, 0, UniformInt.of(1, 5), 0.3f));
         register(context, LIMESTONE_BLOB, Feature.ORE, new OreConfiguration(darkStoneReplaceables, VerseBlocks.LIMESTONE.get().defaultBlockState(), 60));
 
         //Marble Caves
-        register(context, TOP_LAYER_MARBLE, Feature.VEGETATION_PATCH, new VegetationPatchConfiguration(VerseTags.Blocks.MINERS_DREAM_CARVER, new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(VerseBlocks.MARBLE.get().defaultBlockState(), 1).add(VerseBlocks.MARBLE.get().defaultBlockState(), 2)), PlacementUtils.inlinePlaced(configuredFeatures.getOrThrow(TOP_LAYER_SILT)), CaveSurface.FLOOR, ConstantInt.of(1), 0, 3, 0, UniformInt.of(1, 5), 0.3f));
+        register(context, TOP_LAYER_MARBLE, Feature.VEGETATION_PATCH, new VegetationPatchConfiguration(VerseTags.Blocks.MINERS_DREAM_CARVER, new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(VerseBlocks.MARBLE.get().defaultBlockState(), 1).add(VerseBlocks.MARBLE.get().defaultBlockState(), 2)), PlacementUtils.inlinePlaced(configuredFeatures.getOrThrow(TOP_LAYER_MARBLE)), CaveSurface.FLOOR, ConstantInt.of(1), 0, 3, 0, UniformInt.of(1, 5), 0.3f));
         register(context, MARBLE_BLOB, Feature.ORE, new OreConfiguration(darkStoneReplaceables, VerseBlocks.MARBLE.get().defaultBlockState(), 60));
 
         //Mystical Caves
-        register(context, TOP_LAYER_MILVI, Feature.VEGETATION_PATCH, new VegetationPatchConfiguration(VerseTags.Blocks.MINERS_DREAM_CARVER, new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(VerseBlocks.MILVI.get().defaultBlockState(), 1).add(VerseBlocks.MILVI.get().defaultBlockState(), 2)), PlacementUtils.inlinePlaced(configuredFeatures.getOrThrow(TOP_LAYER_SILT)), CaveSurface.FLOOR, ConstantInt.of(1), 0, 3, 0, UniformInt.of(1, 5), 0.3f));
-        register(context, MILVI_BLOB, Feature.ORE, new OreConfiguration(darkStoneReplaceables, VerseBlocks.MILVI.get().defaultBlockState(), 35));
+        register(context, TOP_LAYER_MILVI, Feature.VEGETATION_PATCH, new VegetationPatchConfiguration(VerseTags.Blocks.MINERS_DREAM_CARVER, new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(VerseBlocks.MILVI.get().defaultBlockState(), 1).add(VerseBlocks.MILVI.get().defaultBlockState(), 2)), PlacementUtils.inlinePlaced(configuredFeatures.getOrThrow(TOP_LAYER_MILVI)), CaveSurface.FLOOR, ConstantInt.of(1), 0, 3, 0, UniformInt.of(1, 5), 0.3f));
+        register(context, MILVI_BLOB, Feature.ORE, new OreConfiguration(darkStoneReplaceables, VerseBlocks.MILVI.get().defaultBlockState(), 30));
+        register(context, MILVI_CRYSTAL, Feature.SIMPLE_BLOCK, new SimpleBlockConfiguration(new WeightedStateProvider(SimpleWeightedRandomList.<BlockState>builder().add(VerseBlocks.MILVI_CRYSTAL.get().defaultBlockState(), 99).add(VerseBlocks.MILVI_CRYSTAL.get().defaultBlockState()))));
 
         //Ores
-        register(context, MINERS_DREAM_COAL_ORE, Feature.ORE, new OreConfiguration(MDCoalOres, 7));
-        register(context, MINERS_DREAM_IRON_ORE, Feature.ORE, new OreConfiguration(MDIronOres, 7));
-        register(context, MINERS_DREAM_BOSKALT_ORE, Feature.ORE, new OreConfiguration(MDBoskaltOres, 7));
-        register(context, MINERS_DREAM_COPPER_ORE, Feature.ORE, new OreConfiguration(MDCopperOres, 7));
-        register(context, MINERS_DREAM_QUARTZ_ORE, Feature.ORE, new OreConfiguration(MDQuartzOres, 7));
-        register(context, MINERS_DREAM_GOLD_ORE, Feature.ORE, new OreConfiguration(MDGoldOres, 7));
-        register(context, MINERS_DREAM_REDSTONE_ORE, Feature.ORE, new OreConfiguration(MDRedstoneOres, 7));
-        register(context, MINERS_DREAM_EMERALD_ORE, Feature.ORE, new OreConfiguration(MDEmeraldOres, 7));
-        register(context, MINERS_DREAM_LAPIS_ORE, Feature.ORE, new OreConfiguration(MDLapisOres, 7));
-        register(context, MINERS_DREAM_AMBER_ORE, Feature.ORE, new OreConfiguration(MDAmberOres, 7));
-        register(context, MINERS_DREAM_DIAMOND_ORE, Feature.ORE, new OreConfiguration(MDDiamondOres, 7));
-        register(context, MINERS_DREAM_GARNET_ORE, Feature.ORE, new OreConfiguration(MDGarnetOres, 7));
-        register(context, MINERS_DREAM_SAPPHIRE_ORE, Feature.ORE, new OreConfiguration(MDSapphireOres, 7));
+        register(context, MINERS_DREAM_COAL_ORE, Feature.ORE, new OreConfiguration(MDCoalOres, 9));
+        register(context, MINERS_DREAM_IRON_ORE, Feature.ORE, new OreConfiguration(MDIronOres, 9));
+        register(context, MINERS_DREAM_BOSKALT_ORE, Feature.ORE, new OreConfiguration(MDBoskaltOres, 9));
+        register(context, MINERS_DREAM_COPPER_ORE, Feature.ORE, new OreConfiguration(MDCopperOres, 9));
+        register(context, MINERS_DREAM_QUARTZ_ORE, Feature.ORE, new OreConfiguration(MDQuartzOres, 9));
+        register(context, MINERS_DREAM_GOLD_ORE, Feature.ORE, new OreConfiguration(MDGoldOres, 9));
+        register(context, MINERS_DREAM_REDSTONE_ORE, Feature.ORE, new OreConfiguration(MDRedstoneOres, 9));
+        register(context, MINERS_DREAM_EMERALD_ORE, Feature.ORE, new OreConfiguration(MDEmeraldOres, 9));
+        register(context, MINERS_DREAM_LAPIS_ORE, Feature.ORE, new OreConfiguration(MDLapisOres, 9));
+        register(context, MINERS_DREAM_AMBER_ORE, Feature.ORE, new OreConfiguration(MDAmberOres, 9));
+        register(context, MINERS_DREAM_DIAMOND_ORE, Feature.ORE, new OreConfiguration(MDDiamondOres, 9));
+        register(context, MINERS_DREAM_GARNET_ORE, Feature.ORE, new OreConfiguration(MDGarnetOres, 9));
+        register(context, MINERS_DREAM_SAPPHIRE_ORE, Feature.ORE, new OreConfiguration(MDSapphireOres, 9));
     }
     
     public static ResourceKey<ConfiguredFeature<?, ?>> registerKey (String name) {

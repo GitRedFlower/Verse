@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:coal_block"
+    },
+    "B": {
+      "item": "verse:coal_apple"
+    },
+    "C": {
+      "item": "verse:enchanted_weak_shard"
+    }
+  },
+  "pattern": [
+    "ACA",
+    "CBC",
+    "ACA"
+  ],
+  "result": {
+    "count": 1,
+    "id": "verse:enchanted_coal_apple"
+  }
+}

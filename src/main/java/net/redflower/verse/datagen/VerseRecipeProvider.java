@@ -10,6 +10,7 @@ import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.neoforged.neoforge.common.Tags;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 import net.redflower.verse.VERSE;
@@ -140,6 +141,26 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
                 .pattern("AAA")
                 .define('A', VerseItems.SCULK_STEEL_INGOT.get())
                 .unlockedBy("has_sculk_steel_ingot", has(VerseItems.SCULK_STEEL_INGOT))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseBlocks.SILT, 4)
+                .pattern("BA ")
+                .pattern("AB ")
+                .pattern("   ")
+                .define('A', Items.DIRT)
+                .define('B', Items.SAND)
+                .unlockedBy("has_dirt", has(Items.DIRT))
+                .save(recipeOutput);
+
+        //Altar Recipe
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Blocks.BUDDING_AMETHYST)
+                .pattern("ACA")
+                .pattern("CBC")
+                .pattern("ACA")
+                .define('A', Items.AMETHYST_BLOCK)
+                .define('B', VerseBlocks.MILVI_CRYSTAL)
+                .define('C', VerseItems.ENCHANTED_WEAK_SHARD)
+                .unlockedBy("has_milvi_crystal", has(VerseBlocks.MILVI_CRYSTAL))
                 .save(recipeOutput);
 
         //Armor
@@ -540,6 +561,95 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
                 .unlockedBy("has_diamond", has(Items.DIAMOND))
                 .save(recipeOutput);
 
+        //Altar Recipe
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.ENCHANTED_COAL_APPLE)
+                .pattern("ACA")
+                .pattern("CBC")
+                .pattern("ACA")
+                .define('A', Items.COAL_BLOCK)
+                .define('B', VerseItems.COAL_APPLE)
+                .define('C', VerseItems.ENCHANTED_WEAK_SHARD)
+                .unlockedBy("has_coal_apple", has(VerseItems.COAL_APPLE))
+                .save(recipeOutput);
+
+        //Altar Recipe
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.ENCHANTED_COPPER_APPLE)
+                .pattern("ACA")
+                .pattern("CBC")
+                .pattern("ACA")
+                .define('A', Items.COPPER_BLOCK)
+                .define('B', VerseItems.COPPER_APPLE)
+                .define('C', VerseItems.ENCHANTED_WEAK_SHARD)
+                .unlockedBy("has_copper_apple", has(VerseItems.COPPER_APPLE))
+                .save(recipeOutput);
+
+        //Altar Recipe
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.ENCHANTED_IRON_APPLE)
+                .pattern("ACA")
+                .pattern("CBC")
+                .pattern("ACA")
+                .define('A', Items.IRON_BLOCK)
+                .define('B', VerseItems.IRON_APPLE)
+                .define('C', VerseItems.ENCHANTED_WEAK_SHARD)
+                .unlockedBy("has_iron_apple", has(VerseItems.IRON_APPLE))
+                .save(recipeOutput);
+
+        //Altar Recipe
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.ENCHANTED_REDSTONE_APPLE)
+                .pattern("ACA")
+                .pattern("CBC")
+                .pattern("ACA")
+                .define('A', Items.REDSTONE_BLOCK)
+                .define('B', VerseItems.REDSTONE_APPLE)
+                .define('C', VerseItems.ENCHANTED_WEAK_SHARD)
+                .unlockedBy("has_redstone_apple", has(VerseItems.REDSTONE_APPLE))
+                .save(recipeOutput);
+
+        //Altar Recipe
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.ENCHANTED_LAPIS_APPLE)
+                .pattern("ACA")
+                .pattern("CBC")
+                .pattern("ACA")
+                .define('A', Items.LAPIS_BLOCK)
+                .define('B', VerseItems.LAPIS_APPLE)
+                .define('C', VerseItems.ENCHANTED_WEAK_SHARD)
+                .unlockedBy("has_lapis_apple", has(VerseItems.LAPIS_APPLE))
+                .save(recipeOutput);
+
+        //Altar Recipe
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.ENCHANTED_EMERALD_APPLE)
+                .pattern("ACA")
+                .pattern("CBC")
+                .pattern("ACA")
+                .define('A', Items.EMERALD_BLOCK)
+                .define('B', VerseItems.EMERALD_APPLE)
+                .define('C', VerseItems.ENCHANTED_WEAK_SHARD)
+                .unlockedBy("has_emerald_apple", has(VerseItems.EMERALD_APPLE))
+                .save(recipeOutput);
+
+        //Altar Recipe
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.ENCHANTED_DIAMOND_APPLE)
+                .pattern("ACA")
+                .pattern("CBC")
+                .pattern("ACA")
+                .define('A', Items.DIAMOND_BLOCK)
+                .define('B', VerseItems.DIAMOND_APPLE)
+                .define('C', VerseItems.ENCHANTED_WEAK_SHARD)
+                .unlockedBy("has_diamond_apple", has(VerseItems.DIAMOND_APPLE))
+                .save(recipeOutput);
+
+        //Altar Recipe
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.ENCHANTED_GOLDEN_APPLE)
+                .pattern("ACA")
+                .pattern("CBC")
+                .pattern("ACA")
+                .define('A', Items.GOLD_BLOCK)
+                .define('B', Items.GOLDEN_APPLE)
+                .define('C', VerseItems.ENCHANTED_WEAK_SHARD)
+                .unlockedBy("has_golden_apple", has(Items.GOLDEN_APPLE))
+                .save(recipeOutput);
+
+        //Other Items
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.DIAMOND)
                 .pattern("AAA")
                 .pattern("AAA")
@@ -696,14 +806,7 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
                 .save(recipeOutput, "sculk_steel_upgrade_template_from_template");
 
         //Blocks
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseBlocks.SILT, 4)
-                .pattern("BA ")
-                .pattern("AB ")
-                .pattern("   ")
-                .define('A', Items.DIRT)
-                .define('B', Items.SAND)
-                .unlockedBy("has_dirt", has(Items.DIRT))
-                .save(recipeOutput);
+
 
         //Shapeless
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VerseItems.RAW_BOSKALT.get(), 9)

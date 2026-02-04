@@ -94,8 +94,8 @@ public class MinersDreamBiomes {
         biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_SAPPHIRE_ORE_PLACED_KEY);
 
         return (new Biome.BiomeBuilder()).hasPrecipitation(false)
-                .temperature(-0.55f)
-                .downfall(-0.55f)
+                .temperature(-0.35f)
+                .downfall(-0.35f)
                 .specialEffects((new BiomeSpecialEffects.Builder())
                         .waterColor(0xa1a188)
                         .waterFogColor(0xa1a188)
@@ -133,8 +133,8 @@ public class MinersDreamBiomes {
         biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_SAPPHIRE_ORE_PLACED_KEY);
 
         return (new Biome.BiomeBuilder()).hasPrecipitation(false)
-                .temperature(0.55f)
-                .downfall(0.55f)
+                .temperature(0.65f)
+                .downfall(0.65f)
                 .specialEffects((new BiomeSpecialEffects.Builder())
                         .waterColor(0xc8c8c8)
                         .waterFogColor(0xc8c8c8)
@@ -157,6 +157,7 @@ public class MinersDreamBiomes {
         //Features
         biomeBuilder.addFeature(GenerationStep.Decoration.RAW_GENERATION, VersePlacedFeatures.TOP_LAYER_MILVI_PLACED_KEY);
         biomeBuilder.addFeature(GenerationStep.Decoration.RAW_GENERATION, VersePlacedFeatures.MILVI_BLOB_PLACED_KEY);
+        biomeBuilder.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, VersePlacedFeatures.MILVI_CRYSTAL_PLACED_KEY);
 
         //Ores
         biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_COAL_ORE_PLACED_KEY);
@@ -174,8 +175,8 @@ public class MinersDreamBiomes {
         biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_SAPPHIRE_ORE_PLACED_KEY);
 
         return (new Biome.BiomeBuilder()).hasPrecipitation(false)
-                .temperature(0.74f)
-                .downfall(0.74f)
+                .temperature(0.7f)
+                .downfall(0.7f)
                 .specialEffects((new BiomeSpecialEffects.Builder())
                         .waterColor(0x898297)
                         .waterFogColor(0x898297)

@@ -34,6 +34,7 @@ public class VerseTags {
         //Dimensions
         public static final TagKey<Block> MINERS_DREAM_INFINBURN = createTag("miners_dream_infinburn");
         public static final TagKey<Block> MINERS_DREAM_CARVER = createTag("miners_dream_carver");
+        public static final TagKey<Block> MILVI_PLACEABLES = createTag("milvi_placeables");
 
         private static TagKey<Block> createTag(String name) {
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(VERSE.MODID, name));

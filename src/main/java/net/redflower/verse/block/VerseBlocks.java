@@ -11,6 +11,7 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import net.redflower.verse.VERSE;
 import net.redflower.verse.block.custom.AltarBlock;
+import net.redflower.verse.block.custom.MilviCrystal;
 import net.redflower.verse.block.custom.MinersDreamPortalBlock;
 import net.redflower.verse.item.VerseItems;
 
@@ -49,6 +50,13 @@ public class VerseBlocks {
             () -> new Block(BlockBehaviour.Properties.of()
                     .requiresCorrectToolForDrops()
                     .strength(3.5f)
+                    .sound(SoundType.STONE)));
+
+    //Crystals
+    public static final DeferredBlock<Block> MILVI_CRYSTAL = registerBlock("milvi_crystal",
+            () -> new MilviCrystal(BlockBehaviour.Properties.of().noOcclusion()
+                    .requiresCorrectToolForDrops()
+                    .strength(3f)
                     .sound(SoundType.STONE)));
 
     //Stone Ores
@@ -539,7 +547,6 @@ public class VerseBlocks {
             () -> new MinersDreamPortalBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.NETHER_PORTAL).noLootTable()));
 
 
-    //Registers The Blocks. DO NOT TOUCH!!!!
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

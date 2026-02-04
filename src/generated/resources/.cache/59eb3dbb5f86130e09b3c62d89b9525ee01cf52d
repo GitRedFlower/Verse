@@ -1,4 +1,4 @@
-// 1.21.1	2026-01-22T00:05:16.979945336	Loot Tables
+// 1.21.1	2026-01-22T22:25:57.88092716	Loot Tables
 bc5dcb0a01206ddcffddcec4e7b01b562da6d315 data/verse/loot_table/blocks/altar.json
 83d5b55ddc7024241bbee5947217e253b4c4957a data/verse/loot_table/blocks/amber_ore.json
 c94942093eae0e108cb3dd022c598a42566b8ba4 data/verse/loot_table/blocks/block_of_amber.json
@@ -78,6 +78,7 @@ bb172589285d33362eb93e7e7d6597ca72750707 data/verse/loot_table/blocks/limestone_
 6bfb3ab4a3d00319c183c313dde167e32db5cdf5 data/verse/loot_table/blocks/marble_redstone_ore.json
 18415c9ec748b8ba80e29363d1bc042b2b962fc5 data/verse/loot_table/blocks/marble_sapphire_ore.json
 813442b5e1e271c37dfb1ae46550ababe89b9074 data/verse/loot_table/blocks/milvi.json
+3fc3a7b28c69dcd5781d89b052b9a24b02da329e data/verse/loot_table/blocks/milvi_crystal.json
 4e16a8bdd391de9b0ec7bf0df0abada06187c38e data/verse/loot_table/blocks/quartz_ore.json
 a77b14cf44a8d199ff651c8c70618b147148315e data/verse/loot_table/blocks/reinforced_stone.json
 42effacc40cfc423a1b91d9ea9059672c38a58bd data/verse/loot_table/blocks/sapphire_ore.json

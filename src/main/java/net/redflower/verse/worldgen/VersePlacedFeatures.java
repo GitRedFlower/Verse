@@ -52,6 +52,7 @@ public class VersePlacedFeatures {
     //Mystical Caves
     public static final ResourceKey<PlacedFeature> TOP_LAYER_MILVI_PLACED_KEY = registerKey("top_layer_milvi_placed");
     public static final ResourceKey<PlacedFeature> MILVI_BLOB_PLACED_KEY = registerKey("milvi_blob_placed");
+    public static final ResourceKey<PlacedFeature> MILVI_CRYSTAL_PLACED_KEY = registerKey("milvi_crystal_placed");
 
     //Ores
     public static final ResourceKey<PlacedFeature> MINERS_DREAM_COAL_ORE_PLACED_KEY = registerKey("miners_dream_coal_ore_placed");
@@ -121,23 +122,24 @@ public class VersePlacedFeatures {
         register(context, MARBLE_BLOB_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.MARBLE_BLOB), amount(18, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
 
         //Mystical Caves
-        register(context, TOP_LAYER_MILVI_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.TOP_LAYER_MILVI), amount(220, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
-        register(context, MILVI_BLOB_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.MILVI_BLOB), amount(10, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
+        register(context, TOP_LAYER_MILVI_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.TOP_LAYER_MILVI), amount(228, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
+        register(context, MILVI_BLOB_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.MILVI_BLOB), amount(8, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
+        register(context, MILVI_CRYSTAL_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.MILVI_CRYSTAL), amount(40, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
 
         //Ores
-        register(context, MINERS_DREAM_COAL_ORE_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.MINERS_DREAM_COAL_ORE), VerseOrePlacement.commonOrePlacement(16, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
-        register(context, MINERS_DREAM_IRON_ORE_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.MINERS_DREAM_IRON_ORE), VerseOrePlacement.commonOrePlacement(16, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
-        register(context, MINERS_DREAM_BOSKALT_ORE_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.MINERS_DREAM_BOSKALT_ORE), VerseOrePlacement.commonOrePlacement(16, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
-        register(context, MINERS_DREAM_COPPER_ORE_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.MINERS_DREAM_COPPER_ORE), VerseOrePlacement.commonOrePlacement(16, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
-        register(context, MINERS_DREAM_QUARTZ_ORE_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.MINERS_DREAM_QUARTZ_ORE), VerseOrePlacement.commonOrePlacement(16, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
-        register(context, MINERS_DREAM_GOLD_ORE_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.MINERS_DREAM_GOLD_ORE), VerseOrePlacement.commonOrePlacement(16, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
-        register(context, MINERS_DREAM_REDSTONE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.MINERS_DREAM_REDSTONE_ORE), VerseOrePlacement.commonOrePlacement(16, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
-        register(context, MINERS_DREAM_EMERALD_ORE_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.MINERS_DREAM_EMERALD_ORE), VerseOrePlacement.commonOrePlacement(16, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
-        register(context, MINERS_DREAM_LAPIS_ORE_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.MINERS_DREAM_LAPIS_ORE), VerseOrePlacement.commonOrePlacement(16, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
-        register(context, MINERS_DREAM_AMBER_ORE_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.MINERS_DREAM_AMBER_ORE), VerseOrePlacement.commonOrePlacement(16, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
-        register(context, MINERS_DREAM_DIAMOND_ORE_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.MINERS_DREAM_DIAMOND_ORE), VerseOrePlacement.commonOrePlacement(16, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
-        register(context, MINERS_DREAM_GARNET_ORE_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.MINERS_DREAM_GARNET_ORE), VerseOrePlacement.commonOrePlacement(16, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
-        register(context, MINERS_DREAM_SAPPHIRE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.MINERS_DREAM_SAPPHIRE_ORE), VerseOrePlacement.commonOrePlacement(16, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
+        register(context, MINERS_DREAM_COAL_ORE_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.MINERS_DREAM_COAL_ORE), VerseOrePlacement.commonOrePlacement(20, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
+        register(context, MINERS_DREAM_IRON_ORE_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.MINERS_DREAM_IRON_ORE), VerseOrePlacement.commonOrePlacement(20, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
+        register(context, MINERS_DREAM_BOSKALT_ORE_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.MINERS_DREAM_BOSKALT_ORE), VerseOrePlacement.commonOrePlacement(20, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
+        register(context, MINERS_DREAM_COPPER_ORE_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.MINERS_DREAM_COPPER_ORE), VerseOrePlacement.commonOrePlacement(20, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
+        register(context, MINERS_DREAM_QUARTZ_ORE_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.MINERS_DREAM_QUARTZ_ORE), VerseOrePlacement.commonOrePlacement(20, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
+        register(context, MINERS_DREAM_GOLD_ORE_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.MINERS_DREAM_GOLD_ORE), VerseOrePlacement.commonOrePlacement(20, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
+        register(context, MINERS_DREAM_REDSTONE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.MINERS_DREAM_REDSTONE_ORE), VerseOrePlacement.commonOrePlacement(20, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
+        register(context, MINERS_DREAM_EMERALD_ORE_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.MINERS_DREAM_EMERALD_ORE), VerseOrePlacement.commonOrePlacement(20, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
+        register(context, MINERS_DREAM_LAPIS_ORE_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.MINERS_DREAM_LAPIS_ORE), VerseOrePlacement.commonOrePlacement(20, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
+        register(context, MINERS_DREAM_AMBER_ORE_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.MINERS_DREAM_AMBER_ORE), VerseOrePlacement.commonOrePlacement(20, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
+        register(context, MINERS_DREAM_DIAMOND_ORE_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.MINERS_DREAM_DIAMOND_ORE), VerseOrePlacement.commonOrePlacement(20, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
+        register(context, MINERS_DREAM_GARNET_ORE_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.MINERS_DREAM_GARNET_ORE), VerseOrePlacement.commonOrePlacement(20, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
+        register(context, MINERS_DREAM_SAPPHIRE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.MINERS_DREAM_SAPPHIRE_ORE), VerseOrePlacement.commonOrePlacement(20, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
     }
 
     private static List<PlacementModifier> amount(int attempts, PlacementModifier height) {

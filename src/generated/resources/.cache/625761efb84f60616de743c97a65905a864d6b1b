@@ -1,4 +1,4 @@
-// 1.21.1	2026-01-17T22:25:55.84703572	Tags for minecraft:block mod id verse
+// 1.21.1	2026-01-24T11:13:14.562716343	Tags for minecraft:block mod id verse
 c670749494433974d68ab80c368c3237473bf9ec data/minecraft/tags/block/beacon_base_blocks.json
 c70fb1557541c1d618e7a410dd2a9783a4210b1f data/minecraft/tags/block/mineable/pickaxe.json
 d7daa577002fd3fffa5220b787d3821138bec5fc data/minecraft/tags/block/mineable/shovel.json
@@ -11,6 +11,7 @@ d702db07085c47f5afae4f2c4c73ea9a190b8527 data/verse/tags/block/incorrect_for_eme
 bc659d93135a920b1dfb0ed83373724064563597 data/verse/tags/block/incorrect_for_garnet_tool.json
 f658ea97c9e8798c5881670ee81b9a1492e90305 data/verse/tags/block/incorrect_for_sapphire_tool.json
 e945beaa7a9428ec8668ecdfc9f79d2f2487cf98 data/verse/tags/block/incorrect_for_sculk_steel_tool.json
+a8c4b29e23ddbea999921a7c791b02fcf9609fa3 data/verse/tags/block/milvi_placeables.json
 db757dbc197c32827097d42f381478b549bc03d4 data/verse/tags/block/miners_dream_carver.json
 db757dbc197c32827097d42f381478b549bc03d4 data/verse/tags/block/miners_dream_infinburn.json
 32b13946c4cd1f944b029659ccce5fcb2adad4ff data/verse/tags/block/needs_boskalt_tool.json
