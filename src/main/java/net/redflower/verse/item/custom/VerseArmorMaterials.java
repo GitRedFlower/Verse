@@ -47,15 +47,6 @@ public class VerseArmorMaterials {
                 attribute.put(ArmorItem.Type.BODY, 12);
             }), 10, 2.0f, 0.0f, VerseItems.GARNET, SoundEvents.ARMOR_EQUIP_DIAMOND);
 
-    public static final Holder<ArmorMaterial> DRAGONRITE_ARMOR_MATERIAL = register("dragonrite",
-            Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
-                attribute.put(ArmorItem.Type.BOOTS, 6);
-                attribute.put(ArmorItem.Type.LEGGINGS, 9);
-                attribute.put(ArmorItem.Type.CHESTPLATE, 11);
-                attribute.put(ArmorItem.Type.HELMET, 6);
-                attribute.put(ArmorItem.Type.BODY, 14);
-            }), 16, 4.0f, 0.2f, VerseItems.DRAGONRITE_INGOT, SoundEvents.ARMOR_EQUIP_NETHERITE);
-
     public static final Holder<ArmorMaterial> EMERITE_ARMOR_MATERIAL = register("emerite",
             Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
                 attribute.put(ArmorItem.Type.BOOTS, 3);
@@ -64,6 +55,15 @@ public class VerseArmorMaterials {
                 attribute.put(ArmorItem.Type.HELMET, 3);
                 attribute.put(ArmorItem.Type.BODY, 12);
             }), 15, 3.0f, 0.1f, VerseItems.EMERITE_INGOT, SoundEvents.ARMOR_EQUIP_DIAMOND);
+
+    public static final Holder<ArmorMaterial> DRAGONRITE_ARMOR_MATERIAL = register("dragonrite",
+            Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
+                attribute.put(ArmorItem.Type.BOOTS, 6);
+                attribute.put(ArmorItem.Type.LEGGINGS, 9);
+                attribute.put(ArmorItem.Type.CHESTPLATE, 11);
+                attribute.put(ArmorItem.Type.HELMET, 6);
+                attribute.put(ArmorItem.Type.BODY, 14);
+            }), 16, 4.0f, 0.2f, VerseItems.DRAGONRITE_INGOT, SoundEvents.ARMOR_EQUIP_NETHERITE);
 
     public static final Holder<ArmorMaterial> SCULK_STEEL_ARMOR_MATERIAL = register("sculk_steel",
             Util.make(new EnumMap<>(ArmorItem.Type.class), attribute -> {
