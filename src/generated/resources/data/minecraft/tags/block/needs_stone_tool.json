@@ -15,6 +15,18 @@
     "verse:compressed_copper_ore",
     "verse:compressed_deepslate_copper_ore",
     "verse:compressed_lapis_ore",
-    "verse:compressed_deepslate_lapis_ore"
+    "verse:compressed_deepslate_lapis_ore",
+    "verse:dark_stone_iron_ore",
+    "verse:dark_stone_copper_ore",
+    "verse:limestone_iron_ore",
+    "verse:limestone_copper_ore",
+    "verse:marble_iron_ore",
+    "verse:marble_copper_ore",
+    "verse:dark_stone_lapis_ore",
+    "verse:limestone_lapis_ore",
+    "verse:marble_lapis_ore",
+    "verse:dark_stone_boskalt_ore",
+    "verse:limestone_boskalt_ore",
+    "verse:marble_boskalt_ore"
   ]
 }
