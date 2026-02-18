@@ -9,6 +9,12 @@
     "verse:cobbled_dark_stone",
     "verse:limestone",
     "verse:marble",
-    "verse:milvi"
+    "verse:milvi",
+    "verse:compressed_iron_ore",
+    "verse:compressed_deepslate_iron_ore",
+    "verse:compressed_copper_ore",
+    "verse:compressed_deepslate_copper_ore",
+    "verse:compressed_lapis_ore",
+    "verse:compressed_deepslate_lapis_ore"
   ]
 }

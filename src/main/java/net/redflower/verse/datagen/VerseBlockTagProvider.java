@@ -81,7 +81,13 @@ public class VerseBlockTagProvider extends BlockTagsProvider {
                 .add(VerseBlocks.COBBLED_DARK_STONE.get())
                 .add(VerseBlocks.LIMESTONE.get())
                 .add(VerseBlocks.MARBLE.get())
-                .add(VerseBlocks.MILVI.get());
+                .add(VerseBlocks.MILVI.get())
+                .add(VerseBlocks.COMPRESSED_IRON_ORE.get())
+                .add(VerseBlocks.COMPRESSED_DEEPSLATE_IRON_ORE.get())
+                .add(VerseBlocks.COMPRESSED_COPPER_ORE.get())
+                .add(VerseBlocks.COMPRESSED_DEEPSLATE_COPPER_ORE.get())
+                .add(VerseBlocks.COMPRESSED_LAPIS_ORE.get())
+                .add(VerseBlocks.COMPRESSED_DEEPSLATE_LAPIS_ORE.get());
 
         //Iron Level
         tag(BlockTags.NEEDS_IRON_TOOL)
@@ -96,7 +102,15 @@ public class VerseBlockTagProvider extends BlockTagsProvider {
                 .add(VerseBlocks.AMBER_ORE.get())
                 .add(VerseBlocks.DEEPSLATE_AMBER_ORE.get())
                 .add(VerseBlocks.BLOCK_OF_AMBER.get())
-                .add(VerseBlocks.REINFORCED_STONE.get());
+                .add(VerseBlocks.REINFORCED_STONE.get())
+                .add(VerseBlocks.COMPRESSED_REDSTONE_ORE.get())
+                .add(VerseBlocks.COMPRESSED_DEEPSLATE_REDSTONE_ORE.get())
+                .add(VerseBlocks.COMPRESSED_EMERALD_ORE.get())
+                .add(VerseBlocks.COMPRESSED_DEEPSLATE_EMERALD_ORE.get())
+                .add(VerseBlocks.COMPRESSED_DIAMOND_ORE.get())
+                .add(VerseBlocks.COMPRESSED_DEEPSLATE_DIAMOND_ORE.get())
+                .add(VerseBlocks.COMPRESSED_GOLD_ORE.get())
+                .add(VerseBlocks.COMPRESSED_DEEPSLATE_GOLD_ORE.get());
 
         //Diamond Level
         tag(BlockTags.NEEDS_DIAMOND_TOOL)

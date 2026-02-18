@@ -11,6 +11,14 @@
     "verse:amber_ore",
     "verse:deepslate_amber_ore",
     "verse:block_of_amber",
-    "verse:reinforced_stone"
+    "verse:reinforced_stone",
+    "verse:compressed_redstone_ore",
+    "verse:compressed_deepslate_redstone_ore",
+    "verse:compressed_emerald_ore",
+    "verse:compressed_deepslate_emerald_ore",
+    "verse:compressed_diamond_ore",
+    "verse:compressed_deepslate_diamond_ore",
+    "verse:compressed_gold_ore",
+    "verse:compressed_deepslate_gold_ore"
   ]
 }
