@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "A": {
-      "item": "minecraft:stone"
+      "item": "verse:milvi"
     },
     "B": {
       "item": "verse:enchanted_weak_scroll"

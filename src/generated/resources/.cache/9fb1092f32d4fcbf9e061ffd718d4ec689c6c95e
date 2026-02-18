@@ -1,4 +1,4 @@
-// 1.21.1	2026-01-24T21:13:37.840696759	Recipes
+// 1.21.1	2026-02-18T14:27:56.019962837	Recipes
 743400980829b6639bede3c81f9ff0308f29f844 data/minecraft/advancement/recipes/misc/budding_amethyst.json
 d1247089169faa2fbe0ae39b2db0a985a95fca71 data/minecraft/advancement/recipes/misc/comparator.json
 8358c04bd502024864e5f1514ca5fe59fa01f954 data/minecraft/advancement/recipes/misc/daylight_detector.json
@@ -291,7 +291,7 @@ cc2697e55f2fabd23725e71e151e07957dbb9abd data/verse/advancement/recipes/misc/scu
 55f24102934e3d3e403b82be9f85868ced25791c data/verse/advancement/recipes/misc/sculk_steel_upgrade_smithing_template.json
 9feb69e0cc35a1098d69d7561f90694f965f958e data/verse/advancement/recipes/misc/silt.json
 d9c6994fd53bf41a7b82b800bb4c8efd7b3727c7 data/verse/advancement/recipes/misc/upgrade_template_base.json
-b09fedcbaec86bb10d171e799ab26a8153c5425f data/verse/recipe/altar.json
+27776ad1cb2bb23dbe9f29a8f3cdded55aefb591 data/verse/recipe/altar.json
 e6002d5933f82026030e9a8d1567d41b6784565b data/verse/recipe/amber.json
 fc60b1ede4737b79d0ea2e91ced28cf27dfa60a0 data/verse/recipe/amber_from_blasting_amber_ore.json
 afca4b907f9a1666facc9f9c1bff7b4ec75b90f7 data/verse/recipe/amber_from_blasting_dark_stone_amber_ore.json

@@ -30,7 +30,7 @@ public class MinersDreamGen {
         NoiseBasedChunkGenerator chunkGenerator = new NoiseBasedChunkGenerator(MultiNoiseBiomeSource.createFromList(new Climate.ParameterList<>(List.of(
                 Pair.of(Climate.parameters(-0.8f, -0.8f, 0, 0, 0, 0, 0), biomes.getOrThrow(MinersDreamBiomes.DIRTY_CAVES)),
                 Pair.of(Climate.parameters(-0.35f, -0.35f, 0, 0, 0, 0, 0), biomes.getOrThrow(MinersDreamBiomes.LIMESTONE_CAVES)),
-                Pair.of(Climate.parameters(0.65f, 0.65f, 0, 0, 0, 0, 0), biomes.getOrThrow(MinersDreamBiomes.MARBLE_CAVES)),
+                Pair.of(Climate.parameters(0.45f, 0.45f, 0, 0, 0, 0, 0), biomes.getOrThrow(MinersDreamBiomes.MARBLE_CAVES)),
                 Pair.of(Climate.parameters(0.7f, 0.7f, 0, 0, 0, 0, 0), biomes.getOrThrow(MinersDreamBiomes.MYSTICAL_CAVES))
         ))), noiseSettings.getOrThrow(MINERS_DREAM_GEN));
         return new LevelStem(dimensions.getOrThrow(MinersDreamDimension.MINERS_DREAM), chunkGenerator);

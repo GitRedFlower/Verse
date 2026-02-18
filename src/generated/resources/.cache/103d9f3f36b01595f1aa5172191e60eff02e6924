@@ -1,5 +1,5 @@
-// 1.21.1	2026-01-24T21:13:37.84560199	Registries
-f1cb826824fdba9f8579681684300f6cf943a384 data/verse/dimension/miners_dream.json
+// 1.21.1	2026-02-18T14:13:35.132293538	Registries
+7b1efd86cdaaa33590d7e3c8c4eea29360cc412d data/verse/dimension/miners_dream.json
 4bcfe21f33949dd255fc59016753281e3543bf30 data/verse/dimension_type/miners_dream.json
 53a1ca577283c8cac9721b9c240af06e2b706a07 data/verse/neoforge/biome_modifier/add_end_dragonrite_ore.json
 5b41a5ad297ce2aa9bb9424b9653b68fa6f36f61 data/verse/neoforge/biome_modifier/add_overworld_amber_ore.json
@@ -17,7 +17,7 @@ ca623c1026ab3332e74e3a3569daa9e60f82506c data/verse/neoforge/biome_modifier/add_
 e8a65a33b14e0b8582b9ce22c0582644e6525355 data/verse/neoforge/biome_modifier/add_overworld_sapphire_ore.json
 a3530533921617fe100d2ffb887839fb7bd226b8 data/verse/worldgen/biome/dirty_caves.json
 462362ba492033f823816ea78f5d3a70741fdeea data/verse/worldgen/biome/limestone_caves.json
-04b714417b80dc85d402457f79820c75d54a7590 data/verse/worldgen/biome/marble_caves.json
+46d5f7ed931222c9f9785658258f49740ec7cf4b data/verse/worldgen/biome/marble_caves.json
 9f52aa8496c2312ba5adf0a26c17310082245cf3 data/verse/worldgen/biome/mystical_caves.json
 351c9e8f021ec9afaa7ca240293087b7a7a60e62 data/verse/worldgen/configured_carver/cave.json
 24c9d24b213cd57feeea5f72b312c3a91205a465 data/verse/worldgen/configured_feature/end_dragonrite_ore.json
@@ -61,7 +61,7 @@ a9a95121d2a4e36423d48d32ab70c4fe198365f2 data/verse/worldgen/configured_feature/
 614cde29c80cb26eaf99421ade947813ae35a709 data/verse/worldgen/placed_feature/limestone_blob_placed.json
 2fc6fa8727c58068a2e6f9cd06d174c0936220c2 data/verse/worldgen/placed_feature/marble_blob_placed.json
 ec25c8c6e309de81b092243a4e41ac653efba127 data/verse/worldgen/placed_feature/milvi_blob_placed.json
-3801eb041f8c4de60cff226927a2e2da61b62ea5 data/verse/worldgen/placed_feature/milvi_crystal_placed.json
+f583c6d343eff39767086a2eaaa6b1e53bfecd4d data/verse/worldgen/placed_feature/milvi_crystal_placed.json
 dd5ad8700685826d64158da73f6fe16e2f85b9cf data/verse/worldgen/placed_feature/miners_dream_amber_ore_placed.json
 79321f27c3381d925ac7557d60975372d9aa9397 data/verse/worldgen/placed_feature/miners_dream_boskalt_ore_placed.json
 28a29c319bbd7cc5158a1aa7402ff999a1cd28d3 data/verse/worldgen/placed_feature/miners_dream_coal_ore_placed.json

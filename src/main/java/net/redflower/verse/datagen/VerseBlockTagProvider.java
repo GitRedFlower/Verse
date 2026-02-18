@@ -262,7 +262,6 @@ public class VerseBlockTagProvider extends BlockTagsProvider {
                 .add(VerseBlocks.DARK_STONE.get());
 
         tag(VerseTags.Blocks.MILVI_PLACEABLES)
-                .add(VerseBlocks.DARK_STONE.get())
                 .add(VerseBlocks.MILVI.get());
     }
 }

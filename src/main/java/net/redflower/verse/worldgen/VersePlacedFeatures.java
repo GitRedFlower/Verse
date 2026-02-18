@@ -124,7 +124,7 @@ public class VersePlacedFeatures {
         //Mystical Caves
         register(context, TOP_LAYER_MILVI_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.TOP_LAYER_MILVI), amount(228, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
         register(context, MILVI_BLOB_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.MILVI_BLOB), amount(8, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
-        register(context, MILVI_CRYSTAL_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.MILVI_CRYSTAL), amount(40, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
+        register(context, MILVI_CRYSTAL_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.MILVI_CRYSTAL), amount(60, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));
 
         //Ores
         register(context, MINERS_DREAM_COAL_ORE_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.MINERS_DREAM_COAL_ORE), VerseOrePlacement.commonOrePlacement(20, PlacementUtils.RANGE_BOTTOM_TO_MAX_TERRAIN_HEIGHT));

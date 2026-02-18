@@ -133,8 +133,8 @@ public class MinersDreamBiomes {
         biomeBuilder.addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, VersePlacedFeatures.MINERS_DREAM_SAPPHIRE_ORE_PLACED_KEY);
 
         return (new Biome.BiomeBuilder()).hasPrecipitation(false)
-                .temperature(0.65f)
-                .downfall(0.65f)
+                .temperature(0.45f)
+                .downfall(0.45f)
                 .specialEffects((new BiomeSpecialEffects.Builder())
                         .waterColor(0xc8c8c8)
                         .waterFogColor(0xc8c8c8)

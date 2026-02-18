@@ -719,7 +719,7 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
                 .pattern("A A")
                 .pattern(" A ")
                 .pattern("ABA")
-                .define('A', Items.STONE)
+                .define('A', VerseBlocks.MILVI)
                 .define('B', VerseItems.ENCHANTED_WEAK_SCROLL)
                 .unlockedBy("has_enchanted_weak_shard", has(VerseItems.ENCHANTED_WEAK_SHARD))
                 .save(recipeOutput);
