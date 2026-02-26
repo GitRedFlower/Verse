@@ -220,7 +220,7 @@ public class VerseConfiguredFeatures {
 
         //Overworld
         //Ores Setup
-        register(context, OVERWORLD_QUARTZ_ORE_KEY, Feature.ORE, new OreConfiguration(overworldQuartzOres, 10));
+        register(context, OVERWORLD_QUARTZ_ORE_KEY, Feature.ORE, new OreConfiguration(overworldQuartzOres, 8));
         register(context, OVERWORLD_AMBER_ORE_KEY, Feature.ORE, new OreConfiguration(overworldAmberOres, 8));
         register(context, OVERWORLD_BOSKALT_ORE_KEY, Feature.ORE, new OreConfiguration(overworldBoskaltOres, 10));
         register(context, OVERWORLD_SAPPHIRE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldSapphireOres, 4));

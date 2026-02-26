@@ -75,7 +75,7 @@ public class VersePlacedFeatures {
         //Overworld
         //Ores
         register(context, OVERWORLD_QUARTZ_ORE_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.OVERWORLD_QUARTZ_ORE_KEY),
-                VerseOrePlacement.commonOrePlacement(14, HeightRangePlacement.triangle(VerticalAnchor.absolute(-15), VerticalAnchor.absolute(95))));
+                VerseOrePlacement.commonOrePlacement(12, HeightRangePlacement.triangle(VerticalAnchor.absolute(-15), VerticalAnchor.absolute(95))));
         register(context, OVERWORLD_AMBER_ORE_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.OVERWORLD_AMBER_ORE_KEY),
                 VerseOrePlacement.commonOrePlacement(10, HeightRangePlacement.triangle(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(28))));
         register(context, OVERWORLD_BOSKALT_ORE_PLACED_KEY, configuredFeatures.getOrThrow(VerseConfiguredFeatures.OVERWORLD_BOSKALT_ORE_KEY),

@@ -63,25 +63,25 @@ public class VerseBlockLootTableProvider extends BlockLootSubProvider {
         add(VerseBlocks.COMPRESSED_DEEPSLATE_IRON_ORE.get(),
                 block -> createMultipleOreDrops(VerseBlocks.COMPRESSED_DEEPSLATE_IRON_ORE.get(), Items.RAW_IRON,4,7));
         add(VerseBlocks.COMPRESSED_COPPER_ORE.get(),
-                block -> createMultipleOreDrops(VerseBlocks.COMPRESSED_COPPER_ORE.get(), Items.RAW_COPPER,4,7));
+                block -> createMultipleOreDrops(VerseBlocks.COMPRESSED_COPPER_ORE.get(), Items.RAW_COPPER,5,9));
         add(VerseBlocks.COMPRESSED_DEEPSLATE_COPPER_ORE.get(),
-                block -> createMultipleOreDrops(VerseBlocks.COMPRESSED_DEEPSLATE_COPPER_ORE.get(), Items.RAW_COPPER,4,7));
+                block -> createMultipleOreDrops(VerseBlocks.COMPRESSED_DEEPSLATE_COPPER_ORE.get(), Items.RAW_COPPER,5,9));
         add(VerseBlocks.COMPRESSED_GOLD_ORE.get(),
                 block -> createMultipleOreDrops(VerseBlocks.COMPRESSED_GOLD_ORE.get(), Items.RAW_GOLD,4,7));
         add(VerseBlocks.COMPRESSED_DEEPSLATE_GOLD_ORE.get(),
                 block -> createMultipleOreDrops(VerseBlocks.COMPRESSED_DEEPSLATE_GOLD_ORE.get(), Items.RAW_GOLD,4,7));
         add(VerseBlocks.COMPRESSED_REDSTONE_ORE.get(),
-                block -> createMultipleOreDrops(VerseBlocks.COMPRESSED_REDSTONE_ORE.get(), Items.REDSTONE,4,7));
+                block -> createMultipleOreDrops(VerseBlocks.COMPRESSED_REDSTONE_ORE.get(), Items.REDSTONE,6,12));
         add(VerseBlocks.COMPRESSED_DEEPSLATE_REDSTONE_ORE.get(),
-                block -> createMultipleOreDrops(VerseBlocks.COMPRESSED_DEEPSLATE_REDSTONE_ORE.get(), Items.REDSTONE,4,7));
+                block -> createMultipleOreDrops(VerseBlocks.COMPRESSED_DEEPSLATE_REDSTONE_ORE.get(), Items.REDSTONE,6,12));
         add(VerseBlocks.COMPRESSED_EMERALD_ORE.get(),
                 block -> createMultipleOreDrops(VerseBlocks.COMPRESSED_EMERALD_ORE.get(), Items.EMERALD,4,7));
         add(VerseBlocks.COMPRESSED_DEEPSLATE_EMERALD_ORE.get(),
                 block -> createMultipleOreDrops(VerseBlocks.COMPRESSED_DEEPSLATE_EMERALD_ORE.get(), Items.EMERALD,4,7));
         add(VerseBlocks.COMPRESSED_LAPIS_ORE.get(),
-                block -> createMultipleOreDrops(VerseBlocks.COMPRESSED_LAPIS_ORE.get(), Items.LAPIS_LAZULI,4,7));
+                block -> createMultipleOreDrops(VerseBlocks.COMPRESSED_LAPIS_ORE.get(), Items.LAPIS_LAZULI,6,10));
         add(VerseBlocks.COMPRESSED_DEEPSLATE_LAPIS_ORE.get(),
-                block -> createMultipleOreDrops(VerseBlocks.COMPRESSED_DEEPSLATE_LAPIS_ORE.get(), Items.LAPIS_LAZULI,4,7));
+                block -> createMultipleOreDrops(VerseBlocks.COMPRESSED_DEEPSLATE_LAPIS_ORE.get(), Items.LAPIS_LAZULI,6,10));
         add(VerseBlocks.COMPRESSED_DIAMOND_ORE.get(),
                 block -> createMultipleOreDrops(VerseBlocks.COMPRESSED_DIAMOND_ORE.get(), Items.DIAMOND,4,7));
         add(VerseBlocks.COMPRESSED_DEEPSLATE_DIAMOND_ORE.get(),
