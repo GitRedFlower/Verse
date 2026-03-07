@@ -54,6 +54,7 @@ public class VerseItemModelProvider extends ItemModelProvider {
         basicItem(VerseItems.SAPPHIRE.get());
         basicItem(VerseItems.QUARTZ.get());
         basicItem(VerseItems.AMBER.get());
+        basicItem(VerseItems.MILVIRA_SHARD.get());
 
         //Nuggets
         basicItem(VerseItems.DIAMOND_NUGGET.get());

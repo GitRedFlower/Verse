@@ -31,13 +31,13 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
     protected void buildRecipes(RecipeOutput recipeOutput) {
         //Vanilla
         List<ItemLike> V_COAL = List.of(VerseBlocks.DARK_STONE_COAL_ORE, VerseBlocks.LIMESTONE_COAL_ORE, VerseBlocks.MARBLE_COAL_ORE);
-        List<ItemLike> V_IRON = List.of(VerseBlocks.DARK_STONE_IRON_ORE, VerseBlocks.LIMESTONE_IRON_ORE, VerseBlocks.MARBLE_IRON_ORE);
+        List<ItemLike> V_IRON = List.of(VerseBlocks.DARK_STONE_IRON_ORE, VerseBlocks.LIMESTONE_IRON_ORE, VerseBlocks.MARBLE_IRON_ORE, VerseBlocks.NETHER_IRON_ORE);
         List<ItemLike> V_COPPER = List.of(VerseBlocks.DARK_STONE_COPPER_ORE, VerseBlocks.LIMESTONE_COPPER_ORE, VerseBlocks.MARBLE_COPPER_ORE);
         List<ItemLike> V_GOLD = List.of(VerseBlocks.DARK_STONE_GOLD_ORE,  VerseBlocks.LIMESTONE_GOLD_ORE, VerseBlocks.MARBLE_GOLD_ORE);
         List<ItemLike> V_REDSTONE = List.of(VerseBlocks.DARK_STONE_REDSTONE_ORE,  VerseBlocks.LIMESTONE_REDSTONE_ORE, VerseBlocks.MARBLE_REDSTONE_ORE);
         List<ItemLike> V_EMERALD = List.of(VerseBlocks.DARK_STONE_EMERALD_ORE, VerseBlocks.LIMESTONE_EMERALD_ORE, VerseBlocks.MARBLE_EMERALD_ORE);
         List<ItemLike> V_LAPIS = List.of(VerseBlocks.DARK_STONE_LAPIS_ORE,  VerseBlocks.LIMESTONE_LAPIS_ORE, VerseBlocks.MARBLE_LAPIS_ORE);
-        List<ItemLike> V_DIAMOND = List.of(VerseBlocks.DARK_STONE_DIAMOND_ORE,   VerseBlocks.LIMESTONE_DIAMOND_ORE, VerseBlocks.MARBLE_DIAMOND_ORE);
+        List<ItemLike> V_DIAMOND = List.of(VerseBlocks.DARK_STONE_DIAMOND_ORE,   VerseBlocks.LIMESTONE_DIAMOND_ORE, VerseBlocks.MARBLE_DIAMOND_ORE, VerseBlocks.NETHER_DIAMOND_ORE);
 
         //Verse
         List<ItemLike> V_BOSKALT = List.of(VerseItems.RAW_BOSKALT, VerseBlocks.BOSKALT_ORE, VerseBlocks.DEEPSLATE_BOSKALT_ORE, VerseBlocks.DARK_STONE_BOSKALT_ORE, VerseBlocks.LIMESTONE_BOSKALT_ORE, VerseBlocks.MARBLE_BOSKALT_ORE);
@@ -853,6 +853,12 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
                 .requires(VerseItems.BOSKALT_INGOT.get())
                 .requires(Items.FLINT)
                 .unlockedBy("has_boskalt_ingot", has(VerseItems.BOSKALT_INGOT))
+                .save(recipeOutput);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, Items.STRING, 4)
+                .requires(VerseTags.Items.VERSE_KNIFES)
+                .requires(ItemTags.WOOL)
+                .unlockedBy("has_knife", has(VerseTags.Items.VERSE_KNIFES))
                 .save(recipeOutput);
 
         //Smithing Template Duplication

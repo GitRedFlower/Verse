@@ -1,4 +1,4 @@
-// 1.21.1	2026-02-25T21:47:27.41858273	Loot Tables
+// 1.21.1	2026-03-06T22:55:46.239825618	Loot Tables
 bc5dcb0a01206ddcffddcec4e7b01b562da6d315 data/verse/loot_table/blocks/altar.json
 83d5b55ddc7024241bbee5947217e253b4c4957a data/verse/loot_table/blocks/amber_ore.json
 c94942093eae0e108cb3dd022c598a42566b8ba4 data/verse/loot_table/blocks/block_of_amber.json
@@ -17,7 +17,7 @@ b4705c09b4f88f2ae219babcd4a65f3e1587b40b data/verse/loot_table/blocks/compressed
 b7c8025fff0811b979dc8ae91384dc18cadc74a8 data/verse/loot_table/blocks/compressed_deepslate_coal_ore.json
 a386d1e70cdb4ce3ebbf3d2790ed1da556601390 data/verse/loot_table/blocks/compressed_deepslate_copper_ore.json
 4545c866e7656ab865a8be4f6e767fa51696fb37 data/verse/loot_table/blocks/compressed_deepslate_diamond_ore.json
-ccfcaf0224e4745388601c6a9a1f64d9a03efccc data/verse/loot_table/blocks/compressed_deepslate_emerald_ore.json
+00507cc22a0e0c0ff927a3f52802bf729ce78e09 data/verse/loot_table/blocks/compressed_deepslate_emerald_ore.json
 0175b2a14f5a01c9416b2dc0c63f9038d0b60c1f data/verse/loot_table/blocks/compressed_deepslate_gold_ore.json
 1edb755e27457ff34162840ef6db00fdca2b9ef4 data/verse/loot_table/blocks/compressed_deepslate_iron_ore.json
 e780a8d791880053d3f01039c61de9fa1f9e838f data/verse/loot_table/blocks/compressed_deepslate_lapis_ore.json
@@ -79,7 +79,10 @@ bb172589285d33362eb93e7e7d6597ca72750707 data/verse/loot_table/blocks/limestone_
 18415c9ec748b8ba80e29363d1bc042b2b962fc5 data/verse/loot_table/blocks/marble_sapphire_ore.json
 813442b5e1e271c37dfb1ae46550ababe89b9074 data/verse/loot_table/blocks/milvi.json
 3fc3a7b28c69dcd5781d89b052b9a24b02da329e data/verse/loot_table/blocks/milvi_crystal.json
+fb674c266788a8f1bde4cd2d2c5eee58a3238599 data/verse/loot_table/blocks/nether_diamond_ore.json
+ce83882976cdf9c01edb04707b4f4bb7b9d95457 data/verse/loot_table/blocks/nether_iron_ore.json
 4e16a8bdd391de9b0ec7bf0df0abada06187c38e data/verse/loot_table/blocks/quartz_ore.json
+1c2abd0f2964768475ee50d115cbefafbae35274 data/verse/loot_table/blocks/raw_milvira.json
 a77b14cf44a8d199ff651c8c70618b147148315e data/verse/loot_table/blocks/reinforced_stone.json
 42effacc40cfc423a1b91d9ea9059672c38a58bd data/verse/loot_table/blocks/sapphire_ore.json
 ef44c902e4358e73183668fd88b1ca022eb32277 data/verse/loot_table/blocks/silt.json

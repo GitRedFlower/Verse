@@ -219,6 +219,19 @@ public class VerseBlocks {
                     .strength(4.5f)
                     .sound(SoundType.DEEPSLATE)));
 
+    //Nether Ores
+    public static final DeferredBlock<Block> NETHER_IRON_ORE = registerBlock("nether_iron_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3f)
+                    .sound(SoundType.NETHER_ORE)));
+
+    public static final DeferredBlock<Block> NETHER_DIAMOND_ORE = registerBlock("nether_diamond_ore",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3f)
+                    .sound(SoundType.NETHER_ORE)));
+
     //End Ores
     public static final DeferredBlock<Block> ENDSTONE_DRAGONRITE_ORE = registerBlock("endstone_dragonrite_ore",
             () -> new Block(BlockBehaviour.Properties.of()
@@ -520,6 +533,13 @@ public class VerseBlocks {
                     .requiresCorrectToolForDrops()
                     .strength(3f)
                     .sound(SoundType.METAL)));
+
+    //Mystical Caves Ores
+    public static final DeferredBlock<Block> RAW_MILVIRA = registerBlock("raw_milvira",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .requiresCorrectToolForDrops()
+                    .strength(3f)
+                    .sound(SoundType.AMETHYST)));
 
     //Other Blocks
     public static final DeferredBlock<Block> COBBLED_DARK_STONE = registerBlock("cobbled_dark_stone",

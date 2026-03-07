@@ -53,6 +53,9 @@ public class VerseItems {
     public static final DeferredItem<Item> AMBER = ITEMS.register("amber",
             () -> new Item(new Item.Properties()));
 
+    public static final DeferredItem<Item> MILVIRA_SHARD = ITEMS.register("milvira_shard",
+            () -> new Item(new Item.Properties()));
+
     //Food Items
     //Ore Apples
     public static final DeferredItem<Item> COAL_APPLE = ITEMS.register("coal_apple",

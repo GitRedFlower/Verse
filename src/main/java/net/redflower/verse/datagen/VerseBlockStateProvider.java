@@ -57,6 +57,8 @@ public class VerseBlockStateProvider extends BlockStateProvider {
         blockWithItem(VerseBlocks.COMPRESSED_DEEPSLATE_DIAMOND_ORE);
 
         //Nether Ores
+        blockWithItem(VerseBlocks.NETHER_IRON_ORE);
+        blockWithItem(VerseBlocks.NETHER_DIAMOND_ORE);
 
         //End Ores
         blockWithItem(VerseBlocks.ENDSTONE_DRAGONRITE_ORE);
@@ -107,6 +109,9 @@ public class VerseBlockStateProvider extends BlockStateProvider {
         blockWithItem(VerseBlocks.MARBLE_AMBER_ORE);
         blockWithItem(VerseBlocks.MARBLE_GARNET_ORE);
         blockWithItem(VerseBlocks.MARBLE_SAPPHIRE_ORE);
+
+        //Mystical Caves
+        blockWithItem(VerseBlocks.RAW_MILVIRA);
 
         //Raw Material Blocks
         blockWithItem(VerseBlocks.BLOCK_OF_RAW_BOSKALT);

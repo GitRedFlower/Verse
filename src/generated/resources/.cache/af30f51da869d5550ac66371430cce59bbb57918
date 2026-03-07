@@ -1,4 +1,4 @@
-// 1.21.1	2026-01-22T00:05:16.977110669	Block States: verse
+// 1.21.1	2026-03-06T22:55:46.237613271	Block States: verse
 90fd76107293d102961eed5bf338e7994086e28d assets/verse/blockstates/amber_ore.json
 0b1f6a5600e3aa7d1d4a7ac20a7ebf2bf2dc4724 assets/verse/blockstates/block_of_amber.json
 0badcbda4cab1e13456e8143dddfa0489bb2f64b assets/verse/blockstates/block_of_boskalt.json
@@ -77,7 +77,10 @@ fe402282380c2d602b98fe2733b502fa0459e8fb assets/verse/blockstates/marble_gold_or
 05bb85857a757e2bbe72ac8210aee92658d6124c assets/verse/blockstates/marble_redstone_ore.json
 7276da81fac154bec7dc20070a2a8ddc61867363 assets/verse/blockstates/marble_sapphire_ore.json
 d901761402562d29a4ec8e6ca803ce0b3a0b9043 assets/verse/blockstates/milvi.json
+81bae6546ee8c374c4357ba2500bb5babcb93a8a assets/verse/blockstates/nether_diamond_ore.json
+b368d29efc509108126e900c950deed4004a85cf assets/verse/blockstates/nether_iron_ore.json
 89dcd43a9b735f58edcf5d2cd67103c5a8a430b3 assets/verse/blockstates/quartz_ore.json
+71f24ec17ba6ea99632b7f9affc7ea617ba67808 assets/verse/blockstates/raw_milvira.json
 d69386969ab3b049742b7d04203ad6c19c1e9d78 assets/verse/blockstates/reinforced_stone.json
 d63ce353d0fbbc7aefaf88db41c6a8e08fa481a5 assets/verse/blockstates/sapphire_ore.json
 1cf011054c74607d387941c3c6e5936fa4332716 assets/verse/blockstates/silt.json
@@ -159,7 +162,10 @@ d0f25b3ff0dc27e34feaa66fd376b124fae2585d assets/verse/models/block/marble_quartz
 f07e82f9d3d64af95934623033da4ca1edbcd4ae assets/verse/models/block/marble_redstone_ore.json
 3f4ed34a98f47ecb74c373fb54ba4aab95d5df4f assets/verse/models/block/marble_sapphire_ore.json
 f1fd4392142ba2d4c0e9ff7a9844ae6929a1ea7c assets/verse/models/block/milvi.json
+9e60040a343fc563052ee009dafbb0d031d73f08 assets/verse/models/block/nether_diamond_ore.json
+480f553ed641027d0052c848eac5b9c2a0829fb5 assets/verse/models/block/nether_iron_ore.json
 9c09ac02b377153c88fe0310646d0099242a8726 assets/verse/models/block/quartz_ore.json
+c650d9cabc55ee923a670c0b14d578da53a2f92d assets/verse/models/block/raw_milvira.json
 f7b1addb4e381acd696a4b69ec91910be2c604df assets/verse/models/block/reinforced_stone.json
 cc0d9185c8ab0343911c9fcc3a2b72d93a9bf237 assets/verse/models/block/sapphire_ore.json
 8e528d35831ea3d5eb8636f152e378c5245c7e2a assets/verse/models/block/silt.json
@@ -241,7 +247,10 @@ c242f70de0327a5ac41b06644a030e51a3769c03 assets/verse/models/item/marble_quartz_
 dda1894c6ee55b4e89936df3d2ac4ba2e5615e09 assets/verse/models/item/marble_redstone_ore.json
 bbd5e448149a8f5b22cdbaf4c1261771a6f88ae1 assets/verse/models/item/marble_sapphire_ore.json
 ff1484f62bfb25586d77492f9f31aa60d813de6d assets/verse/models/item/milvi.json
+d5d3decf0596354154d50378cc2e6023e080d4d9 assets/verse/models/item/nether_diamond_ore.json
+606721f1fd05346f2a59bb675c5ef399bd0e23f8 assets/verse/models/item/nether_iron_ore.json
 665a21f26efe5373136961ae4388f88b4a50071e assets/verse/models/item/quartz_ore.json
+ab7d409432047079c4825e6948678498a3dcd94a assets/verse/models/item/raw_milvira.json
 02cb1eac25bdb92409075689807778f562dce257 assets/verse/models/item/reinforced_stone.json
 da47939a9e751c52c70fae042abe3e5b39d7883b assets/verse/models/item/sapphire_ore.json
 175101eae2add57cb08cd2c3ad15d53cbe31dfab assets/verse/models/item/silt.json

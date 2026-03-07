@@ -43,6 +43,9 @@
     "verse:marble_garnet_ore",
     "verse:dark_stone_sapphire_ore",
     "verse:limestone_sapphire_ore",
-    "verse:marble_sapphire_ore"
+    "verse:marble_sapphire_ore",
+    "verse:raw_milvira",
+    "verse:nether_iron_ore",
+    "verse:nether_diamond_ore"
   ]
 }

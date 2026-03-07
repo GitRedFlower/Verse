@@ -1,4 +1,4 @@
-// 1.21.1	2026-01-15T21:14:31.840467954	Item Models: verse
+// 1.21.1	2026-03-05T14:13:16.370792877	Item Models: verse
 2c7e1372223d21a2a099a6949787d347378cf781 assets/verse/models/item/amber.json
 646b97304ad3431807ed9f425cb87b0a74cdfce8 assets/verse/models/item/amber_lens.json
 4c27ffab937ba7dbc3acc6d8564f3e54ba045d2a assets/verse/models/item/amber_lens_core.json
@@ -236,6 +236,7 @@ a34e4080117107e4f1f0e1a20e54d9ceeb396677 assets/verse/models/item/iron_apple.jso
 85f9a5e4c5aafd7aa452806c9472793591c3fdd0 assets/verse/models/item/iron_broadsword.json
 fa729be88774dda7c476935356c338faf92c8f85 assets/verse/models/item/iron_knife.json
 083ee4d1d51cc07184a8539744336f3f360c86d8 assets/verse/models/item/lapis_apple.json
+fba1fc6de9e83cfe05767bd482e7d7dfbc216d34 assets/verse/models/item/milvira_shard.json
 7c496c68ff7cb7470a58b8faab339ff79a65e89f assets/verse/models/item/netherite_broadsword.json
 d82499e9f28711ae1b651a0031e1b72c03dcbb34 assets/verse/models/item/netherite_knife.json
 fad1e1a7d5c62895f17880569fddebd96645ecdc assets/verse/models/item/quartz.json

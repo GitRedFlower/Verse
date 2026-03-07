@@ -1,4 +1,4 @@
-// 1.21.1	2026-01-15T17:57:55.528453038	Tags for minecraft:item mod id verse
+// 1.21.1	2026-03-04T15:04:35.246127453	Tags for minecraft:item mod id verse
 8c04d7550b0f90236195a0236fb4fb73fc5ef346 data/c/tags/item/gems.json
 7da706d853e40866ce4f49134c65ef909636174d data/c/tags/item/gems/quartz.json
 a2d8ae310a794300695f8582f6a3543602ea5c5f data/minecraft/tags/item/axes.json
@@ -35,3 +35,4 @@ c870d6768131b43b301a4d20aaa6c17dd9abf1a2 data/verse/tags/item/tier_3_helmet.json
 6fc5fab909783b54f85f55d91b6eab9ba92431c2 data/verse/tags/item/tier_3_shovel.json
 038f6e7af1cf89e71969efab8a462222bd680c3f data/verse/tags/item/tier_3_sword.json
 83cbb06d3713e77819887c94e819b4a057a7aede data/verse/tags/item/tier_3_upgrade.json
+3b33e3126755656e391c5fd581e8a571798b6dc6 data/verse/tags/item/verse_knifes.json

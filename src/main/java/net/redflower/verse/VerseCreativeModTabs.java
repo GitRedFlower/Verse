@@ -31,9 +31,6 @@ public class VerseCreativeModTabs {
                         output.accept(VerseBlocks.MARBLE);
                         output.accept(VerseBlocks.MILVI);
 
-                        //Other Blocks
-                        output.accept(VerseBlocks.MILVI_CRYSTAL);
-
                         //Ores
                         //Overworld Ores
                         //Regular Ores
@@ -67,6 +64,8 @@ public class VerseCreativeModTabs {
                         output.accept(VerseBlocks.COMPRESSED_DEEPSLATE_DIAMOND_ORE);
 
                         //Nether Ores
+                        output.accept(VerseBlocks.NETHER_IRON_ORE);
+                        output.accept(VerseBlocks.NETHER_DIAMOND_ORE);
 
                         //End Ores
                         output.accept(VerseBlocks.ENDSTONE_DRAGONRITE_ORE);
@@ -117,6 +116,10 @@ public class VerseCreativeModTabs {
                         output.accept(VerseBlocks.MARBLE_GARNET_ORE);
                         output.accept(VerseBlocks.MARBLE_SAPPHIRE_ORE);
 
+                        //Mystical Cave Blocks
+                        output.accept(VerseBlocks.MILVI_CRYSTAL);
+                        output.accept(VerseBlocks.RAW_MILVIRA);
+
                         //Raw Ore Blocks
                         output.accept(VerseBlocks.BLOCK_OF_RAW_BOSKALT);
 
@@ -152,6 +155,7 @@ public class VerseCreativeModTabs {
                         //Other Items
                         output.accept(VerseItems.QUARTZ);
                         output.accept(VerseItems.AMBER);
+                        output.accept(VerseItems.MILVIRA_SHARD);
 
                         //Tier 1 Materials
                         output.accept(VerseItems.BOSKALT_INGOT);

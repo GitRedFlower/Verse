@@ -87,6 +87,11 @@ public class VerseBlockLootTableProvider extends BlockLootSubProvider {
         add(VerseBlocks.COMPRESSED_DEEPSLATE_DIAMOND_ORE.get(),
                 block -> createMultipleOreDrops(VerseBlocks.COMPRESSED_DEEPSLATE_DIAMOND_ORE.get(), Items.DIAMOND,4,7));
 
+        add(VerseBlocks.NETHER_IRON_ORE.get(),
+                block -> createMultipleOreDrops(VerseBlocks.NETHER_IRON_ORE.get(), Items.IRON_NUGGET,2,6));
+        add(VerseBlocks.NETHER_DIAMOND_ORE.get(),
+                block -> createMultipleOreDrops(VerseBlocks.NETHER_DIAMOND_ORE.get(), VerseItems.DIAMOND_NUGGET.get(),2,6));
+
         add(VerseBlocks.DARK_STONE_COPPER_ORE.get(),
                 block -> createMultipleOreDrops(VerseBlocks.DARK_STONE_COPPER_ORE.get(), Items.RAW_COPPER,2,5));
         add(VerseBlocks.DARK_STONE_REDSTONE_ORE.get(),
@@ -105,6 +110,9 @@ public class VerseBlockLootTableProvider extends BlockLootSubProvider {
                 block -> createMultipleOreDrops(VerseBlocks.MARBLE_REDSTONE_ORE.get(), Items.RAW_COPPER,4,5));
         add(VerseBlocks.MARBLE_LAPIS_ORE.get(),
                 block -> createMultipleOreDrops(VerseBlocks.MARBLE_LAPIS_ORE.get(), Items.RAW_COPPER,4,9));
+
+        add(VerseBlocks.RAW_MILVIRA.get(),
+                block -> createMultipleOreDrops(VerseBlocks.RAW_MILVIRA.get(), VerseItems.MILVIRA_SHARD.get(),2,6));
 
         //Single Drops
         add(VerseBlocks.BOSKALT_ORE.get(),

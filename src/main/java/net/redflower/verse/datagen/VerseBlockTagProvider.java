@@ -103,7 +103,10 @@ public class VerseBlockTagProvider extends BlockTagsProvider {
                 .add(VerseBlocks.MARBLE_GARNET_ORE.get())
                 .add(VerseBlocks.DARK_STONE_SAPPHIRE_ORE.get())
                 .add(VerseBlocks.LIMESTONE_SAPPHIRE_ORE.get())
-                .add(VerseBlocks.MARBLE_SAPPHIRE_ORE.get());
+                .add(VerseBlocks.MARBLE_SAPPHIRE_ORE.get())
+                .add(VerseBlocks.RAW_MILVIRA.get())
+                .add(VerseBlocks.NETHER_IRON_ORE.get())
+                .add(VerseBlocks.NETHER_DIAMOND_ORE.get());
 
         //Needs Shovel
         tag(BlockTags.MINEABLE_WITH_SHOVEL)
@@ -185,7 +188,10 @@ public class VerseBlockTagProvider extends BlockTagsProvider {
                 .add(VerseBlocks.MARBLE_GARNET_ORE.get())
                 .add(VerseBlocks.DARK_STONE_SAPPHIRE_ORE.get())
                 .add(VerseBlocks.LIMESTONE_SAPPHIRE_ORE.get())
-                .add(VerseBlocks.MARBLE_SAPPHIRE_ORE.get());
+                .add(VerseBlocks.MARBLE_SAPPHIRE_ORE.get())
+                .add(VerseBlocks.RAW_MILVIRA.get())
+                .add(VerseBlocks.NETHER_IRON_ORE.get())
+                .add(VerseBlocks.NETHER_DIAMOND_ORE.get());
 
         //Diamond Level
         tag(BlockTags.NEEDS_DIAMOND_TOOL)

@@ -43,7 +43,7 @@ public class VerseTags {
 
     public static class Items {
 
-        //Things for tier 2 items
+        //Tier 2 Items
         public static final TagKey<Item> TIER_2_UPGRADE = createTag("tier_2_upgrade");
         public static final TagKey<Item> TIER_2_SWORD = createTag("tier_2_sword");
         public static final TagKey<Item> TIER_2_SHOVEL = createTag("tier_2_shovel");
@@ -57,6 +57,7 @@ public class VerseTags {
         public static final TagKey<Item> TIER_2_BROADSWORD = createTag("tier_2_broadsword");
         public static final TagKey<Item> TIER_2_KNIFE = createTag("tier_2_knife");
 
+        //Tier 3 Items
         public static final TagKey<Item> TIER_3_UPGRADE = createTag("tier_3_upgrade");
         public static final TagKey<Item> TIER_3_SWORD = createTag("tier_3_sword");
         public static final TagKey<Item> TIER_3_SHOVEL = createTag("tier_3_shovel");
@@ -69,6 +70,9 @@ public class VerseTags {
         public static final TagKey<Item> TIER_3_BOOTS = createTag("tier_3_boots");
         public static final TagKey<Item> TIER_3_BROADSWORD = createTag("tier_3_broadsword");
         public static final TagKey<Item> TIER_3_KNIFE = createTag("tier_3_knife");
+
+        //Knifes
+        public static final TagKey<Item> VERSE_KNIFES = createTag("verse_knifes");
 
         private static TagKey<Item> createTag(String name) {
             return ItemTags.create(ResourceLocation.fromNamespaceAndPath(VERSE.MODID, name));

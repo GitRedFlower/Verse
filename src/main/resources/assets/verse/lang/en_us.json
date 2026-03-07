@@ -6,8 +6,6 @@
   "block.verse.marble" : "Marble",
   "block.verse.milvi" : "Milvi",
 
-  "block.verse.milvi_crystal" : "Milvi Crystal",
-
   "block.verse.boskalt_ore" : "Boskalt Ore",
   "block.verse.deepslate_boskalt_ore" : "Deepslate Boskalt Ore",
   "block.verse.garnet_ore" : "Garnet Ore",
@@ -35,6 +33,9 @@
   "block.verse.compressed_deepslate_emerald_ore" : "Compressed Deepslate Emerald Ore",
   "block.verse.compressed_diamond_ore" : "Compressed Diamond Ore",
   "block.verse.compressed_deepslate_diamond_ore" : "Compressed Deepslate Diamond Ore",
+
+  "block.verse.nether_iron_ore" : "Nether Iron Ore",
+  "block.verse.nether_diamond_ore" : "Nether Diamond Ore",
 
   "block.verse.endstone_dragonrite_ore" : "Endstone Dragonrite Ore",
 
@@ -80,6 +81,9 @@
   "block.verse.marble_garnet_ore" : "Marble Garnet Ore",
   "block.verse.marble_sapphire_ore" : "Marble Sapphire Ore",
 
+  "block.verse.milvi_crystal" : "Milvi Crystal",
+  "block.verse.raw_milvira" : "Raw Milvira",
+
   "block.verse.block_of_raw_boskalt" : "Block of Raw Boskalt",
 
   "block.verse.block_of_boskalt" : "Block of Boskalt",
@@ -108,6 +112,7 @@
   "item.verse.sapphire" : "Sapphire",
   "item.verse.quartz" : "Quartz",
   "item.verse.amber" : "Amber",
+  "item.verse.milvira_shard" : "Milvira Shard",
 
   "item.verse.diamond_nugget" : "Diamond Nugget",
   "item.verse.sapphire_nugget" : "Sapphire Nugget",
