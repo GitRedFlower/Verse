@@ -1,21 +1,19 @@
 {
-  "type": "minecraft:crafting_shaped",
+  "type": "minecraft:crafting_shapeless",
   "category": "misc",
-  "key": {
-    "A": {
+  "ingredients": [
+    {
       "item": "minecraft:amethyst_shard"
     },
-    "B": {
-      "item": "minecraft:experience_bottle"
+    {
+      "item": "verse:milvira_shard"
+    },
+    {
+      "item": "minecraft:amethyst_shard"
     }
-  },
-  "pattern": [
-    " A ",
-    "ABA",
-    " A "
   ],
   "result": {
-    "count": 2,
+    "count": 1,
     "id": "verse:enchanted_weak_shard"
   }
 }

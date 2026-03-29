@@ -1,4 +1,4 @@
-// 1.21.1	2026-03-06T22:59:22.096746523	Recipes
+// 1.21.1	2026-03-28T22:27:04.397484193	Recipes
 743400980829b6639bede3c81f9ff0308f29f844 data/minecraft/advancement/recipes/misc/budding_amethyst.json
 d1247089169faa2fbe0ae39b2db0a985a95fca71 data/minecraft/advancement/recipes/misc/comparator.json
 8358c04bd502024864e5f1514ca5fe59fa01f954 data/minecraft/advancement/recipes/misc/daylight_detector.json
@@ -430,7 +430,7 @@ d4d76ccd266e2ee318062351a168c9d225a8cb37 data/verse/recipe/enchanted_iron_apple.
 871cd15078091039c814245b94675aa6aa0bb541 data/verse/recipe/enchanted_lapis_apple.json
 a8c5bd5878bb6264f603fe55cbcf2c34655b479f data/verse/recipe/enchanted_redstone_apple.json
 e661ee3535a8d28fc8b4b7b78e769e83c1467fd8 data/verse/recipe/enchanted_weak_scroll.json
-173f8f7405da76ef66587fea5cdb9c385330c6ce data/verse/recipe/enchanted_weak_shard.json
+daa66d4170fd058f04fae8042853487ccaa50f24 data/verse/recipe/enchanted_weak_shard.json
 58028b2fac7d24ae5c0638dd3750aab7034d6930 data/verse/recipe/flint_and_boskalt.json
 b2ffd0876fc7aab3429d4aecf55b657ee988d3f8 data/verse/recipe/garnet.json
 4e0024780443f927856faa5af1ff1645d517e5f3 data/verse/recipe/garnet_axe.json

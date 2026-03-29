@@ -694,16 +694,6 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
                 .unlockedBy("has_emerite_ingot", has(VerseItems.EMERITE_INGOT))
                 .save(recipeOutput);
 
-        //Enchanted Shards
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.ENCHANTED_WEAK_SHARD, 2)
-                .pattern(" A ")
-                .pattern("ABA")
-                .pattern(" A ")
-                .define('A', Items.AMETHYST_SHARD)
-                .define('B', Items.EXPERIENCE_BOTTLE)
-                .unlockedBy("has_amethyst_shard", has(Items.AMETHYST_SHARD))
-                .save(recipeOutput);
-
         //Enchanted Scrolls
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, VerseItems.ENCHANTED_WEAK_SCROLL)
                 .pattern(" A ")
@@ -859,6 +849,14 @@ public class VerseRecipeProvider extends RecipeProvider implements IConditionBui
                 .requires(VerseTags.Items.VERSE_KNIFES)
                 .requires(ItemTags.WOOL)
                 .unlockedBy("has_knife", has(VerseTags.Items.VERSE_KNIFES))
+                .save(recipeOutput);
+
+        //Enchanted Shards
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, VerseItems.ENCHANTED_WEAK_SHARD, 1)
+                .requires(Items.AMETHYST_SHARD)
+                .requires(VerseItems.MILVIRA_SHARD)
+                .requires(Items.AMETHYST_SHARD)
+                .unlockedBy("has_amethyst_shard", has(Items.AMETHYST_SHARD))
                 .save(recipeOutput);
 
         //Smithing Template Duplication
